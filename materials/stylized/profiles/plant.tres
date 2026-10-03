@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="StylizedMaterialProfile" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/stylized_material_profile.gd" id="1"]
+[resource]
+script = ExtResource("1")
+profile_id = "plant"
+display_name = "绿植"
+role_ids = PackedStringArray("plant")
+priority = 30
+base_color = Color(0.4, 0.517647, 0.380392, 1)
+secondary_color = Color(0.239216, 0.34902, 0.25098, 1)
+paint_highlight_color = Color(0.584314, 0.662745, 0.501961, 1)
+stain_color = Color(0.109804, 0.180392, 0.117647, 1)
+wear_color = Color(0.635294, 0.701961, 0.537255, 1)
+brush_strength = 0.36
+patina_strength = 0.28
+stain_strength = 0.08
+wear_strength = 0.02
+roughness = 0.9
+specular = 0.12
+outline_color = Color(0.094118, 0.145098, 0.098039, 1)

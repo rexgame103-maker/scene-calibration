@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="StylizedMaterialProfile" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/stylized_material_profile.gd" id="1"]
+[resource]
+script = ExtResource("1")
+profile_id = "printer"
+display_name = "打印机"
+role_ids = PackedStringArray("printer")
+priority = 30
+base_color = Color(0.588235, 0.596078, 0.560784, 1)
+secondary_color = Color(0.466667, 0.47451, 0.470588, 1)
+paint_highlight_color = Color(0.776471, 0.760784, 0.694118, 1)
+stain_color = Color(0.247059, 0.254902, 0.254902, 1)
+wear_color = Color(0.815686, 0.788235, 0.717647, 1)
+brush_strength = 0.35
+patina_strength = 0.38
+stain_strength = 0.18
+wear_strength = 0.1
+roughness = 0.76
+specular = 0.3
+outline_color = Color(0.160784, 0.164706, 0.156863, 1)

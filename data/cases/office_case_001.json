@@ -1,0 +1,457 @@
+{
+  "case_id": "office_case_001",
+  "title": "蓝色文档失踪案",
+  "subtitle": "市警局委托 BF-071 · 恢复被提前清空的办公室",
+  "scene_layout": {
+    "mode": "noir_office",
+    "room_width": 8.6,
+    "room_depth": 7.2,
+    "overview_target": [
+      0,
+      0.7,
+      -0.25
+    ],
+    "overview_pan": false,
+    "base_lighting": {
+      "saturation": 1.0,
+      "fill": {
+        "range": 12,
+        "shadow": false,
+        "energy": 0.25,
+        "temperature": 5000
+      },
+      "ambient_energy": 0.16,
+      "accent": {
+        "range": 10,
+        "shadow": false,
+        "energy": 0.18,
+        "temperature": 6000
+      },
+      "key": {
+        "shadow": true,
+        "energy": 0.9,
+        "temperature": 5000
+      },
+      "ambient_color": "#c5ad82"
+    }
+  },
+  "briefing": {
+    "eyebrow": "已接取邮件委托",
+    "title": "恢复被提前清空的办公室",
+    "description": "有人报警称办公室内物品失窃。警员抵达时，现场已经被不明人员彻底清空，原始空间关系遭到破坏。警方已完成取证，请依据随信照片恢复案发前的办公室。",
+    "instruction": "先打开案件资料查看邮件附件。照片只能证明物品存在，摆放位置还要通过场景痕迹逐步确认。",
+    "accept_button": "进入空办公室"
+  },
+  "completion": {
+    "required_reconstruction_step_id": "office_complete",
+    "required_clue_ids": [
+      "clue_printer_layout_photo"
+    ],
+    "failure_message": "现场仍有关键物品未恢复。请核对固定痕迹、电脑工作日志和打印机上的照片。",
+    "title": "办公室原状已恢复",
+    "description": "桌椅、终端、柜体、打印设备、饮水机与文件层级已经形成一致的空间关系。警方可以据此继续追查是谁在他们抵达前清空了现场。",
+    "deduction": "清空行为发生在报警后、警方抵达前。恢复出的工作日志与文件摆法将成为后续案件的重要伏笔。",
+    "return_button": "拍照归档并返回工作室"
+  },
+  "clues": [
+    {
+      "id": "clue_desk_exists",
+      "title": "办公桌存在",
+      "description": "邮件照片确认现场原有一张办公桌。",
+      "type": "photo",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_chair_exists",
+      "title": "办公椅存在",
+      "description": "照片中桌前有一把长期使用的办公椅。",
+      "type": "photo",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_computer_exists",
+      "title": "桌面终端存在",
+      "description": "照片中办公桌上摆有一台电脑。",
+      "type": "photo",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_workstation_restored",
+      "title": "主要工作位",
+      "description": "桌、椅与电脑形成了长期使用的工作位。",
+      "type": "reconstruction",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_desk_side_wear",
+      "title": "桌侧磨损",
+      "description": "办公桌右侧有长期摩擦痕迹，原本紧贴另一件家具。",
+      "type": "scene",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_cabinet_restored",
+      "title": "桌侧柜位置",
+      "description": "矮柜轮廓与桌侧磨损完全吻合。",
+      "type": "reconstruction",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_renovation_log",
+      "title": "装修工作日志",
+      "description": "终端日志记录了高文件柜和打印机的进场日期。",
+      "type": "computer",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_equipment_restored",
+      "title": "设备区恢复",
+      "description": "高柜与打印设备的位置关系已经恢复。",
+      "type": "reconstruction",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_printer_layout_photo",
+      "title": "打印出的布置照片",
+      "description": "纸张上拍到了高柜、饮水机以及三份文件夹在中层的排列。",
+      "type": "scene_photo",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_office_complete",
+      "title": "办公室完整关系",
+      "description": "照片中的全部可确认物品都已归位。",
+      "type": "reconstruction",
+      "is_discovered": false
+    }
+  ],
+  "evidence": [
+    {
+      "id": "mail_photo_01",
+      "title": "邮件附件 · 清空前照片",
+      "category": "现场照片",
+      "view_type": "photo",
+      "is_initially_available": true,
+      "is_viewed": false,
+      "pin_as_reference": true,
+      "image_path": "res://assets/case_photos/office/concept_workstation.png",
+      "caption": "报警人提供 · 办公区旧照",
+      "description": "照片能确认办公桌、办公椅与桌面电脑，但右侧区域被画面裁掉。",
+      "photo_subjects": [
+        "desk",
+        "office_chair",
+        "computer"
+      ],
+      "clue_ids": [
+        "clue_desk_exists",
+        "clue_chair_exists",
+        "clue_computer_exists"
+      ]
+    },
+    {
+      "id": "commission_note",
+      "title": "警局委托说明",
+      "category": "案情描述",
+      "view_type": "text",
+      "is_initially_available": true,
+      "is_viewed": false,
+      "description": "现场在警方抵达前被清空。委托只要求恢复空间关系，清空者身份暂不在本次调查范围内。",
+      "clue_ids": []
+    },
+    {
+      "id": "printer_layout_photo",
+      "title": "打印纸上的旧照片",
+      "category": "现场照片",
+      "view_type": "photo",
+      "is_initially_available": false,
+      "required_clues": [
+        "clue_printer_layout_photo"
+      ],
+      "is_viewed": false,
+      "pin_as_reference": true,
+      "image_path": "res://assets/case_photos/office/concept_equipment.png",
+      "caption": "装修验收留档 · 设备墙",
+      "description": "照片显示高文件柜旁是饮水机，中层从左到右摆着红、灰、米色三份文件夹。",
+      "photo_subjects": [
+        "shelf",
+        "water_dispenser",
+        "files"
+      ],
+      "clue_ids": []
+    }
+  ],
+  "furniture_unlocks": [
+    {
+      "furniture_id": "desk",
+      "catalog_kind": "desk",
+      "display_name": "办公桌",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_desk_exists"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    },
+    {
+      "furniture_id": "office_chair",
+      "catalog_kind": "chair",
+      "display_name": "办公椅",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_chair_exists"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    },
+    {
+      "furniture_id": "office_computer",
+      "catalog_kind": "computer",
+      "display_name": "桌面电脑",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_computer_exists"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    },
+    {
+      "furniture_id": "small_cabinet",
+      "catalog_kind": "small_shelf",
+      "display_name": "白色矮柜",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_desk_side_wear"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    },
+    {
+      "furniture_id": "file_shelf",
+      "catalog_kind": "shelf",
+      "display_name": "高文件柜",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_renovation_log"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    },
+    {
+      "furniture_id": "printer",
+      "catalog_kind": "printer",
+      "display_name": "打印机",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_renovation_log"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    },
+    {
+      "furniture_id": "water_dispenser",
+      "catalog_kind": "water_dispenser",
+      "display_name": "饮水机",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_printer_layout_photo"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    },
+    {
+      "furniture_id": "red_case_file",
+      "catalog_kind": "red_file",
+      "display_name": "红色文件夹",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_printer_layout_photo"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    },
+    {
+      "furniture_id": "gray_case_file",
+      "catalog_kind": "gray_file",
+      "display_name": "灰色文件夹",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_printer_layout_photo"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    },
+    {
+      "furniture_id": "ordinary_file_01",
+      "catalog_kind": "ordinary_file_01",
+      "display_name": "米色文件夹",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_printer_layout_photo"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    }
+  ],
+  "reconstruction_zones": [
+    {
+      "zone_id": "zone_desk_original",
+      "required_furniture_id": "desk",
+      "position": [
+        0.1,
+        0.7,
+        -2.26
+      ],
+      "size": [
+        0.65,
+        3.0,
+        0.65
+      ]
+    },
+    {
+      "zone_id": "zone_small_cabinet_original",
+      "required_furniture_id": "small_cabinet",
+      "position": [
+        2.3,
+        0.7,
+        -2.26
+      ],
+      "size": [
+        0.65,
+        3.0,
+        0.65
+      ]
+    },
+    {
+      "zone_id": "zone_shelf_original",
+      "required_furniture_id": "file_shelf",
+      "position": [
+        -3.37,
+        1.4,
+        -2.55
+      ],
+      "size": [
+        0.65,
+        3.0,
+        0.65
+      ],
+      "require_orientation": true,
+      "target_yaw": 0,
+      "orientation_tolerance": 18.0
+    },
+    {
+      "zone_id": "zone_printer_original",
+      "required_furniture_id": "printer",
+      "position": [
+        3.14,
+        0.9,
+        1.0
+      ],
+      "size": [
+        0.65,
+        3.0,
+        0.65
+      ]
+    },
+    {
+      "zone_id": "zone_water_dispenser_original",
+      "required_furniture_id": "water_dispenser",
+      "position": [
+        -2.21,
+        1.0,
+        -2.49
+      ],
+      "size": [
+        0.65,
+        3.0,
+        0.65
+      ]
+    }
+  ],
+  "reconstruction_steps": [
+    {
+      "step_id": "office_workstation",
+      "zone_ids": [
+        "zone_desk_original",
+        "zone_chair_at_desk",
+        "zone_computer_on_desk"
+      ],
+      "reward_clue_ids": [
+        "clue_workstation_restored"
+      ]
+    },
+    {
+      "step_id": "small_cabinet_restored",
+      "zone_ids": [
+        "zone_small_cabinet_original"
+      ],
+      "required_clue_ids": [
+        "clue_desk_side_wear"
+      ],
+      "reward_clue_ids": [
+        "clue_cabinet_restored"
+      ]
+    },
+    {
+      "step_id": "equipment_restored",
+      "zone_ids": [
+        "zone_shelf_original",
+        "zone_printer_original"
+      ],
+      "required_clue_ids": [
+        "clue_renovation_log"
+      ],
+      "reward_clue_ids": [
+        "clue_equipment_restored"
+      ]
+    },
+    {
+      "step_id": "office_complete",
+      "zone_ids": [
+        "zone_desk_original",
+        "zone_chair_at_desk",
+        "zone_computer_on_desk",
+        "zone_small_cabinet_original",
+        "zone_shelf_original",
+        "zone_printer_original",
+        "zone_water_dispenser_original",
+        "zone_red_file_slot",
+        "zone_gray_file_slot",
+        "zone_ordinary_file_01_slot"
+      ],
+      "required_clue_ids": [
+        "clue_printer_layout_photo"
+      ],
+      "reward_clue_ids": [
+        "clue_office_complete"
+      ]
+    }
+  ],
+  "scene_clue_points": [
+    {
+      "parent_furniture_id": "office_computer",
+      "clue_point_id": "computer_work_log",
+      "clue_id": "clue_renovation_log",
+      "title": "装修工作日志",
+      "description": "电脑里保存着装修验收日志：高文件柜与打印机在同一天沿设备墙安装。",
+      "required_reconstruction_step_id": "small_cabinet_restored",
+      "position": [
+        0,
+        0.65,
+        0
+      ]
+    },
+    {
+      "parent_furniture_id": "printer",
+      "clue_point_id": "printer_photo",
+      "clue_id": "clue_printer_layout_photo",
+      "title": "打印机上的纸张",
+      "description": "纸上是一张旧照片：高柜旁放着饮水机，高柜中层依次摆着红、灰、米色文件夹。",
+      "required_reconstruction_step_id": "equipment_restored",
+      "position": [
+        0,
+        1.32,
+        0.62
+      ]
+    }
+  ]
+}

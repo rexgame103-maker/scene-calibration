@@ -1,0 +1,275 @@
+[gd_scene format=3]
+
+[ext_resource type="Shader" path="res://shaders/noir_toon.gdshader" id="1_8yt7m"]
+[ext_resource type="Shader" path="res://shaders/stylized_outline.gdshader" id="2_0l26k"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a6uy1"]
+render_priority = 0
+shader = ExtResource("1_8yt7m")
+shader_parameter/paint = Color(0.79607844, 0.7254902, 0.52156866, 1)
+shader_parameter/half_size = Vector3(0.325, 0.64, 0.35)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.025
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ld5tq"]
+size = Vector3(0.65, 1.28, 0.7)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_42lus"]
+render_priority = 0
+shader = ExtResource("1_8yt7m")
+shader_parameter/paint = Color(0.23137255, 0.2509804, 0.19607843, 1)
+shader_parameter/half_size = Vector3(0.215, 0.195, 0.0125)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.00625
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_rwjre"]
+size = Vector3(0.43, 0.39, 0.025)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_afo1k"]
+render_priority = 0
+shader = ExtResource("2_0l26k")
+shader_parameter/outline_color = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/outline_width = 0.016
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qysep"]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_afo1k")
+shader = ExtResource("1_8yt7m")
+shader_parameter/paint = Color(0.61960787, 0.5764706, 0.40784314, 1)
+shader_parameter/half_size = Vector3(0, 0, 0)
+shader_parameter/box_ink = false
+shader_parameter/ink_width = 0.015
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_vfusb"]
+top_radius = 0.045
+bottom_radius = 0.045
+height = 0.15
+radial_segments = 12
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gm4a0"]
+render_priority = 0
+shader = ExtResource("1_8yt7m")
+shader_parameter/paint = Color(0.6431373, 0.29411766, 0.1764706, 1)
+shader_parameter/half_size = Vector3(0.0325, 0.0225, 0.0275)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.01125
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_1m182"]
+size = Vector3(0.065, 0.045, 0.055)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_g3iib"]
+top_radius = 0.045
+bottom_radius = 0.045
+height = 0.15
+radial_segments = 12
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ppj7c"]
+render_priority = 0
+shader = ExtResource("1_8yt7m")
+shader_parameter/paint = Color(0.32156864, 0.54901963, 0.61960787, 1)
+shader_parameter/half_size = Vector3(0.0325, 0.0225, 0.0275)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.01125
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_88jdp"]
+size = Vector3(0.065, 0.045, 0.055)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kradt"]
+render_priority = 0
+shader = ExtResource("2_0l26k")
+shader_parameter/outline_color = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/outline_width = 0.016
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_35ai0"]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_kradt")
+shader = ExtResource("1_8yt7m")
+shader_parameter/paint = Color(0.21176471, 0.4745098, 0.54509807, 1)
+shader_parameter/half_size = Vector3(0, 0, 0)
+shader_parameter/box_ink = false
+shader_parameter/ink_width = 0.015
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qjrqp"]
+top_radius = 0.14
+bottom_radius = 0.14
+height = 0.2
+radial_segments = 12
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_53i0m"]
+render_priority = 0
+shader = ExtResource("2_0l26k")
+shader_parameter/outline_color = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/outline_width = 0.016
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gfys8"]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_53i0m")
+shader = ExtResource("1_8yt7m")
+shader_parameter/paint = Color(0.21176471, 0.49803922, 0.5882353, 1)
+shader_parameter/half_size = Vector3(0, 0, 0)
+shader_parameter/box_ink = false
+shader_parameter/ink_width = 0.015
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qijmn"]
+top_radius = 0.3
+bottom_radius = 0.32
+height = 0.88
+radial_segments = 12
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_brwjc"]
+render_priority = 0
+shader = ExtResource("2_0l26k")
+shader_parameter/outline_color = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/outline_width = 0.016
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_efe8w"]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_brwjc")
+shader = ExtResource("1_8yt7m")
+shader_parameter/paint = Color(0.34117648, 0.6117647, 0.6901961, 1)
+shader_parameter/half_size = Vector3(0, 0, 0)
+shader_parameter/box_ink = false
+shader_parameter/ink_width = 0.015
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_515e0"]
+top_radius = 0.327
+bottom_radius = 0.327
+height = 0.045
+radial_segments = 12
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_4i7fx"]
+top_radius = 0.327
+bottom_radius = 0.327
+height = 0.045
+radial_segments = 12
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_wvofn"]
+top_radius = 0.327
+bottom_radius = 0.327
+height = 0.045
+radial_segments = 12
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6odwv"]
+top_radius = 0.327
+bottom_radius = 0.327
+height = 0.045
+radial_segments = 12
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6twpq"]
+top_radius = 0.327
+bottom_radius = 0.327
+height = 0.045
+radial_segments = 12
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hi2vg"]
+render_priority = 0
+shader = ExtResource("2_0l26k")
+shader_parameter/outline_color = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/outline_width = 0.016
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rltbn"]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_hi2vg")
+shader = ExtResource("1_8yt7m")
+shader_parameter/paint = Color(0.64705884, 0.78431374, 0.7490196, 1)
+shader_parameter/half_size = Vector3(0, 0, 0)
+shader_parameter/box_ink = false
+shader_parameter/ink_width = 0.015
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_rwfnj"]
+top_radius = 0.022
+bottom_radius = 0.022
+height = 0.42999983
+radial_segments = 12
+
+[node name="Model" type="Node3D" unique_id=813709536]
+
+[node name="WaterDispenser" type="Node3D" parent="." unique_id=1634373974]
+
+[node name="IvoryBody" type="MeshInstance3D" parent="WaterDispenser" unique_id=76382862]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.64, 0)
+material_override = SubResource("ShaderMaterial_a6uy1")
+mesh = SubResource("BoxMesh_ld5tq")
+
+[node name="TapRecess" type="MeshInstance3D" parent="WaterDispenser" unique_id=344207258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.85, 0.363)
+material_override = SubResource("ShaderMaterial_42lus")
+mesh = SubResource("BoxMesh_rwjre")
+
+[node name="Tap" type="MeshInstance3D" parent="WaterDispenser" unique_id=1304512478]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.13, 0.85, 0.42)
+material_override = SubResource("ShaderMaterial_qysep")
+mesh = SubResource("CylinderMesh_vfusb")
+
+[node name="TapButton" type="MeshInstance3D" parent="WaterDispenser" unique_id=1373767283]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13, 0.96, 0.405)
+material_override = SubResource("ShaderMaterial_gm4a0")
+mesh = SubResource("BoxMesh_1m182")
+
+[node name="@MeshInstance3D@351" type="MeshInstance3D" parent="WaterDispenser" unique_id=722426030]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.13, 0.85, 0.42)
+material_override = SubResource("ShaderMaterial_qysep")
+mesh = SubResource("CylinderMesh_g3iib")
+
+[node name="@MeshInstance3D@352" type="MeshInstance3D" parent="WaterDispenser" unique_id=1529437884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13, 0.96, 0.405)
+material_override = SubResource("ShaderMaterial_ppj7c")
+mesh = SubResource("BoxMesh_88jdp")
+
+[node name="BottleNeck" type="MeshInstance3D" parent="WaterDispenser" unique_id=805884222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.37, 0)
+material_override = SubResource("ShaderMaterial_35ai0")
+mesh = SubResource("CylinderMesh_qjrqp")
+
+[node name="BlueWaterBottle" type="MeshInstance3D" parent="WaterDispenser" unique_id=997166587]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.88, 0)
+material_override = SubResource("ShaderMaterial_gfys8")
+mesh = SubResource("CylinderMesh_qijmn")
+
+[node name="BottleRib" type="MeshInstance3D" parent="WaterDispenser" unique_id=1426765072]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.49, 0)
+material_override = SubResource("ShaderMaterial_efe8w")
+mesh = SubResource("CylinderMesh_515e0")
+
+[node name="@MeshInstance3D@353" type="MeshInstance3D" parent="WaterDispenser" unique_id=2032488249]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.68, 0)
+material_override = SubResource("ShaderMaterial_efe8w")
+mesh = SubResource("CylinderMesh_4i7fx")
+
+[node name="@MeshInstance3D@354" type="MeshInstance3D" parent="WaterDispenser" unique_id=1680434909]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.89, 0)
+material_override = SubResource("ShaderMaterial_efe8w")
+mesh = SubResource("CylinderMesh_wvofn")
+
+[node name="@MeshInstance3D@355" type="MeshInstance3D" parent="WaterDispenser" unique_id=816339614]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.11, 0)
+material_override = SubResource("ShaderMaterial_efe8w")
+mesh = SubResource("CylinderMesh_6odwv")
+
+[node name="@MeshInstance3D@356" type="MeshInstance3D" parent="WaterDispenser" unique_id=1604860070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3, 0)
+material_override = SubResource("ShaderMaterial_efe8w")
+mesh = SubResource("CylinderMesh_6twpq")
+
+[node name="BottleHighlight" type="MeshInstance3D" parent="WaterDispenser" unique_id=477494907]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 1.905, 0.23)
+material_override = SubResource("ShaderMaterial_rltbn")
+mesh = SubResource("CylinderMesh_rwfnj")

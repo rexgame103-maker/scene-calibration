@@ -1,0 +1,206 @@
+[gd_scene format=3]
+
+[ext_resource type="Shader" path="res://shaders/noir_toon.gdshader" id="1_onpb5"]
+[ext_resource type="Shader" path="res://shaders/stylized_outline.gdshader" id="2_wj6wp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jqo2q"]
+render_priority = 0
+shader = ExtResource("1_onpb5")
+shader_parameter/paint = Color(0.7647059, 0.7019608, 0.5019608, 1)
+shader_parameter/half_size = Vector3(0.46, 0.53, 0.735)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.025
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_2aqjw"]
+size = Vector3(0.92, 1.06, 1.47)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hhid4"]
+render_priority = 0
+shader = ExtResource("1_onpb5")
+shader_parameter/paint = Color(0.81960785, 0.74509805, 0.53333336, 1)
+shader_parameter/half_size = Vector3(0.5, 0.06, 0.785)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.025
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_arg18"]
+size = Vector3(1, 0.12, 1.57)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8rj13"]
+render_priority = 0
+shader = ExtResource("1_onpb5")
+shader_parameter/paint = Color(0.7607843, 0.69411767, 0.52156866, 1)
+shader_parameter/half_size = Vector3(0.415, 0.14, 0.0275)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.01375
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_5rp2m"]
+size = Vector3(0.83, 0.28, 0.055)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q6mvb"]
+render_priority = 0
+shader = ExtResource("1_onpb5")
+shader_parameter/paint = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/half_size = Vector3(0.14, 0.04, 0.0125)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.00625
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_b38kj"]
+size = Vector3(0.28, 0.08, 0.025)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_je5xh"]
+render_priority = 0
+shader = ExtResource("2_wj6wp")
+shader_parameter/outline_color = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/outline_width = 0.016
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gn24b"]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_je5xh")
+shader = ExtResource("1_onpb5")
+shader_parameter/paint = Color(0.72156864, 0.5294118, 0.19607843, 1)
+shader_parameter/half_size = Vector3(0, 0, 0)
+shader_parameter/box_ink = false
+shader_parameter/ink_width = 0.015
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_wgeyq"]
+top_radius = 0.019
+bottom_radius = 0.019
+height = 0.24
+radial_segments = 12
+
+[sub_resource type="BoxMesh" id="BoxMesh_fj6eb"]
+size = Vector3(0.83, 0.28, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tugo0"]
+size = Vector3(0.28, 0.08, 0.025)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_tsilh"]
+top_radius = 0.019
+bottom_radius = 0.019
+height = 0.24
+radial_segments = 12
+
+[sub_resource type="BoxMesh" id="BoxMesh_mvsg7"]
+size = Vector3(0.83, 0.28, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3xd10"]
+size = Vector3(0.28, 0.08, 0.025)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_melhh"]
+top_radius = 0.019
+bottom_radius = 0.019
+height = 0.24
+radial_segments = 12
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_48jgj"]
+render_priority = 0
+shader = ExtResource("1_onpb5")
+shader_parameter/paint = Color(0.84705883, 0.7254902, 0.4627451, 1)
+shader_parameter/half_size = Vector3(0.28, 0.0275, 0.36)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.01375
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_8kapj"]
+size = Vector3(0.56, 0.055, 0.72)
+
+[sub_resource type="BoxMesh" id="BoxMesh_iypk4"]
+size = Vector3(0.56, 0.055, 0.72)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lj2ye"]
+render_priority = 0
+shader = ExtResource("1_onpb5")
+shader_parameter/paint = Color(0.28627452, 0.25490198, 0.1764706, 1)
+shader_parameter/half_size = Vector3(0.28, 0.0275, 0.36)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.01375
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_uieqd"]
+size = Vector3(0.56, 0.055, 0.72)
+
+[node name="Model" type="Node3D" unique_id=1432272453]
+
+[node name="DeskSideIvoryCabinet" type="Node3D" parent="." unique_id=367561241]
+
+[node name="Body" type="MeshInstance3D" parent="DeskSideIvoryCabinet" unique_id=758790526]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.53, 0)
+material_override = SubResource("ShaderMaterial_jqo2q")
+mesh = SubResource("BoxMesh_2aqjw")
+
+[node name="Top" type="MeshInstance3D" parent="DeskSideIvoryCabinet" unique_id=1369930345]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+material_override = SubResource("ShaderMaterial_hhid4")
+mesh = SubResource("BoxMesh_arg18")
+
+[node name="Drawer" type="MeshInstance3D" parent="DeskSideIvoryCabinet" unique_id=336776650]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22, 0.755)
+material_override = SubResource("ShaderMaterial_8rj13")
+mesh = SubResource("BoxMesh_5rp2m")
+
+[node name="PullRecess" type="MeshInstance3D" parent="DeskSideIvoryCabinet" unique_id=901522857]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.26, 0.79)
+material_override = SubResource("ShaderMaterial_q6mvb")
+mesh = SubResource("BoxMesh_b38kj")
+
+[node name="MetalPull" type="MeshInstance3D" parent="DeskSideIvoryCabinet" unique_id=2114446496]
+transform = Transform3D(0, 1, 0, -1, 0, 0, 0, 0, 1, 0, 0.275, 0.82)
+material_override = SubResource("ShaderMaterial_gn24b")
+mesh = SubResource("CylinderMesh_wgeyq")
+
+[node name="@MeshInstance3D@310" type="MeshInstance3D" parent="DeskSideIvoryCabinet" unique_id=222375546]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.57, 0.755)
+material_override = SubResource("ShaderMaterial_8rj13")
+mesh = SubResource("BoxMesh_fj6eb")
+
+[node name="@MeshInstance3D@311" type="MeshInstance3D" parent="DeskSideIvoryCabinet" unique_id=1647696231]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.61, 0.79)
+material_override = SubResource("ShaderMaterial_q6mvb")
+mesh = SubResource("BoxMesh_tugo0")
+
+[node name="@MeshInstance3D@312" type="MeshInstance3D" parent="DeskSideIvoryCabinet" unique_id=2141016134]
+transform = Transform3D(0, 1, 0, -1, 0, 0, 0, 0, 1, 0, 0.625, 0.82)
+material_override = SubResource("ShaderMaterial_gn24b")
+mesh = SubResource("CylinderMesh_tsilh")
+
+[node name="@MeshInstance3D@313" type="MeshInstance3D" parent="DeskSideIvoryCabinet" unique_id=544331399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.91, 0.755)
+material_override = SubResource("ShaderMaterial_8rj13")
+mesh = SubResource("BoxMesh_mvsg7")
+
+[node name="@MeshInstance3D@314" type="MeshInstance3D" parent="DeskSideIvoryCabinet" unique_id=120787771]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, 0.79)
+material_override = SubResource("ShaderMaterial_q6mvb")
+mesh = SubResource("BoxMesh_3xd10")
+
+[node name="@MeshInstance3D@315" type="MeshInstance3D" parent="DeskSideIvoryCabinet" unique_id=1912729912]
+transform = Transform3D(0, 1, 0, -1, 0, 0, 0, 0, 1, 0, 0.965, 0.82)
+material_override = SubResource("ShaderMaterial_gn24b")
+mesh = SubResource("CylinderMesh_melhh")
+
+[node name="StackedFolder" type="MeshInstance3D" parent="DeskSideIvoryCabinet" unique_id=951886275]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04, 1.2, -0.17)
+material_override = SubResource("ShaderMaterial_48jgj")
+mesh = SubResource("BoxMesh_8kapj")
+
+[node name="@MeshInstance3D@316" type="MeshInstance3D" parent="DeskSideIvoryCabinet" unique_id=1370183882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04, 1.27, -0.17)
+material_override = SubResource("ShaderMaterial_48jgj")
+mesh = SubResource("BoxMesh_iypk4")
+
+[node name="@MeshInstance3D@317" type="MeshInstance3D" parent="DeskSideIvoryCabinet" unique_id=665509413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04, 1.34, -0.17)
+material_override = SubResource("ShaderMaterial_lj2ye")
+mesh = SubResource("BoxMesh_uieqd")

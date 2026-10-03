@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>错位现场 · 源码导览</title>
+  <style>__REVIEW_CSS__</style>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#overview"><span class="brand-mark">SC</span><span>错位现场<small>源码审核导览</small></span></a>
+    <div class="snapshot" id="snapshot"></div>
+    <nav class="primary-nav" aria-label="主要导航"><a href="#overview">项目概览</a><a href="#file=docs%2FSOURCE_GUIDE.md">阅读导览</a><button id="search-all" type="button">检索源码 <kbd>Ctrl K</kbd></button></nav>
+    <label class="filter-label" for="file-filter">项目文件</label>
+    <input id="file-filter" type="search" placeholder="筛选文件名称或路径" autocomplete="off">
+    <div id="file-count" class="muted"></div>
+    <div id="file-tree" aria-label="源码目录树"></div>
+    <div class="sidebar-footer">离线可用 · 无外部依赖<br><a href="manifest.json" download>下载 SHA-256 文件清单</a></div>
+  </aside>
+  <main id="main"><div id="workspace"></div></main>
+  <dialog id="search-dialog">
+    <form id="search-form"><label for="source-query">跨文件搜索</label><button id="close-search" type="button" aria-label="关闭检索">×</button><input id="source-query" type="search" placeholder="输入函数、变量或文本" autocomplete="off"><div class="search-options"><label><input id="case-sensitive" type="checkbox"> 区分大小写</label><span>Enter 搜索 · Esc 关闭</span></div></form>
+    <div id="search-summary" class="muted">搜索全部已收录的文本源文件。</div><div id="search-results"></div>
+  </dialog>
+  <script id="review-data" type="application/json">__REVIEW_DATA__</script>
+  <script>__REVIEW_JS__</script>
+</body>
+</html>

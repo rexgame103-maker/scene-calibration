@@ -1,0 +1,617 @@
+[gd_scene format=3]
+
+[ext_resource type="Shader" path="res://shaders/noir_toon.gdshader" id="1_ukfur"]
+[ext_resource type="Shader" path="res://shaders/stylized_outline.gdshader" id="2_nfksi"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wn7wx"]
+render_priority = 0
+shader = ExtResource("1_ukfur")
+shader_parameter/paint = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/half_size = Vector3(0.26, 0.0225, 0.175)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.01125
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_71ifq"]
+size = Vector3(0.52, 0.045, 0.35)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hkdq0"]
+render_priority = 0
+shader = ExtResource("1_ukfur")
+shader_parameter/paint = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/half_size = Vector3(0.055, 0.18, 0.05)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.025
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_7his1"]
+size = Vector3(0.11, 0.36, 0.1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2g7qo"]
+render_priority = 0
+shader = ExtResource("1_ukfur")
+shader_parameter/paint = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/half_size = Vector3(0.73, 0.455, 0.045)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.0225
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_i0qlc"]
+size = Vector3(1.46, 0.91, 0.09)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q5bm2"]
+render_priority = 0
+shader = ExtResource("1_ukfur")
+shader_parameter/paint = Color(0.22352941, 0.49411765, 0.5411765, 1)
+shader_parameter/half_size = Vector3(0.66, 0.385, 0.0075)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.00375
+shader_parameter/grain = null
+shader_parameter/glow = 0.35
+
+[sub_resource type="BoxMesh" id="BoxMesh_rui2u"]
+size = Vector3(1.32, 0.77, 0.015)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_om5yo"]
+render_priority = 0
+shader = ExtResource("1_ukfur")
+shader_parameter/paint = Color(0.5019608, 0.7058824, 0.69803923, 1)
+shader_parameter/half_size = Vector3(0.33, 0.23, 0.0025)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.00125
+shader_parameter/grain = null
+shader_parameter/glow = 0.2
+
+[sub_resource type="BoxMesh" id="BoxMesh_r4d8b"]
+size = Vector3(0.66, 0.46, 0.005)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xtygy"]
+render_priority = 0
+shader = ExtResource("1_ukfur")
+shader_parameter/paint = Color(0.57254905, 0.7254902, 0.67058825, 1)
+shader_parameter/half_size = Vector3(0.13, 0.0105, 0.002)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.001
+shader_parameter/grain = null
+shader_parameter/glow = 0.12
+
+[sub_resource type="BoxMesh" id="BoxMesh_s0ner"]
+size = Vector3(0.26, 0.021, 0.004)
+
+[sub_resource type="BoxMesh" id="BoxMesh_444sy"]
+size = Vector3(0.26, 0.021, 0.004)
+
+[sub_resource type="BoxMesh" id="BoxMesh_oqu4q"]
+size = Vector3(0.26, 0.021, 0.004)
+
+[sub_resource type="BoxMesh" id="BoxMesh_litml"]
+size = Vector3(0.26, 0.021, 0.004)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0d2pe"]
+size = Vector3(0.26, 0.021, 0.004)
+
+[sub_resource type="BoxMesh" id="BoxMesh_v46f2"]
+size = Vector3(0.26, 0.021, 0.004)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sw6jh"]
+render_priority = 0
+shader = ExtResource("1_ukfur")
+shader_parameter/paint = Color(0.22352941, 0.21568628, 0.16470589, 1)
+shader_parameter/half_size = Vector3(0.51, 0.0225, 0.185)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.01125
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_3c3tl"]
+size = Vector3(1.02, 0.045, 0.37)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o4hok"]
+render_priority = 0
+shader = ExtResource("1_ukfur")
+shader_parameter/paint = Color(0.6039216, 0.54901963, 0.38039216, 1)
+shader_parameter/half_size = Vector3(0.032, 0.01, 0.0275)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.005
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_c0iae"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_khsb3"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wn6yh"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_aeehw"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3tb46"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_aanqc"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2xp4g"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jgpoq"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rsnxh"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_niik3"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_00mci"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vianf"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2r4x2"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7jsip"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_60eh0"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dkntk"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_32rcn"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_agemb"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_470wm"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_n03hn"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fs5hf"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_37xbu"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6ywc1"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0hhtc"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_aqdod"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_55rg6"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lhyyl"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_18pls"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7jkdc"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_u1fcl"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nwmsl"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dk07g"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rox54"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_86rrg"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_q14xa"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0bsep"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_s4vm8"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_j5ksa"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h8pu6"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h6008"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dxoyi"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_w137a"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ik3fq"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_aw11c"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_liioj"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bryo1"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8ry7v"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3er5k"]
+size = Vector3(0.064, 0.02, 0.055)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_htx0c"]
+render_priority = 0
+shader = ExtResource("1_ukfur")
+shader_parameter/paint = Color(0.7058824, 0.6392157, 0.46666667, 1)
+shader_parameter/half_size = Vector3(0.185, 0.008, 0.0235)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.004
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_l3df0"]
+size = Vector3(0.37, 0.016, 0.047)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jbymc"]
+render_priority = 0
+shader = ExtResource("2_nfksi")
+shader_parameter/outline_color = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/outline_width = 0.016
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cy61i"]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_jbymc")
+shader = ExtResource("1_ukfur")
+shader_parameter/paint = Color(0.23137255, 0.22352941, 0.1764706, 1)
+shader_parameter/half_size = Vector3(0, 0, 0)
+shader_parameter/box_ink = false
+shader_parameter/ink_width = 0.015
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_j03aq"]
+top_radius = 0.105
+bottom_radius = 0.105
+height = 0.055
+radial_segments = 12
+
+[node name="Model" type="Node3D" unique_id=2127653454]
+
+[node name="Computer" type="Node3D" parent="." unique_id=258392358]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05, 0.01999998, -0.43)
+
+[node name="Foot" type="MeshInstance3D" parent="Computer" unique_id=1025519047]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0.06)
+material_override = SubResource("ShaderMaterial_wn7wx")
+mesh = SubResource("BoxMesh_71ifq")
+
+[node name="Stand" type="MeshInstance3D" parent="Computer" unique_id=939707634]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, -0.02)
+material_override = SubResource("ShaderMaterial_hkdq0")
+mesh = SubResource("BoxMesh_7his1")
+
+[node name="MonitorFrame" type="MeshInstance3D" parent="Computer" unique_id=1798717637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.63, 0)
+material_override = SubResource("ShaderMaterial_2g7qo")
+mesh = SubResource("BoxMesh_i0qlc")
+
+[node name="Screen" type="MeshInstance3D" parent="Computer" unique_id=205971837]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.64, 0.052)
+material_override = SubResource("ShaderMaterial_q5bm2")
+mesh = SubResource("BoxMesh_rui2u")
+
+[node name="Window" type="MeshInstance3D" parent="Computer" unique_id=1523293272]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.6, 0.063)
+material_override = SubResource("ShaderMaterial_om5yo")
+mesh = SubResource("BoxMesh_r4d8b")
+
+[node name="LogEntry" type="MeshInstance3D" parent="Computer" unique_id=123294131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.43, 0.88, 0.064)
+material_override = SubResource("ShaderMaterial_xtygy")
+mesh = SubResource("BoxMesh_s0ner")
+
+[node name="@MeshInstance3D@258" type="MeshInstance3D" parent="Computer" unique_id=1746550353]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.43, 0.79, 0.064)
+material_override = SubResource("ShaderMaterial_xtygy")
+mesh = SubResource("BoxMesh_444sy")
+
+[node name="@MeshInstance3D@259" type="MeshInstance3D" parent="Computer" unique_id=1925924505]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.43, 0.7, 0.064)
+material_override = SubResource("ShaderMaterial_xtygy")
+mesh = SubResource("BoxMesh_oqu4q")
+
+[node name="@MeshInstance3D@260" type="MeshInstance3D" parent="Computer" unique_id=1497704972]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.43, 0.61, 0.064)
+material_override = SubResource("ShaderMaterial_xtygy")
+mesh = SubResource("BoxMesh_litml")
+
+[node name="@MeshInstance3D@261" type="MeshInstance3D" parent="Computer" unique_id=137499865]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.43, 0.52, 0.064)
+material_override = SubResource("ShaderMaterial_xtygy")
+mesh = SubResource("BoxMesh_0d2pe")
+
+[node name="@MeshInstance3D@262" type="MeshInstance3D" parent="Computer" unique_id=388767210]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.43, 0.43, 0.064)
+material_override = SubResource("ShaderMaterial_xtygy")
+mesh = SubResource("BoxMesh_v46f2")
+
+[node name="Keyboard" type="Node3D" parent="." unique_id=1718572202]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03, 0.029999971, 0.26)
+
+[node name="Body" type="MeshInstance3D" parent="Keyboard" unique_id=615499062]
+material_override = SubResource("ShaderMaterial_sw6jh")
+mesh = SubResource("BoxMesh_3c3tl")
+
+[node name="Key" type="MeshInstance3D" parent="Keyboard" unique_id=1578457527]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.455, 0.033, -0.128)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_c0iae")
+
+[node name="@MeshInstance3D@263" type="MeshInstance3D" parent="Keyboard" unique_id=746392843]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.373, 0.033, -0.128)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_khsb3")
+
+[node name="@MeshInstance3D@264" type="MeshInstance3D" parent="Keyboard" unique_id=967963723]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.291, 0.033, -0.128)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_wn6yh")
+
+[node name="@MeshInstance3D@265" type="MeshInstance3D" parent="Keyboard" unique_id=1773314159]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.209, 0.033, -0.128)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_aeehw")
+
+[node name="@MeshInstance3D@266" type="MeshInstance3D" parent="Keyboard" unique_id=1635286750]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.127, 0.033, -0.128)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_3tb46")
+
+[node name="@MeshInstance3D@267" type="MeshInstance3D" parent="Keyboard" unique_id=1551136205]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.045, 0.033, -0.128)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_aanqc")
+
+[node name="@MeshInstance3D@268" type="MeshInstance3D" parent="Keyboard" unique_id=602092652]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.037, 0.033, -0.128)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_2xp4g")
+
+[node name="@MeshInstance3D@269" type="MeshInstance3D" parent="Keyboard" unique_id=1105822065]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.119, 0.033, -0.128)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_jgpoq")
+
+[node name="@MeshInstance3D@270" type="MeshInstance3D" parent="Keyboard" unique_id=1768371006]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.201, 0.033, -0.128)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_rsnxh")
+
+[node name="@MeshInstance3D@271" type="MeshInstance3D" parent="Keyboard" unique_id=381831013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.283, 0.033, -0.128)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_niik3")
+
+[node name="@MeshInstance3D@272" type="MeshInstance3D" parent="Keyboard" unique_id=1637359139]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.365, 0.033, -0.128)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_00mci")
+
+[node name="@MeshInstance3D@273" type="MeshInstance3D" parent="Keyboard" unique_id=699895232]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.447, 0.033, -0.128)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_vianf")
+
+[node name="@MeshInstance3D@274" type="MeshInstance3D" parent="Keyboard" unique_id=1041484163]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.455, 0.033, -0.05)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_2r4x2")
+
+[node name="@MeshInstance3D@275" type="MeshInstance3D" parent="Keyboard" unique_id=266106044]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.373, 0.033, -0.05)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_7jsip")
+
+[node name="@MeshInstance3D@276" type="MeshInstance3D" parent="Keyboard" unique_id=542375206]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.291, 0.033, -0.05)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_60eh0")
+
+[node name="@MeshInstance3D@277" type="MeshInstance3D" parent="Keyboard" unique_id=700151139]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.209, 0.033, -0.05)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_dkntk")
+
+[node name="@MeshInstance3D@278" type="MeshInstance3D" parent="Keyboard" unique_id=1740222315]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.127, 0.033, -0.05)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_32rcn")
+
+[node name="@MeshInstance3D@279" type="MeshInstance3D" parent="Keyboard" unique_id=1567985605]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.045, 0.033, -0.05)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_agemb")
+
+[node name="@MeshInstance3D@280" type="MeshInstance3D" parent="Keyboard" unique_id=136823637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.037, 0.033, -0.05)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_470wm")
+
+[node name="@MeshInstance3D@281" type="MeshInstance3D" parent="Keyboard" unique_id=1627288077]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.119, 0.033, -0.05)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_n03hn")
+
+[node name="@MeshInstance3D@282" type="MeshInstance3D" parent="Keyboard" unique_id=1622167515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.201, 0.033, -0.05)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_fs5hf")
+
+[node name="@MeshInstance3D@283" type="MeshInstance3D" parent="Keyboard" unique_id=130617972]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.283, 0.033, -0.05)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_37xbu")
+
+[node name="@MeshInstance3D@284" type="MeshInstance3D" parent="Keyboard" unique_id=1751080152]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.365, 0.033, -0.05)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_6ywc1")
+
+[node name="@MeshInstance3D@285" type="MeshInstance3D" parent="Keyboard" unique_id=1105362982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.447, 0.033, -0.05)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_0hhtc")
+
+[node name="@MeshInstance3D@286" type="MeshInstance3D" parent="Keyboard" unique_id=601060403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.455, 0.033, 0.028)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_aqdod")
+
+[node name="@MeshInstance3D@287" type="MeshInstance3D" parent="Keyboard" unique_id=1648841869]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.373, 0.033, 0.028)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_55rg6")
+
+[node name="@MeshInstance3D@288" type="MeshInstance3D" parent="Keyboard" unique_id=609249574]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.291, 0.033, 0.028)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_lhyyl")
+
+[node name="@MeshInstance3D@289" type="MeshInstance3D" parent="Keyboard" unique_id=1558083128]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.209, 0.033, 0.028)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_18pls")
+
+[node name="@MeshInstance3D@290" type="MeshInstance3D" parent="Keyboard" unique_id=140158665]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.127, 0.033, 0.028)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_7jkdc")
+
+[node name="@MeshInstance3D@291" type="MeshInstance3D" parent="Keyboard" unique_id=1067212204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.045, 0.033, 0.028)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_u1fcl")
+
+[node name="@MeshInstance3D@292" type="MeshInstance3D" parent="Keyboard" unique_id=127396671]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.037, 0.033, 0.028)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_nwmsl")
+
+[node name="@MeshInstance3D@293" type="MeshInstance3D" parent="Keyboard" unique_id=85586476]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.119, 0.033, 0.028)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_dk07g")
+
+[node name="@MeshInstance3D@294" type="MeshInstance3D" parent="Keyboard" unique_id=272667345]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.201, 0.033, 0.028)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_rox54")
+
+[node name="@MeshInstance3D@295" type="MeshInstance3D" parent="Keyboard" unique_id=1539763307]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.283, 0.033, 0.028)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_86rrg")
+
+[node name="@MeshInstance3D@296" type="MeshInstance3D" parent="Keyboard" unique_id=644611913]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.365, 0.033, 0.028)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_q14xa")
+
+[node name="@MeshInstance3D@297" type="MeshInstance3D" parent="Keyboard" unique_id=1940452589]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.447, 0.033, 0.028)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_0bsep")
+
+[node name="@MeshInstance3D@298" type="MeshInstance3D" parent="Keyboard" unique_id=1057887454]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.455, 0.033, 0.106)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_s4vm8")
+
+[node name="@MeshInstance3D@299" type="MeshInstance3D" parent="Keyboard" unique_id=1662945080]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.373, 0.033, 0.106)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_j5ksa")
+
+[node name="@MeshInstance3D@300" type="MeshInstance3D" parent="Keyboard" unique_id=1823744595]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.291, 0.033, 0.106)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_h8pu6")
+
+[node name="@MeshInstance3D@301" type="MeshInstance3D" parent="Keyboard" unique_id=1336435579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.209, 0.033, 0.106)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_h6008")
+
+[node name="@MeshInstance3D@302" type="MeshInstance3D" parent="Keyboard" unique_id=1865110945]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.127, 0.033, 0.106)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_dxoyi")
+
+[node name="@MeshInstance3D@303" type="MeshInstance3D" parent="Keyboard" unique_id=1515661586]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.045, 0.033, 0.106)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_w137a")
+
+[node name="@MeshInstance3D@304" type="MeshInstance3D" parent="Keyboard" unique_id=1534917815]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.037, 0.033, 0.106)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_ik3fq")
+
+[node name="@MeshInstance3D@305" type="MeshInstance3D" parent="Keyboard" unique_id=993429126]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.119, 0.033, 0.106)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_aw11c")
+
+[node name="@MeshInstance3D@306" type="MeshInstance3D" parent="Keyboard" unique_id=528188657]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.201, 0.033, 0.106)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_liioj")
+
+[node name="@MeshInstance3D@307" type="MeshInstance3D" parent="Keyboard" unique_id=1033548622]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.283, 0.033, 0.106)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_bryo1")
+
+[node name="@MeshInstance3D@308" type="MeshInstance3D" parent="Keyboard" unique_id=765204324]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.365, 0.033, 0.106)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_8ry7v")
+
+[node name="@MeshInstance3D@309" type="MeshInstance3D" parent="Keyboard" unique_id=1784327728]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.447, 0.033, 0.106)
+material_override = SubResource("ShaderMaterial_o4hok")
+mesh = SubResource("BoxMesh_3er5k")
+
+[node name="Spacebar" type="MeshInstance3D" parent="Keyboard" unique_id=1609099485]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.047, 0.115)
+material_override = SubResource("ShaderMaterial_htx0c")
+mesh = SubResource("BoxMesh_l3df0")
+
+[node name="Mouse" type="MeshInstance3D" parent="." unique_id=1883803894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.4, 0.72, 0.059999943, 0.26)
+material_override = SubResource("ShaderMaterial_cy61i")
+mesh = SubResource("CylinderMesh_j03aq")

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="StylizedMaterialProfile" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/stylized_material_profile.gd" id="1"]
+[resource]
+script = ExtResource("1")
+profile_id = "gray_file"
+display_name = "灰色文件夹"
+role_ids = PackedStringArray("gray_file")
+priority = 30
+base_color = Color(0.466667, 0.478431, 0.482353, 1)
+secondary_color = Color(0.309804, 0.317647, 0.317647, 1)
+paint_highlight_color = Color(0.658824, 0.65098, 0.611765, 1)
+stain_color = Color(0.164706, 0.168627, 0.168627, 1)
+wear_color = Color(0.733333, 0.709804, 0.65098, 1)
+brush_scale = 4.2
+brush_strength = 0.2
+patina_strength = 0.18
+stain_strength = 0.08
+wear_strength = 0.08
+roughness = 0.9
+specular = 0.1
+outline_color = Color(0.121569, 0.12549, 0.12549, 1)
+outline_width = 0.004

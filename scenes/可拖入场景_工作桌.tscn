@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cuq6jvn37nqsp"]
+
+[ext_resource type="PackedScene" path="res://scenes/furniture/desk_furniture.tscn" id="1_entity"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_41xhn"]
+friction = 0.86
+bounce = 0.04
+
+[node name="工作桌_实体" unique_id=175118909 instance=ExtResource("1_entity")]
+editor_description = "把这个实体场景拖到 PlacedFurniture。请选中本节点，在 Desk Collision 中调整碰撞尺寸和偏移。不要直接拖入 assets/models 下的 desk.glb。"
+physics_material_override = SubResource("PhysicsMaterial_41xhn")
+collision_size = Vector3(3.157, 1.576, 1.63)
+collision_offset = Vector3(0, 0, -0.07)

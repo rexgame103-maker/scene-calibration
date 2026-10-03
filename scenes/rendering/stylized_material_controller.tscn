@@ -1,0 +1,28 @@
+[gd_scene load_steps=20 format=3]
+
+[ext_resource type="Script" path="res://scripts/stylized_material_controller.gd" id="1_controller"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/default_furniture.tres" id="2_default"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/floor.tres" id="3_floor"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/back_wall.tres" id="4_back_wall"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/left_wall.tres" id="5_left_wall"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/desk.tres" id="6_desk"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/chair.tres" id="7_chair"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/computer.tres" id="8_computer"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/lamp.tres" id="9_lamp"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/shelf.tres" id="10_shelf"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/small_shelf.tres" id="11_small_shelf"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/water_dispenser.tres" id="12_water"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/printer.tres" id="13_printer"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/blue_file.tres" id="14_blue_file"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/red_file.tres" id="15_red_file"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/gray_file.tres" id="16_gray_file"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/ordinary_file_01.tres" id="17_file_01"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/ordinary_file_02.tres" id="18_file_02"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/paper.tres" id="19_paper"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/sofa.tres" id="20_sofa"]
+[ext_resource type="Resource" path="res://materials/stylized/profiles/plant.tres" id="21_plant"]
+
+[node name="StylizedMaterialController" type="Node"]
+script = ExtResource("1_controller")
+profiles = Array[Resource]([ExtResource("3_floor"), ExtResource("4_back_wall"), ExtResource("5_left_wall"), ExtResource("6_desk"), ExtResource("7_chair"), ExtResource("8_computer"), ExtResource("9_lamp"), ExtResource("10_shelf"), ExtResource("11_small_shelf"), ExtResource("12_water"), ExtResource("13_printer"), ExtResource("14_blue_file"), ExtResource("15_red_file"), ExtResource("16_gray_file"), ExtResource("17_file_01"), ExtResource("18_file_02"), ExtResource("19_paper"), ExtResource("20_sofa"), ExtResource("21_plant")])
+fallback_profile = ExtResource("2_default")

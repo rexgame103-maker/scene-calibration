@@ -1,0 +1,229 @@
+[gd_scene format=3]
+
+[ext_resource type="Shader" path="res://shaders/noir_toon.gdshader" id="1_jmgdx"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vfqxd"]
+render_priority = 0
+shader = ExtResource("1_jmgdx")
+shader_parameter/paint = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/half_size = Vector3(0.64, 1.48, 0.05)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.025
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ota0q"]
+size = Vector3(1.28, 2.96, 0.1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_arma2"]
+render_priority = 0
+shader = ExtResource("1_jmgdx")
+shader_parameter/paint = Color(0.4509804, 0.3372549, 0.1882353, 1)
+shader_parameter/half_size = Vector3(0.05, 1.48, 0.43)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.025
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ly7lr"]
+size = Vector3(0.1, 2.96, 0.86)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cfnnk"]
+size = Vector3(0.1, 2.96, 0.86)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vcqjs"]
+render_priority = 0
+shader = ExtResource("1_jmgdx")
+shader_parameter/paint = Color(0.59607846, 0.38039216, 0.14901961, 1)
+shader_parameter/half_size = Vector3(0.695, 0.045, 0.44)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.0225
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ix0da"]
+size = Vector3(1.39, 0.09, 0.88)
+
+[sub_resource type="BoxMesh" id="BoxMesh_p3cr1"]
+size = Vector3(1.39, 0.09, 0.88)
+
+[sub_resource type="BoxMesh" id="BoxMesh_c2a07"]
+size = Vector3(1.39, 0.09, 0.88)
+
+[sub_resource type="BoxMesh" id="BoxMesh_w5unu"]
+size = Vector3(1.39, 0.09, 0.88)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t56ef"]
+size = Vector3(1.39, 0.09, 0.88)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wudnp"]
+render_priority = 0
+shader = ExtResource("1_jmgdx")
+shader_parameter/paint = Color(0.6392157, 0.54901963, 0.3372549, 1)
+shader_parameter/half_size = Vector3(0.47, 0.215, 0.31)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.025
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_10i1f"]
+size = Vector3(0.94, 0.43, 0.62)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_12ffv"]
+render_priority = 0
+shader = ExtResource("1_jmgdx")
+shader_parameter/paint = Color(0.5019608, 0.39215687, 0.21568628, 1)
+shader_parameter/half_size = Vector3(0.5, 0.0275, 0.33)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.01375
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_aonl0"]
+size = Vector3(1, 0.055, 0.66)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nbv1e"]
+render_priority = 0
+shader = ExtResource("1_jmgdx")
+shader_parameter/paint = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/half_size = Vector3(0.165, 0.0325, 0.01)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.005
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_cn51j"]
+size = Vector3(0.33, 0.065, 0.02)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1whrl"]
+size = Vector3(0.94, 0.43, 0.62)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8n38i"]
+size = Vector3(1, 0.055, 0.66)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yp86i"]
+size = Vector3(0.33, 0.065, 0.02)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yivr2"]
+render_priority = 0
+shader = ExtResource("1_jmgdx")
+shader_parameter/paint = Color(0.84705883, 0.7254902, 0.4627451, 1)
+shader_parameter/half_size = Vector3(0.32, 0.025, 0.29)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.0125
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_xhjo8"]
+size = Vector3(0.64, 0.05, 0.58)
+
+[sub_resource type="BoxMesh" id="BoxMesh_oyfvk"]
+size = Vector3(0.64, 0.05, 0.58)
+
+[sub_resource type="BoxMesh" id="BoxMesh_j8kuj"]
+size = Vector3(0.64, 0.05, 0.58)
+
+[sub_resource type="BoxMesh" id="BoxMesh_oc3qm"]
+size = Vector3(0.64, 0.05, 0.58)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vl0y2"]
+size = Vector3(0.64, 0.05, 0.58)
+
+[node name="Model" type="Node3D" unique_id=688428728]
+
+[node name="TallFilingShelf" type="Node3D" parent="." unique_id=1089520480]
+
+[node name="Back" type="MeshInstance3D" parent="TallFilingShelf" unique_id=156439313]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.48, -0.36)
+material_override = SubResource("ShaderMaterial_vfqxd")
+mesh = SubResource("BoxMesh_ota0q")
+
+[node name="Side" type="MeshInstance3D" parent="TallFilingShelf" unique_id=1534239317]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.66, 1.48, 0)
+material_override = SubResource("ShaderMaterial_arma2")
+mesh = SubResource("BoxMesh_ly7lr")
+
+[node name="@MeshInstance3D@341" type="MeshInstance3D" parent="TallFilingShelf" unique_id=602138432]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.66, 1.48, 0)
+material_override = SubResource("ShaderMaterial_arma2")
+mesh = SubResource("BoxMesh_cfnnk")
+
+[node name="Shelf" type="MeshInstance3D" parent="TallFilingShelf" unique_id=96813538]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+material_override = SubResource("ShaderMaterial_vcqjs")
+mesh = SubResource("BoxMesh_ix0da")
+
+[node name="@MeshInstance3D@342" type="MeshInstance3D" parent="TallFilingShelf" unique_id=743256413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.66, 0)
+material_override = SubResource("ShaderMaterial_vcqjs")
+mesh = SubResource("BoxMesh_p3cr1")
+
+[node name="@MeshInstance3D@343" type="MeshInstance3D" parent="TallFilingShelf" unique_id=1045999664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.21, 0)
+material_override = SubResource("ShaderMaterial_vcqjs")
+mesh = SubResource("BoxMesh_c2a07")
+
+[node name="@MeshInstance3D@344" type="MeshInstance3D" parent="TallFilingShelf" unique_id=2006841269]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.18, 0)
+material_override = SubResource("ShaderMaterial_vcqjs")
+mesh = SubResource("BoxMesh_w5unu")
+
+[node name="@MeshInstance3D@345" type="MeshInstance3D" parent="TallFilingShelf" unique_id=1378005237]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.94, 0)
+material_override = SubResource("ShaderMaterial_vcqjs")
+mesh = SubResource("BoxMesh_t56ef")
+
+[node name="ArchiveBox" type="MeshInstance3D" parent="TallFilingShelf" unique_id=1825547784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09, 0.35, 0.07)
+material_override = SubResource("ShaderMaterial_wudnp")
+mesh = SubResource("BoxMesh_10i1f")
+
+[node name="Lid" type="MeshInstance3D" parent="TallFilingShelf/ArchiveBox" unique_id=1677969314]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.205, 0)
+material_override = SubResource("ShaderMaterial_12ffv")
+mesh = SubResource("BoxMesh_aonl0")
+
+[node name="HandleSlot" type="MeshInstance3D" parent="TallFilingShelf/ArchiveBox" unique_id=2005788452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.045, 0.322)
+material_override = SubResource("ShaderMaterial_nbv1e")
+mesh = SubResource("BoxMesh_cn51j")
+
+[node name="@MeshInstance3D@346" type="MeshInstance3D" parent="TallFilingShelf" unique_id=1815904337]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09, 2.46, 0.07)
+material_override = SubResource("ShaderMaterial_wudnp")
+mesh = SubResource("BoxMesh_1whrl")
+
+[node name="Lid" type="MeshInstance3D" parent="TallFilingShelf/@MeshInstance3D@346" unique_id=392772001]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.205, 0)
+material_override = SubResource("ShaderMaterial_12ffv")
+mesh = SubResource("BoxMesh_8n38i")
+
+[node name="HandleSlot" type="MeshInstance3D" parent="TallFilingShelf/@MeshInstance3D@346" unique_id=824486711]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.045, 0.322)
+material_override = SubResource("ShaderMaterial_nbv1e")
+mesh = SubResource("BoxMesh_yp86i")
+
+[node name="StackedPaper" type="MeshInstance3D" parent="TallFilingShelf" unique_id=343276164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24, 0.75, 0.1)
+material_override = SubResource("ShaderMaterial_yivr2")
+mesh = SubResource("BoxMesh_xhjo8")
+
+[node name="@MeshInstance3D@347" type="MeshInstance3D" parent="TallFilingShelf" unique_id=824708166]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24, 0.82, 0.1)
+material_override = SubResource("ShaderMaterial_yivr2")
+mesh = SubResource("BoxMesh_oyfvk")
+
+[node name="@MeshInstance3D@348" type="MeshInstance3D" parent="TallFilingShelf" unique_id=2032567033]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24, 0.89, 0.1)
+material_override = SubResource("ShaderMaterial_yivr2")
+mesh = SubResource("BoxMesh_j8kuj")
+
+[node name="@MeshInstance3D@349" type="MeshInstance3D" parent="TallFilingShelf" unique_id=1279514707]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24, 0.96, 0.1)
+material_override = SubResource("ShaderMaterial_yivr2")
+mesh = SubResource("BoxMesh_oc3qm")
+
+[node name="@MeshInstance3D@350" type="MeshInstance3D" parent="TallFilingShelf" unique_id=1616841788]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24, 1.03, 0.1)
+material_override = SubResource("ShaderMaterial_yivr2")
+mesh = SubResource("BoxMesh_vl0y2")

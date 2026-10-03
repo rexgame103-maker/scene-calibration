@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://c6cfu2b5ln5ob"]
+
+[ext_resource type="Script" uid="uid://p40t0kuvaksl" path="res://scripts/scene_clue_point.gd" id="1_script"]
+
+[sub_resource type="SphereShape3D" id="SphereShape_hit"]
+radius = 0.34
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial_glow"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0.14349434, 0.9409757, 0.7533931, 0.2509804)
+
+[sub_resource type="SphereMesh" id="SphereMesh_glow"]
+material = SubResource("StandardMaterial_glow")
+radius = 0.22
+height = 0.44
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial_core"]
+shading_mode = 0
+albedo_color = Color(0.76006126, 0.9999998, 0.92794704, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_core"]
+material = SubResource("StandardMaterial_core")
+radius = 0.085
+height = 0.17
+
+[node name="SceneCluePoint" type="Area3D" unique_id=348483409]
+collision_layer = 16
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+script = ExtResource("1_script")
+
+[node name="HitShape" type="CollisionShape3D" parent="." unique_id=832394033]
+shape = SubResource("SphereShape_hit")
+disabled = true
+
+[node name="GlowMesh" type="MeshInstance3D" parent="." unique_id=590446085]
+cast_shadow = 0
+mesh = SubResource("SphereMesh_glow")
+
+[node name="CoreMesh" type="MeshInstance3D" parent="." unique_id=1529698159]
+cast_shadow = 0
+mesh = SubResource("SphereMesh_core")
+
+[node name="PointLight" type="OmniLight3D" parent="." unique_id=1926100682]
+light_color = Color(1, 0.69, 0.3, 1)
+light_energy = 0.85
+omni_range = 1.65

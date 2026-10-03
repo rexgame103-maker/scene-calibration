@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://x7cqbutsh6ha"]
+
+[ext_resource type="Script" uid="uid://c73omrqyu1sx2" path="res://scripts/desk_furniture.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://c5erp6u0kafnu" path="res://assets/models/furniture/desk/desk.glb" id="2_model"]
+[ext_resource type="PackedScene" path="res://scenes/reconstruction/reconstruction_zone.tscn" id="3_zone"]
+[ext_resource type="PackedScene" uid="uid://c6cfu2b5ln5ob" path="res://scenes/clues/scene_clue_point.tscn" id="4_clue_point"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_4hr4x"]
+friction = 0.86
+bounce = 0.04
+
+[node name="DeskFurniture" type="RigidBody3D" unique_id=1058416615]
+collision_layer = 4
+collision_mask = 5
+mass = 8.0
+physics_material_override = SubResource("PhysicsMaterial_4hr4x")
+linear_damp = 1.1
+angular_damp = 1.8
+script = ExtResource("1_script")
+collision_size = Vector3(3.2, 1.565, 1.63)
+metadata/furniture_kind = "desk"
+metadata/furniture_id = "desk"
+metadata/scene_furniture_kind = "desk"
+metadata/requires_collection = true
+
+[node name="Model" parent="." unique_id=474843214 instance=ExtResource("2_model")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.006963, 0, -0.077374)
+
+[node name="ChairRelationZone" parent="." unique_id=200530926 instance=ExtResource("3_zone")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 1.75)
+collision_layer = 0
+collision_mask = 4
+monitorable = false
+zone_id = "zone_chair_at_desk"
+required_furniture_id = "office_chair"
+zone_type = 1
+zone_size = Vector3(2.3, 3.2, 1.5)
+preview_color = Color(0.78, 0.53, 0.22, 0.18)
+
+[node name="ComputerRelationZone" parent="." unique_id=111927255 instance=ExtResource("3_zone")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.35, 0)
+collision_layer = 0
+collision_mask = 4
+monitorable = false
+zone_id = "zone_computer_on_desk"
+required_furniture_id = "office_computer"
+zone_type = 1
+zone_size = Vector3(2.65, 1.4, 1.35)
+preview_color = Color(0.32, 0.72, 0.82, 0.18)
+
+[node name="DeskSideWearClue" parent="." unique_id=162299887 instance=ExtResource("4_clue_point")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8140256, 1.2, 0.18)
+clue_point_id = "desk_side_wear_point"
+clue_id = "clue_desk_side_wear"
+surface_normal = Vector3(1, 0, 0)
+title = "桌侧磨损"
+description = "办公桌右侧存在长期反复摩擦形成的痕迹，说明这里原本紧贴着另一件家具。"
+required_reconstruction_step_id = "office_workstation"

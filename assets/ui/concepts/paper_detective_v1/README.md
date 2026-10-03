@@ -1,0 +1,16 @@
+# 手绘档案 UI 效果图
+
+使用内置 imagegen，根据用户的办公室截图及两张手绘游戏界面参考生成。手绘黑色轮廓、米黄纸片、蓝灰夹板、芥末黄主按钮、珊瑚红辅助按钮。此文件为整体美术效果图，尚未拆分 UI 素材或修改游戏界面代码。
+
+## 生成提示词
+
+Use case: ui-mockup, edit/compositing. Create a polished single LANDSCAPE 16:9 game UI art direction mockup directly ON IMAGE 1. Image 1 is the base screenshot to preserve: keep its isometric empty office room, camera angle, room size and location, golden lighting, window blinds, wood floor marks, noticeboard, plant and bin unchanged as closely as possible. Images 2 and 3 are UI STYLE references only. Replace ALL modern rounded purple/blue UI in image1 with a cohesive hand-inked illustrated detective game UI. Preserve the original functional layout: case card upper left, compact lighting controls directly below, two action tabs across upper middle, tall furniture inventory on the right, status strip along bottom. Leave central room unobscured; no new furniture or characters.
+Art direction borrowed from images2/3: charming irregular confident black ink outlines, slightly wonky hand-cut silhouettes, cream yellow torn paper slips with bent corners, layered cards with flat black offset shadows, flat muted blue-teal paint, mustard accents and restrained coral red. Clean readable hand-drawn Chinese lettering; a few pen scratches and modest corner wear, not realistic distressed textures. NO glossy buttons, gradients, glass panels, sleek mobile UI, purple rounded rectangles, fantasy potions or medieval characters. Adapt decoration to contemporary mystery: paperclip, binder clip, archive folder tabs, small pin, pencilled magnifier icon. Restrained decoration, strong hierarchy, generous room visibility.
+Specific UI:
+1. Upper left a layered ivory case file paper card with small blue-teal file tab “BF-071”, small subtitle “市警局委托 · 恢复被提前清空的办公室” and clearly legible bold dark ink main title “蓝色文档失踪案”. One small coral “调查中” stamp.
+2. Under it a narrow blue-teal hand-drawn instrument strip: little yellow lamp icon, “灯光工作台”, small “低亮度 · 三盏灯”, separate cream paper button “展开调光”.
+3. Upper middle: mustard hand-cut tab button with tiny folder icon and “案件资料”; adjacent subdued slate teal paper tab “DEBUG 下一步”. Both outlined irregular black, fit original locations.
+4. Right inventory panel occupies original right column, illustrated blue-grey clipboard backing outlined in black with ivory paper interior, a small clip at top, tab-like header “家具栏”. Subtitle “查看资料获得线索，解锁后拖出摆放”. Keep EMPTY inventory state, with a small hand-inked empty archive box icon and centred text “家具栏为空” and “查看案件资料以解锁家具”. Do not add item cards implying unlocked furniture. Subtle empty ruled-paper lines and pencil marks okay; lots of clear empty space. At bottom side-by-side buttons: cream “撤销” with undo arrow, dusty coral “全部收纳” with box icon.
+5. Bottom middle a long cream paper strip, slightly torn edge and black offset shadow, text “现场已载入 · 打开案件资料开始校准”. Tiny pin at one end.
+Maintain excellent Chinese legibility, comfortable contrast, ample internal padding. All illustrated UI should look like one unified artist-drawn set at game-ready scale, borrowing paper buttons and organic ink lines from refs2/3, while original scene remains the image1 scene. Full finished in-game screenshot mockup, no external device frame, no annotations, no palette swatches, no comparison panels, no watermark.
+

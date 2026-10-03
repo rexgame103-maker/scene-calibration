@@ -1,0 +1,121 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/noir_studio/noir_studio.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/art/noir_studio/studio_background.png" id="2"]
+
+[sub_resource type="StyleBoxFlat" id="PanelStyle"]
+bg_color = Color(0.075, 0.057, 0.035, 0.98)
+border_width_top = 2
+border_color = Color(0.49, 0.33, 0.12, 1)
+
+[node name="NoirStudio" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.025, 0.02, 0.015, 1)
+
+[node name="Artwork" type="Node2D" parent="."]
+position = Vector2(190, 0)
+scale = Vector2(0.586, 0.586)
+
+[node name="PaintedRoom" type="Sprite2D" parent="Artwork"]
+texture = ExtResource("2")
+centered = false
+
+[node name="Hotspots" type="Node2D" parent="Artwork"]
+
+[node name="EvidenceBoard" type="Polygon2D" parent="Artwork/Hotspots"]
+color = Color(1, 1, 1, 0)
+polygon = PackedVector2Array(743, 12, 1213, 12, 1190, 210, 734, 197)
+metadata/title = "线索墙"
+metadata/description = "照片、剪报与红线连接着尚未解开的关系。每一次回看，都可能发现遗漏的细节。"
+
+[node name="Bookcase" type="Polygon2D" parent="Artwork/Hotspots"]
+color = Color(1, 1, 1, 0)
+polygon = PackedVector2Array(477, 10, 696, 10, 715, 263, 498, 275)
+metadata/title = "旧书与档案"
+metadata/description = "历年的卷宗被塞进书架，折起的页角标记着曾经追查过的名字。"
+
+[node name="Desk" type="Polygon2D" parent="Artwork/Hotspots"]
+color = Color(1, 1, 1, 0)
+polygon = PackedVector2Array(765, 233, 1248, 244, 1264, 455, 758, 455)
+metadata/title = "主角的工作桌"
+metadata/description = "温暖的台灯照着摊开的案卷。照片、笔记和没有喝完的咖啡，停留在昨夜推理的最后一步。"
+
+[node name="ArchiveCabinet" type="Polygon2D" parent="Artwork/Hotspots"]
+color = Color(1, 1, 1, 0)
+polygon = PackedVector2Array(80, 303, 251, 311, 299, 527, 168, 579, 79, 476)
+metadata/title = "文件柜"
+metadata/description = "沉重的抽屉装着旧案件。磨损的铜色把手，留下了日复一日翻找的痕迹。"
+
+[node name="Sofa" type="Polygon2D" parent="Artwork/Hotspots"]
+color = Color(1, 1, 1, 0)
+polygon = PackedVector2Array(74, 593, 322, 654, 274, 935, 12, 866)
+metadata/title = "短暂休息的沙发"
+metadata/description = "外套随手搭在扶手旁。工作室里最柔软的角落，也常常是等待天亮的地方。"
+
+[node name="Recorder" type="Polygon2D" parent="Artwork/Hotspots"]
+color = Color(1, 1, 1, 0)
+polygon = PackedVector2Array(1150, 299, 1235, 312, 1209, 407, 1132, 391)
+metadata/title = "磁带录音机"
+metadata/description = "一盘尚未整理的访谈磁带。标签已经褪色，倒带键仍被磨得发亮。"
+
+[node name="Outline" type="Line2D" parent="Artwork"]
+visible = false
+closed = true
+width = 3.0
+default_color = Color(1, 0.74, 0.32, 0.8)
+antialiased = true
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="PanelContainer" parent="HUD"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -120.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("PanelStyle")
+
+[node name="Margin" type="MarginContainer" parent="HUD/Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Column" type="VBoxContainer" parent="HUD/Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="Heading" type="Label" parent="HUD/Panel/Margin/Column"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.77, 0.44, 1)
+theme_override_font_sizes/font_size = 21
+text = "深夜 · 私人工作室"
+
+[node name="Detail" type="Label" parent="HUD/Panel/Margin/Column"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.78, 0.72, 0.6, 1)
+theme_override_font_sizes/font_size = 15
+text = "移动鼠标发现物件 · 单击调查 · 滚轮缩放 · 中键拖动画面 · R 返回全景"
+autowrap_mode = 3
+
+[node name="Reset" type="Button" parent="HUD/Panel/Margin/Column"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "返回全景"
+flat = true

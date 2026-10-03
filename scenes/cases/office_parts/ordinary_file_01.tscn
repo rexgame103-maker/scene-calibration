@@ -1,0 +1,72 @@
+[gd_scene format=3]
+
+[ext_resource type="Shader" path="res://shaders/noir_toon.gdshader" id="1_7ulc2"]
+[ext_resource type="Shader" path="res://shaders/stylized_outline.gdshader" id="2_p4fxt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rc2ds"]
+render_priority = 0
+shader = ExtResource("1_7ulc2")
+shader_parameter/paint = Color(0.76862746, 0.6784314, 0.49019608, 1)
+shader_parameter/half_size = Vector3(0.15, 0.37, 0.245)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.025
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_w53p8"]
+size = Vector3(0.3, 0.74, 0.49)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pa4y0"]
+render_priority = 0
+shader = ExtResource("1_7ulc2")
+shader_parameter/paint = Color(0.8010196, 0.723451, 0.5615686, 1)
+shader_parameter/half_size = Vector3(0.09, 0.055, 0.008)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.004
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_3qssj"]
+size = Vector3(0.18, 0.11, 0.016)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lvynl"]
+render_priority = 0
+shader = ExtResource("2_p4fxt")
+shader_parameter/outline_color = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/outline_width = 0.016
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vht8s"]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_lvynl")
+shader = ExtResource("1_7ulc2")
+shader_parameter/paint = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/half_size = Vector3(0, 0, 0)
+shader_parameter/box_ink = false
+shader_parameter/ink_width = 0.015
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2pk3d"]
+top_radius = 0.057
+bottom_radius = 0.057
+height = 0.014
+radial_segments = 12
+
+[node name="Model" type="Node3D" unique_id=1780682086]
+
+[node name="BeigeBinder" type="Node3D" parent="." unique_id=905656537]
+
+[node name="Cover" type="MeshInstance3D" parent="BeigeBinder" unique_id=1802637901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, 0)
+material_override = SubResource("ShaderMaterial_rc2ds")
+mesh = SubResource("BoxMesh_w53p8")
+
+[node name="SpineLabel" type="MeshInstance3D" parent="BeigeBinder" unique_id=320020901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.58, 0.251)
+material_override = SubResource("ShaderMaterial_pa4y0")
+mesh = SubResource("BoxMesh_3qssj")
+
+[node name="FingerHole" type="MeshInstance3D" parent="BeigeBinder" unique_id=1182339836]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.18, 0.259)
+material_override = SubResource("ShaderMaterial_vht8s")
+mesh = SubResource("CylinderMesh_2pk3d")

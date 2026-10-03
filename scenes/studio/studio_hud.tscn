@@ -1,0 +1,2396 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/ui/studio_dossier/investigation_atlas.png" id="1_x1fcm"]
+[ext_resource type="Script" path="res://scripts/catalog_item.gd" id="3_vt7t0"]
+[ext_resource type="Texture2D" path="res://assets/ui/studio_dossier/investigation_tab_dark.svg" id="4_5hl1p"]
+[ext_resource type="Texture2D" path="res://assets/ui/studio_dossier/investigation_tab_light.svg" id="5_656y3"]
+[ext_resource type="PackedScene" path="res://scenes/studio/studio_catalog_item.tscn" id="14_catalog_card"]
+
+[sub_resource type="Theme" id="Theme_6v00c"]
+Button/colors/font_color = Color(0.20392157, 0.14509805, 0.11372549, 1)
+CheckBox/colors/font_color = Color(0.20392157, 0.14509805, 0.11372549, 1)
+CheckButton/colors/font_color = Color(0.20392157, 0.14509805, 0.11372549, 1)
+Label/colors/font_color = Color(0.20392157, 0.14509805, 0.11372549, 1)
+OptionButton/colors/font_color = Color(0.20392157, 0.14509805, 0.11372549, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x1fcm"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(625, 53, 462, 86)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vt7t0"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(17, 402, 260, 294)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5hl1p"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(18, 823, 561, 177)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_656y3"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(590, 882, 472, 112)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7qw0"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(16, 12, 596, 291)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hopgw"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_u7qw0")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hs1jf"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(626, 156, 131, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d13j3"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_hs1jf")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_io4ca"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(626, 156, 131, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q3j6x"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_io4ca")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_14mjv"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(626, 156, 131, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1ncqg"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_14mjv")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0p7un"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(626, 156, 131, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5krpo"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_0p7un")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oxidw"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jc6o2"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hnjxh"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_jc6o2")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rat2q"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lmpok"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_rat2q")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cq2eu"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5jvog"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_cq2eu")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6v00c"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e8ba2"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_6v00c")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aop3q"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2pwg3"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ge7a2"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_2pwg3")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mt5ew"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g8khl"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_mt5ew")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rsiro"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_reelu"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_rsiro")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgdsm"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kilv7"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_cgdsm")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_soulp"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pltnf"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x7puv"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_pltnf")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljrdy"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fpgc6"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_ljrdy")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqv5o"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_khr2s"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_tqv5o")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fja1x"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ydlkk"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_fja1x")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_alapr"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fip0p"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(955, 156, 130, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qxvnr"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_fip0p")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pammh"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(955, 156, 130, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7qvj8"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_pammh")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dsrer"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(955, 156, 130, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_745ap"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_dsrer")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6md6"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(955, 156, 130, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bmewn"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_u6md6")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rcqu5"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifbx5"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(626, 234, 229, 70)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_no3d8"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_ifbx5")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ak3mt"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(626, 234, 229, 70)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fectq"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_ak3mt")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5aj1d"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(626, 234, 229, 70)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t1x5m"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_5aj1d")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_akka5"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(626, 234, 229, 70)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ik4it"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_akka5")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2n8rn"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m3xuw"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(626, 234, 229, 70)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_74n7y"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_m3xuw")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k5v50"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(626, 234, 229, 70)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tk5ry"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_k5v50")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7aou3"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(626, 234, 229, 70)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_281u2"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_7aou3")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hykfw"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(626, 234, 229, 70)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2yioe"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_hykfw")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5v6o3"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5u2i5"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kta6t"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_5u2i5")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljjne"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mcywi"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_ljjne")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jaru4"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1md61"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_jaru4")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bo7ke"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_opu84"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_bo7ke")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2d5wg"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55edc"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7w6gj"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_55edc")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18yda"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6flqy"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_18yda")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_esq3u"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y3a4q"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_esq3u")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrgmi"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wtj1f"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_qrgmi")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ykdy2"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbxua"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tkdx1"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_cbxua")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jed8h"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ycla6"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_jed8h")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1d041"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q17x5"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_1d041")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yolfu"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btwtk"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_yolfu")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j1pb5"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o2n5r"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(625, 53, 462, 86)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hol6r"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_o2n5r")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ddjtu"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_va84s"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_ddjtu")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lp6ul"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5v686"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_lp6ul")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ue3lk"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_knvyv"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_ue3lk")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hb0tv"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w4jr2"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_hb0tv")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjsj8"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nbgu"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p02t8"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_0nbgu")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yge7f"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cmxbt"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_yge7f")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sme4x"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5k0j1"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_sme4x")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0sdo3"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yyly0"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_0sdo3")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ou2v4"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tw5j3"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bxbaj"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_tw5j3")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r3pbh"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fkujt"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_r3pbh")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjq3u"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dndrb"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_wjq3u")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_axkia"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sllyy"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_axkia")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_412d5"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mp5n5"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(1095, 30, 307, 737)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ik01x"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_mp5n5")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_18yda"]
+bg_color = Color(0.6039216, 0.36078432, 0.25882354, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6flqy"]
+bg_color = Color(0.6039216, 0.36078432, 0.25882354, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bu0t6"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(342, 617, 303, 82)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wx82p"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_bu0t6")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfnfm"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(342, 617, 303, 82)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_084ts"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_wfnfm")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pbcn8"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(342, 617, 303, 82)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yabux"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_pbcn8")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccwx6"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(342, 617, 303, 82)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l0oyl"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_ccwx6")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u66hi"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oddhf"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("4_5hl1p")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dofot"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("4_5hl1p")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eqwmt"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("4_5hl1p")
+modulate_color = Color(1.12, 1.09, 1.02, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gb4ol"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("4_5hl1p")
+modulate_color = Color(0.6627451, 0.60784316, 0.52156866, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v22uv"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uxoc6"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("5_656y3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w24ga"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("5_656y3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7s075"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("5_656y3")
+modulate_color = Color(1.12, 1.09, 1.02, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fp0kr"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("5_656y3")
+modulate_color = Color(0.6627451, 0.60784316, 0.52156866, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f1b2v"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5dhhm"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("5_656y3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qvehl"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("5_656y3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_srrak"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("5_656y3")
+modulate_color = Color(1.12, 1.09, 1.02, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t4bak"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("5_656y3")
+modulate_color = Color(0.6627451, 0.60784316, 0.52156866, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r1t2w"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6g4bj"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("5_656y3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4h7j2"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("5_656y3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ytb11"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("5_656y3")
+modulate_color = Color(1.12, 1.09, 1.02, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_us8n7"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("5_656y3")
+modulate_color = Color(0.6627451, 0.60784316, 0.52156866, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mbiyh"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jl67h"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(625, 53, 462, 86)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_80b05"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_jl67h")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gnyus"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(668, 622, 80, 104)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cqt1n"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(625, 53, 462, 86)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fhi2h"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_cqt1n")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3dx8h"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j24xn"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_3dx8h")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4vcmg"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p5730"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_4vcmg")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_us1kt"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ewcc5"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_us1kt")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_udmm0"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i61gs"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_udmm0")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fwtdd"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2g715"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nb0cx"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_2g715")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6yvyw"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4qh44"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_6yvyw")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r45gt"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rt7fy"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_r45gt")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wd5js"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_thxry"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_wd5js")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v1fj4"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dqugg"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oe115"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_dqugg")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qxkr"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2u77a"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_4qxkr")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_utmao"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b1i3y"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_utmao")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_way88"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2l2vw"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_way88")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eibuq"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2stpf"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pnqoy"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_2stpf")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66q11"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dxnbd"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_66q11")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3m2gi"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ovyt4"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_3m2gi")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s4b5u"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nh7o8"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_s4b5u")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qq4rm"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c2h7p"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xk5x6"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_c2h7p")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3lm8b"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bwgh0"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_3lm8b")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y11c3"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hkov0"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_y11c3")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k8rjs"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ncc4w"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_k8rjs")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2f538"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_msr5x"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(625, 53, 462, 86)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tdbtu"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_msr5x")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kajql"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fx6tj"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_kajql")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmm1g"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7grws"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_hmm1g")
+modulate_color = Color(0.8392157, 0.7607843, 0.63529414, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jm743"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fqygb"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_jm743")
+modulate_color = Color(1.08, 1.06, 1, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8urod"]
+atlas = ExtResource("1_x1fcm")
+region = Rect2(764, 156, 91, 61)
+filter_clip = true
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sy17s"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("AtlasTexture_8urod")
+modulate_color = Color(0.76862746, 0.7294118, 0.6666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j5564"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.5019608, 0.29411766, 1)
+
+[node name="StudioHUD" type="Control" unique_id=1495243308]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = SubResource("Theme_6v00c")
+
+[node name="ArchiveDecorations" type="Control" parent="." unique_id=527750055]
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="BureauStrip" type="TextureRect" parent="ArchiveDecorations" unique_id=141315202]
+layout_mode = 0
+offset_left = -9.0
+offset_top = -12.0
+offset_right = 436.0
+offset_bottom = 43.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_x1fcm")
+expand_mode = 1
+
+[node name="BureauLabel" type="Label" parent="ArchiveDecorations" unique_id=1809499962]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 14.0
+offset_right = 428.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 9
+text = "CITY INVESTIGATION BUREAU   /   OBSERVE · CONNECT · REVEAL"
+
+[node name="ArchivePhoto" type="TextureRect" parent="ArchiveDecorations" unique_id=1960967260]
+modulate = Color(0.8, 0.76, 0.7, 0.76)
+layout_mode = 0
+offset_left = -32.0
+offset_top = 408.0
+offset_right = 161.0
+offset_bottom = 597.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_vt7t0")
+expand_mode = 1
+
+[node name="ArchiveNewspaper" type="TextureRect" parent="ArchiveDecorations" unique_id=2109561156]
+modulate = Color(0.72, 0.67, 0.6, 0.85)
+layout_mode = 0
+offset_left = -29.0
+offset_top = 616.0
+offset_right = 262.0
+offset_bottom = 708.0
+rotation = 0.09
+mouse_filter = 2
+texture = SubResource("AtlasTexture_5hl1p")
+expand_mode = 1
+
+[node name="ArchiveMap" type="TextureRect" parent="ArchiveDecorations" unique_id=827676558]
+modulate = Color(0.8, 0.73, 0.63, 0.7)
+layout_mode = 0
+offset_left = 1030.0
+offset_top = 664.0
+offset_right = 1290.0
+offset_bottom = 725.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_656y3")
+expand_mode = 1
+
+[node name="StudioTitlePanel" type="PanelContainer" parent="." unique_id=318153206]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 18.0
+offset_right = 352.0
+offset_bottom = 184.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_hopgw")
+
+[node name="EditableContent" type="Control" parent="StudioTitlePanel" unique_id=1004367009]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="StudioTitleLabel" type="Label" parent="StudioTitlePanel/EditableContent" unique_id=1890870867]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 35.0
+offset_right = 312.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 22
+text = "校准员工作室"
+
+[node name="ModeLabel" type="Label" parent="StudioTitlePanel/EditableContent" unique_id=341446252]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 91.0
+offset_right = 315.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 11
+text = "搭建状态  /  PROGRESS"
+
+[node name="MoneyLabel" type="Label" parent="StudioTitlePanel/EditableContent" unique_id=871149494]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 112.0
+offset_right = 330.0
+offset_bottom = 132.0
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 11
+text = "余额 ¥700　 一楼 1/4　 二楼 0/4"
+
+[node name="StudioSubtitleLabel" type="Label" parent="StudioTitlePanel/EditableContent" unique_id=1898494900]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 70.0
+offset_right = 305.0
+offset_bottom = 85.0
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 9
+text = "CALIBRATOR'S STUDIO"
+
+[node name="StudioToolsPanel" type="Control" parent="." unique_id=1885415489]
+anchors_preset = 0
+offset_left = 10.0
+offset_top = 191.0
+offset_right = 356.0
+offset_bottom = 228.0
+mouse_filter = 1
+
+[node name="Floor1Button" type="Button" parent="StudioToolsPanel" unique_id=1219327642]
+layout_mode = 0
+offset_right = 67.0
+offset_bottom = 35.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.94509804, 0.9098039, 0.84705883, 1)
+theme_override_colors/font_focus_color = Color(0.94509804, 0.9098039, 0.84705883, 1)
+theme_override_colors/font_pressed_color = Color(0.94509804, 0.9098039, 0.84705883, 1)
+theme_override_colors/font_hover_color = Color(0.94509804, 0.9098039, 0.84705883, 1)
+theme_override_colors/font_disabled_color = Color(0.94509804, 0.9098039, 0.84705883, 1)
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxTexture_d13j3")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_q3j6x")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1ncqg")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_5krpo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_oxidw")
+disabled = true
+text = "一楼 1/4"
+
+[node name="Floor2Button" type="Button" parent="StudioToolsPanel" unique_id=1396891413]
+layout_mode = 0
+offset_left = 69.0
+offset_right = 136.0
+offset_bottom = 35.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxTexture_hnjxh")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lmpok")
+theme_override_styles/hover = SubResource("StyleBoxTexture_5jvog")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_e8ba2")
+theme_override_styles/focus = SubResource("StyleBoxFlat_aop3q")
+disabled = true
+text = "二楼 0/4"
+
+[node name="WallStyleButton" type="Button" parent="StudioToolsPanel" unique_id=515981179]
+layout_mode = 0
+offset_left = 138.0
+offset_right = 205.0
+offset_bottom = 35.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxTexture_ge7a2")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_g8khl")
+theme_override_styles/hover = SubResource("StyleBoxTexture_reelu")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_kilv7")
+theme_override_styles/focus = SubResource("StyleBoxFlat_soulp")
+text = "墙面样式"
+
+[node name="FloorStyleButton" type="Button" parent="StudioToolsPanel" unique_id=1079128207]
+layout_mode = 0
+offset_left = 207.0
+offset_right = 274.0
+offset_bottom = 35.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxTexture_x7puv")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fpgc6")
+theme_override_styles/hover = SubResource("StyleBoxTexture_khr2s")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_ydlkk")
+theme_override_styles/focus = SubResource("StyleBoxFlat_alapr")
+text = "地板样式"
+
+[node name="DebugAddMoneyButton" type="Button" parent="StudioToolsPanel" unique_id=664095278]
+layout_mode = 0
+offset_left = 276.0
+offset_right = 343.0
+offset_bottom = 35.0
+tooltip_text = "测试用：立即增加 ¥5000"
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxTexture_qxvnr")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7qvj8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_745ap")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_bmewn")
+theme_override_styles/focus = SubResource("StyleBoxFlat_rcqu5")
+text = "+ ¥5000"
+
+[node name="DebugCaseJumpPanel" type="Control" parent="." unique_id=756137297]
+anchors_preset = 0
+offset_left = 10.0
+offset_top = 234.0
+offset_right = 298.0
+offset_bottom = 274.0
+mouse_filter = 1
+
+[node name="DebugJumpFirstCaseButton" type="Button" parent="DebugCaseJumpPanel" unique_id=1156511864]
+layout_mode = 0
+offset_right = 140.0
+offset_bottom = 40.0
+size_flags_horizontal = 3
+tooltip_text = "测试用：直接进入蓝色文档失踪案"
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 11
+theme_override_styles/normal = SubResource("StyleBoxTexture_no3d8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fectq")
+theme_override_styles/hover = SubResource("StyleBoxTexture_t1x5m")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_ik4it")
+theme_override_styles/focus = SubResource("StyleBoxFlat_2n8rn")
+text = "跳转第一关"
+metadata/case_id = "office_case_001"
+
+[node name="DebugJumpSecondCaseButton" type="Button" parent="DebugCaseJumpPanel" unique_id=873605199]
+layout_mode = 0
+offset_left = 145.0
+offset_right = 285.0
+offset_bottom = 40.0
+size_flags_horizontal = 3
+tooltip_text = "测试用：直接进入失准的修复室"
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 11
+theme_override_styles/normal = SubResource("StyleBoxTexture_74n7y")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_tk5ry")
+theme_override_styles/hover = SubResource("StyleBoxTexture_281u2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_2yioe")
+theme_override_styles/focus = SubResource("StyleBoxFlat_5v6o3")
+text = "跳转第二关"
+metadata/case_id = "gallery_case_002"
+
+[node name="OverviewButton" type="Button" parent="." unique_id=1862587051]
+visible = false
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -71.0
+offset_top = 22.0
+offset_right = 71.0
+offset_bottom = 60.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxTexture_kta6t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_mcywi")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1md61")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_opu84")
+theme_override_styles/focus = SubResource("StyleBoxFlat_2d5wg")
+text = "⌂  返回全景"
+
+[node name="OpenComputerButton" type="Button" parent="." unique_id=1052313735]
+visible = false
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -142.0
+offset_right = 100.0
+offset_bottom = -92.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxTexture_7w6gj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_6flqy")
+theme_override_styles/hover = SubResource("StyleBoxTexture_y3a4q")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_wtj1f")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ykdy2")
+text = "进入电脑"
+
+[node name="ReturnBuildButton" type="Button" parent="." unique_id=1759803999]
+visible = false
+layout_mode = 0
+offset_left = 24.0
+offset_top = 184.0
+offset_right = 154.0
+offset_bottom = 228.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_tkdx1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ycla6")
+theme_override_styles/hover = SubResource("StyleBoxTexture_q17x5")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_btwtk")
+theme_override_styles/focus = SubResource("StyleBoxFlat_j1pb5")
+text = "回到搭建"
+
+[node name="FurnitureActionMenu" type="PanelContainer" parent="." unique_id=766258240]
+visible = false
+layout_mode = 0
+offset_right = 286.0
+offset_bottom = 94.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_hol6r")
+
+[node name="EditableContent" type="Control" parent="FurnitureActionMenu" unique_id=529199639]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="FurnitureMenuTitle" type="Label" parent="FurnitureActionMenu/EditableContent" unique_id=877010793]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 274.0
+offset_bottom = 28.0
+theme_override_colors/font_color = Color(0.91764706, 0.8745098, 0.9607843, 1)
+theme_override_font_sizes/font_size = 13
+text = "已选择家具"
+horizontal_alignment = 1
+
+[node name="InspectFurnitureButton" type="Button" parent="FurnitureActionMenu/EditableContent" unique_id=2074101855]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 0
+offset_left = 12.0
+offset_top = 35.0
+offset_right = 94.0
+offset_bottom = 73.0
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxTexture_va84s")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_5v686")
+theme_override_styles/hover = SubResource("StyleBoxTexture_knvyv")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_w4jr2")
+theme_override_styles/focus = SubResource("StyleBoxFlat_vjsj8")
+text = "检视"
+
+[node name="FurnitureRotateButton" type="Button" parent="FurnitureActionMenu/EditableContent" unique_id=2127977919]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 0
+offset_left = 102.0
+offset_top = 35.0
+offset_right = 184.0
+offset_bottom = 73.0
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxTexture_p02t8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cmxbt")
+theme_override_styles/hover = SubResource("StyleBoxTexture_5k0j1")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_yyly0")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ou2v4")
+text = "旋转"
+
+[node name="StoreFurnitureButton" type="Button" parent="FurnitureActionMenu/EditableContent" unique_id=38248023]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 0
+offset_left = 192.0
+offset_top = 35.0
+offset_right = 274.0
+offset_bottom = 73.0
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxTexture_bxbaj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fkujt")
+theme_override_styles/hover = SubResource("StyleBoxTexture_dndrb")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_sllyy")
+theme_override_styles/focus = SubResource("StyleBoxFlat_412d5")
+text = "收纳"
+
+[node name="ArchiveInventoryPanel" type="PanelContainer" parent="." unique_id=1885973544]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -323.0
+offset_top = 25.0
+offset_right = -10.0
+offset_bottom = 657.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ik01x")
+
+[node name="EditableContent" type="Control" parent="ArchiveInventoryPanel" unique_id=717733882]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="CatalogTitleLabel" type="Label" parent="ArchiveInventoryPanel/EditableContent" unique_id=1404578038]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 38.0
+offset_right = 249.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 29
+text = "家具栏"
+
+[node name="CatalogSubtitleLabel" type="Label" parent="ArchiveInventoryPanel/EditableContent" unique_id=1051520683]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 108.0
+offset_right = 293.0
+offset_bottom = 126.0
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 12
+text = "按住拖出 · 场内家具按住即可移动"
+autowrap_mode = 3
+
+[node name="CatalogHeaderDivider" type="HSeparator" parent="ArchiveInventoryPanel/EditableContent" unique_id=878435216]
+visible = false
+layout_mode = 0
+offset_left = 43.0
+offset_top = 107.0
+offset_right = 294.0
+offset_bottom = 111.0
+theme_override_styles/separator = SubResource("StyleBoxFlat_18yda")
+
+[node name="FurniturePageViewport" type="ScrollContainer" parent="ArchiveInventoryPanel/EditableContent" unique_id=1875299109]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 131.0
+offset_right = 289.0
+offset_bottom = 555.0
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 0
+
+[node name="CatalogList" type="Control" parent="ArchiveInventoryPanel/EditableContent/FurniturePageViewport" unique_id=1023914669]
+custom_minimum_size = Vector2(261, 424)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CatalogSlot1" type="Control" parent="ArchiveInventoryPanel/EditableContent/FurniturePageViewport/CatalogList" unique_id=1618157528]
+anchors_preset = 0
+offset_right = 261.0
+offset_bottom = 101.0
+mouse_filter = 2
+
+[node name="CatalogCard" type="Control" parent="ArchiveInventoryPanel/EditableContent/FurniturePageViewport/CatalogList/CatalogSlot1" unique_id=187339968 instance=ExtResource("14_catalog_card")]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 261.0
+offset_bottom = 101.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_vt7t0")
+visual_style = "studio_dossier"
+
+[node name="CatalogSlot2" type="Control" parent="ArchiveInventoryPanel/EditableContent/FurniturePageViewport/CatalogList" unique_id=469214782]
+anchors_preset = 0
+offset_top = 106.0
+offset_right = 261.0
+offset_bottom = 207.0
+mouse_filter = 2
+
+[node name="CatalogCard" type="Control" parent="ArchiveInventoryPanel/EditableContent/FurniturePageViewport/CatalogList/CatalogSlot2" unique_id=1280893070 instance=ExtResource("14_catalog_card")]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 261.0
+offset_bottom = 101.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_vt7t0")
+icon_kind = "chair"
+visual_style = "studio_dossier"
+
+[node name="CatalogSlot3" type="Control" parent="ArchiveInventoryPanel/EditableContent/FurniturePageViewport/CatalogList" unique_id=613375981]
+anchors_preset = 0
+offset_top = 212.0
+offset_right = 261.0
+offset_bottom = 313.0
+mouse_filter = 2
+
+[node name="CatalogCard" type="Control" parent="ArchiveInventoryPanel/EditableContent/FurniturePageViewport/CatalogList/CatalogSlot3" unique_id=937048764 instance=ExtResource("14_catalog_card")]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 261.0
+offset_bottom = 101.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_vt7t0")
+icon_kind = "computer"
+visual_style = "studio_dossier"
+
+[node name="CatalogSlot4" type="Control" parent="ArchiveInventoryPanel/EditableContent/FurniturePageViewport/CatalogList" unique_id=1381482736]
+anchors_preset = 0
+offset_top = 318.0
+offset_right = 261.0
+offset_bottom = 419.0
+mouse_filter = 2
+
+[node name="CatalogCard" type="Control" parent="ArchiveInventoryPanel/EditableContent/FurniturePageViewport/CatalogList/CatalogSlot4" unique_id=1554823431 instance=ExtResource("14_catalog_card")]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 261.0
+offset_bottom = 101.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_vt7t0")
+icon_kind = "shelf"
+visual_style = "studio_dossier"
+
+[node name="CatalogEmptyLabel" type="Label" parent="ArchiveInventoryPanel/EditableContent/FurniturePageViewport/CatalogList" unique_id=421112092]
+visible = false
+layout_mode = 0
+offset_top = 12.0
+offset_right = 251.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.4627451, 0.3529412, 0.2784314, 1)
+theme_override_font_sizes/font_size = 13
+text = "家具栏为空。
+可在电脑商店购买更多物品。"
+autowrap_mode = 3
+
+[node name="CatalogFooterDivider" type="HSeparator" parent="ArchiveInventoryPanel/EditableContent" unique_id=768556608]
+visible = false
+layout_mode = 0
+offset_left = 43.0
+offset_top = 612.0
+offset_right = 294.0
+offset_bottom = 616.0
+theme_override_styles/separator = SubResource("StyleBoxFlat_6flqy")
+
+[node name="WorkButton" type="Button" parent="ArchiveInventoryPanel/EditableContent" unique_id=839589286]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 563.0
+offset_right = 290.0
+offset_bottom = 624.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.94509804, 0.9098039, 0.84705883, 1)
+theme_override_colors/font_focus_color = Color(0.94509804, 0.9098039, 0.84705883, 1)
+theme_override_colors/font_pressed_color = Color(0.94509804, 0.9098039, 0.84705883, 1)
+theme_override_colors/font_hover_color = Color(0.94509804, 0.9098039, 0.84705883, 1)
+theme_override_colors/font_disabled_color = Color(0.94509804, 0.9098039, 0.84705883, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxTexture_wx82p")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_084ts")
+theme_override_styles/hover = SubResource("StyleBoxTexture_yabux")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_l0oyl")
+theme_override_styles/focus = SubResource("StyleBoxFlat_u66hi")
+text = "开始工作"
+
+[node name="FurniturePageTabs" type="Control" parent="." unique_id=918943169]
+z_index = 8
+anchors_preset = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -36.0
+offset_top = 164.0
+offset_right = -2.0
+offset_bottom = 444.0
+
+[node name="FurniturePageTab1" type="Button" parent="FurniturePageTabs" unique_id=1404301724]
+modulate = Color(1, 0.9411765, 0.7882353, 1)
+layout_mode = 0
+offset_right = 33.0
+offset_bottom = 66.0
+tooltip_text = "家具栏第 1 页"
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.93333334, 0.88235295, 0.7882353, 1)
+theme_override_colors/font_focus_color = Color(0.93333334, 0.88235295, 0.7882353, 1)
+theme_override_colors/font_pressed_color = Color(0.93333334, 0.88235295, 0.7882353, 1)
+theme_override_colors/font_hover_color = Color(0.93333334, 0.88235295, 0.7882353, 1)
+theme_override_colors/font_disabled_color = Color(0.93333334, 0.88235295, 0.7882353, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_oddhf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_dofot")
+theme_override_styles/hover = SubResource("StyleBoxTexture_eqwmt")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_gb4ol")
+theme_override_styles/focus = SubResource("StyleBoxFlat_v22uv")
+text = "1"
+
+[node name="FurniturePageTab2" type="Button" parent="FurniturePageTabs" unique_id=1817048348]
+modulate = Color(0.7254902, 0.65882355, 0.57254905, 1)
+layout_mode = 0
+offset_top = 68.0
+offset_right = 33.0
+offset_bottom = 134.0
+tooltip_text = "家具栏第 2 页"
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_uxoc6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_w24ga")
+theme_override_styles/hover = SubResource("StyleBoxTexture_7s075")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_fp0kr")
+theme_override_styles/focus = SubResource("StyleBoxFlat_f1b2v")
+text = "2"
+
+[node name="FurniturePageTab3" type="Button" parent="FurniturePageTabs" unique_id=577442614]
+modulate = Color(0.5019608, 0.43529412, 0.3764706, 1)
+layout_mode = 0
+offset_top = 136.0
+offset_right = 33.0
+offset_bottom = 202.0
+tooltip_text = "暂无家具"
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_5dhhm")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qvehl")
+theme_override_styles/hover = SubResource("StyleBoxTexture_srrak")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_t4bak")
+theme_override_styles/focus = SubResource("StyleBoxFlat_r1t2w")
+disabled = true
+text = "3"
+
+[node name="FurniturePageTab4" type="Button" parent="FurniturePageTabs" unique_id=970497628]
+modulate = Color(0.5019608, 0.43529412, 0.3764706, 1)
+layout_mode = 0
+offset_top = 204.0
+offset_right = 33.0
+offset_bottom = 270.0
+tooltip_text = "暂无家具"
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxTexture_6g4bj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_4h7j2")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ytb11")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_us8n7")
+theme_override_styles/focus = SubResource("StyleBoxFlat_mbiyh")
+disabled = true
+text = "4"
+
+[node name="ArchiveStatusPanel" type="PanelContainer" parent="." unique_id=1552380843]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -310.0
+offset_top = -61.0
+offset_right = 290.0
+offset_bottom = -9.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_80b05")
+
+[node name="EditableContent" type="Control" parent="ArchiveStatusPanel" unique_id=710872750]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="StatusLabel" type="Label" parent="ArchiveStatusPanel/EditableContent" unique_id=749138797]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 9.0
+offset_right = 582.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 12
+text = "搭建模式 · 从右侧拖出家具，或按住场内家具直接移动 · Q/E 旋转 90°"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="HintBulb" type="TextureRect" parent="ArchiveStatusPanel/EditableContent" unique_id=614683456]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 11.0
+offset_right = 41.0
+offset_bottom = 42.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_gnyus")
+expand_mode = 1
+
+[node name="RoomPanControls" type="PanelContainer" parent="." unique_id=579440047]
+visible = false
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -235.0
+offset_top = -128.0
+offset_right = 125.0
+offset_bottom = -82.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_fhi2h")
+
+[node name="EditableContent" type="Control" parent="RoomPanControls" unique_id=1058497896]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanLeftButton" type="Button" parent="RoomPanControls/EditableContent" unique_id=2020153281]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = 38.0
+offset_bottom = 44.0
+tooltip_text = "查看左侧房间"
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxTexture_j24xn")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_p5730")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ewcc5")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_i61gs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_fwtdd")
+text = "←"
+
+[node name="PanUpButton" type="Button" parent="RoomPanControls/EditableContent" unique_id=303619600]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 0
+offset_left = 43.0
+offset_top = 6.0
+offset_right = 66.0
+offset_bottom = 44.0
+tooltip_text = "查看后侧房间"
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxTexture_nb0cx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_4qh44")
+theme_override_styles/hover = SubResource("StyleBoxTexture_rt7fy")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_thxry")
+theme_override_styles/focus = SubResource("StyleBoxFlat_v1fj4")
+text = "↑"
+
+[node name="PanCenterButton" type="Button" parent="RoomPanControls/EditableContent" unique_id=1669622020]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 0
+offset_left = 71.0
+offset_top = 6.0
+offset_right = 135.0
+offset_bottom = 44.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxTexture_oe115")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_2u77a")
+theme_override_styles/hover = SubResource("StyleBoxTexture_b1i3y")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_2l2vw")
+theme_override_styles/focus = SubResource("StyleBoxFlat_eibuq")
+text = "全部房间"
+
+[node name="PanDownButton" type="Button" parent="RoomPanControls/EditableContent" unique_id=1735732603]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 0
+offset_left = 140.0
+offset_top = 6.0
+offset_right = 163.0
+offset_bottom = 44.0
+tooltip_text = "查看前侧房间"
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxTexture_pnqoy")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_dxnbd")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ovyt4")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_nh7o8")
+theme_override_styles/focus = SubResource("StyleBoxFlat_qq4rm")
+text = "↓"
+
+[node name="PanRightButton" type="Button" parent="RoomPanControls/EditableContent" unique_id=1701183365]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 0
+offset_left = 168.0
+offset_top = 6.0
+offset_right = 198.0
+offset_bottom = 44.0
+tooltip_text = "查看右侧房间"
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxTexture_xk5x6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_bwgh0")
+theme_override_styles/hover = SubResource("StyleBoxTexture_hkov0")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_ncc4w")
+theme_override_styles/focus = SubResource("StyleBoxFlat_2f538")
+text = "→"
+
+[node name="RotationOverlay" type="ColorRect" parent="." unique_id=418878905]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.02, 0.015, 0.04, 0.14)
+
+[node name="RotationDialog" type="PanelContainer" parent="RotationOverlay" unique_id=223047614]
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -235.0
+offset_top = 18.0
+offset_right = 235.0
+offset_bottom = 76.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_tdbtu")
+
+[node name="EditableContent" type="Control" parent="RotationOverlay/RotationDialog" unique_id=1063502444]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="RotationHintLabel" type="Label" parent="RotationOverlay/RotationDialog/EditableContent" unique_id=2013647354]
+layout_mode = 0
+offset_top = 19.0
+offset_right = 360.0
+offset_bottom = 39.0
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.9490196, 0.9098039, 1, 1)
+theme_override_font_sizes/font_size = 14
+text = "独占旋转模式 · 拖动 X / Y / Z 轴环"
+vertical_alignment = 1
+
+[node name="ConfirmRotationButton" type="Button" parent="RotationOverlay/RotationDialog/EditableContent" unique_id=1676037931]
+custom_minimum_size = Vector2(96, 42)
+layout_mode = 0
+offset_left = 374.0
+offset_right = 470.0
+offset_bottom = 58.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_focus_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_pressed_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_hover_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_colors/font_disabled_color = Color(0.16470589, 0.12941177, 0.105882354, 1)
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_fx6tj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7grws")
+theme_override_styles/hover = SubResource("StyleBoxTexture_fqygb")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_sy17s")
+theme_override_styles/focus = SubResource("StyleBoxFlat_j5564")
+text = "确定"

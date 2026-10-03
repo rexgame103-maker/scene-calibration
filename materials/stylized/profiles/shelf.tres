@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="StylizedMaterialProfile" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/stylized_material_profile.gd" id="1"]
+[resource]
+script = ExtResource("1")
+profile_id = "shelf"
+display_name = "高文件柜"
+role_ids = PackedStringArray("shelf")
+priority = 30
+base_color = Color(0.321569, 0.384314, 0.329412, 1)
+secondary_color = Color(0.286275, 0.298039, 0.286275, 1)
+paint_highlight_color = Color(0.568627, 0.552941, 0.439216, 1)
+stain_color = Color(0.188235, 0.211765, 0.184314, 1)
+wear_color = Color(0.709804, 0.666667, 0.560784, 1)
+brush_strength = 0.52
+patina_strength = 0.62
+stain_strength = 0.36
+wear_strength = 0.18
+roughness = 0.86
+specular = 0.18
+outline_color = Color(0.101961, 0.12549, 0.105882, 1)

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="StylizedMaterialProfile" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/stylized_material_profile.gd" id="1"]
+[resource]
+script = ExtResource("1")
+profile_id = "back_wall"
+display_name = "后墙"
+role_ids = PackedStringArray("back_wall")
+priority = 20
+base_color = Color(0.701961, 0.603922, 0.45098, 1)
+secondary_color = Color(0.647059, 0.560784, 0.45098, 1)
+paint_highlight_color = Color(0.827451, 0.74902, 0.6, 1)
+stain_color = Color(0.286275, 0.25098, 0.223529, 1)
+wear_color = Color(0.839216, 0.74902, 0.584314, 1)
+brush_scale = 1.45
+brush_strength = 0.34
+patina_strength = 0.34
+stain_strength = 0.22
+wear_strength = 0.08
+roughness = 0.94
+specular = 0.08
+outline_enabled = false

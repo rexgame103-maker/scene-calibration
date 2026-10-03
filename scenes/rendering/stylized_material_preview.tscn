@@ -1,0 +1,241 @@
+[gd_scene format=3 uid="uid://c2ka57ep8b84s"]
+
+[ext_resource type="PackedScene" path="res://scenes/rendering/stylized_material_controller.tscn" id="1_controller"]
+[ext_resource type="Shader" uid="uid://de2q34nykhi54" path="res://shaders/stylized_surface.gdshader" id="2_3d2n3"]
+[ext_resource type="PackedScene" uid="uid://c5erp6u0kafnu" path="res://assets/models/furniture/desk/desk.glb" id="2_desk"]
+[ext_resource type="PackedScene" uid="uid://ci0fsndsjpuin" path="res://assets/models/furniture/chair/chair.glb" id="3_chair"]
+[ext_resource type="PackedScene" uid="uid://5colb0e7178f" path="res://assets/models/furniture/computer/computer.glb" id="4_computer"]
+[ext_resource type="PackedScene" uid="uid://yaykkhs235vr" path="res://assets/models/furniture/lamp/lamp.glb" id="5_lamp"]
+[ext_resource type="PackedScene" uid="uid://bemvjjc507fmi" path="res://assets/models/furniture/shelf/shelf.glb" id="6_shelf"]
+[ext_resource type="PackedScene" uid="uid://cj55jp3ykiw6v" path="res://assets/models/furniture/smallShelf/smallShelf.glb" id="7_small_shelf"]
+[ext_resource type="PackedScene" uid="uid://box17bqbcxavy" path="res://assets/models/furniture/printer/printer.glb" id="8_printer"]
+[ext_resource type="PackedScene" uid="uid://bq7qsh2pfagjs" path="res://assets/models/furniture/waterDispenser/waterDispenser.glb" id="9_water"]
+[ext_resource type="PackedScene" uid="uid://cv6bm5vvh43yu" path="res://assets/models/furniture/blue_file/blue_file.glb" id="10_blue_file"]
+[ext_resource type="PackedScene" uid="uid://bp84nq86u05na" path="res://assets/models/furniture/red_file/red_file.glb" id="11_red_file"]
+[ext_resource type="PackedScene" uid="uid://q1p4if065vj8" path="res://assets/models/furniture/paper/paper.glb" id="12_paper"]
+
+[sub_resource type="Environment" id="Environment_preview"]
+background_mode = 1
+background_color = Color(0.075, 0.08, 0.09, 1)
+ambient_light_source = 3
+ambient_light_color = Color(0.72, 0.76, 0.82, 1)
+ambient_light_energy = 0.62
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="Material_floor"]
+albedo_color = Color(0.43, 0.39, 0.34, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="Mesh_floor"]
+material = SubResource("Material_floor")
+size = Vector3(13, 0.18, 10)
+
+[sub_resource type="StandardMaterial3D" id="Material_back_wall"]
+albedo_color = Color(0.62, 0.59, 0.53, 1)
+roughness = 0.92
+
+[sub_resource type="BoxMesh" id="Mesh_back_wall"]
+material = SubResource("Material_back_wall")
+size = Vector3(13, 5, 0.16)
+
+[sub_resource type="StandardMaterial3D" id="Material_left_wall"]
+albedo_color = Color(0.49, 0.52, 0.56, 1)
+roughness = 0.92
+
+[sub_resource type="BoxMesh" id="Mesh_left_wall"]
+material = SubResource("Material_left_wall")
+size = Vector3(0.16, 5, 10)
+
+[sub_resource type="StandardMaterial3D" id="Material_pedestal"]
+albedo_color = Color(0.17, 0.18, 0.2, 1)
+roughness = 0.78
+
+[sub_resource type="BoxMesh" id="Mesh_pedestal"]
+material = SubResource("Material_pedestal")
+size = Vector3(3.8, 0.72, 1.35)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3d2n3"]
+render_priority = 0
+shader = ExtResource("2_3d2n3")
+shader_parameter/base_color = Color(0.588235, 0.403922, 0.247059, 1)
+shader_parameter/secondary_color = Color(0.501961, 0.384314, 0.290196, 1)
+shader_parameter/paint_highlight_color = Color(0.72549, 0.556863, 0.376471, 1)
+shader_parameter/stain_color = Color(0.243137, 0.168627, 0.152941, 1)
+shader_parameter/wear_color = Color(0.752941, 0.568627, 0.372549, 1)
+shader_parameter/color_variation = 0.22
+shader_parameter/brush_scale = 1.5
+shader_parameter/brush_strength = 0.34
+shader_parameter/patina_strength = 0.42
+shader_parameter/stain_strength = 0.3
+shader_parameter/roughness_value = 0.9
+shader_parameter/specular_value = 0.12
+shader_parameter/wear_strength = 0.16
+shader_parameter/wear_scale = 3.4
+shader_parameter/desk_wear = 0.0
+shader_parameter/grid_enabled = true
+shader_parameter/grid_color = Color(0.231373, 0.203922, 0.180392, 1)
+shader_parameter/grid_cell_size = 1.0
+shader_parameter/grid_line_width = 0.032
+shader_parameter/grid_strength = 0.68
+shader_parameter/grid_tile_variation = 0.1
+shader_parameter/grid_offset = Vector2(0, 0)
+
+[node name="StylizedMaterialPreview" type="Node3D" unique_id=1927548837]
+editor_description = "风格化材质实时预览场景。保持本场景打开，然后在 materials/stylized/profiles 中选择对应 .tres 调整颜色、笔触、磨损和描边；约 0.15 秒自动刷新。"
+
+[node name="PreviewEnvironment" type="WorldEnvironment" parent="." unique_id=1848785433]
+environment = SubResource("Environment_preview")
+
+[node name="PreviewCamera" type="Camera3D" parent="." unique_id=114602697]
+transform = Transform3D(0.759, -0.254, 0.5994, 0, 0.921, 0.3896, -0.651, -0.296, 0.6993, 12, 9, 14)
+current = true
+fov = 42.0
+
+[node name="KeyLight" type="DirectionalLight3D" parent="." unique_id=1797932607]
+transform = Transform3D(0.8290376, 0.44065, -0.34427354, 0, 0.6156615, 0.7880107, 0.5591929, -0.6532905, 0.51040655, 0, 1.1792088, -0.07461834)
+light_color = Color(1, 0.86, 0.72, 1)
+light_energy = 1.4
+shadow_enabled = true
+
+[node name="FillLight" type="OmniLight3D" parent="." unique_id=1767720340]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 4.2, 3.5)
+light_color = Color(0.56, 0.72, 1, 1)
+light_energy = 2.6
+omni_range = 13.0
+
+[node name="StylizedMaterialController" parent="." unique_id=1465651223 instance=ExtResource("1_controller")]
+
+[node name="PreviewStage" type="Node3D" parent="." unique_id=2144796585]
+
+[node name="FloorPreview" type="MeshInstance3D" parent="PreviewStage" unique_id=255059782]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.09, 0)
+mesh = SubResource("Mesh_floor")
+
+[node name="BackWallPreview" type="MeshInstance3D" parent="PreviewStage" unique_id=1984988414]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -5)
+mesh = SubResource("Mesh_back_wall")
+
+[node name="LeftWallPreview" type="MeshInstance3D" parent="PreviewStage" unique_id=1964149092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 2.5, 0)
+mesh = SubResource("Mesh_left_wall")
+
+[node name="SmallObjectPedestal" type="MeshInstance3D" parent="PreviewStage" unique_id=1064786376]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.36, 3.45)
+mesh = SubResource("Mesh_pedestal")
+surface_material_override/0 = SubResource("ShaderMaterial_3d2n3")
+metadata/stylized_material_applied = true
+
+[node name="PreviewObjects" type="Node3D" parent="." unique_id=1480928830]
+
+[node name="DeskPreview" type="Node3D" parent="PreviewObjects" unique_id=1081783901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -1.45)
+
+[node name="DeskModel" parent="PreviewObjects/DeskPreview" unique_id=357623857 instance=ExtResource("2_desk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9686265, 0, 0)
+
+[node name="DeskLabel" type="Label3D" parent="PreviewObjects/DeskPreview" unique_id=1808367052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.15, 0)
+pixel_size = 0.006
+billboard = 1
+text = "办公桌 / desk.tres"
+font_size = 30
+outline_size = 8
+
+[node name="ChairPreview" type="Node3D" parent="PreviewObjects" unique_id=635770055]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.45, 0, 1.35)
+
+[node name="ChairModel" parent="PreviewObjects/ChairPreview" unique_id=1725152866 instance=ExtResource("3_chair")]
+transform = Transform3D(0.99994004, 0, 0.010950983, 0, 1, 0, -0.010950983, 0, 0.99994004, -1.2340181, -2.3841858e-07, -0.77530897)
+
+[node name="ChairLabel" type="Label3D" parent="PreviewObjects/ChairPreview" unique_id=1935365361]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.55, 0)
+pixel_size = 0.006
+billboard = 1
+text = "办公椅 / chair.tres"
+font_size = 28
+outline_size = 8
+
+[node name="ComputerPreview" type="Node3D" parent="PreviewObjects" unique_id=1967409887]
+transform = Transform3D(0.72, 0, 0, 0, 0.72, 0, 0, 0, 0.72, -0.4, 0.72, 3.42)
+
+[node name="ComputerModel" parent="PreviewObjects/ComputerPreview" unique_id=411958752 instance=ExtResource("4_computer")]
+
+[node name="ComputerLabel" type="Label3D" parent="PreviewObjects/ComputerPreview" unique_id=1931197471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.45, 0)
+pixel_size = 0.008
+billboard = 1
+text = "电脑"
+font_size = 27
+outline_size = 8
+
+[node name="LampPreview" type="Node3D" parent="PreviewObjects" unique_id=1526225408]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 0.72, 3.45)
+
+[node name="LampModel" parent="PreviewObjects/LampPreview" unique_id=306015742 instance=ExtResource("5_lamp")]
+
+[node name="ShelfPreview" type="Node3D" parent="PreviewObjects" unique_id=1673732990]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.95, 0, -1.25)
+
+[node name="ShelfModel" parent="PreviewObjects/ShelfPreview" unique_id=1873935749 instance=ExtResource("6_shelf")]
+
+[node name="ShelfLabel" type="Label3D" parent="PreviewObjects/ShelfPreview" unique_id=828066782]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.2, 0)
+pixel_size = 0.006
+billboard = 1
+text = "高文件柜 / shelf.tres"
+font_size = 28
+outline_size = 8
+
+[node name="SmallShelfPreview" type="Node3D" parent="PreviewObjects" unique_id=1517493282]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65, 0, -1.5)
+
+[node name="SmallShelfModel" parent="PreviewObjects/SmallShelfPreview" unique_id=1036909600 instance=ExtResource("7_small_shelf")]
+
+[node name="SmallShelfLabel" type="Label3D" parent="PreviewObjects/SmallShelfPreview" unique_id=1805106942]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.85, 0)
+pixel_size = 0.006
+billboard = 1
+text = "矮柜"
+font_size = 27
+outline_size = 8
+
+[node name="PrinterPreview" type="Node3D" parent="PreviewObjects" unique_id=513985580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.25, 0, 1.65)
+
+[node name="PrinterModel" parent="PreviewObjects/PrinterPreview" unique_id=1056453499 instance=ExtResource("8_printer")]
+
+[node name="PrinterLabel" type="Label3D" parent="PreviewObjects/PrinterPreview" unique_id=1516311465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.45, 0)
+pixel_size = 0.006
+billboard = 1
+text = "打印机"
+font_size = 27
+outline_size = 8
+
+[node name="WaterDispenserPreview" type="Node3D" parent="PreviewObjects" unique_id=109442889]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.15, 0, 2.65)
+
+[node name="WaterDispenserModel" parent="PreviewObjects/WaterDispenserPreview" unique_id=1526868535 instance=ExtResource("9_water")]
+
+[node name="BlueFilePreview" type="Node3D" parent="PreviewObjects" unique_id=245032833]
+transform = Transform3D(0.9396926, 0, -0.34202012, 0, 1, 0, 0.34202012, 0, 0.9396926, 0.45, 0.72, 3.45)
+
+[node name="BlueFileModel" parent="PreviewObjects/BlueFilePreview" unique_id=894901586 instance=ExtResource("10_blue_file")]
+
+[node name="RedFilePreview" type="Node3D" parent="PreviewObjects" unique_id=2076726707]
+transform = Transform3D(0.95105654, 0, 0.309017, 0, 1, 0, -0.309017, 0, 0.95105654, 1.05, 0.72, 3.45)
+
+[node name="RedFileModel" parent="PreviewObjects/RedFilePreview" unique_id=1120667195 instance=ExtResource("11_red_file")]
+
+[node name="PaperPreview" type="Node3D" parent="PreviewObjects" unique_id=1688538210]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 0.01, 3)
+
+[node name="PaperModel" parent="PreviewObjects/PaperPreview" unique_id=1664146254 instance=ExtResource("12_paper")]
+
+[node name="SmallObjectsLabel" type="Label3D" parent="PreviewObjects" unique_id=1859553978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 1.75, 3.45)
+pixel_size = 0.006
+billboard = 1
+text = "小物件材质"
+font_size = 28
+outline_size = 8

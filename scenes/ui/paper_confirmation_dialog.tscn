@@ -1,0 +1,120 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/ui/studio_dossier/investigation_atlas.png" id="1_atlas"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_note"]
+atlas = ExtResource("1_atlas")
+region = Rect2(16, 12, 596, 291)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_button"]
+atlas = ExtResource("1_atlas")
+region = Rect2(626, 234, 229, 70)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cancel"]
+texture = SubResource("AtlasTexture_button")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cancel_hover"]
+texture = SubResource("AtlasTexture_button")
+modulate_color = Color(1.1, 1.06, 0.93, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_focus"]
+
+[node name="PaperConfirmationDialog" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+color = Color(0.019608, 0.015686, 0.011765, 0.82)
+
+[node name="Note" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -195.0
+offset_right = 350.0
+offset_bottom = 195.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+texture = SubResource("AtlasTexture_note")
+expand_mode = 1
+
+[node name="TitleLabel" type="Label" parent="Note"]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 90.0
+offset_right = 610.0
+offset_bottom = 132.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.19, 0.125, 0.085, 1)
+theme_override_font_sizes/font_size = 30
+text = "开始新游戏？"
+
+[node name="WarningLabel" type="Label" parent="Note"]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 150.0
+offset_right = 610.0
+offset_bottom = 255.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.27, 0.195, 0.14, 1)
+theme_override_font_sizes/font_size = 18
+text = "将清除工作室布置、金钱、已购物品，\n以及案件进度、相册和邮件状态。\n随后开启全新存档。此操作无法撤销。"
+autowrap_mode = 3
+
+[node name="CancelButton" type="Button" parent="Note"]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 275.0
+offset_right = 340.0
+offset_bottom = 365.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.19, 0.125, 0.085, 1)
+theme_override_colors/font_focus_color = Color(0.19, 0.125, 0.085, 1)
+theme_override_colors/font_pressed_color = Color(0.19, 0.125, 0.085, 1)
+theme_override_colors/font_hover_color = Color(0.19, 0.125, 0.085, 1)
+theme_override_colors/font_disabled_color = Color(0.45, 0.39, 0.32, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxTexture_cancel")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cancel_hover")
+theme_override_styles/hover = SubResource("StyleBoxTexture_cancel_hover")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_cancel")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_focus")
+text = "×  取消"
+
+[node name="ConfirmButton" type="Button" parent="Note"]
+layout_mode = 0
+offset_left = 358.0
+offset_top = 275.0
+offset_right = 625.0
+offset_bottom = 365.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.35, 0.16, 0.13, 1)
+theme_override_colors/font_focus_color = Color(0.35, 0.16, 0.13, 1)
+theme_override_colors/font_pressed_color = Color(0.35, 0.16, 0.13, 1)
+theme_override_colors/font_hover_color = Color(0.35, 0.16, 0.13, 1)
+theme_override_colors/font_disabled_color = Color(0.45, 0.39, 0.32, 1)
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("StyleBoxTexture_cancel")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cancel_hover")
+theme_override_styles/hover = SubResource("StyleBoxTexture_cancel_hover")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_cancel")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_focus")
+text = "✓  确认删除全部进度"

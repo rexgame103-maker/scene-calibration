@@ -1,0 +1,326 @@
+{
+  "desk": {
+    "sheet": "office",
+    "region": [
+      33,
+      100,
+      388,
+      259
+    ]
+  },
+  "chair": {
+    "sheet": "office",
+    "region": [
+      511,
+      29,
+      259,
+      388
+    ]
+  },
+  "computer": {
+    "sheet": "office",
+    "region": [
+      877,
+      78,
+      332,
+      317
+    ]
+  },
+  "shelf": {
+    "sheet": "office",
+    "region": [
+      106,
+      437,
+      235,
+      384
+    ]
+  },
+  "small_shelf": {
+    "sheet": "office",
+    "region": [
+      485,
+      501,
+      299,
+      296
+    ]
+  },
+  "water_dispenser": {
+    "sheet": "office",
+    "region": [
+      969,
+      431,
+      155,
+      384
+    ]
+  },
+  "printer": {
+    "sheet": "office",
+    "region": [
+      58,
+      894,
+      339,
+      293
+    ]
+  },
+  "lamp": {
+    "sheet": "office",
+    "region": [
+      499,
+      841,
+      280,
+      365
+    ]
+  },
+  "plant": {
+    "sheet": "office",
+    "region": [
+      872,
+      852,
+      338,
+      355
+    ]
+  },
+  "sofa": {
+    "sheet": "objects",
+    "region": [
+      43,
+      104,
+      398,
+      266
+    ]
+  },
+  "paper": {
+    "sheet": "objects",
+    "region": [
+      486,
+      54,
+      317,
+      337
+    ]
+  },
+  "blue_file": {
+    "sheet": "objects",
+    "region": [
+      936,
+      37,
+      202,
+      362
+    ]
+  },
+  "red_file": {
+    "sheet": "objects",
+    "region": [
+      126,
+      445,
+      204,
+      363
+    ]
+  },
+  "gray_file": {
+    "sheet": "objects",
+    "region": [
+      532,
+      444,
+      204,
+      364
+    ]
+  },
+  "ordinary_file_01": {
+    "sheet": "objects",
+    "region": [
+      936,
+      445,
+      204,
+      363
+    ]
+  },
+  "ordinary_file_02": {
+    "sheet": "objects",
+    "region": [
+      126,
+      844,
+      204,
+      364
+    ]
+  },
+  "studio_lamp": {
+    "sheet": "objects",
+    "region": [
+      550,
+      836,
+      152,
+      363
+    ]
+  },
+  "studio_rug": {
+    "sheet": "objects",
+    "region": [
+      815,
+      932,
+      410,
+      227
+    ]
+  },
+  "restoration_table": {
+    "sheet": "restoration",
+    "region": [
+      27,
+      26,
+      407,
+      369
+    ]
+  },
+  "restoration_stool": {
+    "sheet": "restoration",
+    "region": [
+      501,
+      47,
+      257,
+      348
+    ]
+  },
+  "cold_light_panel": {
+    "sheet": "restoration",
+    "region": [
+      910,
+      9,
+      276,
+      400
+    ]
+  },
+  "halogen_inspection_lamp": {
+    "sheet": "restoration",
+    "region": [
+      106,
+      419,
+      210,
+      396
+    ]
+  },
+  "metal_reflector": {
+    "sheet": "restoration",
+    "region": [
+      511,
+      421,
+      248,
+      383
+    ]
+  },
+  "camera_tripod": {
+    "sheet": "restoration",
+    "region": [
+      929,
+      428,
+      226,
+      392
+    ]
+  },
+  "studio_desk": {
+    "sheet": "restoration",
+    "region": [
+      22,
+      877,
+      384,
+      305
+    ]
+  },
+  "studio_bookshelf": {
+    "sheet": "restoration",
+    "region": [
+      499,
+      816,
+      264,
+      404
+    ]
+  },
+  "analysis_board": {
+    "sheet": "restoration",
+    "region": [
+      858,
+      863,
+      366,
+      317
+    ]
+  },
+  "reference_lightbox": {
+    "sheet": "studio",
+    "region": [
+      57,
+      102,
+      351,
+      256
+    ]
+  },
+  "archive_terminal": {
+    "sheet": "studio",
+    "region": [
+      489,
+      19,
+      241,
+      384
+    ]
+  },
+  "coffee_machine": {
+    "sheet": "studio",
+    "region": [
+      877,
+      51,
+      296,
+      343
+    ]
+  },
+  "case_projector": {
+    "sheet": "studio",
+    "region": [
+      61,
+      446,
+      307,
+      347
+    ]
+  },
+  "studio_coffee_table": {
+    "sheet": "studio",
+    "region": [
+      428,
+      512,
+      394,
+      243
+    ]
+  },
+  "case_frame": {
+    "sheet": "studio",
+    "region": [
+      887,
+      458,
+      311,
+      314
+    ]
+  },
+  "studio_chair": {
+    "sheet": "studio",
+    "region": [
+      69,
+      825,
+      277,
+      393
+    ]
+  },
+  "studio_sofa": {
+    "sheet": "studio",
+    "region": [
+      400,
+      874,
+      419,
+      291
+    ]
+  },
+  "studio_window_bookcase": {
+    "sheet": "studio",
+    "region": [
+      860,
+      848,
+      360,
+      352
+    ]
+  }
+}

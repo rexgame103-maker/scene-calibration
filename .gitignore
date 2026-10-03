@@ -1,0 +1,15 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Local history, deliveries and credentials are not project source.
+/Backups/
+/deliveries/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.p12
+*.pfx
+*.key

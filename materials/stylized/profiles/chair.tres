@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="StylizedMaterialProfile" format=3 uid="uid://dbq3l4tqkw0a1"]
+
+[ext_resource type="Script" uid="uid://cchjhacavumgh" path="res://scripts/stylized_material_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+profile_id = "chair"
+display_name = "办公椅"
+role_ids = PackedStringArray("chair")
+material_name_contains = PackedStringArray()
+priority = 30
+base_color = Color(0.192157, 0.372549, 0.458824, 1)
+secondary_color = Color(0.188235, 0.305882, 0.368627, 1)
+paint_highlight_color = Color(0.419608, 0.576471, 0.615686, 1)
+stain_color = Color(0.129412, 0.215686, 0.262745, 1)
+wear_color = Color(0.505882, 0.607843, 0.627451, 1)
+brush_scale = 1.2
+brush_strength = 0.28
+patina_strength = 0.31
+stain_strength = 0.25
+wear_strength = 0.22
+wear_scale = 3.8000000000000003
+authored_desk_wear = 0.01
+grid_enabled = null
+grid_color = null
+grid_cell_size = null
+grid_line_width = null
+grid_strength = null
+grid_tile_variation = null
+grid_offset = null
+roughness = 0.9
+specular = 0.16
+outline_color = Color(0.07451, 0.14902, 0.184314, 1)
+outline_width = 0.011

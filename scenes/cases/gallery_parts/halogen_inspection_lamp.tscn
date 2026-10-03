@@ -1,0 +1,142 @@
+[gd_scene format=3]
+
+[ext_resource type="Shader" path="res://shaders/stylized_outline.gdshader" id="1_n3kdh"]
+[ext_resource type="Shader" path="res://shaders/gallery_toon.gdshader" id="2_dcv7n"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vvevl"]
+render_priority = 0
+shader = ExtResource("1_n3kdh")
+shader_parameter/outline_color = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/outline_width = 0.016
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nodos"]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_vvevl")
+shader = ExtResource("2_dcv7n")
+shader_parameter/paint = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/half_size = Vector3(0, 0, 0)
+shader_parameter/box_ink = false
+shader_parameter/ink_width = 0.015
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_hwrid"]
+top_radius = 0.33
+bottom_radius = 0.33
+height = 0.1
+radial_segments = 12
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dt4yl"]
+render_priority = 0
+shader = ExtResource("1_n3kdh")
+shader_parameter/outline_color = Color(0.0627451, 0.050980393, 0.03529412, 1)
+shader_parameter/outline_width = 0.016
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dxqgu"]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_dt4yl")
+shader = ExtResource("2_dcv7n")
+shader_parameter/paint = Color(0.26666668, 0.29803923, 0.28627452, 1)
+shader_parameter/half_size = Vector3(0, 0, 0)
+shader_parameter/box_ink = false
+shader_parameter/ink_width = 0.015
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xku25"]
+top_radius = 0.037
+bottom_radius = 0.037
+height = 1.6
+radial_segments = 12
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eaosq"]
+render_priority = 0
+shader = ExtResource("2_dcv7n")
+shader_parameter/paint = Color(0.7019608, 0.4745098, 0.21176471, 1)
+shader_parameter/half_size = Vector3(0.2, 0.18, 0.165)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.025
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ckk7r"]
+size = Vector3(0.4, 0.36, 0.33)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hhvw8"]
+render_priority = 0
+shader = ExtResource("2_dcv7n")
+shader_parameter/paint = Color(0.2784314, 0.24313726, 0.1764706, 1)
+shader_parameter/half_size = Vector3(0.155, 0.13, 0.006)
+shader_parameter/box_ink = true
+shader_parameter/ink_width = 0.003
+shader_parameter/grain = null
+shader_parameter/glow = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_fdxsg"]
+size = Vector3(0.31, 0.26, 0.012)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xajps"]
+top_radius = 0.012
+bottom_radius = 0.012
+height = 0.30999994
+radial_segments = 12
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0pwxb"]
+top_radius = 0.012
+bottom_radius = 0.012
+height = 0.30999994
+radial_segments = 12
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0djgt"]
+top_radius = 0.014
+bottom_radius = 0.014
+height = 1.5652477
+radial_segments = 12
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_kw25t"]
+top_radius = 0.014
+bottom_radius = 0.014
+height = 0.53150725
+radial_segments = 12
+
+[node name="HalogenInspectionLamp" type="Node3D" unique_id=1080369892]
+
+[node name="Base" type="MeshInstance3D" parent="." unique_id=203004017]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07, 0)
+material_override = SubResource("ShaderMaterial_nodos")
+mesh = SubResource("CylinderMesh_hwrid")
+
+[node name="Stand" type="MeshInstance3D" parent="." unique_id=711628038]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.85, 0)
+material_override = SubResource("ShaderMaterial_dxqgu")
+mesh = SubResource("CylinderMesh_xku25")
+
+[node name="LampHousing" type="MeshInstance3D" parent="." unique_id=1080658517]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.73, 0)
+material_override = SubResource("ShaderMaterial_eaosq")
+mesh = SubResource("BoxMesh_ckk7r")
+
+[node name="DarkLens" type="MeshInstance3D" parent="." unique_id=1613293267]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.73, 0.173)
+material_override = SubResource("ShaderMaterial_hhvw8")
+mesh = SubResource("BoxMesh_fdxsg")
+
+[node name="Guard" type="MeshInstance3D" parent="." unique_id=1333904270]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16, 1.725, 0.2)
+material_override = SubResource("ShaderMaterial_nodos")
+mesh = SubResource("CylinderMesh_xajps")
+
+[node name="@MeshInstance3D@237" type="MeshInstance3D" parent="." unique_id=455409655]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16, 1.725, 0.2)
+material_override = SubResource("ShaderMaterial_nodos")
+mesh = SubResource("CylinderMesh_0pwxb")
+
+[node name="PowerCable" type="MeshInstance3D" parent="." unique_id=1141153588]
+transform = Transform3D(1, 0, 0, 0, -0.9838698, 0.17888543, 0, -0.17888543, -0.9838698, 0, 0.83, -0.24)
+material_override = SubResource("ShaderMaterial_nodos")
+mesh = SubResource("CylinderMesh_0djgt")
+
+[node name="PowerCableFloor" type="MeshInstance3D" parent="." unique_id=328226736]
+transform = Transform3D(0.5663717, 0.6585046, 0.49557522, -0.6585046, 0, 0.75257665, 0.49557522, -0.75257665, 0.43362838, 0.175, 0.06, -0.58)
+material_override = SubResource("ShaderMaterial_nodos")
+mesh = SubResource("CylinderMesh_kw25t")

@@ -1,0 +1,203 @@
+[gd_scene format=3 uid="uid://y30kbxq4w4uc"]
+
+[ext_resource type="Script" uid="uid://eexkqmupi7b3" path="res://scripts/the_scene_start_menu.gd" id="1_1v4md"]
+[ext_resource type="PackedScene" uid="uid://bty5ewfvqvm0j" path="res://scenes/studio/player_studio_concept.tscn" id="2_k2tum"]
+[ext_resource type="Shader" uid="uid://1tec2qvexmiv" path="res://shaders/menu_vignette.gdshader" id="3_y2hb1"]
+[ext_resource type="Texture2D" uid="uid://cqobtimo41bfo" path="res://assets/ui/the_scene_menu/face.png" id="4_imehm"]
+[ext_resource type="Texture2D" uid="uid://shmdr3a3ad2n" path="res://assets/ui/the_scene_menu/ink.png" id="5_fic02"]
+[ext_resource type="Texture2D" uid="uid://4st267g3h6x4" path="res://assets/ui/the_scene_menu/title.png" id="6_g7qin"]
+[ext_resource type="Texture2D" uid="uid://de8xt166ty2cf" path="res://assets/ui/the_scene_menu/button.png" id="7_he5jm"]
+[ext_resource type="Texture2D" uid="uid://cw77niajyneob" path="res://assets/ui/the_scene_menu/button_selected.png" id="8_tot5w"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_88xkr"]
+shader = ExtResource("3_y2hb1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_25ygy"]
+content_margin_left = 40.0
+content_margin_top = 5.0
+content_margin_right = 24.0
+content_margin_bottom = 5.0
+texture = ExtResource("7_he5jm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fx3yj"]
+content_margin_left = 40.0
+content_margin_top = 5.0
+content_margin_right = 24.0
+content_margin_bottom = 5.0
+texture = ExtResource("8_tot5w")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1v4md"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k2tum"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y2hb1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_imehm"]
+
+[node name="TheSceneStartMenu" type="Node3D" unique_id=2146342945]
+script = ExtResource("1_1v4md")
+
+[node name="StudioBackground" parent="." unique_id=1914095801 instance=ExtResource("2_k2tum")]
+
+[node name="StartCamera" type="Camera3D" parent="." unique_id=2016854503]
+transform = Transform3D(0.93955326, -0.054628305, 0.33801693, 0, 0.98719084, 0.15954398, -0.34240282, -0.14990006, 0.92751837, 0.2, 2.78, 3.76)
+current = true
+fov = 48.0
+near = 0.08
+
+[node name="StartMenuUI" type="CanvasLayer" parent="." unique_id=1398040514]
+
+[node name="UIRoot" type="Control" parent="StartMenuUI" unique_id=1925425585]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="Atmosphere" type="ColorRect" parent="StartMenuUI/UIRoot" unique_id=1441713173]
+material = SubResource("ShaderMaterial_88xkr")
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="Portrait" type="TextureRect" parent="StartMenuUI/UIRoot" unique_id=394953551]
+clip_contents = true
+layout_mode = 0
+offset_left = -140.0
+offset_top = -30.0
+offset_right = 440.0
+offset_bottom = 740.0
+mouse_filter = 2
+texture = ExtResource("4_imehm")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="InkOverlay" type="TextureRect" parent="StartMenuUI/UIRoot" unique_id=2100343806]
+modulate = Color(1, 1, 1, 0.85)
+layout_mode = 0
+offset_left = -10.0
+offset_top = -8.0
+offset_right = 1290.0
+offset_bottom = 728.0
+mouse_filter = 2
+texture = ExtResource("5_fic02")
+expand_mode = 1
+
+[node name="MenuSlash" type="Polygon2D" parent="StartMenuUI/UIRoot" unique_id=1458295144]
+color = Color(0.03137255, 0.03137255, 0.023529412, 1)
+antialiased = true
+polygon = PackedVector2Array(379, -20, 393, -20, 274, 725, 259, 740, 280, 582, 307, 421, 331, 264)
+
+[node name="Title" type="TextureRect" parent="StartMenuUI/UIRoot" unique_id=2083448950]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 56.0
+offset_right = 1162.0
+offset_bottom = 296.0
+rotation = -0.12217305
+mouse_filter = 2
+texture = ExtResource("6_g7qin")
+expand_mode = 1
+
+[node name="MenuLayout" type="Control" parent="StartMenuUI/UIRoot" unique_id=1226274151]
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="MenuColumn" type="Control" parent="StartMenuUI/UIRoot/MenuLayout" unique_id=335301133]
+anchors_preset = 0
+offset_left = 305.145
+offset_top = 311.0
+offset_right = 630.1459
+offset_bottom = 567.0
+rotation = -0.12217305
+
+[node name="StartButton" type="Button" parent="StartMenuUI/UIRoot/MenuLayout/MenuColumn" unique_id=131788886]
+custom_minimum_size = Vector2(325, 56)
+layout_mode = 0
+offset_right = 325.0
+offset_bottom = 56.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
+theme_override_colors/font_focus_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
+theme_override_colors/font_pressed_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
+theme_override_colors/font_hover_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
+theme_override_colors/font_disabled_color = Color(0.5058824, 0.46666667, 0.4, 1)
+theme_override_font_sizes/font_size = 27
+theme_override_styles/normal = SubResource("StyleBoxTexture_25ygy")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fx3yj")
+theme_override_styles/hover = SubResource("StyleBoxTexture_fx3yj")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_25ygy")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1v4md")
+text = "开始游戏"
+alignment = 0
+
+[node name="ContinueButton" type="Button" parent="StartMenuUI/UIRoot/MenuLayout/MenuColumn" unique_id=1270221058]
+custom_minimum_size = Vector2(325, 56)
+layout_mode = 0
+offset_left = -18.0
+offset_top = 60.0
+offset_right = 307.0
+offset_bottom = 116.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
+theme_override_colors/font_focus_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
+theme_override_colors/font_pressed_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
+theme_override_colors/font_hover_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
+theme_override_colors/font_disabled_color = Color(0.5058824, 0.46666667, 0.4, 1)
+theme_override_font_sizes/font_size = 27
+theme_override_styles/normal = SubResource("StyleBoxTexture_25ygy")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fx3yj")
+theme_override_styles/hover = SubResource("StyleBoxTexture_fx3yj")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_25ygy")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k2tum")
+text = "继续游戏"
+alignment = 0
+
+[node name="SettingsButton" type="Button" parent="StartMenuUI/UIRoot/MenuLayout/MenuColumn" unique_id=579808905]
+custom_minimum_size = Vector2(325, 56)
+layout_mode = 0
+offset_left = -36.0
+offset_top = 120.0
+offset_right = 289.0
+offset_bottom = 176.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
+theme_override_colors/font_focus_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
+theme_override_colors/font_pressed_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
+theme_override_colors/font_hover_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
+theme_override_colors/font_disabled_color = Color(0.5058824, 0.46666667, 0.4, 1)
+theme_override_font_sizes/font_size = 27
+theme_override_styles/normal = SubResource("StyleBoxTexture_25ygy")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fx3yj")
+theme_override_styles/hover = SubResource("StyleBoxTexture_fx3yj")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_25ygy")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y2hb1")
+text = "设置"
+alignment = 0
+
+[node name="ExitButton" type="Button" parent="StartMenuUI/UIRoot/MenuLayout/MenuColumn" unique_id=446394759]
+custom_minimum_size = Vector2(325, 56)
+layout_mode = 0
+offset_left = -54.0
+offset_top = 180.0
+offset_right = 271.0
+offset_bottom = 236.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
+theme_override_colors/font_focus_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
+theme_override_colors/font_pressed_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
+theme_override_colors/font_hover_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
+theme_override_colors/font_disabled_color = Color(0.5058824, 0.46666667, 0.4, 1)
+theme_override_font_sizes/font_size = 27
+theme_override_styles/normal = SubResource("StyleBoxTexture_25ygy")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fx3yj")
+theme_override_styles/hover = SubResource("StyleBoxTexture_fx3yj")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_25ygy")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_imehm")
+text = "退出"
+alignment = 0
+
+[node name="ResetGameButton" type="Button" parent="StartMenuUI/UIRoot" unique_id=901919720]
+visible = false
+layout_mode = 0

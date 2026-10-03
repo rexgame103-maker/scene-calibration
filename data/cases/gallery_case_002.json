@@ -1,0 +1,819 @@
+{
+  "case_id": "gallery_case_002",
+  "title": "失准的修复室",
+  "subtitle": "市立美术馆 · 修复环境校准调查",
+  "scene_layout": {
+    "mode": "noir_gallery",
+    "room_width": 10.0,
+    "room_depth": 7.0,
+    "overview_target": [
+      0.0,
+      0.9,
+      0.0
+    ],
+    "overview_pan": false,
+    "base_lighting": {
+      "ambient_energy": 0.22,
+      "ambient_color": "#C4CBD0",
+      "saturation": 0.96,
+      "key": {
+        "energy": 0.55,
+        "temperature": 5400.0,
+        "shadow": false
+      },
+      "fill": {
+        "energy": 0.3,
+        "temperature": 6500.0,
+        "range": 8.0,
+        "shadow": false
+      },
+      "accent": {
+        "energy": 0.0,
+        "temperature": 4200.0,
+        "range": 7.0,
+        "shadow": false
+      }
+    },
+    "light_calibration": {
+      "enabled": true,
+      "title": "过程照片光影校准",
+      "required_clue_ids": [
+        "clue_hard_shadow",
+        "clue_warm_highlight",
+        "clue_table_rotated"
+      ],
+      "devices": [
+        {
+          "furniture_id": "standard_cold_light",
+          "label": "标准冷光灯"
+        },
+        {
+          "furniture_id": "halogen_lamp",
+          "label": "卤素检查灯"
+        }
+      ]
+    },
+    "fixtures": [
+      {
+        "name": "NorthWindow",
+        "type": "box",
+        "size": [
+          2.6,
+          1.45,
+          0.08
+        ],
+        "position": [
+          -2.5,
+          2.15,
+          -3.38
+        ],
+        "color": "#9CCFE0",
+        "emission": true
+      },
+      {
+        "name": "WindowFrameTop",
+        "type": "box",
+        "size": [
+          2.9,
+          0.1,
+          0.14
+        ],
+        "position": [
+          -2.5,
+          2.9,
+          -3.31
+        ],
+        "color": "#56636B"
+      },
+      {
+        "name": "WindowFrameBottom",
+        "type": "box",
+        "size": [
+          2.9,
+          0.1,
+          0.14
+        ],
+        "position": [
+          -2.5,
+          1.4,
+          -3.31
+        ],
+        "color": "#56636B"
+      },
+      {
+        "name": "WindowFrameMiddle",
+        "type": "box",
+        "size": [
+          0.1,
+          1.55,
+          0.14
+        ],
+        "position": [
+          -2.5,
+          2.15,
+          -3.31
+        ],
+        "color": "#56636B"
+      },
+      {
+        "name": "SidePowerStrip",
+        "type": "box",
+        "size": [
+          0.62,
+          0.3,
+          0.08
+        ],
+        "position": [
+          4.84,
+          0.46,
+          -0.15
+        ],
+        "color": "#D8D4C8"
+      },
+      {
+        "name": "CalibrationRail",
+        "type": "box",
+        "size": [
+          3.7,
+          0.09,
+          0.12
+        ],
+        "position": [
+          -1.2,
+          2.95,
+          -3.28
+        ],
+        "color": "#46525A"
+      },
+      {
+        "name": "StorageMarkHalogen",
+        "type": "box",
+        "size": [
+          0.86,
+          0.025,
+          0.86
+        ],
+        "position": [
+          4.0,
+          0.014,
+          -2.55
+        ],
+        "color": "#B87A52"
+      },
+      {
+        "name": "StorageMarkReflector",
+        "type": "box",
+        "size": [
+          1.32,
+          0.025,
+          0.72
+        ],
+        "position": [
+          2.8,
+          0.014,
+          -2.62
+        ],
+        "color": "#8B979D"
+      }
+    ]
+  },
+  "briefing": {
+    "eyebrow": "警方咨询委托 · 美术馆报案",
+    "title": "失准的修复室",
+    "description": "一幅高价值板画在修复后出现局部发白与起伏。修复报告声称全程使用标准冷光环境，但损伤形态更像局部受热。负责修复的人否认改变过设备。",
+    "instruction": "先根据年度校准照片恢复修复室的标准布局，再核对服务器保存的近距离过程照片，找出照片真正对应的设备状态。",
+    "accept_button": "进入虚拟修复室",
+    "accepted_status": "先打开案件资料，根据年度校准照片建立标准修复室"
+  },
+  "completion": {
+    "required_reconstruction_step_id": "actual_restoration_layout",
+    "required_clue_ids": [
+      "clue_damage_alignment",
+      "clue_night_access",
+      "clue_report_edited"
+    ],
+    "failure_message": "当前布局还不能同时解释过程照片中的锐利阴影、暖色高光与二次反射，或警方补充资料尚未全部核对。",
+    "title": "真实修复环境已还原",
+    "description": "过程照片并非拍摄于报告所称的标准冷光环境。卤素灯与金属反光屏把热量集中在作品右下区域，位置与实际损伤完全重合。",
+    "deduction": "修复师为了赶进度，违规使用发热灯具加速干燥；随后恢复标准布局并修改报告，试图把损伤伪装成材料自身异常。门禁记录、原始照片与报告修改记录形成了完整调查方向。",
+    "return_button": "拍照归档并返回工作室"
+  },
+  "clues": [
+    {
+      "id": "clue_restoration_table_exists",
+      "title": "标准修复桌",
+      "description": "年度校准照片确认了修复桌和作品托板。",
+      "type": "photo",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_restoration_stool_exists",
+      "title": "修复凳",
+      "description": "标准工作位包含一把可调高脚凳。",
+      "type": "photo",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_cold_light_exists",
+      "title": "标准冷光灯",
+      "description": "校准照片记录了宽幅低温灯的固定工作位。",
+      "type": "photo",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_halogen_exists",
+      "title": "卤素检查灯",
+      "description": "检查灯平时停放在侧墙标记内，不用于封护层干燥。",
+      "type": "asset",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_reflector_exists",
+      "title": "金属反光屏",
+      "description": "反光屏在标准状态下收纳于后墙。",
+      "type": "asset",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_camera_exists",
+      "title": "摄影支架",
+      "description": "连续修复照片由固定支架上的相机拍摄。",
+      "type": "asset",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_standard_layout_registered",
+      "title": "标准环境基准",
+      "description": "修复室的合同标准布局已经完成记录。",
+      "type": "reconstruction",
+      "is_discovered": false,
+      "status_message": "标准布局已记录 · 三张服务器过程照片现已开放，请检查光影矛盾"
+    },
+    {
+      "id": "clue_hard_shadow",
+      "title": "锐利工具阴影",
+      "description": "标准宽幅冷光无法产生照片中又长又清晰的刮刀阴影，拍摄时右侧存在低位点状光源。",
+      "type": "photo",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_warm_highlight",
+      "title": "暖色高光与二次反射",
+      "description": "湿润封护层上的小面积暖色高光来自发热灯具，较弱高光说明对侧还有金属反射面。",
+      "type": "photo",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_table_rotated",
+      "title": "转向的修复桌",
+      "description": "画框和校准尺的投影方向证明，修复桌在拍摄时已偏离标准朝向。",
+      "type": "photo",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_true_layout_reconstructed",
+      "title": "照片对应的真实布局",
+      "description": "桌子、卤素灯、反光屏和摄影支架形成了能够解释三张照片的唯一布局。",
+      "type": "reconstruction",
+      "is_discovered": false,
+      "status_message": "真实拍摄布局已成立 · 检视修复桌上的作品，确认热量汇聚位置"
+    },
+    {
+      "id": "clue_damage_alignment",
+      "title": "热量汇聚区域",
+      "description": "卤素灯直射和反光屏二次反射汇聚于作品右下，恰好对应美术馆发现的损伤。",
+      "type": "scene",
+      "is_discovered": false,
+      "status_message": "损伤位置已对应 · 警方补充的门禁记录与报告版本现已开放"
+    },
+    {
+      "id": "clue_night_access",
+      "title": "夜间门禁记录",
+      "description": "关键修复结束后，只有负责修复的修复师再次进入过房间。",
+      "type": "record",
+      "is_discovered": false
+    },
+    {
+      "id": "clue_report_edited",
+      "title": "报告修改记录",
+      "description": "修复师夜间进入后，将照明条件改写为“全程标准冷光”。",
+      "type": "record",
+      "is_discovered": false
+    }
+  ],
+  "evidence": [
+    {
+      "id": "restoration_case_brief",
+      "title": "作品损伤报案摘要",
+      "category": "案情描述",
+      "view_type": "text",
+      "is_initially_available": true,
+      "is_viewed": false,
+      "description": "市立美术馆在作品交还数日后发现右下区域发白并出现细小起伏。合同要求补色与封护阶段保持经过校准的冷光环境，修复师否认改变设备。",
+      "clue_ids": []
+    },
+    {
+      "id": "standard_layout_photo",
+      "title": "年度设备校准照片",
+      "category": "现场照片",
+      "view_type": "photo",
+      "is_initially_available": true,
+      "is_viewed": false,
+      "pin_as_reference": true,
+      "image_path": "res://assets/case_photos/gallery/standard_layout_photo.png",
+      "caption": "修复室年度校准档案 · 标准状态",
+      "description": "修复桌位于宽幅冷光灯前，摄影支架正对作品；卤素检查灯和金属反光屏分别停放在后墙标记处。",
+      "photo_subjects": [
+        "restoration_table",
+        "restoration_stool",
+        "cold_light_panel",
+        "camera_tripod",
+        "halogen_parked",
+        "reflector_parked"
+      ],
+      "clue_ids": [
+        "clue_restoration_table_exists",
+        "clue_restoration_stool_exists",
+        "clue_cold_light_exists",
+        "clue_halogen_exists",
+        "clue_reflector_exists",
+        "clue_camera_exists"
+      ]
+    },
+    {
+      "id": "process_photo_cleaning",
+      "title": "过程照片 01 · 清洁完成",
+      "category": "现场照片",
+      "view_type": "photo",
+      "is_initially_available": false,
+      "required_clues": [
+        "clue_standard_layout_registered"
+      ],
+      "is_viewed": false,
+      "pin_as_reference": true,
+      "image_path": "res://assets/case_photos/gallery/process_photo_01_shadow.png",
+      "caption": "服务器原始文件 · 14:18",
+      "description": "校准尺旁的金属刮刀留下又长又清晰的左后向阴影。标准宽幅冷光只能产生柔和浅影，拍摄时右侧必然存在靠近桌面的点状光源。",
+      "photo_subjects": [
+        "artwork_closeup",
+        "hard_shadow",
+        "scale_ruler"
+      ],
+      "clue_ids": [
+        "clue_hard_shadow"
+      ]
+    },
+    {
+      "id": "process_photo_retouching",
+      "title": "过程照片 02 · 补色完成",
+      "category": "现场照片",
+      "view_type": "photo",
+      "is_initially_available": false,
+      "required_clues": [
+        "clue_standard_layout_registered"
+      ],
+      "is_viewed": false,
+      "pin_as_reference": true,
+      "image_path": "res://assets/case_photos/gallery/process_photo_02_reflection.png",
+      "caption": "服务器原始文件 · 16:42",
+      "description": "湿润画面右侧出现小面积暖色高光，左侧同时出现较弱的二次高光。这对应右侧卤素灯与左侧金属反光屏。",
+      "photo_subjects": [
+        "artwork_closeup",
+        "warm_highlight",
+        "secondary_reflection"
+      ],
+      "clue_ids": [
+        "clue_warm_highlight"
+      ]
+    },
+    {
+      "id": "process_photo_coating",
+      "title": "过程照片 03 · 封护完成",
+      "category": "现场照片",
+      "view_type": "photo",
+      "is_initially_available": false,
+      "required_clues": [
+        "clue_standard_layout_registered"
+      ],
+      "is_viewed": false,
+      "pin_as_reference": true,
+      "image_path": "res://assets/case_photos/gallery/process_photo_03_orientation.png",
+      "caption": "服务器原始文件 · 18:07",
+      "description": "画框边缘与校准尺的投影不符合标准桌面方向。结合固定摄影支架的拍摄轴线，可以确认修复桌曾转动约九十度。",
+      "photo_subjects": [
+        "artwork_closeup",
+        "rotated_frame_shadow",
+        "camera_axis"
+      ],
+      "clue_ids": [
+        "clue_table_rotated"
+      ]
+    },
+    {
+      "id": "night_access_log",
+      "title": "修复室夜间门禁记录",
+      "category": "证物",
+      "view_type": "text",
+      "is_initially_available": false,
+      "required_clues": [
+        "clue_damage_alignment"
+      ],
+      "is_viewed": false,
+      "description": "关键修复在18:20登记结束。负责修复的修复师于22:46再次刷卡进入，23:18离开；该时段没有其他人员进入。",
+      "clue_ids": [
+        "clue_night_access"
+      ]
+    },
+    {
+      "id": "report_revision_log",
+      "title": "修复报告版本记录",
+      "category": "证物",
+      "view_type": "text",
+      "is_initially_available": false,
+      "required_clues": [
+        "clue_damage_alignment"
+      ],
+      "is_viewed": false,
+      "description": "报告中的照明说明在22:59被修改。修改后的文字为“补色与封护全程使用标准冷光设备”，修改账号属于负责修复的修复师。",
+      "clue_ids": [
+        "clue_report_edited"
+      ]
+    }
+  ],
+  "furniture_unlocks": [
+    {
+      "furniture_id": "restoration_table",
+      "catalog_kind": "restoration_table",
+      "display_name": "修复桌",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_restoration_table_exists"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    },
+    {
+      "furniture_id": "restoration_stool",
+      "catalog_kind": "restoration_stool",
+      "display_name": "修复凳",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_restoration_stool_exists"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    },
+    {
+      "furniture_id": "standard_cold_light",
+      "catalog_kind": "cold_light_panel",
+      "display_name": "标准冷光灯",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_cold_light_exists"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    },
+    {
+      "furniture_id": "halogen_lamp",
+      "catalog_kind": "halogen_inspection_lamp",
+      "display_name": "卤素检查灯",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_halogen_exists"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    },
+    {
+      "furniture_id": "metal_reflector",
+      "catalog_kind": "metal_reflector",
+      "display_name": "金属反光屏",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_reflector_exists"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    },
+    {
+      "furniture_id": "photo_tripod",
+      "catalog_kind": "camera_tripod",
+      "display_name": "摄影支架",
+      "is_unlocked": false,
+      "required_clues": [
+        "clue_camera_exists"
+      ],
+      "unlock_mode": "all",
+      "inventory_amount": 1
+    }
+  ],
+  "reconstruction_zones": [
+    {
+      "zone_id": "standard_table",
+      "required_furniture_id": "restoration_table",
+      "position": [
+        -0.8,
+        1.4,
+        -0.25
+      ],
+      "size": [
+        0.9,
+        3.0,
+        0.9
+      ],
+      "require_orientation": true,
+      "target_yaw": 0.0,
+      "orientation_tolerance": 12.0
+    },
+    {
+      "zone_id": "standard_stool",
+      "required_furniture_id": "restoration_stool",
+      "position": [
+        -0.7,
+        1.2,
+        1.05
+      ],
+      "size": [
+        0.85,
+        2.6,
+        0.85
+      ]
+    },
+    {
+      "zone_id": "standard_cold_light",
+      "required_furniture_id": "standard_cold_light",
+      "position": [
+        -0.8,
+        1.4,
+        -1.9
+      ],
+      "size": [
+        0.85,
+        3.0,
+        0.75
+      ],
+      "require_orientation": true,
+      "target_yaw": 180.0,
+      "orientation_tolerance": 14.0
+    },
+    {
+      "zone_id": "standard_halogen_parked",
+      "required_furniture_id": "halogen_lamp",
+      "position": [
+        3.95,
+        1.2,
+        -2.55
+      ],
+      "size": [
+        0.8,
+        2.6,
+        0.8
+      ],
+      "require_orientation": true,
+      "target_yaw": 0.0,
+      "orientation_tolerance": 16.0
+    },
+    {
+      "zone_id": "standard_reflector_parked",
+      "required_furniture_id": "metal_reflector",
+      "position": [
+        2.3,
+        1.25,
+        -2.75
+      ],
+      "size": [
+        0.85,
+        2.7,
+        0.7
+      ],
+      "require_orientation": true,
+      "target_yaw": 0.0,
+      "orientation_tolerance": 16.0
+    },
+    {
+      "zone_id": "standard_camera",
+      "required_furniture_id": "photo_tripod",
+      "position": [
+        -1.35,
+        1.2,
+        2.15
+      ],
+      "size": [
+        0.9,
+        2.6,
+        0.9
+      ],
+      "require_orientation": true,
+      "target_yaw": 0.0,
+      "orientation_tolerance": 14.0
+    },
+    {
+      "zone_id": "actual_table",
+      "required_furniture_id": "restoration_table",
+      "position": [
+        0.45,
+        1.4,
+        -0.1
+      ],
+      "size": [
+        0.9,
+        3.0,
+        0.9
+      ],
+      "require_orientation": true,
+      "target_yaw": 90.0,
+      "orientation_tolerance": 12.0
+    },
+    {
+      "zone_id": "actual_stool",
+      "required_furniture_id": "restoration_stool",
+      "position": [
+        0.45,
+        1.2,
+        1.55
+      ],
+      "size": [
+        0.85,
+        2.6,
+        0.85
+      ]
+    },
+    {
+      "zone_id": "actual_cold_light_parked",
+      "required_furniture_id": "standard_cold_light",
+      "position": [
+        3.55,
+        1.4,
+        -2.48
+      ],
+      "size": [
+        0.9,
+        3.0,
+        0.8
+      ],
+      "require_orientation": true,
+      "target_yaw": 0.0,
+      "orientation_tolerance": 16.0
+    },
+    {
+      "zone_id": "actual_halogen_right",
+      "required_furniture_id": "halogen_lamp",
+      "position": [
+        2.1,
+        1.2,
+        -0.1
+      ],
+      "size": [
+        0.78,
+        2.6,
+        0.78
+      ],
+      "require_orientation": true,
+      "target_yaw": 90.0,
+      "orientation_tolerance": 14.0
+    },
+    {
+      "zone_id": "actual_reflector_left",
+      "required_furniture_id": "metal_reflector",
+      "position": [
+        -1.2,
+        1.25,
+        -0.1
+      ],
+      "size": [
+        0.8,
+        2.7,
+        0.78
+      ],
+      "require_orientation": true,
+      "target_yaw": -90.0,
+      "orientation_tolerance": 14.0
+    },
+    {
+      "zone_id": "actual_camera",
+      "required_furniture_id": "photo_tripod",
+      "position": [
+        0.45,
+        1.2,
+        2.55
+      ],
+      "size": [
+        0.9,
+        2.6,
+        0.9
+      ],
+      "require_orientation": true,
+      "target_yaw": 0.0,
+      "orientation_tolerance": 14.0
+    }
+  ],
+  "reconstruction_steps": [
+    {
+      "step_id": "standard_restoration_layout",
+      "zone_ids": [
+        "standard_table",
+        "standard_stool",
+        "standard_cold_light",
+        "standard_halogen_parked",
+        "standard_reflector_parked",
+        "standard_camera"
+      ],
+      "reward_clue_ids": [
+        "clue_standard_layout_registered"
+      ]
+    },
+    {
+      "step_id": "actual_restoration_layout",
+      "zone_ids": [
+        "actual_table",
+        "actual_stool",
+        "actual_cold_light_parked",
+        "actual_halogen_right",
+        "actual_reflector_left",
+        "actual_camera"
+      ],
+      "required_clue_ids": [
+        "clue_hard_shadow",
+        "clue_warm_highlight",
+        "clue_table_rotated"
+      ],
+      "lighting_conditions": [
+        {
+          "type": "device_parameters",
+          "furniture_id": "standard_cold_light",
+          "energy_range": [
+            0.0,
+            0.55
+          ],
+          "debug_values": {
+            "energy": 0.08,
+            "temperature": 6800.0,
+            "yaw": 180.0,
+            "pitch": -28.0
+          }
+        },
+        {
+          "type": "device_parameters",
+          "furniture_id": "halogen_lamp",
+          "energy_range": [
+            0.45,
+            1.35
+          ],
+          "temperature_range": [
+            2400.0,
+            4800.0
+          ],
+          "yaw_target": 0.0,
+          "yaw_tolerance": 42.0,
+          "pitch_target": -24.0,
+          "pitch_tolerance": 24.0,
+          "debug_values": {
+            "energy": 1.05,
+            "temperature": 3100.0,
+            "yaw": 0.0,
+            "pitch": -24.0
+          }
+        },
+        {
+          "type": "shadow_projection",
+          "light_furniture_id": "halogen_lamp",
+          "receiver_furniture_id": "restoration_table",
+          "caster_node": "ScalpelTool",
+          "surface_node": "ArtworkSurface",
+          "minimum_aim_dot": 0.75,
+          "length_range": [
+            0.02,
+            2.0
+          ]
+        },
+        {
+          "type": "reflection_response",
+          "furniture_id": "metal_reflector",
+          "energy_range": [
+            0.04,
+            0.75
+          ]
+        }
+      ],
+      "reward_clue_ids": [
+        "clue_true_layout_reconstructed"
+      ]
+    }
+  ],
+  "scene_clue_points": [
+    {
+      "parent_furniture_id": "restoration_table",
+      "clue_point_id": "restoration_heat_damage",
+      "clue_id": "clue_damage_alignment",
+      "title": "作品右下的热损伤区域",
+      "description": "卤素灯直射与反光屏的二次反射在这里汇聚。美术馆检测图上的发白和起伏也集中在同一区域。",
+      "required_reconstruction_step_id": "actual_restoration_layout",
+      "position": [
+        0.68,
+        1.36,
+        0.28
+      ]
+    }
+  ]
+}

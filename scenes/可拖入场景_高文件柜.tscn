@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c573rqo0hpltc"]
+
+[ext_resource type="PackedScene" path="res://scenes/furniture/shelf_furniture.tscn" id="1_entity"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0stse"]
+friction = 0.88
+bounce = 0.02
+
+[node name="高文件柜_实体" unique_id=981929075 instance=ExtResource("1_entity")]
+editor_description = "把这个实体场景拖到 PlacedFurniture。请选中本节点，在 Cabinet Collision 和 Folder Shelves 中调整碰撞与三层吸附面。不要直接拖入 assets/models 下的 shelf.glb。"
+physics_material_override = SubResource("PhysicsMaterial_0stse")
+layer_1_height = 0.14500000000000002
+layer_2_height = 0.9

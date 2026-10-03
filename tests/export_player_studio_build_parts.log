@@ -1,0 +1,33 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+STUDIO_PART_BOUNDS: shell_architecture [P: (-5.07, -0.255, -4.97), S: (10.07, 3.59, 8.47)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/shell_architecture.scn
+STUDIO_PART_BOUNDS: shell_floor [P: (-4.9725, -0.0225, -4.89), S: (10.07167, 0.050598, 8.389999)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/shell_floor.scn
+STUDIO_PART_BOUNDS: studio_desk [P: (-1.725, 0.03, -0.822141), S: (3.45, 2.05, 1.602141)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/studio_desk.scn
+STUDIO_PART_BOUNDS: studio_chair [P: (-0.564721, 0.0, -0.564721), S: (1.129441, 1.35, 1.129441)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/studio_chair.scn
+STUDIO_PART_BOUNDS: studio_computer [P: (-0.54, 0.0075, -0.545), S: (1.553586, 1.0975, 0.99)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/studio_computer.scn
+STUDIO_PART_BOUNDS: studio_bookshelf [P: (-1.2, 0.0, -0.35), S: (2.4, 2.9, 0.7)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/studio_bookshelf.scn
+STUDIO_PART_BOUNDS: studio_lamp [P: (-0.35, 0.01, -0.35), S: (0.7, 2.0, 0.7)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/studio_lamp.scn
+STUDIO_PART_BOUNDS: studio_rug [P: (-1.85, -0.0075, -1.425), S: (3.7, 0.028, 2.85)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/studio_rug.scn
+STUDIO_PART_BOUNDS: studio_plant [P: (-0.545265, 0.0, -0.556049), S: (1.095202, 1.284574, 1.112098)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/studio_plant.scn
+STUDIO_PART_BOUNDS: analysis_board [P: (-1.85, -0.91, -0.05), S: (3.7, 1.82, 0.17)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/analysis_board.scn
+STUDIO_PART_BOUNDS: archive_terminal [P: (-0.47, 0.0, -0.385), S: (0.94, 1.923294, 0.807)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/archive_terminal.scn
+STUDIO_PART_BOUNDS: case_projector [P: (-0.95, 0.0, -0.47), S: (1.9, 1.642816, 1.54)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/case_projector.scn
+STUDIO_PART_BOUNDS: studio_sofa [P: (-1.4, 0.065, -0.573256), S: (2.8, 1.176351, 1.097676)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/studio_sofa.scn
+STUDIO_PART_BOUNDS: studio_coffee_table [P: (-0.45, -0.01, -0.96), S: (0.9, 0.828, 1.92)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/studio_coffee_table.scn
+STUDIO_PART_BOUNDS: studio_window_bookcase [P: (-0.76, 0.02, -0.34), S: (1.52, 0.895, 0.68)]
+EXPORTED_STUDIO_PART: res://scenes/studio/player_parts/studio_window_bookcase.scn
+PLAYER_STUDIO_BUILD_PARTS_OK

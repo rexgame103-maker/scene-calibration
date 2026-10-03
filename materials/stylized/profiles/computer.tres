@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="StylizedMaterialProfile" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/stylized_material_profile.gd" id="1"]
+[resource]
+script = ExtResource("1")
+profile_id = "computer"
+display_name = "老式电脑"
+role_ids = PackedStringArray("computer")
+priority = 30
+base_color = Color(0.329412, 0.368627, 0.368627, 1)
+secondary_color = Color(0.309804, 0.32549, 0.321569, 1)
+paint_highlight_color = Color(0.611765, 0.6, 0.545098, 1)
+stain_color = Color(0.247059, 0.254902, 0.254902, 1)
+wear_color = Color(0.815686, 0.788235, 0.717647, 1)
+brush_strength = 0.35
+patina_strength = 0.44
+stain_strength = 0.24
+wear_strength = 0.1
+roughness = 0.74
+specular = 0.32
+outline_color = Color(0.113725, 0.12549, 0.12549, 1)

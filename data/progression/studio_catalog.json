@@ -1,0 +1,19 @@
+{
+  "items": [
+    {"item_id":"basic_desk","furniture_kind":"studio_desk","display_name":"校准工作桌","description":"进入工作状态的必要设备。","price":260,"initially_unlocked":true,"color":"#A87452"},
+    {"item_id":"basic_chair","furniture_kind":"studio_chair","display_name":"工作椅","description":"进入工作状态的必要设备。","price":160,"initially_unlocked":true,"color":"#6C7896"},
+    {"item_id":"basic_computer","furniture_kind":"studio_computer","display_name":"校准终端","description":"接收委托、查看相册与使用商店。","price":420,"initially_unlocked":true,"color":"#739FB0"},
+    {"item_id":"basic_bookshelf","furniture_kind":"studio_bookshelf","display_name":"资料书架","description":"初始收纳家具。","price":230,"initially_unlocked":true,"color":"#92765D"},
+    {"item_id":"studio_lamp","furniture_kind":"studio_lamp","display_name":"落地灯","description":"调整工作室气氛。","price":90,"initially_unlocked":true,"color":"#E0B967"},
+    {"item_id":"studio_rug","furniture_kind":"studio_rug","display_name":"灰蓝地毯","description":"让小工作室不那么空。","price":120,"initially_unlocked":true,"color":"#65758E"},
+    {"item_id":"studio_plant","furniture_kind":"studio_plant","display_name":"耐阴绿植","description":"一盆很难被养死的植物。","price":110,"initially_unlocked":true,"color":"#6A9A70"},
+    {"item_id":"studio_sofa","furniture_kind":"studio_sofa","display_name":"皮质沙发","description":"完成工作后可以休息的会客区家具。","price":520,"initially_unlocked":true,"color":"#5C5946"},
+    {"item_id":"studio_coffee_table","furniture_kind":"studio_coffee_table","display_name":"工作室茶几","description":"与沙发搭配的低矮茶几。","price":260,"initially_unlocked":true,"color":"#71503B"},
+    {"item_id":"studio_window_bookcase","furniture_kind":"studio_window_bookcase","display_name":"窗边矮柜","description":"适合摆在窗边的低矮资料柜。","price":280,"initially_unlocked":true,"color":"#765D46"},
+    {"item_id":"analysis_board","furniture_kind":"analysis_board","display_name":"痕迹分析板","description":"摆放后获得技能：检视时显示当前物体尚未调查的痕迹数量。","price":480,"skill_id":"trace_counter","color":"#B46C58"},
+    {"item_id":"reference_lightbox","furniture_kind":"reference_lightbox","display_name":"照片灯箱","description":"摆放后获得技能：案件中可同时固定三张参考照片。","price":560,"skill_id":"extra_photo_slots","color":"#D1C07A"},
+    {"item_id":"archive_terminal","furniture_kind":"archive_terminal","display_name":"档案索引机","description":"摆放后获得技能：资料列表显示新资料来源。","price":760,"skill_id":"evidence_source_hint","color":"#6D88A7"},
+    {"item_id":"coffee_machine","furniture_kind":"coffee_machine","display_name":"脾气古怪的咖啡机","description":"偶尔会打印一句无用但有趣的话。","price":320,"skill_id":"coffee_break","color":"#7A4F43"},
+    {"item_id":"case_projector","furniture_kind":"case_projector","display_name":"案件回放投影仪","description":"摆放后获得技能：案件索引显示已完成现场的归档摘要。","price":980,"skill_id":"archive_summary","color":"#8A7CB1"}
+  ]
+}
