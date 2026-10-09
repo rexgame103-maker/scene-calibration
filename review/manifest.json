@@ -14305,43 +14305,76 @@
     },
     {
       "path": "design/presentation/05-code-architecture-audit.json",
-      "size": 120,
-      "sha256": "6b9aa49f931a643eb2499cd21ba5e5c0a45be921d13e899ed06ae16fd6337dfd",
+      "size": 121,
+      "sha256": "8d0d83c0134003527743f1f1b599a25ba4bd2ba4ae42562489fc6d022c9098d7",
       "extension": ".json",
       "lines": 10
     },
     {
       "path": "design/presentation/05-code-architecture-copy.txt",
-      "size": 2931,
-      "sha256": "d619ffdc875decc43da3642aaca7835738bc48b9398385a8d6d8404ddd04fbc9",
+      "size": 6250,
+      "sha256": "35a95eb0e2d6b22bdf20e688340bb2ad944676fe4f2c4c1245f38bcf3deaef1f",
       "extension": ".txt",
-      "lines": 99
+      "lines": 245
     },
     {
       "path": "design/presentation/05-code-architecture-sources.json",
-      "size": 6531,
-      "sha256": "8b84256b461675096d865115ccd3132dc1283e0295072f2f7678f53cfe9491c5",
+      "size": 14511,
+      "sha256": "00b689729acc8e448064883767d350280372682a0695a132153b09e27d0e08b2",
       "extension": ".json",
-      "lines": 156
+      "lines": 479
     },
     {
       "path": "design/presentation/05-code-architecture.png",
-      "size": 732649,
-      "sha256": "1b53a3545ff8f2b80e08842fc1584276c86a01dac6ed2a3f75e7b6f7c09d6e2e",
+      "size": 738343,
+      "sha256": "75f530dc3ab67ee0c93f226c08e0a3719f1cfa3bd0ed9ae5ee85a0475069d933",
       "extension": ".png"
     },
     {
       "path": "design/presentation/05-code-architecture.svg",
-      "size": 9437529,
-      "sha256": "d088f043c7d9a7af212e13da6799aba76b629301c38255299431c3c9c8821465",
+      "size": 9462557,
+      "sha256": "0afd8d443df4577d742b5a41d28fe207b71c092ed131c670572e5d333efab603",
+      "extension": ".svg"
+    },
+    {
+      "path": "design/presentation/06-gameplay-demonstration-audit.json",
+      "size": 120,
+      "sha256": "fb8bff75fb6a3f3c59fd487e23c535ed53f7270653907e3a942812fe5e75de7d",
+      "extension": ".json",
+      "lines": 10
+    },
+    {
+      "path": "design/presentation/06-gameplay-demonstration-copy.txt",
+      "size": 1215,
+      "sha256": "ea717347247f37afab8c32942a1c097df1b00132c60b2dd9bdb40ea6e3da237e",
+      "extension": ".txt",
+      "lines": 32
+    },
+    {
+      "path": "design/presentation/06-gameplay-demonstration-sources.json",
+      "size": 3270,
+      "sha256": "7f9925af52a2c2fb300e8e6fe3246f601e54c6bd8c45fe7afddc807a8bde4a1b",
+      "extension": ".json",
+      "lines": 81
+    },
+    {
+      "path": "design/presentation/06-gameplay-demonstration.png",
+      "size": 1017370,
+      "sha256": "d82b9e93675028da04c78a7401540854f3e8337eb936eacab24fed3bc194efc7",
+      "extension": ".png"
+    },
+    {
+      "path": "design/presentation/06-gameplay-demonstration.svg",
+      "size": 18248482,
+      "sha256": "e2e34fe8e842c5c435f819bda125eda87ab67deda13522f03591a6ecb1c149c0",
       "extension": ".svg"
     },
     {
       "path": "design/presentation/build_code_page.py",
-      "size": 8711,
-      "sha256": "98729f81c7ee2a3c8af21b1278c1612aa076e96ad1e6a9fedcf168e6d9291668",
+      "size": 9610,
+      "sha256": "f194438f57239a332532aa5ab35b8f20ad601524b38aebacf387dcc09ff94337",
       "extension": ".py",
-      "lines": 141
+      "lines": 123
     },
     {
       "path": "design/presentation/build_collage_page.py",
@@ -14349,6 +14382,13 @@
       "sha256": "37c83ca73ee81a3756e0d26e50b33bde0ebda6fe570d7422f1f85ffa6bd2b834",
       "extension": ".py",
       "lines": 296
+    },
+    {
+      "path": "design/presentation/build_gameplay_page.py",
+      "size": 6758,
+      "sha256": "18532a80bbe0f19791b37db6e8f28cd75331abd29941bf9f4497359467d8edcd",
+      "extension": ".py",
+      "lines": 89
     },
     {
       "path": "design/presentation/build_mechanics_page.py",
@@ -14400,6 +14440,86 @@
       "path": "design/presentation/code/screenshots/visible-clue.png",
       "size": 619650,
       "sha256": "920fa06b9b665a25a66545c8e88acb5940f2d714224065cacb7614871dec5b4a",
+      "extension": ".png"
+    },
+    {
+      "path": "design/presentation/gameplay/capture-manifest.json",
+      "size": 1981,
+      "sha256": "24c336edbe6742adc5d9f9216a5024896cfb7661afdcf755222c2f3361c4e427",
+      "extension": ".json",
+      "lines": 65
+    },
+    {
+      "path": "design/presentation/gameplay/capture_gameplay_sequence.gd",
+      "size": 9006,
+      "sha256": "336fef95f49e4a540242b69f518ca2e4cc1dbc93a3887ef32728adca8f469021",
+      "extension": ".gd",
+      "lines": 190
+    },
+    {
+      "path": "design/presentation/gameplay/screenshots/album.png",
+      "size": 215826,
+      "sha256": "a0d862bf81d843b1e6e8e96ba9d21a166ed0ae04c7814d3cd06e101e54611ce9",
+      "extension": ".png"
+    },
+    {
+      "path": "design/presentation/gameplay/screenshots/briefing.png",
+      "size": 1823611,
+      "sha256": "974b8184a8179de5fc6d0fddfc279cbf30fb5af515c38723f200e2d635bb6e99",
+      "extension": ".png"
+    },
+    {
+      "path": "design/presentation/gameplay/screenshots/calibration.png",
+      "size": 1279005,
+      "sha256": "f143e66882c3c9e7bf7243f0972b54af7c5a2fa3d0384d78ca53600176f0cdbb",
+      "extension": ".png"
+    },
+    {
+      "path": "design/presentation/gameplay/screenshots/evidence.png",
+      "size": 1332291,
+      "sha256": "6446a87d8451aeb93beae5ca5e210d793b8839ca5952847f88c5723e941ef7c5",
+      "extension": ".png"
+    },
+    {
+      "path": "design/presentation/gameplay/screenshots/inspection.png",
+      "size": 619669,
+      "sha256": "d1b7859995878d05d6ee3f1cb2aba921ab1b74e5fa190ac68dea46f199f32a5a",
+      "extension": ".png"
+    },
+    {
+      "path": "design/presentation/gameplay/screenshots/mail.png",
+      "size": 297872,
+      "sha256": "bdb8424ba7281509939ab0d79628de36d566fd37b11fcc5589e6ed6872581e17",
+      "extension": ".png"
+    },
+    {
+      "path": "design/presentation/gameplay/screenshots/office-restored-ui.png",
+      "size": 1057644,
+      "sha256": "0c6f75c76ff5be965bce5ef02013b1748971fdfe3dc123fcb005d161c85626d6",
+      "extension": ".png"
+    },
+    {
+      "path": "design/presentation/gameplay/screenshots/office-restored.png",
+      "size": 305393,
+      "sha256": "d1581b57765292b45d80696d4cd06fbb767e86b9c5761c6f126f180c6d16f022",
+      "extension": ".png"
+    },
+    {
+      "path": "design/presentation/gameplay/screenshots/placement.png",
+      "size": 1004543,
+      "sha256": "9dfdb39f0e0ed2fd31825067731ec97bf40a995bb4476534426b1dd240ca10a6",
+      "extension": ".png"
+    },
+    {
+      "path": "design/presentation/gameplay/screenshots/settlement.png",
+      "size": 1781797,
+      "sha256": "b43bd2b6280cb6a4146025e518fe9ed1abc87d4b55564c5cdf208cec1b072a20",
+      "extension": ".png"
+    },
+    {
+      "path": "design/presentation/gameplay/screenshots/studio.png",
+      "size": 1337611,
+      "sha256": "f7b0eb18bbfbce060323d70f7163dba42ec3e1a3f22a016627ff92a3f1c2c07f",
       "extension": ".png"
     },
     {
@@ -14543,10 +14663,10 @@
     },
     {
       "path": "design/presentation/README.md",
-      "size": 2220,
-      "sha256": "fe82ce8c0150cde2c2d7b9befd097a706019fa62f79a7302967612325e4ed129",
+      "size": 3071,
+      "sha256": "575f37e35a3d6e21aa8db28ba0ef1243f41b66f0c68e40eb0f66893022438544",
       "extension": ".md",
-      "lines": 19
+      "lines": 22
     },
     {
       "path": "design/presentation/references/collage/ASSET-CREDITS.txt",
@@ -14669,6 +14789,13 @@
       "lines": 70
     },
     {
+      "path": "design/presentation/render_gameplay.cjs",
+      "size": 4287,
+      "sha256": "77cab072351ff2433af8461912f34d8e32411be187d3e07e814e123ae97328ba",
+      "extension": ".cjs",
+      "lines": 72
+    },
+    {
       "path": "design/presentation/render_mechanics.cjs",
       "size": 4283,
       "sha256": "2878d24dc37d3c172bf8507fa49c2baf227127c31bade596a2e68fdbe798c14f",
@@ -14785,10 +14912,10 @@
     },
     {
       "path": "docs/CODE_REVIEW.md",
-      "size": 4832,
-      "sha256": "850182db9dfdc6c7eff828a7e22ce76156685a1b66cf574ec8125006d05a850c",
+      "size": 5937,
+      "sha256": "f7156bc336af5bf404c2a9a90b1db3daf03c2a673ba9615d3a806938fcf1ab6c",
       "extension": ".md",
-      "lines": 51
+      "lines": 53
     },
     {
       "path": "docs/DEVELOPMENT_NOTES.md",
@@ -14799,8 +14926,8 @@
     },
     {
       "path": "docs/SOURCE_GUIDE.md",
-      "size": 6196,
-      "sha256": "375e18eb438aad1d600731dc9d812dc8eb2defa50495cc99366572ceb49d14b6",
+      "size": 6296,
+      "sha256": "6800692f3bb2bf649ce3ff31ac10977ebb99cf14f932a1f6fe86f24fb492f39f",
       "extension": ".md",
       "lines": 87
     },

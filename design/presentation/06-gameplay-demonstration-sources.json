@@ -1,0 +1,81 @@
+{
+  "page": {
+    "width": 1920,
+    "height": 1080,
+    "language": "English",
+    "text": "Editable native SVG",
+    "style": "Lightly aged newspaper"
+  },
+  "images": [
+    {
+      "image": "gameplay/screenshots/mail.png",
+      "sha256": "bdb8424ba7281509939ab0d79628de36d566fd37b11fcc5589e6ed6872581e17",
+      "source": "Actual Godot 4.7.2 Windows OpenGL runtime",
+      "crop_viewbox": null,
+      "rotation_degrees": -1.6
+    },
+    {
+      "image": "gameplay/screenshots/evidence.png",
+      "sha256": "6446a87d8451aeb93beae5ca5e210d793b8839ca5952847f88c5723e941ef7c5",
+      "source": "Actual Godot 4.7.2 Windows OpenGL runtime",
+      "crop_viewbox": null,
+      "rotation_degrees": 1.3
+    },
+    {
+      "image": "gameplay/screenshots/placement.png",
+      "sha256": "9dfdb39f0e0ed2fd31825067731ec97bf40a995bb4476534426b1dd240ca10a6",
+      "source": "Actual Godot 4.7.2 Windows OpenGL runtime",
+      "crop_viewbox": null,
+      "rotation_degrees": 1.1
+    },
+    {
+      "image": "gameplay/screenshots/inspection.png",
+      "sha256": "d1b7859995878d05d6ee3f1cb2aba921ab1b74e5fa190ac68dea46f199f32a5a",
+      "source": "Actual Godot 4.7.2 Windows OpenGL runtime",
+      "crop_viewbox": null,
+      "rotation_degrees": -1.5
+    },
+    {
+      "image": "gameplay/screenshots/office-restored.png",
+      "sha256": "d1581b57765292b45d80696d4cd06fbb767e86b9c5761c6f126f180c6d16f022",
+      "source": "Actual Godot 4.7.2 Windows OpenGL runtime",
+      "crop_viewbox": "100 105 1500 665.86",
+      "rotation_degrees": -0.5
+    },
+    {
+      "image": "gameplay/screenshots/settlement.png",
+      "sha256": "b43bd2b6280cb6a4146025e518fe9ed1abc87d4b55564c5cdf208cec1b072a20",
+      "source": "Actual Godot 4.7.2 Windows OpenGL runtime",
+      "crop_viewbox": null,
+      "rotation_degrees": -0.8
+    },
+    {
+      "image": "gameplay/screenshots/album.png",
+      "sha256": "a0d862bf81d843b1e6e8e96ba9d21a166ed0ae04c7814d3cd06e101e54611ce9",
+      "source": "Actual Godot 4.7.2 Windows OpenGL runtime",
+      "crop_viewbox": null,
+      "rotation_degrees": 1
+    },
+    {
+      "image": "gameplay/screenshots/calibration.png",
+      "sha256": "f143e66882c3c9e7bf7243f0972b54af7c5a2fa3d0384d78ca53600176f0cdbb",
+      "source": "Actual Godot 4.7.2 Windows OpenGL runtime",
+      "crop_viewbox": null,
+      "rotation_degrees": -1.2
+    }
+  ],
+  "capture_script": "gameplay/capture_gameplay_sequence.gd",
+  "capture_manifest": "gameplay/capture-manifest.json",
+  "method": "Fresh runtime images in an isolated user profile. Existing debug helpers stage furniture and lighting; placement bounds, camera visibility, final reconstruction, submission, photograph archive and studio return are checked against actual game code. The large office frame hides only the HUD. Crop and slight rotation are SVG layout operations, not generated or repainted scenes.",
+  "flow": {
+    "office": [
+      "Read the assignment",
+      "Cross-check the record",
+      "Place and orient",
+      "Inspect what is visible",
+      "Submit the reconstruction",
+      "Archive in the studio"
+    ],
+    "restoration_room": "A separately labelled second case adds light, shadow and reflection conditions."
+  }
+}

@@ -1,99 +1,245 @@
 SCENE CALIBRATION / DESIGN DOSSIER
-NO. 05 / CODE & ARCHITECTURE
-THE SYSTEM BEHIND THE SCENE
-From a photograph to a restored room: the code that makes spatial deduction playable.
-PUBLIC REPOSITORY / COMPLETE GODOT PROJECT
+NO. 05 / SOURCE & IMPLEMENTATION
+INSIDE THE INVESTIGATION
+Six connected systems. One evidence-driven reconstruction loop.
+PUBLIC SOURCE  ↗
 github.com/rexgame103-maker/scene-calibration
-SOURCE GUIDE  ↗
-Scenes / scripts / case data / shaders / assets / offline source browser
-REVIEW ROUTE
-README → Code Review → Source Files
-Godot 4.7 / GDScript / Player studio + two cases
+CODE REVIEW / DIRECTORY MAP  ↗
+01 / OBSERVE
+Camera + surface + occlusion
+02 / UNLOCK
+Evidence → clues → furniture
+03 / RECONSTRUCT
+Zones + orientation + lighting
+04 / OPERATE
+Desktop + application windows
+05 / ARCHIVE
+Persistent state + saved photos
 01
-Evidence becomes inventory
-OFFICE / The first photograph reveals three objects.
-view_evidence()
-197
-var item := evidence[evidence_id] as Dictionary
-198
-item["is_viewed"] = true
-199
-evidence[evidence_id] = item
-200
-for clue_value: Variant in item.get("clue_ids", []):
-201
-    var clue_id := String(clue_value)
+Seeing is a condition
+A clue must face the camera and remain unoccluded. Both its glow and the click use this same gate.
+scene_clue_point.gd / is_visible_from_camera()
 202
-    if discover_clue(clue_id):
+func is_visible_from_camera() -> bool:
 203
-        discovered_ids.append(clue_id)
+    var camera := get_viewport().get_camera_3d()
 204
-evidence_viewed.emit(item.duplicate(true))
+    if not is_instance_valid(camera) or not camera.is_position_in_frustum(global_position):
 205
-return discovered_ids
-case_manager.gd / L197–205
-Viewing a photograph records its state and discovers its linked clues. The unlock evaluator then checks those clues and releases the matching furniture into the inventory.
+        return false
+206
+    var screen_position := camera.unproject_position(global_position)
+207
+    var origin := camera.project_ray_origin(screen_position)
+208
+    var toward_camera := (origin - global_position).normalized()
+209
+    if not surface_normal.is_zero_approx():
+210
+        var normal := (global_basis.inverse().transposed() * surface_normal).normalized()
+211
+        if normal.dot(toward_camera) < minimum_view_dot:
+212
+            return false
+…
+… omitted source lines …
+215
+    var endpoint := global_position + toward_camera * 0.015
+216
+    for instance_id in RenderingServer.instances_cull_ray(origin, endpoint,
+↳
+    get_world_3d().scenario):
+217
+        var mesh_node := instance_from_id(instance_id) as MeshInstance3D
+…
+… omitted source lines …
+230
+        var local_from := mesh_node.to_local(origin)
+231
+        var local_to := mesh_node.to_local(endpoint)
+232
+        if not triangles.intersect_segment(local_from, local_to).is_empty():
+233
+            return false
+234
+    return true
+scene_clue_point.gd / 202–212, 215–217, 230–234
+Surface normal → facing test → triangle intersection → valid investigation.
 02
-Observe before you investigate
-OFFICE / Rotate to expose the worn side of the desk.
-_is_runtime_visible()
-194
-return (
-195
-    is_unlocked
-196
-    and not (is_discovered and
-↳
-    hide_after_discovered)
-197
-    and (not show_only_during_inspection or
-↳
-    _inspection_active)
-198
-    and is_visible_from_camera()
-199
-)
-scene_clue_point.gd / L194–199
-The same visibility gate controls both the marker and investigation. Camera frustum, surface angle and rendered-mesh occlusion are checked, so a hidden scratch cannot be clicked through an object.
+Evidence releases furniture
+JSON requirements support all / any clue rules. Unlock once; notify the inventory through a signal.
+case_manager.gd / _evaluate_furniture_unlocks()
+254
+for furniture_id_value: Variant in furniture.keys():
+255
+    var furniture_id := String(furniture_id_value)
+256
+    var item := furniture[furniture_id] as Dictionary
+…
+… omitted source lines …
+259
+    var required_clues: Variant = item.get("required_clues", [])
+260
+    var unlock_mode := String(item.get("unlock_mode", "all"))
+261
+    if not _requirements_met(required_clues, unlock_mode):
+262
+        continue
+263
+    item["is_unlocked"] = true
+264
+    furniture[furniture_id] = item
+265
+    furniture_unlocked.emit(item.duplicate(true))
+case_manager.gd / 254–256, 259–265
 03
-Reconstruct the relationships
-RESTORATION / Furniture placement + light calibration.
-contains_furniture()
-97
-var local_position :=
+A step needs proof
+A correct layout is only part of the answer. Required clues and lighting must agree.
+reconstruction_manager.gd / is_step_satisfied()
+105
+func is_step_satisfied(step_id: String) -> bool:
+106
+    if not reconstruction_steps.has(step_id):
+107
+        return false
+108
+    var step := reconstruction_steps[step_id] as Dictionary
+109
+    if not are_conditions_satisfied(step.get("zone_ids", [])):
+110
+        return false
+111
+    var required_clues: Array = step.get("required_clue_ids", [])
+112
+    if not required_clues.is_empty():
+113
+        var case_manager := _get_case_manager()
+114
+        if not is_instance_valid(case_manager) or not
 ↳
-    to_local(furniture_node.global_position)
-98
-var half_size := zone_size * 0.5
-99
-return (
-100
-    absf(local_position.x) <= half_size.x
-101
-    and absf(local_position.y) <= half_size.y
-102
-    and absf(local_position.z) <= half_size.z
-103
-)
-reconstruction_zone.gd / L97–104
-Positions are evaluated in each zone’s local space; orientation is checked separately. A step also requires its clues and lighting conditions, including lamp settings, shadow projection and reflection.
+    bool(case_manager.call("are_clues_discovered", required_clues)):
+115
+            return false
+116
+    return
+↳
+    _are_lighting_conditions_satisfied(step.get("lighting_conditions",
+↳
+    []))
+reconstruction_manager.gd / 105–116
 04
-A desktop with real windows
-STUDIO / Mail runs inside an independent application window.
-toggle_maximized()
+Light becomes evidence
+Check the lamp’s aim, then estimate its projected shadow.
+_is_shadow_projection_condition_satisfied()
+261
+var light_origin := light_device.get_light_origin()
+262
+var caster_position := caster.global_position
+263
+var toward_caster := (caster_position - light_origin).normalized()
+264
+if light_device.get_light_direction().dot(toward_caster) <
+↳
+    float(condition.get("minimum_aim_dot", 0.90)):
+265
+    return false
+266
+var horizontal_distance := Vector2(
+267
+    caster_position.x - light_origin.x,
+268
+    caster_position.z - light_origin.z
+269
+).length()
+270
+var vertical_distance := maxf(0.05, light_origin.y - caster_position.y)
+271
+var caster_height := maxf(0.0, caster_position.y -
+↳
+    surface.global_position.y)
+272
+var approximate_shadow_length := caster_height * horizontal_distance /
+↳
+    vertical_distance
+273
+return _value_in_range(approximate_shadow_length,
+↳
+    condition.get("length_range", [0.05, 1.5]) as Array)
+reconstruction_manager.gd / 261–273
+05
+Windows that work
+Store normal bounds. Maximize, restore, drag or minimize. Each app retains its own state.
+terminal_app_window.gd
+72
+func toggle_maximized() -> void:
 73
-_dragging = false
+    _dragging = false
 74
-if not is_maximized:
+    if not is_maximized:
 75
-    normal_rect = Rect2(position, size)
+        normal_rect = Rect2(position, size)
 76
-is_maximized = not is_maximized
+    is_maximized = not is_maximized
 77
-fit_to_workspace()
+    fit_to_workspace()
 78
-maximized_changed.emit(is_maximized)
-terminal_app_window.gd / L73–79
-Maximize stores the original bounds and restore returns to them. Dragging, minimizing, taskbar activation and closing retain the correct app state; reading a message clears its unread dot.
-ACTUAL SOURCE EXCERPTS / IN-GAME CAPTURES / SIX TARGETED SMOKE CHECKS PASSED
-PUBLIC SOURCE / 09 OCT 2026 / 05
+    maximized_changed.emit(is_maximized)
+…
+… omitted source lines …
+81
+func fit_to_workspace() -> void:
+82
+    var workspace_size: Vector2 = get_parent().size
+83
+    if is_maximized:
+84
+        position = Vector2.ZERO
+85
+        size = workspace_size
+86
+    else:
+87
+        size = normal_rect.size.min(workspace_size)
+88
+        position =
+↳
+    _clamp_position(normal_rect.position)
+terminal_app_window.gd / 72–78, 81–88
+06
+State survives a session
+Reading updates mail; JSON preserves the profile.
+175
+func mark_mail_read(mail_id: String) -> void:
+176
+    var state := mail_state.get(mail_id, {}) as
+↳
+    Dictionary
+177
+    state["is_read"] = true
+178
+    mail_state[mail_id] = state
+179
+    mail_changed.emit()
+180
+    save_profile()
+…
+… omitted source lines …
+103
+    var file := FileAccess.open(SAVE_PATH,
+↳
+    FileAccess.WRITE)
+104
+    if file == null:
+105
+        push_error("Unable to write player profile")
+106
+        return false
+107
+    file.store_string(JSON.stringify(payload, "\t",
+↳
+    false))
+108
+    return true
+player_profile.gd / 175–180, 103–108
+ACTUAL GDSCRIPT / 81 SELECTED SOURCE LINES / … MARKS GAPS / ↳ MARKS VISUAL WRAP
+GODOT CAPTURES / EDITABLE VECTOR TEXT / 05

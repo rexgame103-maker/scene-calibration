@@ -84,4 +84,4 @@ flowchart LR
 
 源码交付不包含 `.godot/` 导入缓存、Git 内部目录、`Backups/` 历史备份或 `deliveries/` 生成的压缩包。模型、图片、导入设置和 `.uid` 保留，Godot 首次打开时会重新建立缓存。
 
-英文功能索引见 [CODE_REVIEW.md](CODE_REVIEW.md)。五页展示文件位于 [design/presentation/](../design/presentation/README.md)，代码页的摘录清单记录实际源文件、行号与截图来源。
+英文功能索引见 [CODE_REVIEW.md](CODE_REVIEW.md)。六页展示文件位于 [design/presentation/](../design/presentation/README.md)，代码页包含六个系统与 81 行源码摘录；最后一页用实机截图展示接案到归档的流程。来源清单记录实际源文件、行号与截图方法。

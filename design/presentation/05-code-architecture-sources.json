@@ -6,151 +6,474 @@
     "text": "editable native SVG"
   },
   "repository": "https://github.com/rexgame103-maker/scene-calibration",
-  "code_reference": "main branch line links; source hashes below identify the represented files",
-  "capture_script": "code/capture_code_features.gd",
-  "capture_method": "Isolated Godot project/user directory, English, 1600×900. Existing debug placement/calibration helpers stage the cases. The office clue passes the real camera visibility gate; the restoration case passes its final reconstruction conditions. No game scene files were edited.",
+  "systems": 6,
+  "selected_source_lines": 81,
+  "capture_script": "gameplay/capture_gameplay_sequence.gd",
+  "code_reference": "Current source; original line numbers, hashes and explicit gaps recorded below. Links target GitHub main.",
   "sources": [
     {
-      "image": "code/screenshots/evidence.png",
-      "sha256": "6446a87d8451aeb93beae5ca5e210d793b8839ca5952847f88c5723e941ef7c5",
-      "origin": "Godot 4.7.2 runtime screenshot",
-      "crop_viewbox": null
-    },
-    {
-      "file": "scripts/case_manager.gd",
-      "sha256": "c99ce2a68e7b56c3cd829de66102f76b3c50ee1c07157334f6eb148e5b856bac",
-      "lines": [
-        197,
-        205
-      ],
-      "original_lines": [
-        "\tvar item := evidence[evidence_id] as Dictionary",
-        "\titem[\"is_viewed\"] = true",
-        "\tevidence[evidence_id] = item",
-        "\tfor clue_value: Variant in item.get(\"clue_ids\", []):",
-        "\t\tvar clue_id := String(clue_value)",
-        "\t\tif discover_clue(clue_id):",
-        "\t\t\tdiscovered_ids.append(clue_id)",
-        "\tevidence_viewed.emit(item.duplicate(true))",
-        "\treturn discovered_ids"
-      ],
-      "display_lines": [
-        "var item := evidence[evidence_id] as Dictionary",
-        "item[\"is_viewed\"] = true",
-        "evidence[evidence_id] = item",
-        "for clue_value: Variant in item.get(\"clue_ids\", []):",
-        "    var clue_id := String(clue_value)",
-        "    if discover_clue(clue_id):",
-        "        discovered_ids.append(clue_id)",
-        "evidence_viewed.emit(item.duplicate(true))",
-        "return discovered_ids"
-      ],
-      "display_normalization": "Tabs expanded to four spaces; common indentation removed. Long lines visually wrap, marked by an arrow instead of a new source line number.",
-      "url": "https://github.com/rexgame103-maker/scene-calibration/blob/main/scripts/case_manager.gd#L197-L205",
-      "font_size": 15
-    },
-    {
-      "image": "code/screenshots/visible-clue.png",
-      "sha256": "920fa06b9b665a25a66545c8e88acb5940f2d714224065cacb7614871dec5b4a",
-      "origin": "Godot 4.7.2 runtime screenshot",
+      "image": "gameplay/screenshots/inspection.png",
+      "sha256": "d1b7859995878d05d6ee3f1cb2aba921ab1b74e5fa190ac68dea46f199f32a5a",
+      "origin": "Fresh Godot runtime capture",
       "crop_viewbox": "245 250 1100 618.75"
     },
     {
       "file": "scripts/scene_clue_point.gd",
       "sha256": "2ee6f3642e15fb849310b5696cfb5737ce1377c5657e009b164a10b9a2557b35",
-      "lines": [
-        194,
-        199
+      "ranges": [
+        [
+          202,
+          212
+        ],
+        [
+          215,
+          217
+        ],
+        [
+          230,
+          234
+        ]
       ],
       "original_lines": [
-        "\treturn (",
-        "\t\tis_unlocked",
-        "\t\tand not (is_discovered and hide_after_discovered)",
-        "\t\tand (not show_only_during_inspection or _inspection_active)",
-        "\t\tand is_visible_from_camera()",
-        "\t)"
+        {
+          "line": 202,
+          "text": "func is_visible_from_camera() -> bool:"
+        },
+        {
+          "line": 203,
+          "text": "\tvar camera := get_viewport().get_camera_3d()"
+        },
+        {
+          "line": 204,
+          "text": "\tif not is_instance_valid(camera) or not camera.is_position_in_frustum(global_position):"
+        },
+        {
+          "line": 205,
+          "text": "\t\treturn false"
+        },
+        {
+          "line": 206,
+          "text": "\tvar screen_position := camera.unproject_position(global_position)"
+        },
+        {
+          "line": 207,
+          "text": "\tvar origin := camera.project_ray_origin(screen_position)"
+        },
+        {
+          "line": 208,
+          "text": "\tvar toward_camera := (origin - global_position).normalized()"
+        },
+        {
+          "line": 209,
+          "text": "\tif not surface_normal.is_zero_approx():"
+        },
+        {
+          "line": 210,
+          "text": "\t\tvar normal := (global_basis.inverse().transposed() * surface_normal).normalized()"
+        },
+        {
+          "line": 211,
+          "text": "\t\tif normal.dot(toward_camera) < minimum_view_dot:"
+        },
+        {
+          "line": 212,
+          "text": "\t\t\treturn false"
+        },
+        {
+          "line": 215,
+          "text": "\tvar endpoint := global_position + toward_camera * 0.015"
+        },
+        {
+          "line": 216,
+          "text": "\tfor instance_id in RenderingServer.instances_cull_ray(origin, endpoint, get_world_3d().scenario):"
+        },
+        {
+          "line": 217,
+          "text": "\t\tvar mesh_node := instance_from_id(instance_id) as MeshInstance3D"
+        },
+        {
+          "line": 230,
+          "text": "\t\tvar local_from := mesh_node.to_local(origin)"
+        },
+        {
+          "line": 231,
+          "text": "\t\tvar local_to := mesh_node.to_local(endpoint)"
+        },
+        {
+          "line": 232,
+          "text": "\t\tif not triangles.intersect_segment(local_from, local_to).is_empty():"
+        },
+        {
+          "line": 233,
+          "text": "\t\t\treturn false"
+        },
+        {
+          "line": 234,
+          "text": "\treturn true"
+        }
       ],
-      "display_lines": [
-        "return (",
-        "    is_unlocked",
-        "    and not (is_discovered and hide_after_discovered)",
-        "    and (not show_only_during_inspection or _inspection_active)",
-        "    and is_visible_from_camera()",
-        ")"
-      ],
-      "display_normalization": "Tabs expanded to four spaces; common indentation removed. Long lines visually wrap, marked by an arrow instead of a new source line number.",
-      "url": "https://github.com/rexgame103-maker/scene-calibration/blob/main/scripts/scene_clue_point.gd#L194-L199",
-      "font_size": 14
+      "url": "https://github.com/rexgame103-maker/scene-calibration/blob/main/scripts/scene_clue_point.gd#L202-L234",
+      "display": "Tabs expanded to four spaces; common indentation removed. Explicit gaps and continuation arrows preserve original source line numbering.",
+      "font_size": 13,
+      "rendered_rows": 22
     },
     {
-      "image": "code/screenshots/reconstruction.png",
-      "sha256": "a4da579fe7aee9fa0d10b5d4bed09d699af6bdb2458572291e2e8c4fc02cd63b",
-      "origin": "Godot 4.7.2 runtime screenshot",
+      "image": "gameplay/screenshots/evidence.png",
+      "sha256": "6446a87d8451aeb93beae5ca5e210d793b8839ca5952847f88c5723e941ef7c5",
+      "origin": "Fresh Godot runtime capture",
       "crop_viewbox": null
     },
     {
-      "file": "scripts/reconstruction_zone.gd",
-      "sha256": "cf8e9b9860f928463cbaef497bc9edc302e0b38ef420f9ad223d08cda75b3046",
-      "lines": [
-        97,
-        104
+      "file": "scripts/case_manager.gd",
+      "sha256": "c99ce2a68e7b56c3cd829de66102f76b3c50ee1c07157334f6eb148e5b856bac",
+      "ranges": [
+        [
+          254,
+          256
+        ],
+        [
+          259,
+          265
+        ]
       ],
       "original_lines": [
-        "\tvar local_position := to_local(furniture_node.global_position)",
-        "\tvar half_size := zone_size * 0.5",
-        "\treturn (",
-        "\t\tabsf(local_position.x) <= half_size.x",
-        "\t\tand absf(local_position.y) <= half_size.y",
-        "\t\tand absf(local_position.z) <= half_size.z",
-        "\t)",
-        ""
+        {
+          "line": 254,
+          "text": "\tfor furniture_id_value: Variant in furniture.keys():"
+        },
+        {
+          "line": 255,
+          "text": "\t\tvar furniture_id := String(furniture_id_value)"
+        },
+        {
+          "line": 256,
+          "text": "\t\tvar item := furniture[furniture_id] as Dictionary"
+        },
+        {
+          "line": 259,
+          "text": "\t\tvar required_clues: Variant = item.get(\"required_clues\", [])"
+        },
+        {
+          "line": 260,
+          "text": "\t\tvar unlock_mode := String(item.get(\"unlock_mode\", \"all\"))"
+        },
+        {
+          "line": 261,
+          "text": "\t\tif not _requirements_met(required_clues, unlock_mode):"
+        },
+        {
+          "line": 262,
+          "text": "\t\t\tcontinue"
+        },
+        {
+          "line": 263,
+          "text": "\t\titem[\"is_unlocked\"] = true"
+        },
+        {
+          "line": 264,
+          "text": "\t\tfurniture[furniture_id] = item"
+        },
+        {
+          "line": 265,
+          "text": "\t\tfurniture_unlocked.emit(item.duplicate(true))"
+        }
       ],
-      "display_lines": [
-        "var local_position := to_local(furniture_node.global_position)",
-        "var half_size := zone_size * 0.5",
-        "return (",
-        "    absf(local_position.x) <= half_size.x",
-        "    and absf(local_position.y) <= half_size.y",
-        "    and absf(local_position.z) <= half_size.z",
-        ")"
-      ],
-      "display_normalization": "Tabs expanded to four spaces; common indentation removed. Long lines visually wrap, marked by an arrow instead of a new source line number.",
-      "url": "https://github.com/rexgame103-maker/scene-calibration/blob/main/scripts/reconstruction_zone.gd#L97-L104",
-      "font_size": 14
+      "url": "https://github.com/rexgame103-maker/scene-calibration/blob/main/scripts/case_manager.gd#L254-L265",
+      "display": "Tabs expanded to four spaces; common indentation removed. Explicit gaps and continuation arrows preserve original source line numbering.",
+      "font_size": 14,
+      "rendered_rows": 11
     },
     {
-      "image": "code/screenshots/desktop.png",
-      "sha256": "9adfd76d846e55c564e5e91abfd0851e2cd55a2cb7c8bb2da87c34e1f403fc1f",
-      "origin": "Godot 4.7.2 runtime screenshot",
+      "image": "gameplay/screenshots/calibration.png",
+      "sha256": "f143e66882c3c9e7bf7243f0972b54af7c5a2fa3d0384d78ca53600176f0cdbb",
+      "origin": "Fresh Godot runtime capture",
+      "crop_viewbox": null
+    },
+    {
+      "file": "scripts/reconstruction_manager.gd",
+      "sha256": "543fb93f1d08787a96f1eb11f9d4c98a8fe39ce10988bb5265c1b970a5267d3b",
+      "ranges": [
+        [
+          105,
+          116
+        ]
+      ],
+      "original_lines": [
+        {
+          "line": 105,
+          "text": "func is_step_satisfied(step_id: String) -> bool:"
+        },
+        {
+          "line": 106,
+          "text": "\tif not reconstruction_steps.has(step_id):"
+        },
+        {
+          "line": 107,
+          "text": "\t\treturn false"
+        },
+        {
+          "line": 108,
+          "text": "\tvar step := reconstruction_steps[step_id] as Dictionary"
+        },
+        {
+          "line": 109,
+          "text": "\tif not are_conditions_satisfied(step.get(\"zone_ids\", [])):"
+        },
+        {
+          "line": 110,
+          "text": "\t\treturn false"
+        },
+        {
+          "line": 111,
+          "text": "\tvar required_clues: Array = step.get(\"required_clue_ids\", [])"
+        },
+        {
+          "line": 112,
+          "text": "\tif not required_clues.is_empty():"
+        },
+        {
+          "line": 113,
+          "text": "\t\tvar case_manager := _get_case_manager()"
+        },
+        {
+          "line": 114,
+          "text": "\t\tif not is_instance_valid(case_manager) or not bool(case_manager.call(\"are_clues_discovered\", required_clues)):"
+        },
+        {
+          "line": 115,
+          "text": "\t\t\treturn false"
+        },
+        {
+          "line": 116,
+          "text": "\treturn _are_lighting_conditions_satisfied(step.get(\"lighting_conditions\", []))"
+        }
+      ],
+      "url": "https://github.com/rexgame103-maker/scene-calibration/blob/main/scripts/reconstruction_manager.gd#L105-L116",
+      "display": "Tabs expanded to four spaces; common indentation removed. Explicit gaps and continuation arrows preserve original source line numbering.",
+      "font_size": 13,
+      "rendered_rows": 15
+    },
+    {
+      "file": "scripts/reconstruction_manager.gd",
+      "sha256": "543fb93f1d08787a96f1eb11f9d4c98a8fe39ce10988bb5265c1b970a5267d3b",
+      "ranges": [
+        [
+          261,
+          273
+        ]
+      ],
+      "original_lines": [
+        {
+          "line": 261,
+          "text": "\tvar light_origin := light_device.get_light_origin()"
+        },
+        {
+          "line": 262,
+          "text": "\tvar caster_position := caster.global_position"
+        },
+        {
+          "line": 263,
+          "text": "\tvar toward_caster := (caster_position - light_origin).normalized()"
+        },
+        {
+          "line": 264,
+          "text": "\tif light_device.get_light_direction().dot(toward_caster) < float(condition.get(\"minimum_aim_dot\", 0.90)):"
+        },
+        {
+          "line": 265,
+          "text": "\t\treturn false"
+        },
+        {
+          "line": 266,
+          "text": "\tvar horizontal_distance := Vector2("
+        },
+        {
+          "line": 267,
+          "text": "\t\tcaster_position.x - light_origin.x,"
+        },
+        {
+          "line": 268,
+          "text": "\t\tcaster_position.z - light_origin.z"
+        },
+        {
+          "line": 269,
+          "text": "\t).length()"
+        },
+        {
+          "line": 270,
+          "text": "\tvar vertical_distance := maxf(0.05, light_origin.y - caster_position.y)"
+        },
+        {
+          "line": 271,
+          "text": "\tvar caster_height := maxf(0.0, caster_position.y - surface.global_position.y)"
+        },
+        {
+          "line": 272,
+          "text": "\tvar approximate_shadow_length := caster_height * horizontal_distance / vertical_distance"
+        },
+        {
+          "line": 273,
+          "text": "\treturn _value_in_range(approximate_shadow_length, condition.get(\"length_range\", [0.05, 1.5]) as Array)"
+        }
+      ],
+      "url": "https://github.com/rexgame103-maker/scene-calibration/blob/main/scripts/reconstruction_manager.gd#L261-L273",
+      "display": "Tabs expanded to four spaces; common indentation removed. Explicit gaps and continuation arrows preserve original source line numbering.",
+      "font_size": 13,
+      "rendered_rows": 17
+    },
+    {
+      "image": "gameplay/screenshots/mail.png",
+      "sha256": "bdb8424ba7281509939ab0d79628de36d566fd37b11fcc5589e6ed6872581e17",
+      "origin": "Fresh Godot runtime capture",
       "crop_viewbox": null
     },
     {
       "file": "scripts/terminal_app_window.gd",
       "sha256": "06f58d832e6b7497c082df5fd589812e3fe2c654011455c77ba7e0a82389f0bd",
-      "lines": [
-        73,
-        79
+      "ranges": [
+        [
+          72,
+          78
+        ],
+        [
+          81,
+          88
+        ]
       ],
       "original_lines": [
-        "\t_dragging = false",
-        "\tif not is_maximized:",
-        "\t\tnormal_rect = Rect2(position, size)",
-        "\tis_maximized = not is_maximized",
-        "\tfit_to_workspace()",
-        "\tmaximized_changed.emit(is_maximized)",
-        ""
+        {
+          "line": 72,
+          "text": "func toggle_maximized() -> void:"
+        },
+        {
+          "line": 73,
+          "text": "\t_dragging = false"
+        },
+        {
+          "line": 74,
+          "text": "\tif not is_maximized:"
+        },
+        {
+          "line": 75,
+          "text": "\t\tnormal_rect = Rect2(position, size)"
+        },
+        {
+          "line": 76,
+          "text": "\tis_maximized = not is_maximized"
+        },
+        {
+          "line": 77,
+          "text": "\tfit_to_workspace()"
+        },
+        {
+          "line": 78,
+          "text": "\tmaximized_changed.emit(is_maximized)"
+        },
+        {
+          "line": 81,
+          "text": "func fit_to_workspace() -> void:"
+        },
+        {
+          "line": 82,
+          "text": "\tvar workspace_size: Vector2 = get_parent().size"
+        },
+        {
+          "line": 83,
+          "text": "\tif is_maximized:"
+        },
+        {
+          "line": 84,
+          "text": "\t\tposition = Vector2.ZERO"
+        },
+        {
+          "line": 85,
+          "text": "\t\tsize = workspace_size"
+        },
+        {
+          "line": 86,
+          "text": "\telse:"
+        },
+        {
+          "line": 87,
+          "text": "\t\tsize = normal_rect.size.min(workspace_size)"
+        },
+        {
+          "line": 88,
+          "text": "\t\tposition = _clamp_position(normal_rect.position)"
+        }
       ],
-      "display_lines": [
-        "_dragging = false",
-        "if not is_maximized:",
-        "    normal_rect = Rect2(position, size)",
-        "is_maximized = not is_maximized",
-        "fit_to_workspace()",
-        "maximized_changed.emit(is_maximized)"
+      "url": "https://github.com/rexgame103-maker/scene-calibration/blob/main/scripts/terminal_app_window.gd#L72-L88",
+      "display": "Tabs expanded to four spaces; common indentation removed. Explicit gaps and continuation arrows preserve original source line numbering.",
+      "font_size": 13,
+      "rendered_rows": 17
+    },
+    {
+      "file": "scripts/player_profile.gd",
+      "sha256": "3aa9ca7a7d82d95af66c3bb2d32a25432f98515d8111022dccc3e1406e405f6d",
+      "ranges": [
+        [
+          175,
+          180
+        ],
+        [
+          103,
+          108
+        ]
       ],
-      "display_normalization": "Tabs expanded to four spaces; common indentation removed. Long lines visually wrap, marked by an arrow instead of a new source line number.",
-      "url": "https://github.com/rexgame103-maker/scene-calibration/blob/main/scripts/terminal_app_window.gd#L73-L79",
-      "font_size": 15
+      "original_lines": [
+        {
+          "line": 175,
+          "text": "func mark_mail_read(mail_id: String) -> void:"
+        },
+        {
+          "line": 176,
+          "text": "\tvar state := mail_state.get(mail_id, {}) as Dictionary"
+        },
+        {
+          "line": 177,
+          "text": "\tstate[\"is_read\"] = true"
+        },
+        {
+          "line": 178,
+          "text": "\tmail_state[mail_id] = state"
+        },
+        {
+          "line": 179,
+          "text": "\tmail_changed.emit()"
+        },
+        {
+          "line": 180,
+          "text": "\tsave_profile()"
+        },
+        {
+          "line": 103,
+          "text": "\tvar file := FileAccess.open(SAVE_PATH, FileAccess.WRITE)"
+        },
+        {
+          "line": 104,
+          "text": "\tif file == null:"
+        },
+        {
+          "line": 105,
+          "text": "\t\tpush_error(\"Unable to write player profile\")"
+        },
+        {
+          "line": 106,
+          "text": "\t\treturn false"
+        },
+        {
+          "line": 107,
+          "text": "\tfile.store_string(JSON.stringify(payload, \"\\t\", false))"
+        },
+        {
+          "line": 108,
+          "text": "\treturn true"
+        }
+      ],
+      "url": "https://github.com/rexgame103-maker/scene-calibration/blob/main/scripts/player_profile.gd#L103-L180",
+      "display": "Tabs expanded to four spaces; common indentation removed. Explicit gaps and continuation arrows preserve original source line numbering.",
+      "font_size": 13,
+      "rendered_rows": 16
     }
   ]
 }

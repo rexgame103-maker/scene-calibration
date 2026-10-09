@@ -1,0 +1,65 @@
+{
+	"captures": [
+		{
+			"case_id": "office_case_001",
+			"image": "screenshots/studio.png",
+			"state": "Player studio: the investigation hub"
+		},
+		{
+			"case_id": "office_case_001",
+			"image": "screenshots/mail.png",
+			"state": "01: read and accept the office assignment"
+		},
+		{
+			"case_id": "office_case_001",
+			"image": "screenshots/briefing.png",
+			"state": "Office briefing after accepting the assignment"
+		},
+		{
+			"case_id": "office_case_001",
+			"image": "screenshots/evidence.png",
+			"state": "02: photograph reveals three clues and furniture"
+		},
+		{
+			"case_id": "office_case_001",
+			"image": "screenshots/placement.png",
+			"state": "03: staged chair preview passes the normal bounds and overlap validator"
+		},
+		{
+			"case_id": "office_case_001",
+			"image": "screenshots/inspection.png",
+			"state": "04: visible desk-side wear is investigated and collected"
+		},
+		{
+			"case_id": "office_case_001",
+			"image": "screenshots/office-restored-ui.png",
+			"state": "Office restored: full gameplay interface"
+		},
+		{
+			"case_id": "office_case_001",
+			"image": "screenshots/office-restored.png",
+			"state": "Restored office hero: same runtime camera with HUD hidden"
+		},
+		{
+			"case_id": "office_case_001",
+			"image": "screenshots/settlement.png",
+			"state": "06: submit the reconstruction and receive the case conclusion"
+		},
+		{
+			"case_id": "office_case_001",
+			"image": "screenshots/album.png",
+			"state": "07: restored photograph appears in the studio album"
+		},
+		{
+			"case_id": "gallery_case_002",
+			"image": "screenshots/calibration.png",
+			"state": "05: restoration room light, color temperature and shadow calibration"
+		}
+	],
+	"engine": "4.7.2-stable (steam)",
+	"method": "Fresh Godot runtime captures in an isolated profile. Existing debug helpers stage placement and calibration; real visibility, reconstruction, submission and album checks remain active. Hero capture hides only the HUD.",
+	"resolution": [
+		1600,
+		900
+	]
+}
