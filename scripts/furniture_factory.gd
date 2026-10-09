@@ -2,6 +2,8 @@
 class_name FurnitureFactory
 extends RefCounted
 
+const PLANT_FOLIAGE := preload("res://scenes/props/indoor_plant_foliage.tscn")
+
 
 const DESK_MODEL: PackedScene = preload("res://assets/models/furniture/desk/desk.glb")
 const DESK_FURNITURE_SCENE: PackedScene = preload("res://scenes/furniture/desk_furniture.tscn")
@@ -45,6 +47,7 @@ const CATALOG: Array[Dictionary] = [
 		"kind": "computer",
 		"label": "老式电脑",
 		"description": "案发现场的电脑设备",
+		"short_description": "案发现场电脑",
 		"footprint": Vector2i(2, 2),
 		"size": Vector3(1.341696, 0.715336, 1.395977),
 		"model_scale": 0.72,
@@ -56,6 +59,7 @@ const CATALOG: Array[Dictionary] = [
 		"kind": "restoration_table",
 		"label": "修复桌",
 		"description": "带作品托板的标准修复工作台",
+		"short_description": "配作品托板",
 		"footprint": Vector2i(3, 2),
 		"size": Vector3(2.80, 1.12, 1.62),
 		"color": Color("b8a27d")
@@ -64,6 +68,7 @@ const CATALOG: Array[Dictionary] = [
 		"kind": "restoration_stool",
 		"label": "修复凳",
 		"description": "修复室使用的可调高脚凳",
+		"short_description": "高度可调",
 		"footprint": Vector2i(1, 1),
 		"size": Vector3(0.72, 1.18, 0.72),
 		"color": Color("63798a")
@@ -72,6 +77,7 @@ const CATALOG: Array[Dictionary] = [
 		"kind": "cold_light_panel",
 		"label": "标准冷光灯",
 		"description": "经过校准的宽幅低温照明设备",
+		"short_description": "宽幅冷光照明",
 		"footprint": Vector2i(2, 1),
 		"size": Vector3(1.72, 2.18, 0.62),
 		"color": Color("9fd3dc")
@@ -80,6 +86,7 @@ const CATALOG: Array[Dictionary] = [
 		"kind": "halogen_inspection_lamp",
 		"label": "卤素检查灯",
 		"description": "会明显发热的移动式点光检查灯",
+		"short_description": "移动点光，发热明显",
 		"footprint": Vector2i(1, 1),
 		"size": Vector3(0.72, 1.78, 0.72),
 		"color": Color("e09a52")
@@ -88,6 +95,7 @@ const CATALOG: Array[Dictionary] = [
 		"kind": "metal_reflector",
 		"label": "金属反光屏",
 		"description": "能够改变补光方向的移动反射板",
+		"short_description": "可调补光方向",
 		"footprint": Vector2i(1, 1),
 		"size": Vector3(1.18, 1.92, 0.58),
 		"color": Color("b7bdc3")
@@ -96,6 +104,7 @@ const CATALOG: Array[Dictionary] = [
 		"kind": "camera_tripod",
 		"label": "摄影支架",
 		"description": "用于拍摄连续修复记录的固定相机",
+		"short_description": "固定机位连续记录",
 		"footprint": Vector2i(1, 1),
 		"size": Vector3(0.92, 1.72, 0.92),
 		"color": Color("4d5865")
@@ -569,13 +578,10 @@ static func _build_lamp(root: Node3D) -> void:
 
 static func _build_plant(root: Node3D) -> void:
 	_add_cylinder(root, 0.30, 0.38, 0.48, Vector3(0, 0.24, 0), Color("b66f58"))
-	var greens: Array[Color] = [Color("5aaf78"), Color("78c98f"), Color("3f8c69")]
-	var leaf_positions: Array[Vector3] = [
-		Vector3(0, 0.84, 0), Vector3(-0.22, 0.76, 0.02), Vector3(0.22, 0.78, 0.08),
-		Vector3(-0.10, 1.04, -0.05), Vector3(0.13, 1.12, 0.03)
-	]
-	for i: int in range(leaf_positions.size()):
-		_add_sphere(root, Vector3(0.38, 0.52, 0.30), leaf_positions[i], greens[i % greens.size()])
+	var foliage := PLANT_FOLIAGE.instantiate() as Node3D
+	foliage.position.y = 0.48
+	foliage.scale = Vector3(0.72, 1.0, 0.72)
+	root.add_child(foliage)
 
 
 static func _add_collision(root: Node3D, kind: String) -> void:

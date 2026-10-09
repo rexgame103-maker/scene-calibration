@@ -47,9 +47,14 @@ func build(summary: Dictionary) -> void:
 	label("案件资料", Rect2(48,38,285,53),38,Color("e9dec9"),true)
 	label("CASE ARCHIVE",Rect2(50,96,280,24),12,Color("a89b85"))
 	rule(Rect2(50,132,275,1))
-	label(String(summary.get("title","案件资料")),Rect2(50,155,287,40),25,Color("e9dec9"),true)
+	var case_title := label(String(summary.get("title","案件资料")),Rect2(50,155,287,40),25,Color("e9dec9"),true)
+	var heading_size := 25
+	while heading_size > 14 and serif.get_string_size(tr(case_title.text), HORIZONTAL_ALIGNMENT_LEFT, -1, heading_size).x > 287:
+		heading_size -= 1
+	case_title.add_theme_font_size_override("font_size", heading_size)
 	var subtitle := label(String(summary.get("subtitle","")),Rect2(50,198,285,42),14,Color("a99e8c"))
 	subtitle.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	subtitle.size = Vector2(285,42)
 	category = OptionButton.new()
 	for value: String in ["全部","案情描述","现场照片","证物"]:
 		category.add_item(value)
@@ -141,6 +146,7 @@ func place(control: Control, rect: Rect2) -> void:
 func label(value: String, rect: Rect2, font_size: int, color: Color, use_serif := false) -> Label:
 	var control := Label.new()
 	control.text = value
+	control.clip_text = true
 	control.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	control.add_theme_font_size_override("font_size",font_size)
 	control.add_theme_color_override("font_color",color)

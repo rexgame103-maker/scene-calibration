@@ -1,5 +1,6 @@
 [gd_scene format=4]
 
+[ext_resource type="PackedScene" path="res://scenes/props/indoor_plant_foliage.tscn" id="plant_foliage"]
 [ext_resource type="Script" path="res://scripts/noir_studio/noir_studio_3d.gd" id="1_65bua"]
 [ext_resource type="Shader" path="res://shaders/noir_toon.gdshader" id="2_pb1a7"]
 [ext_resource type="Shader" path="res://shaders/stylized_outline.gdshader" id="3_pw3rg"]
@@ -10421,95 +10422,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.405, 0)
 material_override = SubResource("ShaderMaterial_vp205")
 mesh = SubResource("CylinderMesh_y2bee")
 
-[node name="Stem" type="MeshInstance3D" parent="PottedPlant" unique_id=146929183]
-transform = Transform3D(0.8434957, 0.53713596, 0, -0.53713596, 0.8434957, 0, 0, 0, 1, 0.2, 0.71407163, 0)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_eofcg")
-
-[node name="@MeshInstance3D@474" type="MeshInstance3D" parent="PottedPlant" unique_id=1729785102]
-transform = Transform3D(0.48, 0, 0, 0, 0.21184403, -0.6425402, 0, 0.089566216, 1.5197506, 0.4, 1.0281433, 0)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_ftnru")
-
-[node name="@MeshInstance3D@475" type="MeshInstance3D" parent="PottedPlant" unique_id=1072047185]
-transform = Transform3D(0.9020091, 0.4238145, -0.082224116, -0.4238145, 0.8330149, -0.35562262, -0.082224116, 0.35562262, 0.9310058, 0.15320888, 0.7011347, 0.12855752)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_hmkcs")
-
-[node name="@MeshInstance3D@476" type="MeshInstance3D" parent="PottedPlant" unique_id=348457138]
-transform = Transform3D(0.36770132, -0.05757205, -0.9768768, 0, 0.21184403, -0.6425402, 0.30853802, 0.068611704, 1.1641965, 0.30641776, 1.0022694, 0.25711504)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_af4wx")
-
-[node name="@MeshInstance3D@477" type="MeshInstance3D" parent="PottedPlant" unique_id=1256816322]
-transform = Transform3D(0.9934667, 0.10794028, -0.037052367, -0.10794028, 0.7833323, -0.6121596, -0.037052367, 0.6121596, 0.7898656, 0.034729637, 0.6520361, 0.19696155)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_e7xig")
-
-[node name="@MeshInstance3D@478" type="MeshInstance3D" parent="PottedPlant" unique_id=1473153062]
-transform = Transform3D(0.08335114, -0.0882055, -1.4966621, 0, 0.21184403, -0.6425402, 0.4727077, 0.015553015, 0.26390198, 0.069459274, 0.90407217, 0.3939231)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_2spaj")
-
-[node name="@MeshInstance3D@479" type="MeshInstance3D" parent="PottedPlant" unique_id=408517663]
-transform = Transform3D(0.96069235, -0.26913747, 0.068082884, 0.26913747, 0.8427693, -0.46615976, 0.068082884, 0.46615976, 0.882077, -0.1, 0.7131371, 0.17320508)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_f55bf")
-
-[node name="@MeshInstance3D@480" type="MeshInstance3D" parent="PottedPlant" unique_id=358401732]
-transform = Transform3D(-0.24000002, -0.077566616, -1.3161426, 0, 0.21184403, -0.6425402, 0.41569218, -0.044783115, -0.7598754, -0.2, 1.0262742, 0.34641016)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_ipd1i")
-
-[node name="@MeshInstance3D@481" type="MeshInstance3D" parent="PottedPlant" unique_id=724902535]
-transform = Transform3D(0.85680735, -0.5129959, 0.052117843, 0.5129959, 0.83783805, -0.18671522, 0.052117843, 0.18671522, 0.98103064, -0.18793853, 0.70694596, 0.06840403)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_10nra")
-
-[node name="@MeshInstance3D@482" type="MeshInstance3D" parent="PottedPlant" unique_id=1974933393]
-transform = Transform3D(-0.45105246, -0.030633459, -0.51978546, 0, 0.21184403, -0.6425402, 0.1641697, -0.08416472, -1.4280984, -0.37587705, 1.0138919, 0.13680805)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_tvjjc")
-
-[node name="@MeshInstance3D@483" type="MeshInstance3D" parent="PottedPlant" unique_id=1455295735]
-transform = Transform3D(0.84017193, -0.5391911, -0.058172654, 0.5391911, 0.8189988, 0.1962495, -0.058172654, -0.1962495, 0.9788269, -0.18793853, 0.6854673, -0.06840403)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_bprf2")
-
-[node name="@MeshInstance3D@484" type="MeshInstance3D" parent="PottedPlant" unique_id=724004614]
-transform = Transform3D(-0.45105246, 0.030633451, 0.51978534, 0, 0.21184403, -0.6425402, -0.16416967, -0.08416472, -1.4280984, -0.37587705, 0.9709346, -0.13680805)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_kj8cw")
-
-[node name="@MeshInstance3D@485" type="MeshInstance3D" parent="PottedPlant" unique_id=215033129]
-transform = Transform3D(0.9622639, -0.26415184, -0.06536088, 0.26415184, 0.8490555, 0.45752436, -0.06536088, -0.45752436, 0.88679165, -0.1, 0.7214271, -0.17320508)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_odmx3")
-
-[node name="@MeshInstance3D@486" type="MeshInstance3D" parent="PottedPlant" unique_id=64536400]
-transform = Transform3D(-0.23999995, 0.07756662, 1.3161427, 0, 0.21184403, -0.6425402, -0.4156922, -0.0447831, -0.7598752, -0.2, 1.0428542, -0.34641016)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_vvfis")
-
-[node name="@MeshInstance3D@487" type="MeshInstance3D" parent="PottedPlant" unique_id=1513274271]
-transform = Transform3D(0.995989, 0.08653586, 0.022747487, -0.08653586, 0.8669816, 0.49076924, 0.022747487, -0.49076924, 0.8709926, 0.034729637, 0.74794775, -0.19696155)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_t810j")
-
-[node name="@MeshInstance3D@488" type="MeshInstance3D" parent="PottedPlant" unique_id=1563581012]
-transform = Transform3D(0.08335111, 0.0882055, 1.4966621, 0, 0.21184403, -0.6425402, -0.4727077, 0.015553009, 0.2639019, 0.069459274, 1.0958955, -0.3939231)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_t6svn")
-
-[node name="@MeshInstance3D@489" type="MeshInstance3D" parent="PottedPlant" unique_id=941750492]
-transform = Transform3D(0.92270124, 0.38002032, 0.06486137, -0.38002032, 0.8682761, 0.3188749, 0.06486137, -0.3188749, 0.9455749, 0.15320888, 0.75005394, -0.12855752)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_i45sm")
-
-[node name="@MeshInstance3D@490" type="MeshInstance3D" parent="PottedPlant" unique_id=1911922429]
-transform = Transform3D(0.36770126, 0.05757207, 0.9768771, 0, 0.21184403, -0.6425402, -0.3085381, 0.0686117, 1.1641964, 0.30641776, 1.1001079, -0.25711504)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_5agcx")
+[node name="Foliage" parent="PottedPlant" instance=ExtResource("plant_foliage")]
+position = Vector3(0, 0.405, 0)
 
 [node name="@Node3D@491" type="Node3D" parent="." unique_id=1942300049]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8, 0.05, 0.65)
@@ -10524,95 +10438,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.405, 0)
 material_override = SubResource("ShaderMaterial_vp205")
 mesh = SubResource("CylinderMesh_bvs3n")
 
-[node name="Stem" type="MeshInstance3D" parent="@Node3D@491" unique_id=1438890157]
-transform = Transform3D(0.62849736, 0.77781177, 0, -0.77781177, 0.62849736, 0, 0, 0, 1, 0.2, 0.5616066, 0)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_8w4tn")
-
-[node name="@MeshInstance3D@492" type="MeshInstance3D" parent="@Node3D@491" unique_id=969925306]
-transform = Transform3D(0.48, 0, 0, 0, 0.21184403, -0.6425402, 0, 0.089566216, 1.5197506, 0.4, 0.72321314, 0)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_cvdcn")
-
-[node name="@MeshInstance3D@493" type="MeshInstance3D" parent="@Node3D@491" unique_id=1031435998]
-transform = Transform3D(0.79925716, 0.576901, -0.16844323, -0.576901, 0.65791655, -0.4840775, -0.16844323, 0.4840775, 0.8586593, 0.15320888, 0.5747243, 0.12855752)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_maxle")
-
-[node name="@MeshInstance3D@494" type="MeshInstance3D" parent="@Node3D@491" unique_id=84845229]
-transform = Transform3D(0.36770132, -0.05757205, -0.9768768, 0, 0.21184403, -0.6425402, 0.30853802, 0.068611704, 1.1641965, 0.30641776, 0.74944866, 0.25711504)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_sjlj0")
-
-[node name="@MeshInstance3D@495" type="MeshInstance3D" parent="@Node3D@491" unique_id=1986715378]
-transform = Transform3D(0.9917924, 0.119084686, -0.04654764, -0.119084686, 0.72780764, -0.6753628, -0.04654764, 0.6753628, 0.7360152, 0.034729637, 0.6122565, 0.19696155)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_autkd")
-
-[node name="@MeshInstance3D@496" type="MeshInstance3D" parent="@Node3D@491" unique_id=1142484699]
-transform = Transform3D(0.08335114, -0.0882055, -1.4966621, 0, 0.21184403, -0.6425402, 0.4727077, 0.015553015, 0.26390198, 0.069459274, 0.824513, 0.3939231)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_lohfx")
-
-[node name="@MeshInstance3D@497" type="MeshInstance3D" parent="@Node3D@491" unique_id=991908538]
-transform = Transform3D(0.9679076, -0.24508184, 0.055585667, 0.24508184, 0.87163043, -0.42449418, 0.055585667, 0.42449418, 0.9037228, -0.1, 0.75564873, 0.17320508)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_3lig1")
-
-[node name="@MeshInstance3D@498" type="MeshInstance3D" parent="@Node3D@491" unique_id=1832987697]
-transform = Transform3D(-0.24000002, -0.077566616, -1.3161426, 0, 0.21184403, -0.6425402, 0.41569218, -0.044783115, -0.7598754, -0.2, 1.1112975, 0.34641016)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_nklfh")
-
-[node name="@MeshInstance3D@499" type="MeshInstance3D" parent="@Node3D@491" unique_id=1416561751]
-transform = Transform3D(0.7777024, -0.6234041, 0.08090971, 0.6234041, 0.74825364, -0.22690049, 0.08090971, 0.22690049, 0.97055125, -0.18793853, 0.62557715, 0.06840403)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_77lq7")
-
-[node name="@MeshInstance3D@500" type="MeshInstance3D" parent="@Node3D@491" unique_id=1126955429]
-transform = Transform3D(-0.45105246, -0.030633459, -0.51978546, 0, 0.21184403, -0.6425402, 0.1641697, -0.08416472, -1.4280984, -0.37587705, 0.85115427, 0.13680805)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_pdmmd")
-
-[node name="@MeshInstance3D@501" type="MeshInstance3D" parent="@Node3D@491" unique_id=210613503]
-transform = Transform3D(0.81819314, -0.57112277, -0.06617229, 0.57112277, 0.7941084, 0.20787168, -0.06617229, -0.20787168, 0.97591525, -0.18793853, 0.6613161, -0.06840403)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_420qy")
-
-[node name="@MeshInstance3D@502" type="MeshInstance3D" parent="@Node3D@491" unique_id=1552709839]
-transform = Transform3D(-0.45105246, 0.030633451, 0.51978534, 0, 0.21184403, -0.6425402, -0.16416967, -0.08416472, -1.4280984, -0.37587705, 0.92263216, -0.13680805)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_168o7")
-
-[node name="@MeshInstance3D@503" type="MeshInstance3D" parent="@Node3D@491" unique_id=936319099]
-transform = Transform3D(0.9664536, -0.25018266, -0.058104068, 0.25018266, 0.86581445, 0.433329, -0.058104068, -0.433329, 0.89936084, -0.1, 0.74607295, -0.17320508)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_2d7un")
-
-[node name="@MeshInstance3D@504" type="MeshInstance3D" parent="@Node3D@491" unique_id=1094824728]
-transform = Transform3D(-0.23999995, 0.07756662, 1.3161427, 0, 0.21184403, -0.6425402, -0.4156922, -0.0447831, -0.7598752, -0.2, 1.0921459, -0.34641016)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_j3sdm")
-
-[node name="@MeshInstance3D@505" type="MeshInstance3D" parent="@Node3D@491" unique_id=371855767]
-transform = Transform3D(0.99256265, 0.11419396, 0.042179193, -0.11419396, 0.7533526, 0.64762616, 0.042179193, -0.64762616, 0.76078993, 0.034729637, 0.629116, -0.19696155)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_74hfp")
-
-[node name="@MeshInstance3D@506" type="MeshInstance3D" parent="@Node3D@491" unique_id=564176699]
-transform = Transform3D(0.08335111, 0.0882055, 1.4966621, 0, 0.21184403, -0.6425402, -0.4727077, 0.015553009, 0.2639019, 0.069459274, 0.85823196, -0.3939231)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_rqb5m")
-
-[node name="@MeshInstance3D@507" type="MeshInstance3D" parent="@Node3D@491" unique_id=1616010458]
-transform = Transform3D(0.9202395, 0.3855905, 0.066927, -0.3855905, 0.8640811, 0.32354885, 0.066927, -0.32354885, 0.9438416, 0.15320888, 0.74333024, -0.12855752)
-material_override = SubResource("ShaderMaterial_ugbvj")
-mesh = SubResource("CylinderMesh_brw75")
-
-[node name="@MeshInstance3D@508" type="MeshInstance3D" parent="@Node3D@491" unique_id=1152382303]
-transform = Transform3D(0.36770126, 0.05757207, 0.9768771, 0, 0.21184403, -0.6425402, -0.3085381, 0.0686117, 1.1641964, 0.30641776, 1.0866605, -0.25711504)
-material_override = SubResource("ShaderMaterial_lywd0")
-mesh = SubResource("SphereMesh_xbscu")
+[node name="Foliage" parent="@Node3D@491" instance=ExtResource("plant_foliage")]
+position = Vector3(0, 0.405, 0)
 
 [node name="FloorLamp" type="Node3D" parent="." unique_id=422889595]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3, 0.08, 3.12)

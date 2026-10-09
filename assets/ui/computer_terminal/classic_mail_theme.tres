@@ -1,0 +1,97 @@
+[gd_resource type="Theme" load_steps=12 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/ui/computer_terminal/classic_button.svg" id="1_button"]
+[ext_resource type="Texture2D" path="res://assets/ui/computer_terminal/classic_button_pressed.svg" id="2_pressed"]
+[ext_resource type="Texture2D" path="res://assets/ui/computer_terminal/classic_inset.svg" id="3_inset"]
+
+[sub_resource type="SystemFont" id="Font_regular"]
+font_names = PackedStringArray("Tahoma", "Microsoft YaHei", "sans-serif")
+font_weight = 400
+
+[sub_resource type="StyleBoxTexture" id="Style_button"]
+texture = ExtResource("1_button")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+content_margin_left = 10.0
+content_margin_top = 5.0
+content_margin_right = 10.0
+content_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="Style_pressed"]
+texture = ExtResource("2_pressed")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+content_margin_left = 11.0
+content_margin_top = 6.0
+content_margin_right = 9.0
+content_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxTexture" id="Style_inset"]
+texture = ExtResource("3_inset")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="Style_selected"]
+bg_color = Color(0.16, 0.25, 0.39, 1)
+
+[sub_resource type="StyleBoxFlat" id="Style_selected_hover"]
+bg_color = Color(0.2, 0.3, 0.44, 1)
+
+[sub_resource type="StyleBoxFlat" id="Style_focus"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.25, 0.27, 0.25, 0.65)
+expand_margin_left = -4.0
+expand_margin_top = -4.0
+expand_margin_right = -4.0
+expand_margin_bottom = -4.0
+
+[sub_resource type="StyleBoxFlat" id="Style_separator"]
+bg_color = Color(0.56, 0.59, 0.55, 1)
+content_margin_top = 1.0
+content_margin_bottom = 1.0
+
+[resource]
+default_font = SubResource("Font_regular")
+default_font_size = 12
+Button/colors/font_color = Color(0.13, 0.16, 0.15, 1)
+Button/colors/font_hover_color = Color(0.13, 0.16, 0.15, 1)
+Button/colors/font_pressed_color = Color(0.13, 0.16, 0.15, 1)
+Button/colors/font_focus_color = Color(0.13, 0.16, 0.15, 1)
+Button/colors/font_disabled_color = Color(0.51, 0.53, 0.49, 1)
+Button/constants/h_separation = 6
+Button/styles/normal = SubResource("Style_button")
+Button/styles/hover = SubResource("Style_button")
+Button/styles/pressed = SubResource("Style_pressed")
+Button/styles/disabled = SubResource("Style_button")
+Button/styles/focus = SubResource("Style_focus")
+Label/colors/font_color = Color(0.13, 0.16, 0.15, 1)
+RichTextLabel/colors/default_color = Color(0.13, 0.16, 0.15, 1)
+Tree/colors/font_color = Color(0.13, 0.16, 0.15, 1)
+Tree/colors/font_selected_color = Color(0.96, 0.96, 0.92, 1)
+Tree/colors/title_button_color = Color(0.13, 0.16, 0.15, 1)
+Tree/constants/v_separation = 6
+Tree/constants/h_separation = 6
+Tree/constants/item_margin = 3
+Tree/styles/panel = SubResource("Style_inset")
+Tree/styles/selected = SubResource("Style_selected")
+Tree/styles/selected_focus = SubResource("Style_selected")
+Tree/styles/hovered_selected = SubResource("Style_selected_hover")
+Tree/styles/hovered_selected_focus = SubResource("Style_selected_hover")
+Tree/styles/title_button_normal = SubResource("Style_button")
+Tree/styles/title_button_hover = SubResource("Style_button")
+Tree/styles/title_button_pressed = SubResource("Style_pressed")
+HSeparator/styles/separator = SubResource("Style_separator")

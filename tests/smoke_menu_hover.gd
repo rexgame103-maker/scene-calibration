@@ -15,22 +15,35 @@ func run() -> void:
 	menu.camera_motion_enabled=false
 	await create_timer(1.1).timeout
 	var ui := menu.get_node("StartMenuUI/UIRoot")
-	var face: TextureRect = ui.get_node("Portrait")
-	assert(face.stretch_mode==TextureRect.STRETCH_KEEP_ASPECT_COVERED)
-	assert(face.size==Vector2(580,770))
-	assert(ui.has_node("MenuSlash"))
+	assert(not ui.has_node("Portrait") and not ui.has_node("MenuSlash"))
 	var start: Button = ui.get_node("MenuLayout/MenuColumn/StartButton")
 	var settings: Button = ui.get_node("MenuLayout/MenuColumn/SettingsButton")
-	assert(start.get_theme_stylebox("focus") is StyleBoxEmpty)
+	assert(start.rotation==0 and start.get_global_rect().end.x<640)
+	assert(start.get_theme_stylebox("focus").border_width_left==3)
 	await move_pointer(Vector2(1200,680))
 	assert(not start.is_hovered() and not start.has_focus())
 	await RenderingServer.frame_post_draw
-	root.get_texture().get_image().save_png("res://tests/menu_visual_fixed.png")
+	root.get_texture().get_image().save_png("res://tests/start_menu_window_preview.png")
 	await move_pointer(start.get_global_transform_with_canvas()*(start.size*0.5))
 	assert(start.is_hovered())
 	await move_pointer(settings.get_global_transform_with_canvas()*(settings.size*0.5))
 	assert(settings.is_hovered() and not start.is_hovered())
 	await RenderingServer.frame_post_draw
-	root.get_texture().get_image().save_png("res://tests/menu_hover_settings.png")
-	print("MENU_HOVER_OK: native pointer hover transfer, default black, aspect-correct portrait, slash")
+	root.get_texture().get_image().save_png("res://tests/start_menu_window_hover.png")
+	var press := InputEventMouseButton.new()
+	press.button_index=MOUSE_BUTTON_LEFT
+	press.position=settings.get_global_transform_with_canvas()*(settings.size*0.5)
+	press.pressed=true
+	root.push_input(press,true)
+	var release := press.duplicate() as InputEventMouseButton
+	release.pressed=false
+	root.push_input(release,true)
+	await process_frame
+	assert(ui.get_node("Settings").visible)
+	print("MENU_HOVER_OK: left menu, native pointer hover transfer, real settings click")
+	root.get_node("GameAudio").call("stop_all")
+	menu.queue_free()
+	await process_frame
+	await process_frame
+	await create_timer(0.15).timeout
 	quit()

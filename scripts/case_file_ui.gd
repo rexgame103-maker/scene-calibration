@@ -12,10 +12,44 @@ class EvidencePhotoCanvas:
 	extends Control
 
 	var evidence_data: Dictionary = {}
+	var caption_label: Label
+
+	func _ready() -> void:
+		caption_label = Label.new()
+		caption_label.name = "PhotoCaption"
+		caption_label.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE)
+		caption_label.offset_left = 24
+		caption_label.offset_right = -24
+		caption_label.offset_top = -48
+		caption_label.offset_bottom = -16
+		caption_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		caption_label.add_theme_font_size_override("font_size", 13)
+		caption_label.add_theme_color_override("font_color", Color("eee6d6"))
+		caption_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		caption_label.text = String(evidence_data.get("caption", "警方现场照片"))
+		add_child(caption_label)
+		var tag := Label.new()
+		tag.name = "PhotoTag"
+		tag.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
+		tag.offset_left = -116
+		tag.offset_right = -20
+		tag.offset_top = 18
+		tag.offset_bottom = 40
+		tag.text = "POLICE / 01"
+		tag.add_theme_font_size_override("font_size", 11)
+		tag.add_theme_color_override("font_color", Color("ead8b0"))
+		tag.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		add_child(tag)
 
 	func set_evidence(data: Dictionary) -> void:
 		evidence_data = data.duplicate(true)
+		if is_instance_valid(caption_label):
+			caption_label.text = String(evidence_data.get("caption", "警方现场照片"))
 		queue_redraw()
+
+	func _notification(what: int) -> void:
+		if what == NOTIFICATION_TRANSLATION_CHANGED:
+			queue_redraw()
 
 	func _draw() -> void:
 		var view_size := size
@@ -92,10 +126,6 @@ class EvidencePhotoCanvas:
 			draw_line(chair_center + Vector2(22, 14), chair_center + Vector2(29, 55), Color("29242a"), 6.0)
 
 		draw_rect(inset, Color("d7c8aa"), false, 2.0)
-		var font := ThemeDB.fallback_font
-		var caption := String(evidence_data.get("caption", "警方现场照片"))
-		draw_string(font, Vector2(24, view_size.y - 20), caption, HORIZONTAL_ALIGNMENT_LEFT, view_size.x - 48, 13, Color("eee6d6"))
-		draw_string(font, Vector2(view_size.x - 116, 34), "POLICE / 01", HORIZONTAL_ALIGNMENT_LEFT, 96, 11, Color("ead8b0"))
 
 
 var _manager: Node
@@ -127,6 +157,8 @@ func _ready() -> void:
 
 
 func open_files() -> void:
+	if not visible:
+		GameAudio.play("dossier_open")
 	# z_index controls drawing, not GUI hit testing. Pinned references are added
 	# later as siblings; put this opaque modal last so it receives clicks first.
 	# Making the scene HUD transparent leaves those controls intercepting input.
@@ -151,6 +183,7 @@ func close_files() -> void:
 	if not visible:
 		return
 	visible = false
+	GameAudio.play("dossier_close")
 	closed.emit()
 
 
@@ -238,6 +271,7 @@ func _refresh_evidence_list() -> void:
 		ARCHIVE_VIEW.skin_button(item_button, String(item.get("id", "")) == _selected_evidence_id)
 		item_button.alignment = HORIZONTAL_ALIGNMENT_LEFT
 		item_button.pressed.connect(_select_evidence.bind(String(item.get("id", ""))))
+		GameAudio.bind_button(item_button, "")
 		_evidence_list.add_child(item_button)
 		shown += 1
 	_archive_view.count.text = "%d 份资料" % shown
@@ -259,9 +293,13 @@ func _select_evidence(evidence_id: String) -> void:
 	if evidence_id.is_empty() or not is_instance_valid(_manager):
 		return
 	_selected_evidence_id = evidence_id
+	var audio_evidence: Dictionary = _manager.call("get_evidence_data", evidence_id)
+	GameAudio.play("photo_pick" if String(audio_evidence.get("view_type", "text")) == "photo" else "page_turn")
 	var discovered_ids: Array = _manager.call("view_evidence", evidence_id)
 	var item: Dictionary = _manager.call("get_evidence_data", evidence_id)
 	_display_evidence(item, discovered_ids)
+	if not discovered_ids.is_empty():
+		GameAudio.play("clue_collect")
 	_refresh_evidence_list()
 	evidence_opened.emit(evidence_id)
 
@@ -295,8 +333,8 @@ func _display_evidence(item: Dictionary, discovered_ids: Array) -> void:
 	for clue_id_value: Variant in discovered_ids:
 		var clue_data: Dictionary = _manager.call("get_clue_data", String(clue_id_value))
 		clue_titles.append(String(clue_data.get("title", clue_id_value)))
-	_result_label.text = tr("已获得 %d 条线索，家具栏已更新。") % discovered_ids.size()
-	_result_label.tooltip_text = tr("获得线索：%s") % "、".join(clue_titles)
+	_result_label.text = "已获得 %d 条线索，家具栏已更新。" % discovered_ids.size()
+	_result_label.tooltip_text = "获得线索：%s" % "、".join(clue_titles)
 	_result_label.add_theme_color_override("font_color", Color("344c31"))
 
 
@@ -327,8 +365,8 @@ func _button(text_value: String, background: Color) -> Button:
 	button.add_theme_font_size_override("font_size", 13)
 	button.add_theme_color_override("font_color", Color("30251f"))
 	_skin_menu(button)
-	
-	
+
+
 	return button
 
 

@@ -1,0 +1,46 @@
+{
+  "page_size": [
+    1920,
+    1080
+  ],
+  "aspect_ratio": "16:9",
+  "text": "Editable SVG text; Georgia and Arial",
+  "image_embedding": "Self-contained data URIs, unchanged official screenshot pixels",
+  "interpretation": "Core game descriptions are researched; Design Reading / What We Take / Our Departure are project-specific analysis.",
+  "inspiration": "A design premise based on the current project, not a claim about the creator's historical influences.",
+  "references": [
+    {
+      "game": "Return of the Obra Dinn",
+      "developer": "Lucas Pope",
+      "year": 2018,
+      "official_page": "https://obradinn.com/",
+      "store_page": "https://store.steampowered.com/app/653530/Return_of_the_Obra_Dinn/",
+      "screenshots": [
+        {
+          "file": "references/obra-dinn-scene.png",
+          "url": "https://obradinn.com/img/shots/People-01.png"
+        },
+        {
+          "file": "references/obra-dinn-book.png",
+          "url": "https://obradinn.com/img/shots/Book-03.png"
+        }
+      ]
+    },
+    {
+      "game": "House Flipper",
+      "developer": "Empyrean",
+      "year": 2018,
+      "official_page": "https://store.steampowered.com/app/613100/House_Flipper/",
+      "screenshots": [
+        {
+          "file": "references/house-flipper-1.jpg",
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/613100/ss_3f556347267bfb571fbdba2eca76a83888570682.1920x1080.jpg?t=1790844381"
+        },
+        {
+          "file": "references/house-flipper-0.jpg",
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/613100/ss_66b4628cedb499f8c72661125cc9c800eef17ae1.1920x1080.jpg?t=1790844381"
+        }
+      ]
+    }
+  ]
+}

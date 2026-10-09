@@ -70,6 +70,13 @@ func _run() -> void:
 		await click(popup.collect_button.get_global_rect().get_center())
 		check(manager.call("has_clue","clue_renovation_log"),"Collect click awards computer clue")
 		check(manager.call("is_furniture_unlocked","printer"),"Collected computer clue unlocks the printer")
+	popup.close()
+	main.queue_free()
+	await process_frame
+	await process_frame
+	await create_timer(0.4).timeout
+	root.get_node("GameAudio").call("stop_all")
+	await create_timer(0.15).timeout
 	print("COMPUTER_CLUE_CLICK_OK" if failures.is_empty() else "COMPUTER_CLUE_CLICK_FAILED: " + str(failures))
 	quit(0 if failures.is_empty() else 1)
 

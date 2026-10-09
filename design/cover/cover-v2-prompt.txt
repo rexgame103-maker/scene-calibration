@@ -1,0 +1,23 @@
+Use case: compositing.
+Asset type: revised game presentation cover, landscape EXACTLY 16:9 (1920 x 1080 canvas).
+Primary request: re-layout the previous portrait cover into an elegant wide newspaper cover. Make the newspaper only SLIGHTLY aged: clean warm off-white paper, very faint fibers and gentle patina, crisp intact edges, minimal aging. Remove all tears, ragged corners, dark stains, heavy creases, yellow blotches and heavily distressed lettering. It should feel cared for and readable, not antique or damaged.
+Input image 1 is the previous cover: use ONLY its newspaper visual language, game identity and exact English copy. Change its aspect ratio and layout, and drastically reduce the aging.
+Input image 2 is the ACTUAL start menu camera capture. This is the exact scene to insert as a large hero image. Preserve its full 16:9 composition, camera viewpoint, object positions and proportions. Window and blinds on the left, radiator, foreground chair, wooden desk, monitor, lamp, mug, notebook, papers and evidence board must remain exactly as in this capture. Do not remodel or reinterpret the studio. Retain the cel-shaded game appearance, warm gold lighting and muted cyan monitor with only a subtle ink-print texture.
+
+Layout: finished flat cover page edge-to-edge, straight-on, no perspective mockup or photographed tabletop. Very thin inset double black border with comfortable margins. A full-width large elegant condensed black serif masthead "SCENE CALIBRATION" across the top, the dominant title. Tiny SPECIAL EDITION kicker above, with a small genre line and deck beneath. Thin muted rust-red horizontal rule. Main content below: the wide 16:9 screenshot on the LEFT, taking about 62% of usable width, in a clean fine frame. On the RIGHT, a clear editorial column with THE INVESTIGATION heading and the complete game overview, comfortably readable black serif text. Leave room for all text, natural paragraphs, no text over the image. Bottom footer below a thin rule: three evenly spaced small columns OBSERVE / CONNECT / REVEAL with their short descriptions. Refined newspaper hierarchy and clean baseline alignment. All page and body text fully inside margins. The entire output must be wide 16:9, not square or portrait.
+
+Exact English text only, each once:
+"SPECIAL EDITION"
+"SCENE CALIBRATION"
+"A SPATIAL DEDUCTION GAME"
+"REBUILD THE SCENE. REVEAL THE TRUTH."
+"THE INVESTIGATION"
+"Scene Calibration is a spatial deduction game about reconstructing places after the evidence has been disturbed. Work from a personal studio, compare photographs and records, and inspect traces on everyday objects. Restore furniture, lighting, and spatial relationships to test your deductions. Complete investigations, archive restored scenes, and equip your studio for the next case."
+"OBSERVE"
+"Study photographs, records, and physical traces."
+"CONNECT"
+"Test how objects, surfaces, and light relate."
+"REVEAL"
+"Reconstruct the scene and preserve your findings."
+
+Constraints: exact 16:9 landscape composition. Lightly aged paper only. No buttons, menus, navigation, watermarks, extra text, Chinese, badges, large faces, new props, paperclips, heavy grunge, coffee stains, ripped edges, damaged typography or checkerboard. Preserve the actual source camera view. Large readable game title and overview.

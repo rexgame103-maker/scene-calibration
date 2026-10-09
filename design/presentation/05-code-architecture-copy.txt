@@ -1,0 +1,99 @@
+SCENE CALIBRATION / DESIGN DOSSIER
+NO. 05 / CODE & ARCHITECTURE
+THE SYSTEM BEHIND THE SCENE
+From a photograph to a restored room: the code that makes spatial deduction playable.
+PUBLIC REPOSITORY / COMPLETE GODOT PROJECT
+github.com/rexgame103-maker/scene-calibration
+SOURCE GUIDE  ↗
+Scenes / scripts / case data / shaders / assets / offline source browser
+REVIEW ROUTE
+README → Code Review → Source Files
+Godot 4.7 / GDScript / Player studio + two cases
+01
+Evidence becomes inventory
+OFFICE / The first photograph reveals three objects.
+view_evidence()
+197
+var item := evidence[evidence_id] as Dictionary
+198
+item["is_viewed"] = true
+199
+evidence[evidence_id] = item
+200
+for clue_value: Variant in item.get("clue_ids", []):
+201
+    var clue_id := String(clue_value)
+202
+    if discover_clue(clue_id):
+203
+        discovered_ids.append(clue_id)
+204
+evidence_viewed.emit(item.duplicate(true))
+205
+return discovered_ids
+case_manager.gd / L197–205
+Viewing a photograph records its state and discovers its linked clues. The unlock evaluator then checks those clues and releases the matching furniture into the inventory.
+02
+Observe before you investigate
+OFFICE / Rotate to expose the worn side of the desk.
+_is_runtime_visible()
+194
+return (
+195
+    is_unlocked
+196
+    and not (is_discovered and
+↳
+    hide_after_discovered)
+197
+    and (not show_only_during_inspection or
+↳
+    _inspection_active)
+198
+    and is_visible_from_camera()
+199
+)
+scene_clue_point.gd / L194–199
+The same visibility gate controls both the marker and investigation. Camera frustum, surface angle and rendered-mesh occlusion are checked, so a hidden scratch cannot be clicked through an object.
+03
+Reconstruct the relationships
+RESTORATION / Furniture placement + light calibration.
+contains_furniture()
+97
+var local_position :=
+↳
+    to_local(furniture_node.global_position)
+98
+var half_size := zone_size * 0.5
+99
+return (
+100
+    absf(local_position.x) <= half_size.x
+101
+    and absf(local_position.y) <= half_size.y
+102
+    and absf(local_position.z) <= half_size.z
+103
+)
+reconstruction_zone.gd / L97–104
+Positions are evaluated in each zone’s local space; orientation is checked separately. A step also requires its clues and lighting conditions, including lamp settings, shadow projection and reflection.
+04
+A desktop with real windows
+STUDIO / Mail runs inside an independent application window.
+toggle_maximized()
+73
+_dragging = false
+74
+if not is_maximized:
+75
+    normal_rect = Rect2(position, size)
+76
+is_maximized = not is_maximized
+77
+fit_to_workspace()
+78
+maximized_changed.emit(is_maximized)
+terminal_app_window.gd / L73–79
+Maximize stores the original bounds and restore returns to them. Dragging, minimizing, taskbar activation and closing retain the correct app state; reading a message clears its unread dot.
+ACTUAL SOURCE EXCERPTS / IN-GAME CAPTURES / SIX TARGETED SMOKE CHECKS PASSED
+PUBLIC SOURCE / 09 OCT 2026 / 05

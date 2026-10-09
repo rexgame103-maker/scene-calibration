@@ -12,6 +12,7 @@ func _run() -> void:
 	root.add_child(computer)
 	await process_frame
 	computer.open_desktop()
+	computer.call("_open_app", "mail")
 	await process_frame
 	await process_frame
 	var mail_dock := computer.find_child("MailDockButton", true, false) as Button

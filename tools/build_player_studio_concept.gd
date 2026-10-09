@@ -38,6 +38,8 @@ func _build() -> void:
 	# Lower self illumination than the first office, keeping pools of lamp light.
 	var mats: Dictionary={}
 	for mesh in scene.find_children("*","MeshInstance3D",true,false):
+		if bool(mesh.get_meta("stylized_material_locked", false)):
+			continue
 		var mat := mesh.material_override as ShaderMaterial
 		if mat!=null:
 			if not mats.has(mat):
@@ -59,6 +61,8 @@ func _build() -> void:
 	DirAccess.make_dir_recursive_absolute("res://assets/player_studio/meshes")
 	var meshes: Dictionary={}
 	for item in scene.find_children("*","MeshInstance3D",true,false):
+		if bool(item.get_meta("stylized_material_locked", false)):
+			continue
 		if item.mesh is ArrayMesh and not meshes.has(item.mesh):
 			var path := "res://assets/player_studio/meshes/mesh_%02d.res"%meshes.size()
 			ResourceSaver.save(item.mesh,path)
@@ -66,6 +70,8 @@ func _build() -> void:
 			meshes[item.mesh]=true
 	var saved_materials: Dictionary={}
 	for item in scene.find_children("*","MeshInstance3D",true,false):
+		if bool(item.get_meta("stylized_material_locked", false)):
+			continue
 		if item.material_override!=null and not saved_materials.has(item.material_override):
 			var path := "res://assets/player_studio/meshes/material_%04d.res"%saved_materials.size()
 			ResourceSaver.save(item.material_override,path)

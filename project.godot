@@ -20,12 +20,14 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+GameLanguage="*res://scripts/game_language.gd"
 CaseManager="*res://scripts/case_manager.gd"
 ReconstructionManager="*res://scripts/reconstruction_manager.gd"
 SceneTransition="*res://scripts/scene_transition.gd"
 PlayerProfile="*res://scripts/player_profile.gd"
 GameFlow="*res://scripts/game_flow.gd"
 PauseMenu="*res://scripts/pause_menu.gd"
+GameAudio="*res://scripts/game_audio.gd"
 
 [display]
 

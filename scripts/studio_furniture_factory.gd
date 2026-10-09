@@ -3,6 +3,7 @@ extends RefCounted
 
 
 const AUTHORED_PART_DIRECTORY := "res://scenes/studio/player_parts"
+const PLANT_FOLIAGE := preload("res://scenes/props/indoor_plant_foliage.tscn")
 const AUTHORED_PARTS := {
 	"studio_desk": "studio_desk",
 	"studio_chair": "studio_chair",
@@ -139,9 +140,13 @@ static func _lamp(root: Node3D, color: Color, preview: bool) -> void:
 
 static func _plant(root: Node3D, color: Color, preview: bool) -> void:
 	_cylinder(root, "Pot", 0.28, 0.42, Vector3(0, 0.21, 0), Color("7a5140"), preview)
-	_cylinder(root, "Stem", 0.045, 0.52, Vector3(0, 0.67, 0), Color("406441"), preview)
-	for offset: Vector3 in [Vector3(-0.18,0.88,0), Vector3(0.16,0.98,0.05), Vector3(0,1.12,-0.08), Vector3(0.17,0.80,-0.10)]:
-		_sphere(root, "Leaf", 0.24, offset, color, preview)
+	var foliage := PLANT_FOLIAGE.instantiate() as Node3D
+	foliage.position.y = 0.42
+	root.add_child(foliage)
+	if preview:
+		for leaf: GeometryInstance3D in foliage.get_children():
+			leaf.transparency = 0.48
+			leaf.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 
 
 static func _analysis_board(root: Node3D, color: Color, preview: bool) -> void:

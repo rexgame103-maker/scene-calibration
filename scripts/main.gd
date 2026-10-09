@@ -207,6 +207,8 @@ func _ready() -> void:
 	_initialize_starter_inventory()
 	_initialize_lighting_state()
 	_build_ui()
+	var audio_case := String(_get_case_manager().get_case_summary().get("case_id", ""))
+	GameAudio.set_ambience("amb_gallery" if "gallery" in audio_case else "amb_office")
 	_set_status("先打开案件资料查看警方照片，获得线索后会解锁家具", Color("cbbce5"))
 
 
@@ -625,6 +627,7 @@ func _on_case_furniture_unlocked(furniture_data: Dictionary) -> void:
 	var amount := maxi(1, int(furniture_data.get("inventory_amount", 1)))
 	inventory_counts[kind] = int(inventory_counts.get(kind, 0)) + amount
 	_refresh_inventory_ui()
+	GameAudio.play("item_unlock")
 	_set_status(
 		"已解锁「%s」，家具已加入右侧物品栏" % String(furniture_data.get("display_name", kind)),
 		Color("9de2b6")
@@ -1027,9 +1030,11 @@ func _input(event: InputEvent) -> void:
 			if event.button_index == MOUSE_BUTTON_LEFT and not event.pressed:
 				_finish_placement()
 			elif event.button_index == MOUSE_BUTTON_RIGHT and event.pressed:
+				GameAudio.play("paper_cancel")
 				_cancel_placement()
 		elif event is InputEventKey and event.pressed and not event.echo:
 			if event.keycode == KEY_ESCAPE:
+				GameAudio.play("paper_cancel")
 				_cancel_placement()
 				get_viewport().set_input_as_handled()
 			elif event.keycode == KEY_Q:
@@ -2341,9 +2346,12 @@ func _capture_and_archive_case() -> void:
 	var profile := get_node_or_null("/root/PlayerProfile")
 	var case_id := String((case_manager.call("get_case_summary") as Dictionary).get("case_id", "")) if is_instance_valid(case_manager) else ""
 	captured_case_photo_path = _capture_case_photo(case_id)
+	if not captured_case_photo_path.is_empty():
+		GameAudio.play("camera_shutter")
 	ui_root.visible = true
 	if is_instance_valid(profile) and not case_id.is_empty():
 		profile.call("complete_case", case_id, captured_case_photo_path)
+		GameAudio.play("archive_stamp")
 	first_case_flow_ui.finish_photo_capture(not captured_case_photo_path.is_empty())
 
 
@@ -2467,6 +2475,7 @@ func _begin_placement(kind: String) -> void:
 	placement_valid = false
 	_last_valid_state = false
 	_has_preview_tint = false
+	GameAudio.play("furniture_pickup")
 	_set_status("自由拖动中 · Q/E 每次旋转 90° · 松开确认放置", Color("d6c4ed"))
 
 
@@ -2477,6 +2486,7 @@ func _rotate_active_preview(angle_step: float) -> void:
 	active_preview.rotation_degrees = preview_rotation_degrees
 	_has_preview_tint = false
 	_update_active_preview()
+	GameAudio.play("furniture_rotate", active_preview.global_position)
 
 
 func _update_active_preview() -> void:
@@ -2534,6 +2544,7 @@ func _update_active_preview() -> void:
 	)
 	active_preview.rotation_degrees = preview_rotation_degrees
 	active_preview.visible = true
+	GameAudio.update_drag(self, active_preview.global_position, active_kind)
 	_sync_moving_supported_items(active_preview.global_transform, true)
 	_update_preview_bounds_marker(placement_origin)
 
@@ -2565,6 +2576,7 @@ func _update_active_preview() -> void:
 
 func _finish_placement() -> void:
 	if not placement_valid or not is_instance_valid(active_preview) or not active_preview.visible:
+		GameAudio.play("placement_invalid")
 		_cancel_placement()
 		return
 	if moving_existing:
@@ -2603,6 +2615,7 @@ func _finish_placement() -> void:
 		"requires_collection": false
 	})
 	_notify_reconstruction_placement_completed(placed)
+	GameAudio.play_placement(active_kind, placed.global_position)
 	var item_name: String = _furniture_info(active_kind).label
 	placing_from_inventory = false
 	_cancel_placement(false)
@@ -2610,6 +2623,7 @@ func _finish_placement() -> void:
 
 
 func _cancel_placement(show_message: bool = true) -> void:
+	GameAudio.end_drag(self)
 	if moving_existing and not editing_item.is_empty():
 		_restore_moving_supported_items()
 		var original_node: Node3D = editing_item.node
@@ -2833,6 +2847,7 @@ func _focus_selected_furniture() -> void:
 		_clear_selection(true)
 		return
 	focus_target_position = furniture_node.global_position + Vector3(0, 0.72, 0)
+	GameAudio.play("inspect_focus")
 	focus_yaw = 0.0
 	focus_target_yaw = 0.0
 	focus_pitch = 0.0
@@ -2980,6 +2995,7 @@ func _begin_move_selected() -> void:
 		original_body.linear_velocity = Vector3.ZERO
 		original_body.angular_velocity = Vector3.ZERO
 	_prepare_moving_supported_items(original_node, true)
+	GameAudio.begin_drag(self, original_node.global_position)
 	for cell: Vector2i in editing_item.cells:
 		occupied.erase(cell)
 	original_node.visible = false
@@ -3039,6 +3055,7 @@ func _commit_existing_move() -> void:
 	if is_instance_valid(furniture_body):
 		_set_placed_body_support_state(furniture_body, preview_support_node)
 	_notify_reconstruction_placement_completed(furniture_node)
+	GameAudio.play_placement(active_kind, furniture_node.global_position)
 	moving_existing = false
 	editing_item = {}
 	selected_item = updated_entry
@@ -3176,6 +3193,7 @@ func _collect_selected() -> void:
 		return
 	var furniture_node: Node3D = selected_item.node
 	var kind := String(selected_item.kind)
+	GameAudio.play("furniture_pickup", furniture_node.global_position)
 	var item_name: String = _furniture_info(kind).label
 	for cell: Vector2i in selected_item.cells:
 		occupied.erase(cell)
@@ -3410,6 +3428,9 @@ func _update_rotation_gizmo_drag(event: InputEventMouseMotion) -> void:
 func _end_rotation_gizmo_drag() -> void:
 	if not gizmo_dragging:
 		return
+	var node := selected_item.get("node", null) as Node3D
+	if is_instance_valid(node):
+		GameAudio.play("furniture_rotate", node.global_position)
 	gizmo_dragging = false
 	gizmo_axis_index = -1
 	_set_status("旋转角度已暂存 · 可继续拖动其他轴 · 完成后点击“确定”", Color("ffd47e"))

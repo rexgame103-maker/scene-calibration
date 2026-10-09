@@ -1,0 +1,21 @@
+Wooden Chair
+Photographer: epSos.de
+Source: https://commons.wikimedia.org/wiki/File:Wooden_Chair.jpg
+Original: https://www.flickr.com/photos/36495803@N05/6018530839/
+License: Creative Commons Attribution 2.0 Generic
+License URL: https://creativecommons.org/licenses/by/2.0/
+Derivative: wooden-chair-cutout.png
+Changes: background extracted with ImageGen. The SVG composition applies a reversible tonal filter.
+
+Agfa Isola II
+Photographer: Alfred (alf_sigaro on Flickr), Germany
+Source: https://commons.wikimedia.org/wiki/File:Agfa_Isola_II.jpg
+Original: https://www.flickr.com/photos/alf_sigaro/292259201/
+License: Creative Commons Attribution-ShareAlike 2.0 Generic
+License URL: https://creativecommons.org/licenses/by-sa/2.0/
+Derivative: camera-cutout.png, distributed under CC BY-SA 2.0.
+Changes: background extracted with ImageGen.
+The file's license is CC BY-SA 2.0. Commons' site-wide text license is not the photograph's license.
+
+Original source photos and generated transparent versions are retained separately.
+These licenses apply to these photographs and cutouts, not the official game screenshots.

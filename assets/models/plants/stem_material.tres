@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+
+[ext_resource type="Shader" path="res://shaders/gallery_toon.gdshader" id="1_toon"]
+
+[resource]
+shader = ExtResource("1_toon")
+shader_parameter/paint = Color(0.23, 0.3, 0.12, 1)
+shader_parameter/box_ink = false
+shader_parameter/grain = 0.015

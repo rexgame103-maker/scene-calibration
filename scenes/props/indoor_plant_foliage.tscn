@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/models/plants/indoor_leaves.res" id="1_leaves"]
+[ext_resource type="ArrayMesh" path="res://assets/models/plants/indoor_stems.res" id="2_stems"]
+[ext_resource type="Material" path="res://assets/models/plants/leaf_material.tres" id="3_leaf_material"]
+[ext_resource type="Material" path="res://assets/models/plants/stem_material.tres" id="4_stem_material"]
+
+[node name="PlantFoliage" type="Node3D"]
+metadata/leaf_count = 12
+
+[node name="Leaves" type="MeshInstance3D" parent="."]
+cast_shadow = 2
+mesh = ExtResource("1_leaves")
+material_override = ExtResource("3_leaf_material")
+metadata/stylized_material_locked = true
+
+[node name="Petioles" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_stems")
+material_override = ExtResource("4_stem_material")
+metadata/stylized_material_locked = true

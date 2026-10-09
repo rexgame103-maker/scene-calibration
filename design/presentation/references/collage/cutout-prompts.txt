@@ -1,0 +1,9 @@
+Image generation mode: edit / background-extraction; transparent_background=true.
+
+chair_cutout
+Reference: E:\GodotProject\悬疑建造\design\presentation\references\collage\wooden-chair-source.jpg
+BACKGROUND EXTRACTION ONLY. Use this exact reference photo. Isolate the complete wooden dining chair with its tan upholstered seat, preserving its exact frontal perspective, proportions, all four legs, wooden back slats, grain and realistic photographic details. Remove the wall, floor, floor shadow and all other background completely. Make all openings between the back slats and all gaps between the chair legs genuinely transparent. Do not add a new setting, paper, frame, typography, outline, sticker border or drop shadow. Keep the entire chair visible with a small clear margin on a genuinely transparent background. This is a faithful clean photographic cutout for an editorial newspaper collage.
+
+camera_cutout
+Reference: E:\GodotProject\悬疑建造\design\presentation\references\collage\camera-source.jpg
+BACKGROUND EXTRACTION ONLY. Use this exact reference photograph of an Agfa Isola II vintage camera. Remove the white background completely and preserve the exact full camera silhouette, frontal angle, black textured body, silver metal casing, lens, controls, original labels and realistic photographic detail. No invented parts, no recoloring, no illustration, no new text. Do not add a frame, paper, outline, sticker border or drop shadow. Keep the camera fully visible with a small clear margin on a genuinely transparent background. Faithful clean photographic cutout for an editorial newspaper collage.

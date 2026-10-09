@@ -1,0 +1,24 @@
+Use case: compositing.
+Asset type: a polished first cover for the game presentation / portfolio, all English, portrait 3:4 page, high resolution.
+Primary request: compose an elegant vintage newspaper cover for SCENE CALIBRATION using the supplied actual game screenshot as its main wide illustration. This is a flat finished cover design, not a photograph of a book or a newspaper sitting on a table.
+Input image 1 is the exact start-menu camera capture to place into the cover. Keep its full 16:9 scene composition, camera viewpoint, proportions, window and blinds on the left, chair in foreground, wooden desk, cyan monitor, lamp, mug, evidence board and all existing scene geometry unchanged. Do not reimagine or remodel the studio. No new people or faces, no added objects. A restrained sepia / ink halftone print treatment is allowed; the cel-shaded game scene must remain clearly recognizable.
+Input image 2 is ONLY a style reference for warm aged ivory paper, distressed black ink, fine double rules, restrained rust-red accents and newspaper typography. Do not copy its Chinese text, CITY DAILY masthead, photos, paperclip, or button.
+
+Composition: straight-on portrait newspaper page occupying the whole canvas, subtle paper wear and a narrow layered-paper edge, generous aligned margins. Dominant large black condensed serif masthead SCENE CALIBRATION, split over two lines if needed, clearly the largest text. Small uppercase edition line above. Then the game subtitle and a thin rust-red rule. The actual screenshot is a wide 16:9 hero image centered across the page, approximately the middle 40% of the cover height; show the entire scene without cropping or changing perspective. Below the hero, an editorial section heading and readable overview in two balanced newspaper columns separated by a hairline. Finish with three small equal columns describing the core loop. Refined restrained professional typesetting, visually balanced and legible at normal page size. No interface controls.
+
+Render only the following exact English text, each once, with correct spelling and natural line breaks:
+Top small line: "SPECIAL EDITION"
+Large masthead: "SCENE CALIBRATION"
+Small genre line: "A SPATIAL DEDUCTION GAME"
+Deck: "REBUILD THE SCENE. REVEAL THE TRUTH."
+Overview heading: "THE INVESTIGATION"
+Overview body: "Scene Calibration is a spatial deduction game about reconstructing places after the evidence has been disturbed. Work from a personal studio, compare photographs and records, and inspect traces on everyday objects. Restore furniture, lighting, and spatial relationships to test your deductions. Complete investigations, archive restored scenes, and equip your studio for the next case."
+Three footer columns:
+"OBSERVE"
+"Study photographs, records, and physical traces."
+"CONNECT"
+"Test how objects, surfaces, and light relate."
+"REVEAL"
+"Reconstruct the scene and preserve your findings."
+
+Constraints: all English. No buttons, menu, navigation, logos, ratings, promotional badges, fake review quotes, extra text, watermarks, checkerboard, Chinese characters or giant decorative face. No excessive props or collage clutter. Preserve the source scene and camera. Good contrast and readable body text; no tiny illegible filler.

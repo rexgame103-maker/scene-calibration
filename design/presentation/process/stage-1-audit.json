@@ -1,0 +1,17 @@
+{
+  "studio": {
+    "object_blocks": 15,
+    "all_objects_single_8_vertex_boxes": true,
+    "modelled_keyboard_parts": 0
+  },
+  "office": {
+    "object_blocks": 10,
+    "all_objects_single_8_vertex_boxes": true,
+    "modelled_keyboard_parts": 0
+  },
+  "restoration": {
+    "object_blocks": 10,
+    "all_objects_single_8_vertex_boxes": true,
+    "modelled_keyboard_parts": 0
+  }
+}

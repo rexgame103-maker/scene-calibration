@@ -1,0 +1,40 @@
+SCENE CALIBRATION / DESIGN DOSSIER
+NO. 04 / ENVIRONMENT PRODUCTION
+FROM BLOCKOUT TO ATMOSPHERE
+Three environments. Four stages. Establish the space, refine the objects, then shape the mood.
+01 / BLOCKOUT
+One object = one box. No parts.
+02 / FORM & STRUCTURE
+Silhouettes, supports and openings.
+03 / DETAIL PASS
+Joinery, props and surface cues.
+04 / FINAL LIGHTING
+Complete scenes captured in Godot.
+A
+PLAYER
+STUDIO
+Investigation hub
+Work + archive
+A1
+A2
+A3
+A4
+B
+OFFICE
+CASE 01
+Space + traces
+B1
+B2
+B3
+B4
+C
+RESTORATION
+ROOM
+CASE 02
+Light + evidence
+C1
+C2
+C3
+C4
+01–03 / RECONSTRUCTED BLENDER STUDIES     ·     04 / IN-ENGINE GODOT CAPTURES
+THREE SPACES / TWELVE VIEWS / 04

@@ -1,0 +1,24 @@
+{
+  "format": {
+    "width": 1920,
+    "height": 1080,
+    "language": "English",
+    "text": "editable SVG",
+    "images": "embedded Blender render PNGs"
+  },
+  "accepted_spaces": [
+    "Player studio (hub)",
+    "Office (case 01)",
+    "Conservation / heritage restoration lab (case 02)"
+  ],
+  "sources": [
+    "data/cases/office_case_001.json",
+    "data/cases/gallery_case_002.json",
+    "scripts/reconstruction_zone.gd",
+    "scripts/scene_clue_point.gd",
+    "scripts/reconstruction_manager.gd"
+  ],
+  "assets": "whitebox/scene-calibration-whiteboxes.blend",
+  "limitations": "Whiteboxes simplify geometry. Light arrows show evidence relationships, not a thermal simulation.",
+  "unrelated_legacy_cases": "Excluded from this page; project data left unchanged."
+}

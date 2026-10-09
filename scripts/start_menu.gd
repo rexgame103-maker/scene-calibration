@@ -52,6 +52,7 @@ func _on_start_game_pressed() -> void:
 func _on_exit_game_pressed() -> void:
 	if _starting_game or _resetting_game:
 		return
+	GameAudio.stop_all()
 	get_tree().quit()
 
 

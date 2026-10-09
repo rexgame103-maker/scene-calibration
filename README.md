@@ -8,6 +8,8 @@
 - **[离线浏览说明](review/README.md)**：目录树、带行号的完整文本源码、函数 / 节点导航和全文检索。
 - **[文件校验清单](review/manifest.json)**：实际文件路径、字节数与 SHA-256。
 - **[开发记录与操作说明](docs/DEVELOPMENT_NOTES.md)**：详细交互规则、编辑器配置与历史说明。
+- **[English code review map](docs/CODE_REVIEW.md)**: feature entry points, matching game captures, and verified checks.
+- **[Portfolio pages](design/presentation/README.md)**: editable English newspaper SVGs and PNG previews.
 
 下载完整工程后，双击 `review/index.html` 即可离线审阅源码。GitHub 上可直接阅读 `.gd`、`.tscn`、`.json` 与 `.gdshader` 文件；浏览页的 HTML 请下载到本地打开。
 
@@ -23,13 +25,15 @@
 
 ```text
 scene-calibration/
-├── project.godot          # 工程配置、启动入口与六个 Autoload
+├── project.godot          # 工程配置、启动入口与八个 Autoload
 ├── scripts/              # 游戏逻辑、输入、家具系统、存档与运行时 UI
 ├── scenes/               # 开始菜单、工作室、案件现场和界面节点
 ├── data/
 │   ├── cases/            # 案件、线索、资料、解锁与重构步骤
-│   └── progression/      # 案件进程与工作室商品
-├── assets/               # 模型、图片、字体、照片与 UI 图集
+│   ├── progression/      # 案件进程与工作室商品
+│   ├── localization/     # 英文翻译与语言设置
+│   └── audio/            # 音效清单与事件配置
+├── assets/               # 模型、图片、字体、照片、音效与 UI 图集
 ├── materials/            # Godot 材质资源
 ├── shaders/              # 着色器与手绘画面效果
 ├── tests/                # 功能验证脚本与预览
@@ -47,6 +51,10 @@ scene-calibration/
 4. [main.gd](scripts/main.gd) 与 [furniture_factory.gd](scripts/furniture_factory.gd)：家具创建与现场交互。
 5. [reconstruction_manager.gd](scripts/reconstruction_manager.gd)：空间条件与案件重构步骤。
 6. [player_profile.gd](scripts/player_profile.gd)：进度、库存和布局存档。
+7. [terminal_app_window.gd](scripts/terminal_app_window.gd) 与 [terminal_mail_client.gd](scripts/terminal_mail_client.gd)：桌面窗口、任务栏和邮件阅读状态。
+8. [game_language.gd](scripts/game_language.gd) 与 [game_audio.gd](scripts/game_audio.gd)：默认英语、语言偏好与事件音效。
+
+当前展示范围是玩家工作室，以及办公室、文物修复室两个正式案件。目录中的公寓数据是旧实验内容，不作为本项目的正式关卡展示。
 
 ## 离线交付与验证
 

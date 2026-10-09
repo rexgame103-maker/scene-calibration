@@ -1,203 +1,462 @@
 [gd_scene format=3 uid="uid://y30kbxq4w4uc"]
 
-[ext_resource type="Script" uid="uid://eexkqmupi7b3" path="res://scripts/the_scene_start_menu.gd" id="1_1v4md"]
-[ext_resource type="PackedScene" uid="uid://bty5ewfvqvm0j" path="res://scenes/studio/player_studio_concept.tscn" id="2_k2tum"]
-[ext_resource type="Shader" uid="uid://1tec2qvexmiv" path="res://shaders/menu_vignette.gdshader" id="3_y2hb1"]
-[ext_resource type="Texture2D" uid="uid://cqobtimo41bfo" path="res://assets/ui/the_scene_menu/face.png" id="4_imehm"]
-[ext_resource type="Texture2D" uid="uid://shmdr3a3ad2n" path="res://assets/ui/the_scene_menu/ink.png" id="5_fic02"]
-[ext_resource type="Texture2D" uid="uid://4st267g3h6x4" path="res://assets/ui/the_scene_menu/title.png" id="6_g7qin"]
-[ext_resource type="Texture2D" uid="uid://de8xt166ty2cf" path="res://assets/ui/the_scene_menu/button.png" id="7_he5jm"]
-[ext_resource type="Texture2D" uid="uid://cw77niajyneob" path="res://assets/ui/the_scene_menu/button_selected.png" id="8_tot5w"]
+[ext_resource type="Script" uid="uid://eexkqmupi7b3" path="res://scripts/the_scene_start_menu.gd" id="1_delxc"]
+[ext_resource type="PackedScene" uid="uid://bty5ewfvqvm0j" path="res://scenes/studio/player_studio_concept.tscn" id="2_42yir"]
+[ext_resource type="Shader" uid="uid://1tec2qvexmiv" path="res://shaders/menu_vignette.gdshader" id="3_nau7i"]
+[ext_resource type="Texture2D" path="res://assets/ui/case_briefing_newspaper/newspaper_modules.png" id="4_newspaper"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_88xkr"]
-shader = ExtResource("3_y2hb1")
+[sub_resource type="AtlasTexture" id="AtlasTexture_newspaper_page"]
+atlas = ExtResource("4_newspaper")
+region = Rect2(28, 364, 710, 445)
+filter_clip = true
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_25ygy"]
-content_margin_left = 40.0
-content_margin_top = 5.0
-content_margin_right = 24.0
-content_margin_bottom = 5.0
-texture = ExtResource("7_he5jm")
+[sub_resource type="AtlasTexture" id="AtlasTexture_paper_grain"]
+atlas = ExtResource("4_newspaper")
+region = Rect2(70, 646, 630, 113)
+filter_clip = true
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fx3yj"]
-content_margin_left = 40.0
-content_margin_top = 5.0
-content_margin_right = 24.0
-content_margin_bottom = 5.0
-texture = ExtResource("8_tot5w")
+[sub_resource type="AtlasTexture" id="AtlasTexture_newspaper_masthead"]
+atlas = ExtResource("4_newspaper")
+region = Rect2(43, 70, 1060, 160)
+filter_clip = true
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1v4md"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_x5u37"]
+shader = ExtResource("3_nau7i")
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k2tum"]
+[sub_resource type="SystemFont" id="SystemFont_fjl12"]
+font_names = PackedStringArray("STZhongsong", "SimSun", "Microsoft YaHei")
+font_weight = 700
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y2hb1"]
+[sub_resource type="SystemFont" id="SystemFont_menu"]
+font_names = PackedStringArray("Georgia", "STZhongsong", "SimSun", "Microsoft YaHei")
+font_weight = 400
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_imehm"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1v4md"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 3
+border_color = Color(1, 1, 1, 0)
 
-[node name="TheSceneStartMenu" type="Node3D" unique_id=2146342945]
-script = ExtResource("1_1v4md")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k2tum"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0.32, 0.18, 0.1, 0.12)
+border_width_left = 3
+border_color = Color(0.49, 0.27, 0.18, 1)
 
-[node name="StudioBackground" parent="." unique_id=1914095801 instance=ExtResource("2_k2tum")]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y2hb1"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0.32, 0.18, 0.1, 0.07)
+border_width_left = 3
+border_color = Color(0.49, 0.27, 0.18, 1)
 
-[node name="StartCamera" type="Camera3D" parent="." unique_id=2016854503]
-transform = Transform3D(0.93955326, -0.054628305, 0.33801693, 0, 0.98719084, 0.15954398, -0.34240282, -0.14990006, 0.92751837, 0.2, 2.78, 3.76)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_imehm"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 3
+border_color = Color(1, 1, 1, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fic02"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 3
+border_color = Color(0.49, 0.27, 0.18, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g7qin"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 3
+border_color = Color(1, 1, 1, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_he5jm"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0.32, 0.18, 0.1, 0.12)
+border_width_left = 3
+border_color = Color(0.49, 0.27, 0.18, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tot5w"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0.32, 0.18, 0.1, 0.07)
+border_width_left = 3
+border_color = Color(0.49, 0.27, 0.18, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_88xkr"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 3
+border_color = Color(1, 1, 1, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_25ygy"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 3
+border_color = Color(0.49, 0.27, 0.18, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fx3yj"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 3
+border_color = Color(1, 1, 1, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gd7yc"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0.32, 0.18, 0.1, 0.12)
+border_width_left = 3
+border_color = Color(0.49, 0.27, 0.18, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lipmt"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0.32, 0.18, 0.1, 0.07)
+border_width_left = 3
+border_color = Color(0.49, 0.27, 0.18, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_44kgy"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 3
+border_color = Color(1, 1, 1, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ynnqp"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 3
+border_color = Color(0.49, 0.27, 0.18, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j36lw"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 3
+border_color = Color(1, 1, 1, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1d37h"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0.32, 0.18, 0.1, 0.12)
+border_width_left = 3
+border_color = Color(0.49, 0.27, 0.18, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3q1l4"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0.32, 0.18, 0.1, 0.07)
+border_width_left = 3
+border_color = Color(0.49, 0.27, 0.18, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8v4ab"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 3
+border_color = Color(1, 1, 1, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_43r7q"]
+content_margin_left = 24.0
+content_margin_right = 20.0
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 3
+border_color = Color(0.49, 0.27, 0.18, 1)
+
+[node name="TheSceneStartMenu" type="Node3D" unique_id=2087201703]
+script = ExtResource("1_delxc")
+camera_push_in_distance = 0.65
+
+[node name="StudioBackground" parent="." unique_id=1914095801 instance=ExtResource("2_42yir")]
+
+[node name="StartCamera" type="Camera3D" parent="." unique_id=694013136]
+transform = Transform3D(0.6971651, -0.29615897, 0.6528788, 0, 0.91068363, 0.41310444, -0.7169106, -0.28800198, 0.6348969, 0.31545436, 2.877717, 1.9033573)
 current = true
-fov = 48.0
-near = 0.08
+fov = 44.5
+near = 0.06
 
-[node name="StartMenuUI" type="CanvasLayer" parent="." unique_id=1398040514]
+[node name="StartMenuUI" type="CanvasLayer" parent="." unique_id=1988961983]
 
-[node name="UIRoot" type="Control" parent="StartMenuUI" unique_id=1925425585]
+[node name="UIRoot" type="Control" parent="StartMenuUI" unique_id=1844115094]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1280.0
 offset_bottom = 720.0
 mouse_filter = 2
 
-[node name="Atmosphere" type="ColorRect" parent="StartMenuUI/UIRoot" unique_id=1441713173]
-material = SubResource("ShaderMaterial_88xkr")
+[node name="Atmosphere" type="ColorRect" parent="StartMenuUI/UIRoot" unique_id=1339613733]
+material = SubResource("ShaderMaterial_x5u37")
 layout_mode = 0
 offset_right = 1280.0
 offset_bottom = 720.0
 mouse_filter = 2
 
-[node name="Portrait" type="TextureRect" parent="StartMenuUI/UIRoot" unique_id=394953551]
-clip_contents = true
+[node name="NewspaperStack" type="Control" parent="StartMenuUI/UIRoot"]
 layout_mode = 0
-offset_left = -140.0
-offset_top = -30.0
-offset_right = 440.0
-offset_bottom = 740.0
+offset_right = 580.0
+offset_bottom = 720.0
 mouse_filter = 2
-texture = ExtResource("4_imehm")
-expand_mode = 1
-stretch_mode = 6
 
-[node name="InkOverlay" type="TextureRect" parent="StartMenuUI/UIRoot" unique_id=2100343806]
-modulate = Color(1, 1, 1, 0.85)
+[node name="BottomShadow" type="TextureRect" parent="StartMenuUI/UIRoot/NewspaperStack"]
+self_modulate = Color(0, 0, 0, 0.38)
 layout_mode = 0
-offset_left = -10.0
-offset_top = -8.0
-offset_right = 1290.0
-offset_bottom = 728.0
+offset_left = -188.0
+offset_top = 438.0
+offset_right = 362.0
+offset_bottom = 783.0
+rotation = -0.28
+pivot_offset = Vector2(275, 172.5)
 mouse_filter = 2
-texture = ExtResource("5_fic02")
+texture = SubResource("AtlasTexture_newspaper_page")
 expand_mode = 1
 
-[node name="MenuSlash" type="Polygon2D" parent="StartMenuUI/UIRoot" unique_id=1458295144]
-color = Color(0.03137255, 0.03137255, 0.023529412, 1)
-antialiased = true
-polygon = PackedVector2Array(379, -20, 393, -20, 274, 725, 259, 740, 280, 582, 307, 421, 331, 264)
-
-[node name="Title" type="TextureRect" parent="StartMenuUI/UIRoot" unique_id=2083448950]
+[node name="BottomPaper" type="TextureRect" parent="StartMenuUI/UIRoot/NewspaperStack"]
+modulate = Color(0.93, 0.89, 0.82, 1)
 layout_mode = 0
-offset_left = 312.0
-offset_top = 56.0
-offset_right = 1162.0
-offset_bottom = 296.0
-rotation = -0.12217305
+offset_left = -196.0
+offset_top = 427.0
+offset_right = 354.0
+offset_bottom = 772.0
+rotation = -0.28
+pivot_offset = Vector2(275, 172.5)
 mouse_filter = 2
-texture = ExtResource("6_g7qin")
+texture = SubResource("AtlasTexture_newspaper_page")
 expand_mode = 1
 
-[node name="MenuLayout" type="Control" parent="StartMenuUI/UIRoot" unique_id=1226274151]
+[node name="BlankPrintArea" type="TextureRect" parent="StartMenuUI/UIRoot/NewspaperStack/BottomPaper"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 60.0
+offset_right = 520.0
+offset_bottom = 305.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_paper_grain")
+expand_mode = 1
+
+[node name="MiddleShadow" type="TextureRect" parent="StartMenuUI/UIRoot/NewspaperStack"]
+self_modulate = Color(0, 0, 0, 0.4)
+layout_mode = 0
+offset_left = -160.0
+offset_top = 249.0
+offset_right = 300.0
+offset_bottom = 538.0
+rotation = -0.08
+pivot_offset = Vector2(230, 144.5)
+mouse_filter = 2
+texture = SubResource("AtlasTexture_newspaper_page")
+expand_mode = 1
+
+[node name="MiddlePaper" type="TextureRect" parent="StartMenuUI/UIRoot/NewspaperStack"]
+layout_mode = 0
+offset_left = -168.0
+offset_top = 238.0
+offset_right = 292.0
+offset_bottom = 527.0
+rotation = -0.08
+pivot_offset = Vector2(230, 144.5)
+mouse_filter = 2
+texture = SubResource("AtlasTexture_newspaper_page")
+expand_mode = 1
+
+[node name="BlankPrintArea" type="TextureRect" parent="StartMenuUI/UIRoot/NewspaperStack/MiddlePaper"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 55.0
+offset_right = 435.0
+offset_bottom = 260.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_paper_grain")
+expand_mode = 1
+
+[node name="Masthead" type="TextureRect" parent="StartMenuUI/UIRoot/NewspaperStack/MiddlePaper"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 15.0
+offset_right = 435.0
+offset_bottom = 77.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_newspaper_masthead")
+expand_mode = 1
+
+[node name="TopShadow" type="TextureRect" parent="StartMenuUI/UIRoot/NewspaperStack"]
+self_modulate = Color(0, 0, 0, 0.42)
+layout_mode = 0
+offset_left = -77.0
+offset_top = -99.0
+offset_right = 548.0
+offset_bottom = 291.0
+rotation = 0.19
+pivot_offset = Vector2(312.5, 195)
+mouse_filter = 2
+texture = SubResource("AtlasTexture_newspaper_page")
+expand_mode = 1
+
+[node name="TopPaper" type="TextureRect" parent="StartMenuUI/UIRoot/NewspaperStack"]
+layout_mode = 0
+offset_left = -85.0
+offset_top = -110.0
+offset_right = 540.0
+offset_bottom = 280.0
+rotation = 0.19
+pivot_offset = Vector2(312.5, 195)
+mouse_filter = 2
+texture = SubResource("AtlasTexture_newspaper_page")
+expand_mode = 1
+
+[node name="BlankPrintArea" type="TextureRect" parent="StartMenuUI/UIRoot/NewspaperStack/TopPaper"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 85.0
+offset_right = 595.0
+offset_bottom = 330.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_paper_grain")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="StartMenuUI/UIRoot" unique_id=1029103046]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 85.0
+offset_right = 495.0
+offset_bottom = 170.0
+theme_override_colors/font_color = Color(0.18431373, 0.14901961, 0.12156863, 1)
+theme_override_fonts/font = SubResource("SystemFont_fjl12")
+theme_override_font_sizes/font_size = 60
+text = "错位现场"
+clip_text = true
+
+[node name="Subtitle" type="Label" parent="StartMenuUI/UIRoot" unique_id=175078772]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 175.0
+offset_right = 431.0
+offset_bottom = 201.0
+theme_override_colors/font_color = Color(0.4627451, 0.40784314, 0.3254902, 1)
+theme_override_font_sizes/font_size = 17
+text = "SCENE CALIBRATION"
+
+[node name="StudioCaption" type="Label" parent="StartMenuUI/UIRoot" unique_id=512391627]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 610.0
+offset_right = 334.0
+offset_bottom = 638.0
+theme_override_colors/font_color = Color(0.31764707, 0.27058825, 0.21176471, 1)
+theme_override_font_sizes/font_size = 14
+text = "校准员工作室"
+
+[node name="Motto" type="Label" parent="StartMenuUI/UIRoot" unique_id=2044933986]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 638.0
+offset_right = 434.0
+offset_bottom = 663.0
+theme_override_colors/font_color = Color(0.4745098, 0.41568628, 0.33333334, 1)
+theme_override_font_sizes/font_size = 13
+text = "观察 · 连接 · 还原"
+
+[node name="MenuLayout" type="Control" parent="StartMenuUI/UIRoot" unique_id=1962200613]
 anchors_preset = 0
 mouse_filter = 2
 
-[node name="MenuColumn" type="Control" parent="StartMenuUI/UIRoot/MenuLayout" unique_id=335301133]
+[node name="MenuColumn" type="Control" parent="StartMenuUI/UIRoot/MenuLayout" unique_id=1423221967]
 anchors_preset = 0
-offset_left = 305.145
-offset_top = 311.0
-offset_right = 630.1459
-offset_bottom = 567.0
-rotation = -0.12217305
+offset_left = 62.0
+offset_top = 310.0
+offset_right = 392.0
+offset_bottom = 599.0
 
-[node name="StartButton" type="Button" parent="StartMenuUI/UIRoot/MenuLayout/MenuColumn" unique_id=131788886]
-custom_minimum_size = Vector2(325, 56)
+[node name="StartButton" type="Button" parent="StartMenuUI/UIRoot/MenuLayout/MenuColumn" unique_id=2110963858]
 layout_mode = 0
-offset_right = 325.0
-offset_bottom = 56.0
+offset_right = 210.0
+offset_bottom = 54.0
 mouse_default_cursor_shape = 2
-theme_override_colors/font_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
-theme_override_colors/font_focus_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
-theme_override_colors/font_pressed_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
-theme_override_colors/font_hover_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
-theme_override_colors/font_disabled_color = Color(0.5058824, 0.46666667, 0.4, 1)
-theme_override_font_sizes/font_size = 27
-theme_override_styles/normal = SubResource("StyleBoxTexture_25ygy")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_fx3yj")
-theme_override_styles/hover = SubResource("StyleBoxTexture_fx3yj")
-theme_override_styles/disabled = SubResource("StyleBoxTexture_25ygy")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_1v4md")
+theme_override_colors/font_color = Color(0.2, 0.16, 0.12, 1)
+theme_override_colors/font_focus_color = Color(0.49, 0.24, 0.16, 1)
+theme_override_colors/font_pressed_color = Color(0.38, 0.19, 0.11, 1)
+theme_override_colors/font_hover_color = Color(0.49, 0.24, 0.16, 1)
+theme_override_colors/font_disabled_color = Color(0.52, 0.48, 0.41, 1)
+theme_override_fonts/font = SubResource("SystemFont_menu")
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("StyleBoxFlat_1v4md")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_k2tum")
+theme_override_styles/hover = SubResource("StyleBoxFlat_y2hb1")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_imehm")
+theme_override_styles/focus = SubResource("StyleBoxFlat_fic02")
 text = "开始游戏"
 alignment = 0
 
-[node name="ContinueButton" type="Button" parent="StartMenuUI/UIRoot/MenuLayout/MenuColumn" unique_id=1270221058]
-custom_minimum_size = Vector2(325, 56)
+[node name="ContinueButton" type="Button" parent="StartMenuUI/UIRoot/MenuLayout/MenuColumn" unique_id=1967080287]
 layout_mode = 0
-offset_left = -18.0
-offset_top = 60.0
-offset_right = 307.0
-offset_bottom = 116.0
+offset_top = 66.0
+offset_right = 210.0
+offset_bottom = 120.0
 mouse_default_cursor_shape = 2
-theme_override_colors/font_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
-theme_override_colors/font_focus_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
-theme_override_colors/font_pressed_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
-theme_override_colors/font_hover_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
-theme_override_colors/font_disabled_color = Color(0.5058824, 0.46666667, 0.4, 1)
-theme_override_font_sizes/font_size = 27
-theme_override_styles/normal = SubResource("StyleBoxTexture_25ygy")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_fx3yj")
-theme_override_styles/hover = SubResource("StyleBoxTexture_fx3yj")
-theme_override_styles/disabled = SubResource("StyleBoxTexture_25ygy")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_k2tum")
+theme_override_colors/font_color = Color(0.2, 0.16, 0.12, 1)
+theme_override_colors/font_focus_color = Color(0.49, 0.24, 0.16, 1)
+theme_override_colors/font_pressed_color = Color(0.38, 0.19, 0.11, 1)
+theme_override_colors/font_hover_color = Color(0.49, 0.24, 0.16, 1)
+theme_override_colors/font_disabled_color = Color(0.52, 0.48, 0.41, 1)
+theme_override_fonts/font = SubResource("SystemFont_menu")
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("StyleBoxFlat_g7qin")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_he5jm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tot5w")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_88xkr")
+theme_override_styles/focus = SubResource("StyleBoxFlat_25ygy")
 text = "继续游戏"
 alignment = 0
 
-[node name="SettingsButton" type="Button" parent="StartMenuUI/UIRoot/MenuLayout/MenuColumn" unique_id=579808905]
-custom_minimum_size = Vector2(325, 56)
+[node name="SettingsButton" type="Button" parent="StartMenuUI/UIRoot/MenuLayout/MenuColumn" unique_id=2058345458]
 layout_mode = 0
-offset_left = -36.0
-offset_top = 120.0
-offset_right = 289.0
-offset_bottom = 176.0
+offset_top = 132.0
+offset_right = 210.0
+offset_bottom = 186.0
 mouse_default_cursor_shape = 2
-theme_override_colors/font_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
-theme_override_colors/font_focus_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
-theme_override_colors/font_pressed_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
-theme_override_colors/font_hover_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
-theme_override_colors/font_disabled_color = Color(0.5058824, 0.46666667, 0.4, 1)
-theme_override_font_sizes/font_size = 27
-theme_override_styles/normal = SubResource("StyleBoxTexture_25ygy")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_fx3yj")
-theme_override_styles/hover = SubResource("StyleBoxTexture_fx3yj")
-theme_override_styles/disabled = SubResource("StyleBoxTexture_25ygy")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_y2hb1")
+theme_override_colors/font_color = Color(0.2, 0.16, 0.12, 1)
+theme_override_colors/font_focus_color = Color(0.49, 0.24, 0.16, 1)
+theme_override_colors/font_pressed_color = Color(0.38, 0.19, 0.11, 1)
+theme_override_colors/font_hover_color = Color(0.49, 0.24, 0.16, 1)
+theme_override_colors/font_disabled_color = Color(0.52, 0.48, 0.41, 1)
+theme_override_fonts/font = SubResource("SystemFont_menu")
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("StyleBoxFlat_fx3yj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gd7yc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lipmt")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_44kgy")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ynnqp")
 text = "设置"
 alignment = 0
 
-[node name="ExitButton" type="Button" parent="StartMenuUI/UIRoot/MenuLayout/MenuColumn" unique_id=446394759]
-custom_minimum_size = Vector2(325, 56)
+[node name="ExitButton" type="Button" parent="StartMenuUI/UIRoot/MenuLayout/MenuColumn" unique_id=1656850608]
 layout_mode = 0
-offset_left = -54.0
-offset_top = 180.0
-offset_right = 271.0
-offset_bottom = 236.0
+offset_top = 222.0
+offset_right = 210.0
+offset_bottom = 276.0
 mouse_default_cursor_shape = 2
-theme_override_colors/font_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
-theme_override_colors/font_focus_color = Color(0.93333334, 0.88235295, 0.76862746, 1)
-theme_override_colors/font_pressed_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
-theme_override_colors/font_hover_color = Color(0.15294118, 0.1254902, 0.09019608, 1)
-theme_override_colors/font_disabled_color = Color(0.5058824, 0.46666667, 0.4, 1)
-theme_override_font_sizes/font_size = 27
-theme_override_styles/normal = SubResource("StyleBoxTexture_25ygy")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_fx3yj")
-theme_override_styles/hover = SubResource("StyleBoxTexture_fx3yj")
-theme_override_styles/disabled = SubResource("StyleBoxTexture_25ygy")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_imehm")
-text = "退出"
+theme_override_colors/font_color = Color(0.2, 0.16, 0.12, 1)
+theme_override_colors/font_focus_color = Color(0.49, 0.24, 0.16, 1)
+theme_override_colors/font_pressed_color = Color(0.38, 0.19, 0.11, 1)
+theme_override_colors/font_hover_color = Color(0.49, 0.24, 0.16, 1)
+theme_override_colors/font_disabled_color = Color(0.52, 0.48, 0.41, 1)
+theme_override_fonts/font = SubResource("SystemFont_menu")
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("StyleBoxFlat_j36lw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1d37h")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3q1l4")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_8v4ab")
+theme_override_styles/focus = SubResource("StyleBoxFlat_43r7q")
+text = "退出游戏"
 alignment = 0
 
-[node name="ResetGameButton" type="Button" parent="StartMenuUI/UIRoot" unique_id=901919720]
+[node name="ResetGameButton" type="Button" parent="StartMenuUI/UIRoot" unique_id=1518330677]
 visible = false
 layout_mode = 0

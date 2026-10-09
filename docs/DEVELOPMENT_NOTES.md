@@ -10,6 +10,16 @@
 
 主镜头使用轻微透视的长焦构图，在保留 2.5D 等距观感的同时提供适度的近大远小效果。
 
+## 界面语言
+
+开始菜单的 `Settings → Language` 可选择 `English` 或 `简体中文`，首次启动默认英语。选择即时生效，并保存到 `user://the_scene_options.cfg` 的 `interface/language`；声音和显示设置共用此文件，修改设置时保留已有字段。
+
+`GameLanguage` 在其他 Autoload 之前加载语言偏好与 `data/localization/en.json`。英文表以原始中文为键，涵盖菜单、工作室、电脑、家具、案件正文、调查提示与结案页。新增文案时在表中补充对应英文；格式字符串的 `%d`、`%s` 等参数须保留相同数量和顺序。
+
+`scripts/ui_translation.gd` 接入 Godot 原生 `TranslationServer`，也处理已有界面先格式化再赋给控件的金额、数量、家具名称、已读标识和多行资料按钮。控件的原始文字保留给类别筛选等逻辑，案件 ID 与玩家存档使用原来的字段。绘制照片字幕时显式调用 `tr()`。
+
+语言检查使用独立的临时工程与用户目录：`tools/run_audio_smoke.ps1 -Tests smoke_language_settings,smoke_language_saved`。检查默认语言、即时切换、动态文字、资料筛选、英文布局和重启后的偏好读取。
+
 ## 操作
 
 - 游戏开始时，编辑器中预先摆好的家具会作为案发现场家具保留原姿态
@@ -140,15 +150,26 @@
 
 ## 开始界面工作室预览
 
-打开 `scenes/start_menu/start_menu_office.tscn` 可以在 3D 编辑器中调整标题界面的循环镜头。背景固定实例化家具齐全的 `player_studio_concept.tscn`，不会因为新游戏的工作室布局为空而变空。该场景是 `project.godot` 的启动入口。
+打开 `scenes/start_menu/start_menu_office.tscn` 可以调整开始界面。镜头朝向玩家工作室窗户，左侧为深色渐变上的标题和菜单。背景直接实例化家具齐全的 `player_studio_concept.tscn`，使用原工作室的模型、窗户材质、百叶窗和灯光，不会因为新游戏的工作室布局为空而变空。该场景是 `project.godot` 的启动入口。
 
-- `StartCamera`：在设定的近、远阈值之间缓慢推进和拉远，并带轻微晃动
-- `StudioBackground`：家具齐全的固定工作室，仅作为标题画面
-- `StartMenuUI/UIRoot`：角色、墨迹、`THE SCENE` 标题与开始、继续、设置、退出按钮
+- `StartCamera`：直接在 3D 编辑器调整并保存位置、旋转角度和 `Fov`，运行时以保存的构图为运动起点，不会被固定的目标或方向覆盖。
+- 场景根节点 Inspector 的“循环镜头”：`Loop Push In Distance` 设置沿镜头前方的推进距离（默认 0.45 米），`Travel Cycle Seconds` 设置往返周期（默认 48 秒，前 24 秒缓慢推进，后 24 秒平滑返回）；`Sway Distance`、`Sway Rotation Degrees`、`Sway Roll Degrees` 调整轻微位移、俯仰偏转和侧倾。`Camera Motion Enabled` 或游戏设置的“背景镜头运动”关闭时，镜头恢复到场景中保存的构图；已保存的游戏设置优先于 Inspector 的默认开关。
+- `StudioBackground`：直接使用原工作室场景，开始界面没有新增窗帘、窗外模型或灯光。
+- `StartMenuUI/UIRoot`：可在 2D 编辑器调整标题、说明和四个菜单按钮的位置、尺寸、颜色与字体。`NewspaperStack` 以已有 `newspaper_modules.png` 的透明模块组成三张错位倾斜的纸，深色菜单文字印在纸面上；各 `Paper` 的位置、旋转和尺寸可以直接手动调整。纸张与阴影均忽略鼠标输入，悬停及焦点反馈由原生按钮处理。`Atmosphere` 为背景提供左侧暗角。
+
+`tools/build_window_start_menu.gd` 是当前布局的重建脚本；手动调整直接保存场景即可，重建会覆盖场景中的手动布局，但保留已保存的 `StartCamera` 位置、角度和视野。
 
 “开始游戏”会锁定菜单操作，让 `StartCamera` 平滑向工作室推进，同时淡出至黑屏；随后进入可交互的玩家工作室 `scenes/studio/calibrator_studio.tscn`，再从黑色淡入游戏画面。“结束游戏”会退出当前运行实例。跨场景黑屏由 Autoload `SceneTransition` 统一管理。
 
 在工作室或案件现场的普通界面中按 `Esc` 会打开全局暂停小窗口，可以继续游戏、回到开始界面或退出游戏。检视、资料、电脑界面或正在摆放家具时，`Esc` 优先退出当前局部操作。
+
+## 电脑邮箱界面
+
+`scenes/ui/terminal_mail_client.tscn` 可在 2D 编辑器直接调整邮件区：`Toolbar` 是工具栏，`Panes/Messages` 是邮件列表，`Panes/Reader` 是发件人、收件人、主题和正文，`Status` 是底部邮件数量。运行时可以拖动列表与正文之间的分隔条；正文较长时在白色阅读窗内滚动。
+
+`assets/ui/computer_terminal/classic_mail_theme.tres` 控制六个应用共用的方角灰色按钮、凹槽内容框、选中行和字体；窗口外框、相册、商店、案件索引、小游戏和系统工具由 `scripts/studio_computer_ui.gd` 构建。收件箱显示当前可用邮件，已读邮件按已读状态筛选，已归档显示已完成案件的邮件。
+
+打开邮件并在正文末尾停留 1.2 秒后自动标为已读；长邮件须滚到末尾，离开或关闭邮箱会取消计时，也可以点击“标为已读”。阅读不会自动接取案件。邮箱入口的 10 像素小红点只在有未读邮件时显示，最后一封读完后隐藏，有新邮件时重新出现。已读状态写入原有存档，刷新状态不会重建阅读窗或重置正文滚动位置。
 
 ## 当前资产尺寸
 
@@ -196,3 +217,11 @@
 ```
 
 这条链路是：`SceneCluePoint` 调查 → `CaseManager.discover_clue()` → `clue_discovered` / 家具条件评估 → `furniture_unlocked` → 现有家具栏增加对应物品。
+
+## UI 文本边界检查
+
+运行 `tools/run_audio_smoke.ps1 -Tests smoke_ui_text_fit`，使用真实渲染器和独立测试存档检查中英文界面，窗口尺寸为 1280×720、1024×600、2048×1055。覆盖开始菜单、设置、重置确认、三个案件的资料分类与照片、参考图、家具菜单和检视/旋转、调光、结算、暂停、工作室家具分页，以及六个电脑软件的普通、最大化和最小化状态。
+
+检查按钮时必须扣除各状态的内容边距、图标和下拉箭头，测量文字本身的宽高；检查标签时须检查更外层的卡片，避免布局容器伸出纸框却被判定通过。滚动区域允许内容延伸，但卡片内部的文字不能延伸。原先超长的参考按钮与多行按钮溢出均保留为检查器的回归样例。
+
+参考栏使用短标题，两列排列；完整资料名称保留在悬停提示。运行后，`tests/ui_text_fit_report.json` 保存问题列表，`tests/ui_text_fit_coverage.json` 保存具体覆盖状态，`tests/ui_reference_fit_en.png` 保存英文参考栏截图。新增界面或动态提示也要加入覆盖状态，不能仅凭已有状态通过就声称所有 UI 均已验证。

@@ -51,7 +51,12 @@ func set_enabled(enabled: bool) -> void:
 
 
 func set_energy(value: float, emit_change := true) -> void:
+	var was_on := light_energy > 0.01
 	light_energy = clampf(value, 0.0, 4.0)
+	if emit_change and not Engine.is_editor_hint() and was_on != (light_energy > 0.01):
+		var audio := get_node_or_null("/root/GameAudio")
+		if audio != null:
+			audio.call("play", "lamp_toggle", global_position)
 	_apply_settings(emit_change)
 
 

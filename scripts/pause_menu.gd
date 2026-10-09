@@ -43,6 +43,7 @@ func open_pause_menu() -> bool:
 	overlay.visible = true
 	overlay.move_to_front()
 	get_tree().paused = true
+	GameAudio.play("dossier_open")
 	continue_button.grab_focus()
 	return true
 
@@ -52,6 +53,7 @@ func close_pause_menu() -> void:
 		return
 	get_tree().paused = false
 	overlay.visible = false
+	GameAudio.play("dossier_close")
 
 
 func _on_continue_pressed() -> void:
@@ -77,6 +79,7 @@ func _on_return_to_start_pressed() -> void:
 
 func _on_exit_pressed() -> void:
 	get_tree().paused = false
+	GameAudio.stop_all()
 	get_tree().quit()
 
 

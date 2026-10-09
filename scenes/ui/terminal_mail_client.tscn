@@ -1,0 +1,165 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/terminal_mail_client.gd" id="1_script"]
+[ext_resource type="Theme" path="res://assets/ui/computer_terminal/classic_mail_theme.tres" id="2_theme"]
+[ext_resource type="Texture2D" path="res://assets/ui/computer_terminal/icons/mail.png" id="3_mail"]
+
+[sub_resource type="StyleBoxFlat" id="Style_reader"]
+bg_color = Color(0.835, 0.824, 0.776, 1)
+content_margin_left = 10.0
+content_margin_top = 8.0
+content_margin_right = 10.0
+content_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxFlat" id="Style_body"]
+bg_color = Color(0.945, 0.937, 0.894, 1)
+content_margin_left = 14.0
+content_margin_top = 12.0
+content_margin_right = 14.0
+content_margin_bottom = 12.0
+
+[node name="TerminalMailClient" type="VBoxContainer"]
+offset_right = 850.0
+offset_bottom = 540.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_theme")
+theme_override_constants/separation = 5
+script = ExtResource("1_script")
+
+[node name="Toolbar" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="CheckMail" type="Button" parent="Toolbar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(118, 32)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "收取邮件"
+icon = ExtResource("3_mail")
+expand_icon = true
+theme_override_constants/icon_max_width = 22
+
+[node name="MarkRead" type="Button" parent="Toolbar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "标为已读"
+
+[node name="CaseAction" type="Button" parent="Toolbar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "接取委托"
+
+[node name="Spacer" type="Control" parent="Toolbar"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="FolderName" type="Label" parent="Toolbar"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "收件箱"
+
+[node name="ToolbarRule" type="HSeparator" parent="."]
+layout_mode = 2
+
+[node name="Panes" type="VSplitContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+split_offset = -105
+
+[node name="Messages" type="Tree" parent="Panes"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 110)
+layout_mode = 2
+size_flags_vertical = 3
+columns = 3
+column_titles_visible = true
+hide_root = true
+select_mode = 1
+
+[node name="Reader" type="VBoxContainer" parent="Panes"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 2
+
+[node name="Fields" type="PanelContainer" parent="Panes/Reader"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("Style_reader")
+
+[node name="Grid" type="GridContainer" parent="Panes/Reader/Fields"]
+layout_mode = 2
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 4
+columns = 2
+
+[node name="FromCaption" type="Label" parent="Panes/Reader/Fields/Grid"]
+layout_mode = 2
+text = "发件人："
+
+[node name="Sender" type="Label" parent="Panes/Reader/Fields/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+autowrap_mode = 3
+
+[node name="ToCaption" type="Label" parent="Panes/Reader/Fields/Grid"]
+layout_mode = 2
+text = "收件人："
+
+[node name="Recipient" type="Label" parent="Panes/Reader/Fields/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "校准员 · 本地终端"
+autowrap_mode = 3
+
+[node name="SubjectCaption" type="Label" parent="Panes/Reader/Fields/Grid"]
+layout_mode = 2
+text = "主题："
+
+[node name="Subject" type="Label" parent="Panes/Reader/Fields/Grid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+autowrap_mode = 3
+
+[node name="BodyPanel" type="PanelContainer" parent="Panes/Reader"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("Style_body")
+
+[node name="Scroll" type="ScrollContainer" parent="Panes/Reader/BodyPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="Body" type="RichTextLabel" parent="Panes/Reader/BodyPanel/Scroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/normal_font_size = 13
+fit_content = true
+scroll_active = false
+
+[node name="StatusRule" type="HSeparator" parent="."]
+layout_mode = 2
+
+[node name="Status" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="MessageCount" type="Label" parent="Status"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "共 0 封邮件，0 封未读"
+
+[node name="SelectionState" type="Label" parent="Status"]
+unique_name_in_owner = true
+layout_mode = 2

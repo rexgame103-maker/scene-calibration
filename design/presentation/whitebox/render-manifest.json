@@ -1,0 +1,203 @@
+{
+  "studio": {
+    "scene": "01_Studio_Hub",
+    "resolution": [
+      1200,
+      720
+    ],
+    "anchors": {
+      "terminal": [
+        733.85,
+        261.48
+      ],
+      "chair": [
+        625.52,
+        406.12
+      ]
+    }
+  },
+  "office-workstation": {
+    "scene": "02_Office_Workstation",
+    "resolution": [
+      1200,
+      720
+    ],
+    "anchors": {
+      "desk": [
+        735.24,
+        209.45
+      ],
+      "wear": [
+        852.75,
+        295.28
+      ]
+    }
+  },
+  "office-full": {
+    "scene": "03_Office_Restored",
+    "resolution": [
+      1200,
+      720
+    ],
+    "anchors": {
+      "desk": [
+        714.71,
+        278.7
+      ],
+      "wear": [
+        826.77,
+        361.58
+      ],
+      "cabinet": [
+        864.64,
+        370.8
+      ],
+      "shelf": [
+        492.01,
+        142.67
+      ],
+      "printer": [
+        767.07,
+        445.41
+      ],
+      "dispenser": [
+        568.21,
+        186.83
+      ],
+      "files": [
+        475.39,
+        165.45
+      ]
+    }
+  },
+  "office-wear": {
+    "scene": "04_Desk_Wear_Detail",
+    "resolution": [
+      1200,
+      720
+    ],
+    "anchors": {
+      "wear": [
+        646.54,
+        392.02
+      ]
+    }
+  },
+  "office-files": {
+    "scene": "05_Middle_Shelf_Detail",
+    "resolution": [
+      1200,
+      720
+    ],
+    "anchors": {
+      "red": [
+        328.56,
+        334.64
+      ],
+      "gray": [
+        553.62,
+        351.19
+      ],
+      "beige": [
+        778.68,
+        367.74
+      ]
+    }
+  },
+  "lab-standard": {
+    "scene": "06_Conservation_Standard",
+    "resolution": [
+      1200,
+      720
+    ],
+    "anchors": {
+      "table": [
+        558.01,
+        252.75
+      ],
+      "cold": [
+        648.26,
+        131.18
+      ],
+      "lamp": [
+        1016.86,
+        274.72
+      ],
+      "reflector": [
+        912.11,
+        215.77
+      ],
+      "camera": [
+        388.16,
+        307.0
+      ]
+    }
+  },
+  "lab-actual": {
+    "scene": "07_Conservation_Actual",
+    "resolution": [
+      1200,
+      720
+    ],
+    "anchors": {
+      "table": [
+        637.45,
+        294.49
+      ],
+      "cold": [
+        984.99,
+        235.55
+      ],
+      "lamp": [
+        753.13,
+        312.06
+      ],
+      "reflector": [
+        521.76,
+        212.79
+      ],
+      "camera": [
+        492.49,
+        373.93
+      ]
+    }
+  },
+  "lab-light": {
+    "scene": "08_Conservation_Light_Detail",
+    "resolution": [
+      1200,
+      720
+    ],
+    "anchors": {
+      "lamp": [
+        855.92,
+        346.19
+      ],
+      "reflector": [
+        354.17,
+        146.53
+      ],
+      "damage": [
+        739.5,
+        235.71
+      ],
+      "tool": [
+        574.69,
+        280.63
+      ]
+    }
+  },
+  "lab-soft-shadow": {
+    "scene": "09_Soft_Shadow_Detail",
+    "resolution": [
+      1200,
+      720
+    ],
+    "anchors": {
+      "tool": [
+        560.39,
+        223.12
+      ]
+    }
+  }
+}

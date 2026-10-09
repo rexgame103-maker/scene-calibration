@@ -123,6 +123,7 @@ func _ready() -> void:
 	_build_shell()
 	_restore_layout()
 	_build_ui()
+	GameAudio.set_ambience("amb_studio")
 	_refresh_catalog()
 	_switch_floor(0, false)
 	_set_status("搭建模式 · 从右侧拖出家具，或按住场内家具直接移动 · Q/E 旋转 90°", Color("cbbce5"))
@@ -354,6 +355,8 @@ func _set_catalog_page(page_index: int) -> void:
 	var page_count := _catalog_page_count()
 	if page_index < 0 or page_index >= page_count:
 		return
+	if page_index != catalog_page:
+		GameAudio.play("page_turn")
 	catalog_page = page_index
 	_render_catalog_page()
 
@@ -473,6 +476,7 @@ func _begin_placement(kind: String, moving: Node3D = null, from_inventory := fal
 	preview_wall_attachment.clear()
 	preview_rotation = moving.rotation_degrees if is_instance_valid(moving) else Vector3.ZERO
 	active_preview = StudioFurnitureFactory.build(kind, true)
+	GameAudio.begin_drag(self, moving.global_position if is_instance_valid(moving) else Vector3.ZERO)
 	active_preview.rotation_degrees = preview_rotation
 	add_child(active_preview)
 	if is_instance_valid(moving):
@@ -549,6 +553,7 @@ func _update_preview() -> void:
 	active_preview.rotation_degrees = preview_rotation
 	active_preview.visible = true
 	preview_valid = (not bool(info.get("desk_item", false)) or is_instance_valid(preview_support)) and _placement_clear(world, object_size, preview_rotation, moving_furniture, preview_support)
+	GameAudio.update_drag(self, active_preview.global_position, active_kind)
 	_sync_supported_items(active_preview.global_transform)
 	if preview_valid:
 		_set_status("%s · Q/E 每次旋转 90° · 松开确认" % ("已吸附桌面" if is_instance_valid(preview_support) else "可放置"), Color("98e3b4"))
@@ -564,10 +569,13 @@ func _rotate_active_preview(amount: float) -> void:
 	if is_instance_valid(active_preview):
 		active_preview.rotation_degrees = preview_rotation
 	_update_preview()
+	if is_instance_valid(active_preview):
+		GameAudio.play("furniture_rotate", active_preview.global_position)
 
 
 func _finish_placement() -> void:
 	if not preview_valid or not is_instance_valid(active_preview) or not active_preview.visible:
+		GameAudio.play("placement_invalid")
 		_set_status("本次没有放置：请把家具完整放在室内；电脑必须放在桌面上。", Color("ff9da6"))
 		_cancel_placement(false)
 		return
@@ -593,6 +601,8 @@ func _finish_placement() -> void:
 	else:
 		node.remove_meta("support_uid")
 	_commit_supported_items(node)
+	GameAudio.play_placement(active_kind, node.global_position)
+	GameAudio.end_drag(self)
 	active_preview.queue_free()
 	active_preview = null
 	active_kind = ""
@@ -609,6 +619,9 @@ func _finish_placement() -> void:
 
 
 func _cancel_placement(show_message := true) -> void:
+	if show_message and is_instance_valid(active_preview):
+		GameAudio.play("paper_cancel")
+	GameAudio.end_drag(self)
 	if is_instance_valid(active_preview):
 		active_preview.queue_free()
 	if is_instance_valid(moving_furniture):
@@ -708,6 +721,7 @@ func _store_selected() -> void:
 	if not is_instance_valid(selected_furniture):
 		return
 	var node := selected_furniture
+	GameAudio.play("furniture_pickup", node.global_position)
 	var uid := String(node.get_meta("studio_uid", ""))
 	var stored_supported_count := 0
 	for child: Node in furniture_root.get_children():
@@ -763,6 +777,7 @@ func _focus_selected_furniture() -> void:
 	_hide_furniture_menu()
 	if not is_instance_valid(selected_furniture):
 		return
+	GameAudio.play("inspect_focus")
 	var info := StudioFurnitureFactory.get_info(String(selected_furniture.get_meta("studio_kind", "")))
 	focus_target_position = selected_furniture.global_position + Vector3(0, float(info.size.y) * 0.52, 0)
 	focus_yaw = 0.0
@@ -1015,6 +1030,8 @@ func _update_rotation_gizmo_drag(event: InputEventMouseMotion) -> void:
 
 
 func _end_rotation_gizmo_drag() -> void:
+	if gizmo_dragging and is_instance_valid(selected_furniture):
+		GameAudio.play("furniture_rotate", selected_furniture.global_position)
 	gizmo_dragging = false
 	gizmo_axis_index = -1
 	_set_status("旋转角度已暂存 · 可继续拖动其他轴 · 完成后点击“确定”", Color("ffd47e"))

@@ -335,6 +335,9 @@ func _is_under_named_parent(node: Node, target_name: String) -> bool:
 
 
 func _should_ignore(mesh_instance: MeshInstance3D) -> bool:
+	# Thin leaves retain their two-sided shading and UV veins under the scene style.
+	if bool(mesh_instance.get_meta("stylized_material_locked", false)):
+		return true
 	var lowered := mesh_instance.name.to_lower()
 	if lowered.contains("preview") or lowered.contains("marker") or lowered.contains("gizmo") or lowered.contains("evidencegloss"):
 		return true

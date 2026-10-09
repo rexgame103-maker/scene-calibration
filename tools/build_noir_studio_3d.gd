@@ -268,22 +268,10 @@ func plant(at: Vector3) -> void:
 	var pot := group("PottedPlant", scene, at)
 	cylinder(pot, "Terracotta", Vector3(0, 0.2, 0), 0.20, 0.4, Color("8e6335"), 0.28)
 	cylinder(pot, "Soil", Vector3(0, 0.405, 0), 0.25, 0.02, INK)
-	for i in range(9):
-		var angle := i * TAU / 9
-		var tip := Vector3(cos(angle) * 0.4, rng.randf_range(0.72, 1.15), sin(angle) * 0.4)
-		rod(pot, "Stem", Vector3(0, 0.4, 0), tip, 0.015, Color("3e4221"))
-		var leaf := SphereMesh.new()
-		leaf.radius = 0.18
-		leaf.height = 0.36
-		leaf.radial_segments = 6
-		leaf.rings = 3
-		var item := MeshInstance3D.new()
-		item.mesh = leaf
-		item.position = tip
-		item.scale = Vector3(0.48, 0.23, 1.65)
-		item.rotation = Vector3(0.4, -angle, 0)
-		item.material_override = material(Color("686731"))
-		pot.add_child(item)
+	var foliage := preload("res://scenes/props/indoor_plant_foliage.tscn").instantiate() as Node3D
+	foliage.name = "Foliage"
+	foliage.position.y = 0.405
+	pot.add_child(foliage)
 
 func _props() -> void:
 	plant(Vector3(3.82, 1.30, 2.38))

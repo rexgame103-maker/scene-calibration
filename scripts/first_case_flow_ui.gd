@@ -49,12 +49,15 @@ func _ready() -> void:
 
 
 func show_briefing() -> void:
+	if not briefing_panel.visible:
+		GameAudio.play("dossier_open")
 	var data := _case_manager.call("get_briefing_data") as Dictionary if is_instance_valid(_case_manager) else {}
 	briefing_panel.get_node("Margin/Column/Eyebrow").text = String(data.get("eyebrow", "收到警局委托"))
 	briefing_panel.get_node("Margin/Column/Title").text = String(data.get("title", "蓝色档案失窃案"))
 	briefing_panel.get_node("Margin/Column/Description").text = String(data.get("description", ""))
 	briefing_panel.get_node("Margin/Column/InstructionPanel/Instruction").text = String(data.get("instruction", ""))
 	briefing_panel.get_node("Margin/Column/AcceptButton").text = String(data.get("accept_button", "接受委托"))
+	_fit_modal_text.call_deferred(briefing_panel)
 	briefing_panel.visible = true
 	modal_backdrop.visible = true
 	mouse_filter = Control.MOUSE_FILTER_STOP
@@ -62,6 +65,7 @@ func show_briefing() -> void:
 
 
 func show_submit_failure(message: String) -> void:
+	GameAudio.play("terminal_unavailable")
 	submit_feedback.text = message
 	submit_feedback.visible = true
 	var tween := create_tween()
@@ -70,11 +74,14 @@ func show_submit_failure(message: String) -> void:
 
 
 func show_settlement() -> void:
+	if not settlement_panel.visible:
+		GameAudio.play("case_complete")
 	var data := _case_manager.call("get_completion_data") as Dictionary if is_instance_valid(_case_manager) else {}
 	settlement_panel.get_node("Margin/Column/Title").text = String(data.get("title", "案件完成"))
 	settlement_panel.get_node("Margin/Column/Description").text = String(data.get("description", ""))
 	settlement_panel.get_node("Margin/Column/DeductionPanel/Deduction").text = String(data.get("deduction", ""))
 	settlement_panel.get_node("Margin/Column/ReturnButton").text = String(data.get("return_button", "返回工作台"))
+	_fit_modal_text.call_deferred(settlement_panel)
 	briefing_panel.visible = false
 	_fit_settlement()
 	settlement_panel.visible = true
@@ -362,6 +369,25 @@ func _fit_settlement() -> void:
 		settlement_panel.scale = Vector2.ONE * maxf(0.1, factor)
 
 
+func _fit_modal_text(node: Node) -> void:
+	# Fit translations inside the existing newspaper columns instead of cutting
+	# off longer English paragraphs. Keep the original Chinese sizes as defaults.
+	if node is RichTextLabel and not node.scroll_active:
+		var font_size: int = 19 if node.name == "Description" and briefing_panel.is_ancestor_of(node) else (20 if node.name == "Description" else 17)
+		node.add_theme_font_size_override("normal_font_size", font_size)
+		while font_size > 14 and node.get_content_height() > node.size.y:
+			font_size -= 1
+			node.add_theme_font_size_override("normal_font_size", font_size)
+	elif node is Button and node.name == "AcceptButton":
+		var font_size := 21
+		var font: Font = node.get_theme_font("font")
+		while font_size > 14 and font.get_string_size(tr(node.text), HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x > node.size.x - 92:
+			font_size -= 1
+		node.add_theme_font_size_override("font_size", font_size)
+	for child: Node in node.get_children():
+		_fit_modal_text(child)
+
+
 func _settlement_label(parent: Control, node_name: String, text_value: String, rect: Rect2, font_size: int, color := PAPER_INK) -> Label:
 	var label := _label(text_value, font_size, color)
 	label.name = node_name
@@ -383,6 +409,7 @@ func _settlement_rule(parent: Control, rect: Rect2, color: Color) -> void:
 
 
 func _on_accept_pressed() -> void:
+	GameAudio.play("paper_confirm")
 	briefing_panel.visible = false
 	modal_backdrop.visible = false
 	mouse_filter = Control.MOUSE_FILTER_IGNORE

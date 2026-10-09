@@ -1,14 +1,47 @@
 class_name ReferencePhotoTray
 extends Control
 
+const REFERENCE_CAPTIONS := {
+	"mail_photo_01": "清空前照片",
+	"printer_layout_photo": "打印旧照",
+	"standard_layout_photo": "年度校准",
+	"process_photo_cleaning": "01 · 清洁",
+	"process_photo_retouching": "02 · 补色",
+	"process_photo_coating": "03 · 封护",
+	"guest_room_photo": "会客室旧照",
+	"archive_shift_photo": "交班旧照",
+}
+
 
 class PhotoSketch:
 	extends Control
 	var data: Dictionary = {}
+	var caption_label: Label
+
+	func _ready() -> void:
+		caption_label = Label.new()
+		caption_label.name = "Caption"
+		caption_label.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
+		caption_label.offset_left = 14
+		caption_label.offset_right = -14
+		caption_label.offset_top = 10
+		caption_label.offset_bottom = 44
+		caption_label.add_theme_font_size_override("font_size", 11)
+		caption_label.add_theme_color_override("font_color", Color("f2eadc"))
+		caption_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		caption_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		caption_label.text = String(data.get("caption", "参考照片"))
+		add_child(caption_label)
 
 	func setup(value: Dictionary) -> void:
 		data = value.duplicate(true)
+		if is_instance_valid(caption_label):
+			caption_label.text = String(data.get("caption", "参考照片"))
 		queue_redraw()
+
+	func _notification(what: int) -> void:
+		if what == NOTIFICATION_TRANSLATION_CHANGED:
+			queue_redraw()
 
 	func _draw() -> void:
 		var rect := Rect2(Vector2.ZERO, size)
@@ -103,8 +136,6 @@ class PhotoSketch:
 					"reflector_parked":
 						draw_rect(Rect2(x + 5, floor_y - 58, spacing * 0.72, 50), Color("c6ccca"), true)
 				slot += 1
-		var font := ThemeDB.fallback_font
-		draw_string(font, Vector2(14, 25), String(data.get("caption", "参考照片")), HORIZONTAL_ALIGNMENT_LEFT, size.x - 28, 11, Color("f2eadc"))
 
 
 class FloatingPhoto:
@@ -127,7 +158,7 @@ class FloatingPhoto:
 
 
 var _case_manager: Node
-var _button_row: HBoxContainer
+var _button_row: GridContainer
 var _references: Dictionary = {}
 var _floating_cards: Dictionary = {}
 
@@ -144,10 +175,11 @@ func _ready() -> void:
 	offset_top = -126
 	offset_bottom = -78
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
-	_button_row = HBoxContainer.new()
+	_button_row = GridContainer.new()
+	_button_row.columns = 2
 	_button_row.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	_button_row.add_theme_constant_override("separation", 8)
-	_button_row.alignment = BoxContainer.ALIGNMENT_BEGIN
+	_button_row.add_theme_constant_override("h_separation", 8)
+	_button_row.add_theme_constant_override("v_separation", 8)
 	add_child(_button_row)
 
 
@@ -159,13 +191,20 @@ func add_reference(evidence_id: String) -> void:
 		return
 	_references[evidence_id] = evidence
 	var button := Button.new()
-	button.text = "拖出参考 · %s" % String(evidence.get("title", "照片"))
-	button.custom_minimum_size = Vector2(150, 42)
+	button.name = "Reference_" + evidence_id
+	button.text = "参考 · %s" % String(REFERENCE_CAPTIONS.get(evidence_id, "照片"))
+	button.tooltip_text = String(evidence.get("title", "参考照片"))
+	button.custom_minimum_size = Vector2(228, 42)
+	button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	button.clip_text = true
+	button.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 	button.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	button.add_theme_font_size_override("font_size", 12)
 	preload("res://scripts/investigation_ui_theme.gd").button(button, "wide")
 	button.pressed.connect(func() -> void: _toggle_photo(evidence_id))
 	_button_row.add_child(button)
+	var rows := ceili(_references.size() / 2.0)
+	offset_top = offset_bottom - rows * 42 - maxi(0, rows - 1) * 8
 
 
 func _toggle_photo(evidence_id: String) -> void:

@@ -1,6 +1,11 @@
 extends SceneTree
 
 var failures: Array[String] = []
+var clue_sounds: Array[String] = []
+
+func _heard_sound(id: String, _spatial: bool, _position: Vector3) -> void:
+	if id in ["clue_discover", "clue_collect"]:
+		clue_sounds.append(id)
 
 func _initialize() -> void:
 	call_deferred("_run")
@@ -22,6 +27,7 @@ func click(position: Vector2) -> void:
 
 func _run() -> void:
 	root.size = Vector2i(1280, 800)
+	root.get_node("GameAudio").connect("sound_played", _heard_sound)
 	var manager := root.get_node("CaseManager")
 	manager.call("load_case", "res://data/cases/office_case_001.json")
 	var main := (load("res://scenes/main.tscn") as PackedScene).instantiate()
@@ -45,6 +51,7 @@ func _run() -> void:
 	check(not point.investigate(), "Direct investigation cannot bypass the hidden-side gate")
 	await click(camera.unproject_position(point.global_position))
 	check(not popup.visible and not point.is_discovered, "Blind click through desk cannot open or collect clue")
+	check(clue_sounds.is_empty(), "Hidden clue does not reveal itself with sound")
 	var found := false
 	for yaw: float in [-45.0, 45.0]:
 		for pitch: float in [-22.0, 0.0, 22.0]:
@@ -77,6 +84,7 @@ func _run() -> void:
 	check(not point.visible and not point.investigate(), "Visual geometry occludes marker without broad physics boxes")
 	await click(camera.unproject_position(point.global_position))
 	check(not popup.visible, "Occluded marker ignores real clicks")
+	check(clue_sounds.is_empty(), "Occluded clue stays silent")
 	blocker.queue_free()
 	await process_frame
 	await process_frame
@@ -90,5 +98,16 @@ func _run() -> void:
 	await click(camera.unproject_position(point.global_position))
 	check(popup.visible and popup.point == point, "Visible marker opens on actual mouse click")
 	check(not point.is_discovered, "Opening still requires manual clue collection")
+	check(clue_sounds == ["clue_discover"], "Visible marker plays discovery only on successful investigation")
+	point.collect_clue()
+	point.collect_clue()
+	check(clue_sounds == ["clue_discover", "clue_collect"], "Successful collection sounds once, repeated collection stays silent")
+	popup.close()
+	main.queue_free()
+	await process_frame
+	await process_frame
+	await create_timer(0.4).timeout
+	root.get_node("GameAudio").call("stop_all")
+	await create_timer(0.15).timeout
 	print("CLUE_VISIBILITY_OK" if failures.is_empty() else str(failures))
 	quit(0 if failures.is_empty() else 1)

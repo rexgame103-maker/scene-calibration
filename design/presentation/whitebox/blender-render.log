@@ -1,0 +1,793 @@
+信息: 已另存为 "scene-calibration-whiteboxes.blend"
+WHITEBOX_RENDER_START studio
+Blender 4.5.10 LTS (hash 6dc0b208d1b5 built 2026-05-19 01:33:42)
+Fra:1 Mem:66.78M (Peak 66.78M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Cutaway floor
+Fra:1 Mem:66.78M (Peak 66.78M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Rear cutaway wall
+Fra:1 Mem:66.78M (Peak 66.78M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Floor grid line.001
+Fra:1 Mem:68.78M (Peak 68.78M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Floor grid line.004
+Fra:1 Mem:68.80M (Peak 68.80M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Floor grid line.005
+Fra:1 Mem:68.80M (Peak 68.80M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Floor grid line.006
+Fra:1 Mem:68.81M (Peak 68.81M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Floor grid line.007
+Fra:1 Mem:68.82M (Peak 68.82M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Large studio key
+Fra:1 Mem:68.82M (Peak 68.82M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Soft fill
+Fra:1 Mem:68.82M (Peak 68.82M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Office desk
+Fra:1 Mem:68.82M (Peak 68.82M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Table leg
+Fra:1 Mem:68.83M (Peak 68.83M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Table leg.001
+Fra:1 Mem:68.84M (Peak 68.84M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Table leg.002
+Fra:1 Mem:68.84M (Peak 68.84M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Drawer face
+Fra:1 Mem:68.84M (Peak 68.84M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Drawer face.002
+Fra:1 Mem:68.84M (Peak 68.84M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Drawer pull.002
+Fra:1 Mem:68.85M (Peak 68.85M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Visible side-wear line
+帧:1 内存:68.89M (峰值 68.89M) | 时间:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Untextured studio record.003
+Fra:1 Mem:68.93M (Peak 68.93M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Visible side-wear line.001
+Fra:1 Mem:69.00M (Peak 69.00M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Visible side-wear line.002
+帧:1 内存:69.00M (峰值 69.00M) | 时间:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Untextured studio record.002
+Fra:1 Mem:69.06M (Peak 69.06M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Visible side-wear line.003
+帧:1 内存:69.08M (峰值 69.08M) | 时间:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Untextured studio record.001
+Fra:1 Mem:69.14M (Peak 69.14M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Visible side-wear line.004
+Fra:1 Mem:69.13M (Peak 69.14M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Monitor bezel
+帧:1 内存:69.17M (峰值 69.17M) | 时间:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Untextured studio record
+Fra:1 Mem:69.25M (Peak 69.25M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Blank display
+Fra:1 Mem:69.24M (Peak 69.25M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key
+Fra:1 Mem:69.34M (Peak 69.34M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Evidence board
+Fra:1 Mem:69.41M (Peak 69.41M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.001
+Fra:1 Mem:69.39M (Peak 69.41M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.003
+Fra:1 Mem:69.42M (Peak 69.42M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.004
+Fra:1 Mem:69.42M (Peak 69.42M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.006
+Fra:1 Mem:69.41M (Peak 69.42M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.007
+Fra:1 Mem:69.44M (Peak 69.44M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.009
+Fra:1 Mem:69.45M (Peak 69.45M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Window horizontal mullion
+Fra:1 Mem:69.49M (Peak 69.49M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.010
+Fra:1 Mem:69.54M (Peak 69.54M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.011
+Fra:1 Mem:69.56M (Peak 69.56M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.015
+Fra:1 Mem:69.59M (Peak 69.59M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.016
+帧:1 内存:69.63M (峰值 69.64M) | 时间:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Window mullion.002
+Fra:1 Mem:69.67M (Peak 69.67M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.020
+Fra:1 Mem:69.73M (Peak 69.73M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.022
+Fra:1 Mem:69.72M (Peak 69.73M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.023
+Fra:1 Mem:69.74M (Peak 69.74M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.024
+Fra:1 Mem:69.73M (Peak 69.74M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.025
+Fra:1 Mem:69.81M (Peak 69.81M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.027
+帧:1 内存:69.81M (峰值 69.81M) | 时间:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Window mullion.001
+Fra:1 Mem:69.89M (Peak 69.89M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.028
+Fra:1 Mem:69.89M (Peak 69.90M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.030
+Fra:1 Mem:69.88M (Peak 69.90M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.032
+Fra:1 Mem:69.88M (Peak 69.90M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.034
+Fra:1 Mem:69.85M (Peak 69.90M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.039
+Fra:1 Mem:69.88M (Peak 69.90M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.041
+Fra:1 Mem:69.91M (Peak 69.91M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.043
+帧:1 内存:69.93M (峰值 69.93M) | 时间:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Window mullion
+Fra:1 Mem:69.93M (Peak 69.93M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.046
+Fra:1 Mem:69.96M (Peak 69.96M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Keyboard key.047
+Fra:1 Mem:69.96M (Peak 69.96M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Chair back
+Fra:1 Mem:69.93M (Peak 69.96M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Caster
+Fra:1 Mem:69.98M (Peak 69.98M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Caster spoke.001
+Fra:1 Mem:70.01M (Peak 70.01M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Caster.001
+Fra:1 Mem:70.03M (Peak 70.03M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Caster spoke.002
+Fra:1 Mem:70.09M (Peak 70.09M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Caster.002
+Fra:1 Mem:70.17M (Peak 70.17M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Caster spoke.003
+Fra:1 Mem:70.18M (Peak 70.18M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Caster.003
+Fra:1 Mem:70.19M (Peak 70.19M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Cabinet back
+Fra:1 Mem:70.25M (Peak 70.25M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Cabinet side
+Fra:1 Mem:70.27M (Peak 70.27M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Cabinet side.001
+Fra:1 Mem:70.31M (Peak 70.31M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Shelf
+Fra:1 Mem:70.30M (Peak 70.31M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Shelf.001
+帧:1 内存:70.33M (峰值 70.33M) | 时间:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Shelf.002
+Fra:1 Mem:70.35M (Peak 70.35M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Shelf.004
+Fra:1 Mem:70.33M (Peak 70.35M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Synchronizing object | Window surround
+帧:1 内存:70.58M (峰值 70.58M) | 时间:00:00.07 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Initializing
+Fra:1 Mem:64.17M (Peak 70.58M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Waiting for render to start
+Fra:1 Mem:64.17M (Peak 70.58M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Updating Scene
+Fra:1 Mem:64.17M (Peak 70.58M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Updating Shaders
+Fra:1 Mem:64.17M (Peak 70.58M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:64.26M (Peak 92.28M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Updating Procedurals
+Fra:1 Mem:64.26M (Peak 92.28M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Updating Background
+Fra:1 Mem:64.26M (Peak 92.28M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Updating Camera
+Fra:1 Mem:64.26M (Peak 92.28M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Updating Meshes Flags
+Fra:1 Mem:64.26M (Peak 92.28M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Updating Objects
+Fra:1 Mem:64.26M (Peak 92.28M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | 01_Studio_Hub, 视图层 | Updating Objects | Copying Transformations to device
+Fra:1 Mem:64.29M (Peak 92.28M) | Time:00:00.16 | Mem:0.03M, Peak:0.03M | 01_Studio_Hub, 视图层 | Updating Particle Systems
+Fra:1 Mem:64.29M (Peak 92.28M) | Time:00:00.16 | Mem:0.03M, Peak:0.03M | 01_Studio_Hub, 视图层 | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:64.29M (Peak 92.28M) | Time:00:00.16 | Mem:0.03M, Peak:0.03M | 01_Studio_Hub, 视图层 | Updating Meshes
+Fra:1 Mem:64.29M (Peak 92.28M) | Time:00:00.16 | Mem:0.03M, Peak:0.03M | 01_Studio_Hub, 视图层 | Updating Objects | Applying Static Transformations
+Fra:1 Mem:64.29M (Peak 92.28M) | Time:00:00.16 | Mem:0.03M, Peak:0.03M | 01_Studio_Hub, 视图层 | Updating Mesh | Computing attributes
+Fra:1 Mem:64.65M (Peak 92.28M) | Time:00:00.16 | Mem:0.04M, Peak:0.04M | 01_Studio_Hub, 视图层 | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:64.63M (Peak 92.28M) | Time:00:00.16 | Mem:0.38M, Peak:0.38M | 01_Studio_Hub, 视图层 | Updating Scene BVH | Building
+Fra:1 Mem:64.63M (Peak 92.28M) | Time:00:00.16 | Mem:0.38M, Peak:0.38M | 01_Studio_Hub, 视图层 | Updating Scene BVH | Building BVH
+Fra:1 Mem:65.50M (Peak 92.28M) | Time:00:00.17 | Mem:0.38M, Peak:0.38M | 01_Studio_Hub, 视图层 | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:65.56M (Peak 92.28M) | Time:00:00.17 | Mem:0.38M, Peak:0.38M | 01_Studio_Hub, 视图层 | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:65.60M (Peak 92.28M) | Time:00:00.17 | Mem:0.38M, Peak:0.38M | 01_Studio_Hub, 视图层 | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:65.60M (Peak 92.28M) | Time:00:00.17 | Mem:0.86M, Peak:0.86M | 01_Studio_Hub, 视图层 | Updating Mesh | Computing normals
+Fra:1 Mem:66.50M (Peak 92.28M) | Time:00:00.17 | Mem:0.86M, Peak:0.86M | 01_Studio_Hub, 视图层 | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:66.50M (Peak 92.28M) | Time:00:00.17 | Mem:1.76M, Peak:1.76M | 01_Studio_Hub, 视图层 | Updating Objects Flags
+Fra:1 Mem:66.50M (Peak 92.28M) | Time:00:00.17 | Mem:1.76M, Peak:1.76M | 01_Studio_Hub, 视图层 | Updating Primitive Offsets
+Fra:1 Mem:66.50M (Peak 92.28M) | Time:00:00.17 | Mem:1.77M, Peak:1.77M | 01_Studio_Hub, 视图层 | Updating Images
+Fra:1 Mem:66.50M (Peak 92.28M) | Time:00:00.17 | Mem:1.77M, Peak:1.77M | 01_Studio_Hub, 视图层 | Updating Camera Volume
+Fra:1 Mem:66.50M (Peak 92.28M) | Time:00:00.17 | Mem:1.77M, Peak:1.77M | 01_Studio_Hub, 视图层 | Updating Lookup Tables
+Fra:1 Mem:66.50M (Peak 92.28M) | Time:00:00.17 | Mem:1.85M, Peak:1.85M | 01_Studio_Hub, 视图层 | Updating Lights
+Fra:1 Mem:66.50M (Peak 92.28M) | Time:00:00.17 | Mem:1.85M, Peak:1.85M | 01_Studio_Hub, 视图层 | Updating Lights | Computing tree
+Fra:1 Mem:66.51M (Peak 92.28M) | Time:00:00.17 | Mem:1.85M, Peak:1.85M | 01_Studio_Hub, 视图层 | Updating Integrator
+Fra:1 Mem:66.51M (Peak 92.28M) | Time:00:00.17 | Mem:1.85M, Peak:1.85M | 01_Studio_Hub, 视图层 | Updating Film
+Fra:1 Mem:66.51M (Peak 92.28M) | Time:00:00.17 | Mem:1.77M, Peak:1.85M | 01_Studio_Hub, 视图层 | Updating Lookup Tables
+Fra:1 Mem:66.51M (Peak 92.28M) | Time:00:00.17 | Mem:1.85M, Peak:1.85M | 01_Studio_Hub, 视图层 | Updating Baking
+Fra:1 Mem:66.51M (Peak 92.28M) | Time:00:00.17 | Mem:1.85M, Peak:1.85M | 01_Studio_Hub, 视图层 | Updating Device | Writing constant memory
+Fra:1 Mem:66.51M (Peak 92.28M) | Time:00:00.17 | Mem:1.85M, Peak:1.85M | 01_Studio_Hub, 视图层 | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:74.21M (Peak 92.28M) | Time:00:00.19 | Mem:678.35M, Peak:678.35M | 01_Studio_Hub, 视图层 | Sample 0/32
+Fra:1 Mem:136.83M (Peak 136.83M) | Time:00:00.20 | Remaining:00:00.39 | Mem:740.98M, Peak:740.98M | 01_Studio_Hub, 视图层 | Sample 1/32
+Fra:1 Mem:163.21M (Peak 202.76M) | Time:00:01.59 | Mem:740.98M, Peak:740.98M | 01_Studio_Hub, 视图层 | Sample 32/32
+Fra:1 Mem:163.21M (Peak 202.76M) | Time:00:01.59 | Mem:740.98M, Peak:740.98M | 01_Studio_Hub, 视图层 | Finished
+Saved: 'E:\GodotProject\悬疑建造\design\presentation\whitebox\renders\studio.png'
+Time: 00:01.77 (Saving: 00:00.11)
+
+WHITEBOX_RENDER_DONE studio
+WHITEBOX_RENDER_START office-workstation
+Fra:1 Mem:94.38M (Peak 94.38M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Cutaway floor.001
+Fra:1 Mem:94.38M (Peak 94.38M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Floor grid line.008
+Fra:1 Mem:94.38M (Peak 94.38M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Floor grid line.009
+Fra:1 Mem:94.41M (Peak 94.41M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Floor grid line.017
+Fra:1 Mem:94.40M (Peak 94.41M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Large studio key.001
+Fra:1 Mem:94.41M (Peak 94.41M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Soft fill.001
+Fra:1 Mem:94.42M (Peak 94.42M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Drawer pull.008
+Fra:1 Mem:94.43M (Peak 94.43M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Desk pedestal.003
+Fra:1 Mem:94.43M (Peak 94.43M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Drawer pull.009
+Fra:1 Mem:94.48M (Peak 94.48M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Drawer face.010
+Fra:1 Mem:94.51M (Peak 94.51M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Drawer pull.010
+Fra:1 Mem:94.50M (Peak 94.51M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Drawer pull.011
+Fra:1 Mem:94.55M (Peak 94.55M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Visible side-wear line.005
+Fra:1 Mem:94.57M (Peak 94.57M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Visible side-wear line.006
+Fra:1 Mem:94.62M (Peak 94.62M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Visible side-wear line.007
+Fra:1 Mem:94.69M (Peak 94.69M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Visible side-wear line.008
+Fra:1 Mem:94.72M (Peak 94.72M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Visible side-wear line.009
+Fra:1 Mem:94.75M (Peak 94.75M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Monitor bezel.001
+Fra:1 Mem:94.77M (Peak 94.77M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Monitor stem.001
+Fra:1 Mem:94.80M (Peak 94.80M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Monitor foot.001
+帧:1 内存:94.81M (峰值 94.81M) | 时间:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Caster.009
+Fra:1 Mem:94.86M (Peak 94.86M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.048
+Fra:1 Mem:94.85M (Peak 94.86M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.049
+Fra:1 Mem:94.83M (Peak 94.86M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.051
+Fra:1 Mem:94.85M (Peak 94.86M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.052
+Fra:1 Mem:94.88M (Peak 94.88M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.053
+Fra:1 Mem:94.91M (Peak 94.91M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.054
+Fra:1 Mem:94.95M (Peak 94.95M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.056
+Fra:1 Mem:94.96M (Peak 94.96M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.057
+帧:1 内存:94.95M (峰值 94.96M) | 时间:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Caster spoke.009
+Fra:1 Mem:94.96M (Peak 94.96M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.058
+Fra:1 Mem:94.99M (Peak 94.99M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.060
+Fra:1 Mem:95.05M (Peak 95.05M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.061
+Fra:1 Mem:95.14M (Peak 95.14M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.062
+Fra:1 Mem:95.14M (Peak 95.14M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.064
+Fra:1 Mem:95.12M (Peak 95.14M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.065
+Fra:1 Mem:95.17M (Peak 95.17M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.067
+Fra:1 Mem:95.18M (Peak 95.18M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.068
+Fra:1 Mem:95.19M (Peak 95.19M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.069
+Fra:1 Mem:95.25M (Peak 95.25M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.070
+Fra:1 Mem:95.29M (Peak 95.29M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.071
+Fra:1 Mem:95.24M (Peak 95.29M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.073
+Fra:1 Mem:95.26M (Peak 95.29M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.074
+Fra:1 Mem:95.28M (Peak 95.29M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.076
+Fra:1 Mem:95.31M (Peak 95.31M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Caster.008
+Fra:1 Mem:95.30M (Peak 95.31M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.078
+Fra:1 Mem:95.31M (Peak 95.31M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.079
+帧:1 内存:95.38M (峰值 95.38M) | 时间:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.080
+Fra:1 Mem:95.39M (Peak 95.39M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.081
+Fra:1 Mem:95.43M (Peak 95.43M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.082
+Fra:1 Mem:95.41M (Peak 95.43M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.083
+Fra:1 Mem:95.42M (Peak 95.43M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.086
+Fra:1 Mem:95.45M (Peak 95.45M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.087
+Fra:1 Mem:95.46M (Peak 95.46M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.089
+Fra:1 Mem:95.46M (Peak 95.46M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.090
+Fra:1 Mem:95.48M (Peak 95.47M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.091
+Fra:1 Mem:95.48M (Peak 95.48M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Keyboard key.092
+Fra:1 Mem:95.49M (Peak 95.50M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Work-log file.001
+帧:1 内存:95.47M (峰值 95.50M) | 时间:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Caster spoke.008
+Fra:1 Mem:95.49M (Peak 95.50M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Chair back.001
+Fra:1 Mem:95.61M (Peak 95.61M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Chair stem.001
+Fra:1 Mem:95.61M (Peak 95.61M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Caster.005
+Fra:1 Mem:95.60M (Peak 95.61M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Caster spoke.006
+Fra:1 Mem:95.64M (Peak 95.64M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Caster.006
+Fra:1 Mem:95.66M (Peak 95.66M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Caster spoke.007
+Fra:1 Mem:95.73M (Peak 95.73M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Synchronizing object | Caster.007
+帧:1 内存:95.93M (峰值 95.93M) | 时间:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Initializing
+Fra:1 Mem:90.35M (Peak 95.93M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Waiting for render to start
+Fra:1 Mem:90.35M (Peak 95.93M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Updating Scene
+Fra:1 Mem:90.35M (Peak 95.93M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Updating Shaders
+Fra:1 Mem:90.35M (Peak 95.93M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:90.43M (Peak 118.46M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Updating Procedurals
+Fra:1 Mem:90.43M (Peak 118.46M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Updating Background
+Fra:1 Mem:90.43M (Peak 118.46M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Updating Camera
+Fra:1 Mem:90.43M (Peak 118.46M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Updating Meshes Flags
+Fra:1 Mem:90.43M (Peak 118.46M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Updating Objects
+Fra:1 Mem:90.43M (Peak 118.46M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 02_Office_Workstation, 视图层 | Updating Objects | Copying Transformations to device
+Fra:1 Mem:90.46M (Peak 118.46M) | Time:00:00.13 | Mem:0.03M, Peak:0.03M | 02_Office_Workstation, 视图层 | Updating Particle Systems
+Fra:1 Mem:90.46M (Peak 118.46M) | Time:00:00.13 | Mem:0.03M, Peak:0.03M | 02_Office_Workstation, 视图层 | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:90.46M (Peak 118.46M) | Time:00:00.13 | Mem:0.03M, Peak:0.03M | 02_Office_Workstation, 视图层 | Updating Meshes
+Fra:1 Mem:90.46M (Peak 118.46M) | Time:00:00.13 | Mem:0.03M, Peak:0.03M | 02_Office_Workstation, 视图层 | Updating Objects | Applying Static Transformations
+Fra:1 Mem:90.46M (Peak 118.46M) | Time:00:00.13 | Mem:0.03M, Peak:0.03M | 02_Office_Workstation, 视图层 | Updating Mesh | Computing attributes
+Fra:1 Mem:90.77M (Peak 118.46M) | Time:00:00.13 | Mem:0.04M, Peak:0.04M | 02_Office_Workstation, 视图层 | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:90.76M (Peak 118.46M) | Time:00:00.14 | Mem:0.33M, Peak:0.33M | 02_Office_Workstation, 视图层 | Updating Scene BVH | Building
+Fra:1 Mem:90.76M (Peak 118.46M) | Time:00:00.14 | Mem:0.33M, Peak:0.33M | 02_Office_Workstation, 视图层 | Updating Scene BVH | Building BVH
+Fra:1 Mem:91.51M (Peak 118.46M) | Time:00:00.14 | Mem:0.33M, Peak:0.33M | 02_Office_Workstation, 视图层 | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:91.56M (Peak 118.46M) | Time:00:00.14 | Mem:0.33M, Peak:0.33M | 02_Office_Workstation, 视图层 | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:91.60M (Peak 118.46M) | Time:00:00.14 | Mem:0.33M, Peak:0.33M | 02_Office_Workstation, 视图层 | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:91.60M (Peak 118.46M) | Time:00:00.14 | Mem:0.75M, Peak:0.75M | 02_Office_Workstation, 视图层 | Updating Mesh | Computing normals
+Fra:1 Mem:92.38M (Peak 118.46M) | Time:00:00.14 | Mem:0.75M, Peak:0.75M | 02_Office_Workstation, 视图层 | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:92.38M (Peak 118.46M) | Time:00:00.14 | Mem:1.53M, Peak:1.53M | 02_Office_Workstation, 视图层 | Updating Objects Flags
+Fra:1 Mem:92.38M (Peak 118.46M) | Time:00:00.14 | Mem:1.53M, Peak:1.53M | 02_Office_Workstation, 视图层 | Updating Primitive Offsets
+Fra:1 Mem:92.38M (Peak 118.46M) | Time:00:00.14 | Mem:1.53M, Peak:1.53M | 02_Office_Workstation, 视图层 | Updating Images
+Fra:1 Mem:92.38M (Peak 118.46M) | Time:00:00.14 | Mem:1.53M, Peak:1.53M | 02_Office_Workstation, 视图层 | Updating Camera Volume
+Fra:1 Mem:92.38M (Peak 118.46M) | Time:00:00.14 | Mem:1.53M, Peak:1.53M | 02_Office_Workstation, 视图层 | Updating Lookup Tables
+Fra:1 Mem:92.38M (Peak 118.46M) | Time:00:00.14 | Mem:1.61M, Peak:1.61M | 02_Office_Workstation, 视图层 | Updating Lights
+Fra:1 Mem:92.38M (Peak 118.46M) | Time:00:00.14 | Mem:1.61M, Peak:1.61M | 02_Office_Workstation, 视图层 | Updating Lights | Computing tree
+Fra:1 Mem:92.38M (Peak 118.46M) | Time:00:00.14 | Mem:1.61M, Peak:1.61M | 02_Office_Workstation, 视图层 | Updating Integrator
+Fra:1 Mem:92.38M (Peak 118.46M) | Time:00:00.14 | Mem:1.61M, Peak:1.61M | 02_Office_Workstation, 视图层 | Updating Film
+Fra:1 Mem:92.38M (Peak 118.46M) | Time:00:00.14 | Mem:1.53M, Peak:1.61M | 02_Office_Workstation, 视图层 | Updating Lookup Tables
+Fra:1 Mem:92.38M (Peak 118.46M) | Time:00:00.14 | Mem:1.61M, Peak:1.61M | 02_Office_Workstation, 视图层 | Updating Baking
+Fra:1 Mem:92.38M (Peak 118.46M) | Time:00:00.14 | Mem:1.61M, Peak:1.61M | 02_Office_Workstation, 视图层 | Updating Device | Writing constant memory
+Fra:1 Mem:92.39M (Peak 118.46M) | Time:00:00.14 | Mem:1.61M, Peak:1.61M | 02_Office_Workstation, 视图层 | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:100.08M (Peak 118.46M) | Time:00:00.16 | Mem:678.12M, Peak:678.12M | 02_Office_Workstation, 视图层 | Sample 0/32
+Fra:1 Mem:162.70M (Peak 162.70M) | Time:00:00.17 | Remaining:00:00.43 | Mem:740.74M, Peak:740.74M | 02_Office_Workstation, 视图层 | Sample 1/32
+Fra:1 Mem:189.08M (Peak 228.63M) | Time:00:01.55 | Mem:740.74M, Peak:740.74M | 02_Office_Workstation, 视图层 | Sample 32/32
+Fra:1 Mem:189.08M (Peak 228.63M) | Time:00:01.55 | Mem:740.74M, Peak:740.74M | 02_Office_Workstation, 视图层 | Finished
+Saved: 'E:\GodotProject\悬疑建造\design\presentation\whitebox\renders\office-workstation.png'
+Time: 00:01.66 (Saving: 00:00.04)
+
+WHITEBOX_RENDER_DONE office-workstation
+WHITEBOX_RENDER_START office-full
+Fra:1 Mem:122.55M (Peak 122.55M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Cutaway floor.002
+Fra:1 Mem:122.55M (Peak 122.55M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Left cutaway wall.002
+Fra:1 Mem:122.56M (Peak 122.56M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Floor grid line.022
+Fra:1 Mem:122.60M (Peak 122.60M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Floor grid line.029
+Fra:1 Mem:122.58M (Peak 122.60M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Large studio key.002
+Fra:1 Mem:122.59M (Peak 122.60M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Table leg.008
+Fra:1 Mem:122.60M (Peak 122.60M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Desk pedestal.004
+Fra:1 Mem:122.59M (Peak 122.60M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Drawer face.012
+Fra:1 Mem:122.61M (Peak 122.61M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Drawer face.013
+Fra:1 Mem:122.62M (Peak 122.62M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Drawer pull.014
+Fra:1 Mem:122.64M (Peak 122.64M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Desk pedestal.005
+Fra:1 Mem:122.64M (Peak 122.64M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Drawer face.015
+Fra:1 Mem:122.67M (Peak 122.67M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Drawer pull.015
+Fra:1 Mem:122.68M (Peak 122.68M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Drawer face.016
+Fra:1 Mem:122.68M (Peak 122.68M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Drawer pull.016
+Fra:1 Mem:122.71M (Peak 122.71M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Drawer pull.017
+Fra:1 Mem:122.71M (Peak 122.71M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Visible side-wear line.010
+Fra:1 Mem:122.73M (Peak 122.73M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Visible side-wear line.011
+Fra:1 Mem:122.78M (Peak 122.78M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Visible side-wear line.012
+Fra:1 Mem:122.87M (Peak 122.87M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Visible side-wear line.013
+Fra:1 Mem:122.87M (Peak 122.87M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Visible side-wear line.014
+Fra:1 Mem:122.94M (Peak 122.94M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Monitor bezel.002
+Fra:1 Mem:122.94M (Peak 122.94M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Blank display.002
+Fra:1 Mem:122.97M (Peak 122.98M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Monitor foot.002
+Fra:1 Mem:122.94M (Peak 122.98M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.096
+Fra:1 Mem:122.98M (Peak 122.99M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.099
+Fra:1 Mem:122.98M (Peak 122.99M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.101
+Fra:1 Mem:123.06M (Peak 123.06M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.102
+Fra:1 Mem:123.09M (Peak 123.09M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.103
+Fra:1 Mem:123.16M (Peak 123.16M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.104
+Fra:1 Mem:123.17M (Peak 123.17M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.105
+Fra:1 Mem:123.18M (Peak 123.18M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.106
+Fra:1 Mem:123.18M (Peak 123.18M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.108
+Fra:1 Mem:123.26M (Peak 123.26M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.110
+Fra:1 Mem:123.24M (Peak 123.26M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.111
+Fra:1 Mem:123.26M (Peak 123.26M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.114
+Fra:1 Mem:123.27M (Peak 123.27M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.118
+Fra:1 Mem:123.31M (Peak 123.31M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.119
+Fra:1 Mem:123.32M (Peak 123.32M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.120
+Fra:1 Mem:123.33M (Peak 123.33M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.121
+Fra:1 Mem:123.36M (Peak 123.36M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.122
+Fra:1 Mem:123.36M (Peak 123.36M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.124
+Fra:1 Mem:123.39M (Peak 123.39M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.125
+Fra:1 Mem:123.39M (Peak 123.39M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.126
+Fra:1 Mem:123.40M (Peak 123.40M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.128
+Fra:1 Mem:123.44M (Peak 123.44M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.130
+Fra:1 Mem:123.46M (Peak 123.46M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.131
+Fra:1 Mem:123.48M (Peak 123.48M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.132
+Fra:1 Mem:123.47M (Peak 123.48M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.133
+Fra:1 Mem:123.54M (Peak 123.54M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.134
+Fra:1 Mem:123.55M (Peak 123.55M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.136
+Fra:1 Mem:123.55M (Peak 123.55M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.138
+Fra:1 Mem:123.57M (Peak 123.57M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.139
+Fra:1 Mem:123.61M (Peak 123.61M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.140
+Fra:1 Mem:123.64M (Peak 123.64M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.141
+Fra:1 Mem:123.69M (Peak 123.69M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.142
+Fra:1 Mem:123.64M (Peak 123.69M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Keyboard key.143
+Fra:1 Mem:123.64M (Peak 123.69M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Chair seat.002
+Fra:1 Mem:123.69M (Peak 123.69M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Chair back.002
+Fra:1 Mem:123.73M (Peak 123.73M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Caster.010
+Fra:1 Mem:123.73M (Peak 123.73M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Caster spoke.011
+Fra:1 Mem:123.81M (Peak 123.81M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Caster.012
+Fra:1 Mem:123.77M (Peak 123.81M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Caster.013
+Fra:1 Mem:123.80M (Peak 123.81M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Caster.014
+Fra:1 Mem:123.88M (Peak 123.88M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Cabinet back.001
+Fra:1 Mem:123.93M (Peak 123.93M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Cabinet side.002
+Fra:1 Mem:123.92M (Peak 123.93M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Cabinet side.003
+Fra:1 Mem:123.95M (Peak 123.95M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Shelf.006
+Fra:1 Mem:123.98M (Peak 123.98M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Shelf.007
+Fra:1 Mem:124.01M (Peak 124.01M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Cabinet back.002
+Fra:1 Mem:124.01M (Peak 124.01M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Cabinet side.005
+Fra:1 Mem:124.08M (Peak 124.08M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Shelf.008
+Fra:1 Mem:124.12M (Peak 124.12M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Shelf.009
+Fra:1 Mem:124.15M (Peak 124.15M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Shelf.010
+Fra:1 Mem:124.13M (Peak 124.15M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Shelf.012
+Fra:1 Mem:124.16M (Peak 124.16M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | File spine label
+Fra:1 Mem:124.17M (Peak 124.17M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Tap.001
+Fra:1 Mem:124.21M (Peak 124.21M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Middle shelf Grey_File
+Fra:1 Mem:124.19M (Peak 124.21M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | File spine label.001
+Fra:1 Mem:124.15M (Peak 124.21M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | File spine label.002
+Fra:1 Mem:124.27M (Peak 124.27M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Printer pedestal
+Fra:1 Mem:124.24M (Peak 124.27M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Printer body
+Fra:1 Mem:124.26M (Peak 124.27M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Paper output slot
+Fra:1 Mem:124.26M (Peak 124.27M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Water dispenser
+Fra:1 Mem:124.28M (Peak 124.28M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Recessed taps
+Fra:1 Mem:124.29M (Peak 124.29M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Synchronizing object | Tap
+帧:1 内存:124.63M (峰值 124.63M) | 时间:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Initializing
+Fra:1 Mem:117.21M (Peak 124.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Waiting for render to start
+Fra:1 Mem:117.21M (Peak 124.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Updating Scene
+Fra:1 Mem:117.21M (Peak 124.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Updating Shaders
+Fra:1 Mem:117.21M (Peak 124.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 03_Office_Restored, 视图层 | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:117.30M (Peak 145.32M) | Time:00:00.14 | Mem:0.01M, Peak:0.01M | 03_Office_Restored, 视图层 | Updating Procedurals
+Fra:1 Mem:117.30M (Peak 145.32M) | Time:00:00.14 | Mem:0.01M, Peak:0.01M | 03_Office_Restored, 视图层 | Updating Background
+Fra:1 Mem:117.30M (Peak 145.32M) | Time:00:00.14 | Mem:0.01M, Peak:0.01M | 03_Office_Restored, 视图层 | Updating Camera
+Fra:1 Mem:117.30M (Peak 145.32M) | Time:00:00.14 | Mem:0.01M, Peak:0.01M | 03_Office_Restored, 视图层 | Updating Meshes Flags
+Fra:1 Mem:117.30M (Peak 145.32M) | Time:00:00.14 | Mem:0.01M, Peak:0.01M | 03_Office_Restored, 视图层 | Updating Objects
+Fra:1 Mem:117.30M (Peak 145.32M) | Time:00:00.14 | Mem:0.01M, Peak:0.01M | 03_Office_Restored, 视图层 | Updating Objects | Copying Transformations to device
+Fra:1 Mem:117.33M (Peak 145.32M) | Time:00:00.14 | Mem:0.04M, Peak:0.04M | 03_Office_Restored, 视图层 | Updating Particle Systems
+Fra:1 Mem:117.33M (Peak 145.32M) | Time:00:00.14 | Mem:0.04M, Peak:0.04M | 03_Office_Restored, 视图层 | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:117.33M (Peak 145.32M) | Time:00:00.14 | Mem:0.04M, Peak:0.04M | 03_Office_Restored, 视图层 | Updating Meshes
+Fra:1 Mem:117.33M (Peak 145.32M) | Time:00:00.14 | Mem:0.04M, Peak:0.04M | 03_Office_Restored, 视图层 | Updating Objects | Applying Static Transformations
+Fra:1 Mem:117.33M (Peak 145.32M) | Time:00:00.14 | Mem:0.04M, Peak:0.04M | 03_Office_Restored, 视图层 | Updating Mesh | Computing attributes
+Fra:1 Mem:117.74M (Peak 145.32M) | Time:00:00.14 | Mem:0.05M, Peak:0.05M | 03_Office_Restored, 视图层 | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:117.73M (Peak 145.32M) | Time:00:00.14 | Mem:0.44M, Peak:0.44M | 03_Office_Restored, 视图层 | Updating Scene BVH | Building
+Fra:1 Mem:117.73M (Peak 145.32M) | Time:00:00.14 | Mem:0.44M, Peak:0.44M | 03_Office_Restored, 视图层 | Updating Scene BVH | Building BVH
+Fra:1 Mem:118.73M (Peak 145.32M) | Time:00:00.15 | Mem:0.44M, Peak:0.44M | 03_Office_Restored, 视图层 | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:118.80M (Peak 145.32M) | Time:00:00.15 | Mem:0.44M, Peak:0.44M | 03_Office_Restored, 视图层 | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:118.85M (Peak 145.32M) | Time:00:00.15 | Mem:0.44M, Peak:0.44M | 03_Office_Restored, 视图层 | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:118.85M (Peak 145.32M) | Time:00:00.15 | Mem:0.99M, Peak:0.99M | 03_Office_Restored, 视图层 | Updating Mesh | Computing normals
+Fra:1 Mem:119.89M (Peak 145.32M) | Time:00:00.15 | Mem:0.99M, Peak:0.99M | 03_Office_Restored, 视图层 | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:119.89M (Peak 145.32M) | Time:00:00.15 | Mem:2.04M, Peak:2.04M | 03_Office_Restored, 视图层 | Updating Objects Flags
+Fra:1 Mem:119.89M (Peak 145.32M) | Time:00:00.15 | Mem:2.04M, Peak:2.04M | 03_Office_Restored, 视图层 | Updating Primitive Offsets
+Fra:1 Mem:119.89M (Peak 145.32M) | Time:00:00.15 | Mem:2.04M, Peak:2.04M | 03_Office_Restored, 视图层 | Updating Images
+Fra:1 Mem:119.89M (Peak 145.32M) | Time:00:00.15 | Mem:2.04M, Peak:2.04M | 03_Office_Restored, 视图层 | Updating Camera Volume
+Fra:1 Mem:119.89M (Peak 145.32M) | Time:00:00.15 | Mem:2.04M, Peak:2.04M | 03_Office_Restored, 视图层 | Updating Lookup Tables
+Fra:1 Mem:119.89M (Peak 145.32M) | Time:00:00.15 | Mem:2.12M, Peak:2.12M | 03_Office_Restored, 视图层 | Updating Lights
+Fra:1 Mem:119.89M (Peak 145.32M) | Time:00:00.15 | Mem:2.12M, Peak:2.12M | 03_Office_Restored, 视图层 | Updating Lights | Computing tree
+Fra:1 Mem:119.89M (Peak 145.32M) | Time:00:00.15 | Mem:2.12M, Peak:2.12M | 03_Office_Restored, 视图层 | Updating Integrator
+Fra:1 Mem:119.89M (Peak 145.32M) | Time:00:00.15 | Mem:2.12M, Peak:2.12M | 03_Office_Restored, 视图层 | Updating Film
+Fra:1 Mem:119.90M (Peak 145.32M) | Time:00:00.15 | Mem:2.04M, Peak:2.12M | 03_Office_Restored, 视图层 | Updating Lookup Tables
+Fra:1 Mem:119.90M (Peak 145.32M) | Time:00:00.15 | Mem:2.13M, Peak:2.13M | 03_Office_Restored, 视图层 | Updating Baking
+Fra:1 Mem:119.90M (Peak 145.32M) | Time:00:00.15 | Mem:2.13M, Peak:2.13M | 03_Office_Restored, 视图层 | Updating Device | Writing constant memory
+Fra:1 Mem:119.90M (Peak 145.32M) | Time:00:00.15 | Mem:2.13M, Peak:2.13M | 03_Office_Restored, 视图层 | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:127.59M (Peak 145.32M) | Time:00:00.17 | Mem:678.63M, Peak:678.63M | 03_Office_Restored, 视图层 | Sample 0/32
+Fra:1 Mem:190.22M (Peak 190.22M) | Time:00:00.18 | Remaining:00:00.45 | Mem:741.25M, Peak:741.25M | 03_Office_Restored, 视图层 | Sample 1/32
+Fra:1 Mem:216.59M (Peak 256.15M) | Time:00:01.56 | Mem:741.26M, Peak:741.26M | 03_Office_Restored, 视图层 | Sample 32/32
+Fra:1 Mem:216.59M (Peak 256.15M) | Time:00:01.56 | Mem:741.26M, Peak:741.26M | 03_Office_Restored, 视图层 | Finished
+Saved: 'E:\GodotProject\悬疑建造\design\presentation\whitebox\renders\office-full.png'
+Time: 00:01.66 (Saving: 00:00.04)
+
+WHITEBOX_RENDER_DONE office-full
+WHITEBOX_RENDER_START office-wear
+Fra:1 Mem:145.86M (Peak 145.86M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Large studio key.003
+Fra:1 Mem:145.86M (Peak 145.86M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Soft fill.003
+Fra:1 Mem:145.86M (Peak 145.86M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Table leg.014
+Fra:1 Mem:145.86M (Peak 145.86M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Drawer face.018
+Fra:1 Mem:145.86M (Peak 145.86M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Drawer face.019
+Fra:1 Mem:145.90M (Peak 145.90M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Drawer pull.020
+Fra:1 Mem:145.93M (Peak 145.93M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Desk pedestal.007
+Fra:1 Mem:145.93M (Peak 145.93M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Drawer face.021
+Fra:1 Mem:145.97M (Peak 145.97M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Visible side-wear line.016
+Fra:1 Mem:145.94M (Peak 145.97M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Visible side-wear line.017
+Fra:1 Mem:145.95M (Peak 145.97M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Visible side-wear line.019
+Fra:1 Mem:146.03M (Peak 146.03M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Monitor bezel.003
+Fra:1 Mem:146.09M (Peak 146.09M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Blank display.003
+Fra:1 Mem:146.07M (Peak 146.09M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Monitor stem.003
+Fra:1 Mem:146.10M (Peak 146.10M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Monitor foot.003
+Fra:1 Mem:146.10M (Peak 146.10M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard.003
+Fra:1 Mem:146.13M (Peak 146.13M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.144
+Fra:1 Mem:146.21M (Peak 146.21M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.145
+Fra:1 Mem:146.21M (Peak 146.21M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.146
+Fra:1 Mem:146.22M (Peak 146.22M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.147
+Fra:1 Mem:146.22M (Peak 146.22M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.148
+Fra:1 Mem:146.30M (Peak 146.30M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.149
+Fra:1 Mem:146.31M (Peak 146.30M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.150
+Fra:1 Mem:146.38M (Peak 146.39M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.152
+Fra:1 Mem:146.35M (Peak 146.39M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.153
+Fra:1 Mem:146.34M (Peak 146.39M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.154
+Fra:1 Mem:146.35M (Peak 146.39M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.157
+Fra:1 Mem:146.34M (Peak 146.39M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.158
+Fra:1 Mem:146.35M (Peak 146.39M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Work-log file.003
+Fra:1 Mem:146.39M (Peak 146.39M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.160
+Fra:1 Mem:146.38M (Peak 146.39M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.162
+Fra:1 Mem:146.44M (Peak 146.45M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.163
+Fra:1 Mem:146.43M (Peak 146.45M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.166
+Fra:1 Mem:146.44M (Peak 146.45M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.167
+Fra:1 Mem:146.51M (Peak 146.51M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.168
+Fra:1 Mem:146.54M (Peak 146.54M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.169
+Fra:1 Mem:146.54M (Peak 146.54M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.170
+Fra:1 Mem:146.57M (Peak 146.57M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.172
+Fra:1 Mem:146.62M (Peak 146.62M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.173
+Fra:1 Mem:146.62M (Peak 146.62M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.174
+Fra:1 Mem:146.59M (Peak 146.62M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.175
+Fra:1 Mem:146.63M (Peak 146.63M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.176
+Fra:1 Mem:146.66M (Peak 146.66M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.177
+Fra:1 Mem:146.64M (Peak 146.66M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.178
+Fra:1 Mem:146.68M (Peak 146.68M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.181
+Fra:1 Mem:146.69M (Peak 146.69M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.182
+Fra:1 Mem:146.72M (Peak 146.72M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.183
+Fra:1 Mem:146.73M (Peak 146.73M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.185
+Fra:1 Mem:146.73M (Peak 146.73M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.186
+Fra:1 Mem:146.76M (Peak 146.76M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.187
+帧:1 内存:146.76M (峰值 146.76M) | 时间:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.191
+Fra:1 Mem:146.79M (Peak 146.79M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.188
+Fra:1 Mem:146.82M (Peak 146.82M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.189
+Fra:1 Mem:146.85M (Peak 146.85M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Synchronizing object | Keyboard key.190
+帧:1 内存:147.03M (峰值 147.03M) | 时间:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Initializing
+Fra:1 Mem:142.80M (Peak 147.03M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Waiting for render to start
+Fra:1 Mem:142.80M (Peak 147.03M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Updating Scene
+Fra:1 Mem:142.80M (Peak 147.03M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Updating Shaders
+Fra:1 Mem:142.80M (Peak 147.03M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:142.88M (Peak 170.91M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Updating Procedurals
+Fra:1 Mem:142.88M (Peak 170.91M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Updating Background
+Fra:1 Mem:142.88M (Peak 170.91M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Updating Camera
+Fra:1 Mem:142.88M (Peak 170.91M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Updating Meshes Flags
+Fra:1 Mem:142.88M (Peak 170.91M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Updating Objects
+Fra:1 Mem:142.88M (Peak 170.91M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 04_Desk_Wear_Detail, 视图层 | Updating Objects | Copying Transformations to device
+Fra:1 Mem:142.90M (Peak 170.91M) | Time:00:00.13 | Mem:0.02M, Peak:0.02M | 04_Desk_Wear_Detail, 视图层 | Updating Particle Systems
+Fra:1 Mem:142.90M (Peak 170.91M) | Time:00:00.13 | Mem:0.02M, Peak:0.02M | 04_Desk_Wear_Detail, 视图层 | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:142.90M (Peak 170.91M) | Time:00:00.13 | Mem:0.02M, Peak:0.02M | 04_Desk_Wear_Detail, 视图层 | Updating Meshes
+Fra:1 Mem:142.90M (Peak 170.91M) | Time:00:00.13 | Mem:0.02M, Peak:0.02M | 04_Desk_Wear_Detail, 视图层 | Updating Objects | Applying Static Transformations
+Fra:1 Mem:142.90M (Peak 170.91M) | Time:00:00.13 | Mem:0.02M, Peak:0.02M | 04_Desk_Wear_Detail, 视图层 | Updating Mesh | Computing attributes
+Fra:1 Mem:143.14M (Peak 170.91M) | Time:00:00.13 | Mem:0.03M, Peak:0.03M | 04_Desk_Wear_Detail, 视图层 | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:143.13M (Peak 170.91M) | Time:00:00.13 | Mem:0.25M, Peak:0.25M | 04_Desk_Wear_Detail, 视图层 | Updating Scene BVH | Building
+Fra:1 Mem:143.13M (Peak 170.91M) | Time:00:00.13 | Mem:0.25M, Peak:0.25M | 04_Desk_Wear_Detail, 视图层 | Updating Scene BVH | Building BVH
+Fra:1 Mem:143.69M (Peak 170.91M) | Time:00:00.13 | Mem:0.25M, Peak:0.25M | 04_Desk_Wear_Detail, 视图层 | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:143.73M (Peak 170.91M) | Time:00:00.13 | Mem:0.25M, Peak:0.25M | 04_Desk_Wear_Detail, 视图层 | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:143.76M (Peak 170.91M) | Time:00:00.13 | Mem:0.25M, Peak:0.25M | 04_Desk_Wear_Detail, 视图层 | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:143.76M (Peak 170.91M) | Time:00:00.13 | Mem:0.56M, Peak:0.56M | 04_Desk_Wear_Detail, 视图层 | Updating Mesh | Computing normals
+Fra:1 Mem:144.35M (Peak 170.91M) | Time:00:00.13 | Mem:0.56M, Peak:0.56M | 04_Desk_Wear_Detail, 视图层 | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:144.35M (Peak 170.91M) | Time:00:00.13 | Mem:1.16M, Peak:1.16M | 04_Desk_Wear_Detail, 视图层 | Updating Objects Flags
+Fra:1 Mem:144.35M (Peak 170.91M) | Time:00:00.13 | Mem:1.16M, Peak:1.16M | 04_Desk_Wear_Detail, 视图层 | Updating Primitive Offsets
+Fra:1 Mem:144.35M (Peak 170.91M) | Time:00:00.13 | Mem:1.16M, Peak:1.16M | 04_Desk_Wear_Detail, 视图层 | Updating Images
+Fra:1 Mem:144.35M (Peak 170.91M) | Time:00:00.13 | Mem:1.16M, Peak:1.16M | 04_Desk_Wear_Detail, 视图层 | Updating Camera Volume
+Fra:1 Mem:144.35M (Peak 170.91M) | Time:00:00.13 | Mem:1.16M, Peak:1.16M | 04_Desk_Wear_Detail, 视图层 | Updating Lookup Tables
+Fra:1 Mem:144.35M (Peak 170.91M) | Time:00:00.13 | Mem:1.24M, Peak:1.24M | 04_Desk_Wear_Detail, 视图层 | Updating Lights
+Fra:1 Mem:144.35M (Peak 170.91M) | Time:00:00.13 | Mem:1.24M, Peak:1.24M | 04_Desk_Wear_Detail, 视图层 | Updating Lights | Computing tree
+Fra:1 Mem:144.36M (Peak 170.91M) | Time:00:00.14 | Mem:1.24M, Peak:1.24M | 04_Desk_Wear_Detail, 视图层 | Updating Integrator
+Fra:1 Mem:144.36M (Peak 170.91M) | Time:00:00.14 | Mem:1.24M, Peak:1.24M | 04_Desk_Wear_Detail, 视图层 | Updating Film
+Fra:1 Mem:144.36M (Peak 170.91M) | Time:00:00.14 | Mem:1.16M, Peak:1.24M | 04_Desk_Wear_Detail, 视图层 | Updating Lookup Tables
+Fra:1 Mem:144.36M (Peak 170.91M) | Time:00:00.14 | Mem:1.24M, Peak:1.24M | 04_Desk_Wear_Detail, 视图层 | Updating Baking
+Fra:1 Mem:144.36M (Peak 170.91M) | Time:00:00.14 | Mem:1.24M, Peak:1.24M | 04_Desk_Wear_Detail, 视图层 | Updating Device | Writing constant memory
+Fra:1 Mem:144.36M (Peak 170.91M) | Time:00:00.14 | Mem:1.24M, Peak:1.24M | 04_Desk_Wear_Detail, 视图层 | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:152.05M (Peak 170.91M) | Time:00:00.15 | Mem:677.75M, Peak:677.75M | 04_Desk_Wear_Detail, 视图层 | Sample 0/32
+Fra:1 Mem:214.68M (Peak 214.68M) | Time:00:00.17 | Remaining:00:00.44 | Mem:740.37M, Peak:740.37M | 04_Desk_Wear_Detail, 视图层 | Sample 1/32
+Fra:1 Mem:241.06M (Peak 280.61M) | Time:00:01.54 | Mem:740.38M, Peak:740.38M | 04_Desk_Wear_Detail, 视图层 | Sample 32/32
+Fra:1 Mem:241.06M (Peak 280.61M) | Time:00:01.54 | Mem:740.38M, Peak:740.38M | 04_Desk_Wear_Detail, 视图层 | Finished
+Saved: 'E:\GodotProject\悬疑建造\design\presentation\whitebox\renders\office-wear.png'
+Time: 00:01.65 (Saving: 00:00.05)
+
+WHITEBOX_RENDER_DONE office-wear
+WHITEBOX_RENDER_START office-files
+Fra:1 Mem:169.11M (Peak 169.11M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 05_Middle_Shelf_Detail, 视图层 | Synchronizing object | Large studio key.004
+Fra:1 Mem:169.12M (Peak 169.12M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 05_Middle_Shelf_Detail, 视图层 | Synchronizing object | File spine label.005
+帧:1 内存:169.30M (峰值 169.30M) | 时间:00:00.07 | Mem:0.00M, Peak:0.00M | 05_Middle_Shelf_Detail, 视图层 | Initializing
+Fra:1 Mem:168.30M (Peak 169.30M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 05_Middle_Shelf_Detail, 视图层 | Waiting for render to start
+Fra:1 Mem:168.30M (Peak 169.30M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 05_Middle_Shelf_Detail, 视图层 | Updating Scene
+Fra:1 Mem:168.30M (Peak 169.30M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 05_Middle_Shelf_Detail, 视图层 | Updating Shaders
+Fra:1 Mem:168.30M (Peak 169.30M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | 05_Middle_Shelf_Detail, 视图层 | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:168.39M (Peak 196.41M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 05_Middle_Shelf_Detail, 视图层 | Updating Procedurals
+Fra:1 Mem:168.39M (Peak 196.41M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 05_Middle_Shelf_Detail, 视图层 | Updating Background
+Fra:1 Mem:168.39M (Peak 196.41M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 05_Middle_Shelf_Detail, 视图层 | Updating Camera
+Fra:1 Mem:168.39M (Peak 196.41M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 05_Middle_Shelf_Detail, 视图层 | Updating Meshes Flags
+Fra:1 Mem:168.39M (Peak 196.41M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 05_Middle_Shelf_Detail, 视图层 | Updating Objects
+Fra:1 Mem:168.39M (Peak 196.41M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 05_Middle_Shelf_Detail, 视图层 | Updating Objects | Copying Transformations to device
+Fra:1 Mem:168.39M (Peak 196.41M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 05_Middle_Shelf_Detail, 视图层 | Updating Particle Systems
+Fra:1 Mem:168.39M (Peak 196.41M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 05_Middle_Shelf_Detail, 视图层 | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:168.39M (Peak 196.41M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 05_Middle_Shelf_Detail, 视图层 | Updating Meshes
+Fra:1 Mem:168.39M (Peak 196.41M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 05_Middle_Shelf_Detail, 视图层 | Updating Objects | Applying Static Transformations
+Fra:1 Mem:168.39M (Peak 196.41M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 05_Middle_Shelf_Detail, 视图层 | Updating Mesh | Computing attributes
+Fra:1 Mem:168.43M (Peak 196.41M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 05_Middle_Shelf_Detail, 视图层 | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:168.43M (Peak 196.41M) | Time:00:00.13 | Mem:0.04M, Peak:0.04M | 05_Middle_Shelf_Detail, 视图层 | Updating Scene BVH | Building
+Fra:1 Mem:168.43M (Peak 196.41M) | Time:00:00.13 | Mem:0.04M, Peak:0.04M | 05_Middle_Shelf_Detail, 视图层 | Updating Scene BVH | Building BVH
+Fra:1 Mem:168.52M (Peak 196.41M) | Time:00:00.13 | Mem:0.04M, Peak:0.04M | 05_Middle_Shelf_Detail, 视图层 | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:168.52M (Peak 196.41M) | Time:00:00.13 | Mem:0.04M, Peak:0.04M | 05_Middle_Shelf_Detail, 视图层 | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:168.53M (Peak 196.41M) | Time:00:00.13 | Mem:0.04M, Peak:0.04M | 05_Middle_Shelf_Detail, 视图层 | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:168.53M (Peak 196.41M) | Time:00:00.13 | Mem:0.09M, Peak:0.09M | 05_Middle_Shelf_Detail, 视图层 | Updating Mesh | Computing normals
+Fra:1 Mem:168.62M (Peak 196.41M) | Time:00:00.13 | Mem:0.09M, Peak:0.09M | 05_Middle_Shelf_Detail, 视图层 | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:168.62M (Peak 196.41M) | Time:00:00.13 | Mem:0.19M, Peak:0.19M | 05_Middle_Shelf_Detail, 视图层 | Updating Objects Flags
+Fra:1 Mem:168.62M (Peak 196.41M) | Time:00:00.13 | Mem:0.19M, Peak:0.19M | 05_Middle_Shelf_Detail, 视图层 | Updating Primitive Offsets
+Fra:1 Mem:168.62M (Peak 196.41M) | Time:00:00.13 | Mem:0.19M, Peak:0.19M | 05_Middle_Shelf_Detail, 视图层 | Updating Images
+Fra:1 Mem:168.62M (Peak 196.41M) | Time:00:00.13 | Mem:0.19M, Peak:0.19M | 05_Middle_Shelf_Detail, 视图层 | Updating Camera Volume
+Fra:1 Mem:168.62M (Peak 196.41M) | Time:00:00.13 | Mem:0.19M, Peak:0.19M | 05_Middle_Shelf_Detail, 视图层 | Updating Lookup Tables
+Fra:1 Mem:168.62M (Peak 196.41M) | Time:00:00.13 | Mem:0.27M, Peak:0.27M | 05_Middle_Shelf_Detail, 视图层 | Updating Lights
+Fra:1 Mem:168.62M (Peak 196.41M) | Time:00:00.13 | Mem:0.27M, Peak:0.27M | 05_Middle_Shelf_Detail, 视图层 | Updating Lights | Computing tree
+Fra:1 Mem:168.62M (Peak 196.41M) | Time:00:00.13 | Mem:0.27M, Peak:0.27M | 05_Middle_Shelf_Detail, 视图层 | Updating Integrator
+Fra:1 Mem:168.62M (Peak 196.41M) | Time:00:00.13 | Mem:0.27M, Peak:0.27M | 05_Middle_Shelf_Detail, 视图层 | Updating Film
+Fra:1 Mem:168.63M (Peak 196.41M) | Time:00:00.13 | Mem:0.19M, Peak:0.27M | 05_Middle_Shelf_Detail, 视图层 | Updating Lookup Tables
+Fra:1 Mem:168.63M (Peak 196.41M) | Time:00:00.13 | Mem:0.27M, Peak:0.27M | 05_Middle_Shelf_Detail, 视图层 | Updating Baking
+Fra:1 Mem:168.63M (Peak 196.41M) | Time:00:00.13 | Mem:0.27M, Peak:0.27M | 05_Middle_Shelf_Detail, 视图层 | Updating Device | Writing constant memory
+Fra:1 Mem:168.63M (Peak 196.41M) | Time:00:00.13 | Mem:0.27M, Peak:0.27M | 05_Middle_Shelf_Detail, 视图层 | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:176.32M (Peak 196.41M) | Time:00:00.15 | Mem:676.77M, Peak:676.77M | 05_Middle_Shelf_Detail, 视图层 | Sample 0/32
+Fra:1 Mem:238.94M (Peak 238.94M) | Time:00:00.16 | Remaining:00:00.45 | Mem:739.40M, Peak:739.40M | 05_Middle_Shelf_Detail, 视图层 | Sample 1/32
+Fra:1 Mem:265.32M (Peak 304.87M) | Time:00:01.62 | Mem:739.40M, Peak:739.40M | 05_Middle_Shelf_Detail, 视图层 | Sample 32/32
+Fra:1 Mem:265.32M (Peak 304.87M) | Time:00:01.62 | Mem:739.40M, Peak:739.40M | 05_Middle_Shelf_Detail, 视图层 | Finished
+Saved: 'E:\GodotProject\悬疑建造\design\presentation\whitebox\renders\office-files.png'
+Time: 00:01.73 (Saving: 00:00.05)
+
+WHITEBOX_RENDER_DONE office-files
+WHITEBOX_RENDER_START lab-standard
+Fra:1 Mem:197.55M (Peak 197.55M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Cutaway floor.003
+Fra:1 Mem:197.55M (Peak 197.55M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Floor grid line.032
+Fra:1 Mem:197.55M (Peak 197.55M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Floor grid line.035
+Fra:1 Mem:197.57M (Peak 197.57M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Floor grid line.039
+Fra:1 Mem:197.57M (Peak 197.57M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Floor grid line.042
+Fra:1 Mem:197.58M (Peak 197.58M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Floor grid line.045
+Fra:1 Mem:197.60M (Peak 197.60M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Table leg.016
+Fra:1 Mem:197.59M (Peak 197.60M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Table leg.017
+Fra:1 Mem:197.59M (Peak 197.60M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Table leg.018
+Fra:1 Mem:197.63M (Peak 197.63M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Cross rail.001
+Fra:1 Mem:197.63M (Peak 197.63M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Panel painting — whitebox
+Fra:1 Mem:197.64M (Peak 197.64M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Ruler
+Fra:1 Mem:197.64M (Peak 197.64M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Stool seat
+Fra:1 Mem:197.65M (Peak 197.65M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Stool leg.001
+Fra:1 Mem:197.67M (Peak 197.67M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Stool leg.002
+Fra:1 Mem:197.68M (Peak 197.68M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Cold panel stand
+Fra:1 Mem:197.69M (Peak 197.69M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Cold panel stand.001
+Fra:1 Mem:197.68M (Peak 197.69M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Cold panel foot.001
+Fra:1 Mem:197.75M (Peak 197.75M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Wide cold panel frame
+Fra:1 Mem:197.73M (Peak 197.75M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Broad diffused emitter
+Fra:1 Mem:197.77M (Peak 197.77M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Camera lens
+Fra:1 Mem:197.75M (Peak 197.77M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Wide soft cold source
+Fra:1 Mem:197.78M (Peak 197.78M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | halogen tripod leg
+Fra:1 Mem:197.80M (Peak 197.80M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | halogen tripod leg.001
+Fra:1 Mem:197.82M (Peak 197.82M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | halogen tripod leg.002
+Fra:1 Mem:197.84M (Peak 197.84M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | halogen head
+Fra:1 Mem:197.91M (Peak 197.91M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | reflector tripod leg
+Fra:1 Mem:198.02M (Peak 198.02M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | reflector tripod leg.001
+Fra:1 Mem:198.01M (Peak 198.02M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | reflector tripod leg.002
+Fra:1 Mem:198.10M (Peak 198.10M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | reflector head
+帧:1 内存:198.05M (峰值 198.10M) | 时间:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | Metal reflector
+Fra:1 Mem:198.06M (Peak 198.10M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | camera tripod leg.001
+Fra:1 Mem:198.11M (Peak 198.11M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | camera tripod leg.002
+Fra:1 Mem:198.09M (Peak 198.11M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Synchronizing object | camera head
+帧:1 内存:198.41M (峰值 198.41M) | 时间:00:00.06 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Initializing
+Fra:1 Mem:195.30M (Peak 198.41M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Waiting for render to start
+Fra:1 Mem:195.30M (Peak 198.41M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Updating Scene
+Fra:1 Mem:195.30M (Peak 198.41M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Updating Shaders
+Fra:1 Mem:195.30M (Peak 198.41M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:195.39M (Peak 223.41M) | Time:00:00.12 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Updating Procedurals
+Fra:1 Mem:195.39M (Peak 223.41M) | Time:00:00.12 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Updating Background
+Fra:1 Mem:195.39M (Peak 223.41M) | Time:00:00.12 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Updating Camera
+Fra:1 Mem:195.39M (Peak 223.41M) | Time:00:00.12 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Updating Meshes Flags
+Fra:1 Mem:195.39M (Peak 223.41M) | Time:00:00.12 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Updating Objects
+Fra:1 Mem:195.39M (Peak 223.41M) | Time:00:00.12 | Mem:0.00M, Peak:0.00M | 06_Conservation_Standard, 视图层 | Updating Objects | Copying Transformations to device
+Fra:1 Mem:195.40M (Peak 223.41M) | Time:00:00.12 | Mem:0.02M, Peak:0.02M | 06_Conservation_Standard, 视图层 | Updating Particle Systems
+Fra:1 Mem:195.40M (Peak 223.41M) | Time:00:00.12 | Mem:0.02M, Peak:0.02M | 06_Conservation_Standard, 视图层 | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:195.40M (Peak 223.41M) | Time:00:00.12 | Mem:0.02M, Peak:0.02M | 06_Conservation_Standard, 视图层 | Updating Meshes
+Fra:1 Mem:195.40M (Peak 223.41M) | Time:00:00.12 | Mem:0.02M, Peak:0.02M | 06_Conservation_Standard, 视图层 | Updating Objects | Applying Static Transformations
+Fra:1 Mem:195.40M (Peak 223.41M) | Time:00:00.12 | Mem:0.02M, Peak:0.02M | 06_Conservation_Standard, 视图层 | Updating Mesh | Computing attributes
+Fra:1 Mem:195.57M (Peak 223.41M) | Time:00:00.12 | Mem:0.02M, Peak:0.02M | 06_Conservation_Standard, 视图层 | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:195.56M (Peak 223.41M) | Time:00:00.12 | Mem:0.18M, Peak:0.18M | 06_Conservation_Standard, 视图层 | Updating Scene BVH | Building
+Fra:1 Mem:195.57M (Peak 223.41M) | Time:00:00.12 | Mem:0.18M, Peak:0.18M | 06_Conservation_Standard, 视图层 | Updating Scene BVH | Building BVH
+Fra:1 Mem:195.99M (Peak 223.41M) | Time:00:00.12 | Mem:0.18M, Peak:0.18M | 06_Conservation_Standard, 视图层 | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:196.02M (Peak 223.41M) | Time:00:00.13 | Mem:0.18M, Peak:0.18M | 06_Conservation_Standard, 视图层 | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:196.03M (Peak 223.41M) | Time:00:00.13 | Mem:0.18M, Peak:0.18M | 06_Conservation_Standard, 视图层 | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:196.03M (Peak 223.41M) | Time:00:00.13 | Mem:0.41M, Peak:0.41M | 06_Conservation_Standard, 视图层 | Updating Mesh | Computing normals
+Fra:1 Mem:196.46M (Peak 223.41M) | Time:00:00.13 | Mem:0.41M, Peak:0.41M | 06_Conservation_Standard, 视图层 | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:196.46M (Peak 223.41M) | Time:00:00.13 | Mem:0.85M, Peak:0.85M | 06_Conservation_Standard, 视图层 | Updating Objects Flags
+Fra:1 Mem:196.46M (Peak 223.41M) | Time:00:00.13 | Mem:0.85M, Peak:0.85M | 06_Conservation_Standard, 视图层 | Updating Primitive Offsets
+Fra:1 Mem:196.46M (Peak 223.41M) | Time:00:00.13 | Mem:0.85M, Peak:0.85M | 06_Conservation_Standard, 视图层 | Updating Images
+Fra:1 Mem:196.46M (Peak 223.41M) | Time:00:00.13 | Mem:0.85M, Peak:0.85M | 06_Conservation_Standard, 视图层 | Updating Camera Volume
+Fra:1 Mem:196.46M (Peak 223.41M) | Time:00:00.13 | Mem:0.85M, Peak:0.85M | 06_Conservation_Standard, 视图层 | Updating Lookup Tables
+Fra:1 Mem:196.46M (Peak 223.41M) | Time:00:00.13 | Mem:0.93M, Peak:0.93M | 06_Conservation_Standard, 视图层 | Updating Lights
+Fra:1 Mem:196.46M (Peak 223.41M) | Time:00:00.13 | Mem:0.93M, Peak:0.93M | 06_Conservation_Standard, 视图层 | Updating Lights | Computing tree
+Fra:1 Mem:196.47M (Peak 223.41M) | Time:00:00.13 | Mem:0.93M, Peak:0.93M | 06_Conservation_Standard, 视图层 | Updating Integrator
+Fra:1 Mem:196.47M (Peak 223.41M) | Time:00:00.13 | Mem:0.93M, Peak:0.93M | 06_Conservation_Standard, 视图层 | Updating Film
+Fra:1 Mem:196.47M (Peak 223.41M) | Time:00:00.13 | Mem:0.85M, Peak:0.93M | 06_Conservation_Standard, 视图层 | Updating Lookup Tables
+Fra:1 Mem:196.47M (Peak 223.41M) | Time:00:00.13 | Mem:0.93M, Peak:0.93M | 06_Conservation_Standard, 视图层 | Updating Baking
+Fra:1 Mem:196.47M (Peak 223.41M) | Time:00:00.13 | Mem:0.93M, Peak:0.93M | 06_Conservation_Standard, 视图层 | Updating Device | Writing constant memory
+Fra:1 Mem:196.47M (Peak 223.41M) | Time:00:00.13 | Mem:0.93M, Peak:0.93M | 06_Conservation_Standard, 视图层 | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:204.16M (Peak 223.41M) | Time:00:00.15 | Mem:677.44M, Peak:677.44M | 06_Conservation_Standard, 视图层 | Sample 0/32
+Fra:1 Mem:266.79M (Peak 266.79M) | Time:00:00.16 | Remaining:00:00.45 | Mem:740.06M, Peak:740.06M | 06_Conservation_Standard, 视图层 | Sample 1/32
+Fra:1 Mem:293.16M (Peak 332.72M) | Time:00:01.50 | Mem:740.07M, Peak:740.07M | 06_Conservation_Standard, 视图层 | Sample 32/32
+Fra:1 Mem:293.16M (Peak 332.72M) | Time:00:01.50 | Mem:740.07M, Peak:740.07M | 06_Conservation_Standard, 视图层 | Finished
+Saved: 'E:\GodotProject\悬疑建造\design\presentation\whitebox\renders\lab-standard.png'
+Time: 00:01.61 (Saving: 00:00.04)
+
+WHITEBOX_RENDER_DONE lab-standard
+WHITEBOX_RENDER_START lab-actual
+Fra:1 Mem:224.05M (Peak 224.05M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Cutaway floor.004
+Fra:1 Mem:224.07M (Peak 224.07M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Left cutaway wall.004
+Fra:1 Mem:224.08M (Peak 224.08M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Floor grid line.047
+Fra:1 Mem:224.09M (Peak 224.09M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Floor grid line.048
+Fra:1 Mem:224.09M (Peak 224.09M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Floor grid line.049
+Fra:1 Mem:224.09M (Peak 224.09M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Floor grid line.052
+Fra:1 Mem:224.10M (Peak 224.10M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Floor grid line.053
+Fra:1 Mem:224.10M (Peak 224.10M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Floor grid line.057
+Fra:1 Mem:224.10M (Peak 224.10M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Dim explanatory fill.001
+Fra:1 Mem:224.10M (Peak 224.10M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Table leg.021
+Fra:1 Mem:224.10M (Peak 224.10M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Table leg.022
+Fra:1 Mem:224.11M (Peak 224.11M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Cross rail.003
+Fra:1 Mem:224.13M (Peak 224.13M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Panel painting — whitebox.001
+Fra:1 Mem:224.12M (Peak 224.13M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Scalpel raised tool.001
+Fra:1 Mem:224.14M (Peak 224.14M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Ruler.001
+Fra:1 Mem:224.16M (Peak 224.16M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Stool seat.001
+Fra:1 Mem:224.22M (Peak 224.22M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Stool leg.003
+Fra:1 Mem:224.23M (Peak 224.23M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Stool leg.005
+Fra:1 Mem:224.20M (Peak 224.23M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Cold panel foot.002
+Fra:1 Mem:224.29M (Peak 224.29M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Cold panel foot.003
+Fra:1 Mem:224.26M (Peak 224.29M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Wide cold panel frame.001
+Fra:1 Mem:224.28M (Peak 224.29M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | halogen tripod leg.003
+Fra:1 Mem:224.31M (Peak 224.31M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | halogen tripod leg.004
+Fra:1 Mem:224.33M (Peak 224.33M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | halogen tripod leg.005
+Fra:1 Mem:224.35M (Peak 224.35M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | halogen head.001
+Fra:1 Mem:224.36M (Peak 224.35M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | reflector tripod leg.003
+帧:1 内存:224.37M (峰值 224.37M) | 时间:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Damage correspondence
+Fra:1 Mem:224.47M (Peak 224.47M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | reflector tripod leg.005
+Fra:1 Mem:224.48M (Peak 224.48M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | reflector stand.001
+Fra:1 Mem:224.52M (Peak 224.52M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | reflector head.001
+Fra:1 Mem:224.56M (Peak 224.56M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Illustrative secondary reflection
+帧:1 内存:224.56M (峰值 224.56M) | 时间:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | Camera lens.001
+Fra:1 Mem:224.61M (Peak 224.61M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | camera tripod leg.004
+Fra:1 Mem:224.60M (Peak 224.61M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | camera stand.001
+Fra:1 Mem:224.65M (Peak 224.65M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Synchronizing object | camera head.001
+帧:1 内存:224.93M (峰值 224.93M) | 时间:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Initializing
+Fra:1 Mem:221.71M (Peak 224.93M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Waiting for render to start
+Fra:1 Mem:221.71M (Peak 224.93M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Updating Scene
+Fra:1 Mem:221.71M (Peak 224.93M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Updating Shaders
+Fra:1 Mem:221.71M (Peak 224.93M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 07_Conservation_Actual, 视图层 | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:221.80M (Peak 249.82M) | Time:00:00.14 | Mem:0.01M, Peak:0.01M | 07_Conservation_Actual, 视图层 | Updating Procedurals
+Fra:1 Mem:221.80M (Peak 249.82M) | Time:00:00.14 | Mem:0.01M, Peak:0.01M | 07_Conservation_Actual, 视图层 | Updating Background
+Fra:1 Mem:221.80M (Peak 249.82M) | Time:00:00.14 | Mem:0.01M, Peak:0.01M | 07_Conservation_Actual, 视图层 | Updating Camera
+Fra:1 Mem:221.80M (Peak 249.82M) | Time:00:00.14 | Mem:0.01M, Peak:0.01M | 07_Conservation_Actual, 视图层 | Updating Meshes Flags
+Fra:1 Mem:221.80M (Peak 249.82M) | Time:00:00.14 | Mem:0.01M, Peak:0.01M | 07_Conservation_Actual, 视图层 | Updating Objects
+Fra:1 Mem:221.80M (Peak 249.82M) | Time:00:00.14 | Mem:0.01M, Peak:0.01M | 07_Conservation_Actual, 视图层 | Updating Objects | Copying Transformations to device
+Fra:1 Mem:221.81M (Peak 249.82M) | Time:00:00.14 | Mem:0.02M, Peak:0.02M | 07_Conservation_Actual, 视图层 | Updating Particle Systems
+Fra:1 Mem:221.81M (Peak 249.82M) | Time:00:00.14 | Mem:0.02M, Peak:0.02M | 07_Conservation_Actual, 视图层 | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:221.81M (Peak 249.82M) | Time:00:00.14 | Mem:0.02M, Peak:0.02M | 07_Conservation_Actual, 视图层 | Updating Meshes
+Fra:1 Mem:221.81M (Peak 249.82M) | Time:00:00.14 | Mem:0.02M, Peak:0.02M | 07_Conservation_Actual, 视图层 | Updating Objects | Applying Static Transformations
+Fra:1 Mem:221.81M (Peak 249.82M) | Time:00:00.14 | Mem:0.02M, Peak:0.02M | 07_Conservation_Actual, 视图层 | Updating Mesh | Computing attributes
+Fra:1 Mem:221.98M (Peak 249.82M) | Time:00:00.14 | Mem:0.02M, Peak:0.02M | 07_Conservation_Actual, 视图层 | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:221.98M (Peak 249.82M) | Time:00:00.14 | Mem:0.19M, Peak:0.19M | 07_Conservation_Actual, 视图层 | Updating Scene BVH | Building
+Fra:1 Mem:221.98M (Peak 249.82M) | Time:00:00.14 | Mem:0.19M, Peak:0.19M | 07_Conservation_Actual, 视图层 | Updating Scene BVH | Building BVH
+Fra:1 Mem:222.41M (Peak 249.82M) | Time:00:00.14 | Mem:0.19M, Peak:0.19M | 07_Conservation_Actual, 视图层 | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:222.44M (Peak 249.82M) | Time:00:00.14 | Mem:0.19M, Peak:0.19M | 07_Conservation_Actual, 视图层 | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:222.45M (Peak 249.82M) | Time:00:00.14 | Mem:0.19M, Peak:0.19M | 07_Conservation_Actual, 视图层 | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:222.45M (Peak 249.82M) | Time:00:00.14 | Mem:0.42M, Peak:0.42M | 07_Conservation_Actual, 视图层 | Updating Mesh | Computing normals
+Fra:1 Mem:222.89M (Peak 249.82M) | Time:00:00.14 | Mem:0.42M, Peak:0.42M | 07_Conservation_Actual, 视图层 | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:222.89M (Peak 249.82M) | Time:00:00.14 | Mem:0.86M, Peak:0.86M | 07_Conservation_Actual, 视图层 | Updating Objects Flags
+Fra:1 Mem:222.89M (Peak 249.82M) | Time:00:00.14 | Mem:0.86M, Peak:0.86M | 07_Conservation_Actual, 视图层 | Updating Primitive Offsets
+Fra:1 Mem:222.89M (Peak 249.82M) | Time:00:00.14 | Mem:0.86M, Peak:0.86M | 07_Conservation_Actual, 视图层 | Updating Images
+Fra:1 Mem:222.89M (Peak 249.82M) | Time:00:00.14 | Mem:0.86M, Peak:0.86M | 07_Conservation_Actual, 视图层 | Updating Camera Volume
+Fra:1 Mem:222.89M (Peak 249.82M) | Time:00:00.14 | Mem:0.86M, Peak:0.86M | 07_Conservation_Actual, 视图层 | Updating Lookup Tables
+Fra:1 Mem:222.89M (Peak 249.82M) | Time:00:00.14 | Mem:0.94M, Peak:0.94M | 07_Conservation_Actual, 视图层 | Updating Lights
+Fra:1 Mem:222.89M (Peak 249.82M) | Time:00:00.14 | Mem:0.94M, Peak:0.94M | 07_Conservation_Actual, 视图层 | Updating Lights | Computing tree
+Fra:1 Mem:222.89M (Peak 249.82M) | Time:00:00.14 | Mem:0.95M, Peak:0.95M | 07_Conservation_Actual, 视图层 | Updating Integrator
+Fra:1 Mem:222.89M (Peak 249.82M) | Time:00:00.14 | Mem:0.95M, Peak:0.95M | 07_Conservation_Actual, 视图层 | Updating Film
+Fra:1 Mem:222.90M (Peak 249.82M) | Time:00:00.14 | Mem:0.86M, Peak:0.95M | 07_Conservation_Actual, 视图层 | Updating Lookup Tables
+Fra:1 Mem:222.90M (Peak 249.82M) | Time:00:00.14 | Mem:0.95M, Peak:0.95M | 07_Conservation_Actual, 视图层 | Updating Baking
+Fra:1 Mem:222.90M (Peak 249.82M) | Time:00:00.14 | Mem:0.95M, Peak:0.95M | 07_Conservation_Actual, 视图层 | Updating Device | Writing constant memory
+Fra:1 Mem:222.90M (Peak 249.82M) | Time:00:00.14 | Mem:0.95M, Peak:0.95M | 07_Conservation_Actual, 视图层 | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:230.59M (Peak 249.82M) | Time:00:00.16 | Mem:677.45M, Peak:677.45M | 07_Conservation_Actual, 视图层 | Sample 0/32
+Fra:1 Mem:293.22M (Peak 293.22M) | Time:00:00.17 | Remaining:00:00.40 | Mem:740.08M, Peak:740.08M | 07_Conservation_Actual, 视图层 | Sample 1/32
+Fra:1 Mem:319.59M (Peak 359.15M) | Time:00:01.52 | Mem:740.08M, Peak:740.08M | 07_Conservation_Actual, 视图层 | Sample 32/32
+Fra:1 Mem:319.59M (Peak 359.15M) | Time:00:01.52 | Mem:740.08M, Peak:740.08M | 07_Conservation_Actual, 视图层 | Finished
+Saved: 'E:\GodotProject\悬疑建造\design\presentation\whitebox\renders\lab-actual.png'
+Time: 00:01.62 (Saving: 00:00.04)
+
+WHITEBOX_RENDER_DONE lab-actual
+WHITEBOX_RENDER_START lab-light
+Fra:1 Mem:248.89M (Peak 248.89M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Synchronizing object | Dim explanatory fill.002
+Fra:1 Mem:248.89M (Peak 248.89M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Synchronizing object | Restoration table.002
+Fra:1 Mem:248.89M (Peak 248.89M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Synchronizing object | Table leg.024
+Fra:1 Mem:248.92M (Peak 248.92M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Synchronizing object | Table leg.025
+帧:1 内存:248.93M (峰值 248.93M) | 时间:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Synchronizing object | Damage correspondence.001
+Fra:1 Mem:248.97M (Peak 248.97M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Synchronizing object | Table leg.027
+帧:1 内存:248.99M (峰值 248.99M) | 时间:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Synchronizing object | Illustrative secondary reflection.001
+帧:1 内存:249.00M (峰值 249.00M) | 时间:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Synchronizing object | Metal reflector.002
+Fra:1 Mem:249.00M (Peak 249.00M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Synchronizing object | Cross rail.004
+Fra:1 Mem:249.00M (Peak 249.00M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Synchronizing object | Cross rail.005
+Fra:1 Mem:249.02M (Peak 249.02M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Synchronizing object | reflector stand.002
+Fra:1 Mem:249.01M (Peak 249.02M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Synchronizing object | reflector head.002
+帧:1 内存:249.32M (峰值 249.32M) | 时间:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Initializing
+Fra:1 Mem:247.70M (Peak 249.32M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Waiting for render to start
+Fra:1 Mem:247.70M (Peak 249.32M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Updating Scene
+Fra:1 Mem:247.70M (Peak 249.32M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Updating Shaders
+Fra:1 Mem:247.70M (Peak 249.32M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:247.79M (Peak 275.81M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Updating Procedurals
+Fra:1 Mem:247.79M (Peak 275.81M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Updating Background
+Fra:1 Mem:247.79M (Peak 275.81M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Updating Camera
+Fra:1 Mem:247.79M (Peak 275.81M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Updating Meshes Flags
+Fra:1 Mem:247.79M (Peak 275.81M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Updating Objects
+Fra:1 Mem:247.79M (Peak 275.81M) | Time:00:00.13 | Mem:0.00M, Peak:0.00M | 08_Conservation_Light_Detail, 视图层 | Updating Objects | Copying Transformations to device
+Fra:1 Mem:247.80M (Peak 275.81M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 08_Conservation_Light_Detail, 视图层 | Updating Particle Systems
+Fra:1 Mem:247.80M (Peak 275.81M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 08_Conservation_Light_Detail, 视图层 | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:247.80M (Peak 275.81M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 08_Conservation_Light_Detail, 视图层 | Updating Meshes
+Fra:1 Mem:247.80M (Peak 275.81M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 08_Conservation_Light_Detail, 视图层 | Updating Objects | Applying Static Transformations
+Fra:1 Mem:247.80M (Peak 275.81M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 08_Conservation_Light_Detail, 视图层 | Updating Mesh | Computing attributes
+Fra:1 Mem:247.88M (Peak 275.81M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 08_Conservation_Light_Detail, 视图层 | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:247.88M (Peak 275.81M) | Time:00:00.13 | Mem:0.09M, Peak:0.09M | 08_Conservation_Light_Detail, 视图层 | Updating Scene BVH | Building
+Fra:1 Mem:247.88M (Peak 275.81M) | Time:00:00.13 | Mem:0.09M, Peak:0.09M | 08_Conservation_Light_Detail, 视图层 | Updating Scene BVH | Building BVH
+Fra:1 Mem:248.09M (Peak 275.81M) | Time:00:00.13 | Mem:0.09M, Peak:0.09M | 08_Conservation_Light_Detail, 视图层 | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:248.10M (Peak 275.81M) | Time:00:00.13 | Mem:0.09M, Peak:0.09M | 08_Conservation_Light_Detail, 视图层 | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:248.10M (Peak 275.81M) | Time:00:00.13 | Mem:0.09M, Peak:0.09M | 08_Conservation_Light_Detail, 视图层 | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:248.10M (Peak 275.81M) | Time:00:00.13 | Mem:0.21M, Peak:0.21M | 08_Conservation_Light_Detail, 视图层 | Updating Mesh | Computing normals
+Fra:1 Mem:248.32M (Peak 275.81M) | Time:00:00.13 | Mem:0.21M, Peak:0.21M | 08_Conservation_Light_Detail, 视图层 | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:248.32M (Peak 275.81M) | Time:00:00.13 | Mem:0.42M, Peak:0.42M | 08_Conservation_Light_Detail, 视图层 | Updating Objects Flags
+Fra:1 Mem:248.32M (Peak 275.81M) | Time:00:00.13 | Mem:0.42M, Peak:0.42M | 08_Conservation_Light_Detail, 视图层 | Updating Primitive Offsets
+Fra:1 Mem:248.32M (Peak 275.81M) | Time:00:00.13 | Mem:0.42M, Peak:0.42M | 08_Conservation_Light_Detail, 视图层 | Updating Images
+Fra:1 Mem:248.32M (Peak 275.81M) | Time:00:00.13 | Mem:0.42M, Peak:0.42M | 08_Conservation_Light_Detail, 视图层 | Updating Camera Volume
+Fra:1 Mem:248.32M (Peak 275.81M) | Time:00:00.13 | Mem:0.42M, Peak:0.42M | 08_Conservation_Light_Detail, 视图层 | Updating Lookup Tables
+Fra:1 Mem:248.32M (Peak 275.81M) | Time:00:00.13 | Mem:0.50M, Peak:0.50M | 08_Conservation_Light_Detail, 视图层 | Updating Lights
+Fra:1 Mem:248.32M (Peak 275.81M) | Time:00:00.13 | Mem:0.50M, Peak:0.50M | 08_Conservation_Light_Detail, 视图层 | Updating Lights | Computing tree
+Fra:1 Mem:248.32M (Peak 275.81M) | Time:00:00.13 | Mem:0.50M, Peak:0.50M | 08_Conservation_Light_Detail, 视图层 | Updating Integrator
+Fra:1 Mem:248.32M (Peak 275.81M) | Time:00:00.13 | Mem:0.50M, Peak:0.50M | 08_Conservation_Light_Detail, 视图层 | Updating Film
+Fra:1 Mem:248.33M (Peak 275.81M) | Time:00:00.13 | Mem:0.42M, Peak:0.50M | 08_Conservation_Light_Detail, 视图层 | Updating Lookup Tables
+Fra:1 Mem:248.33M (Peak 275.81M) | Time:00:00.13 | Mem:0.51M, Peak:0.51M | 08_Conservation_Light_Detail, 视图层 | Updating Baking
+Fra:1 Mem:248.33M (Peak 275.81M) | Time:00:00.13 | Mem:0.51M, Peak:0.51M | 08_Conservation_Light_Detail, 视图层 | Updating Device | Writing constant memory
+Fra:1 Mem:248.33M (Peak 275.81M) | Time:00:00.13 | Mem:0.51M, Peak:0.51M | 08_Conservation_Light_Detail, 视图层 | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:256.02M (Peak 275.81M) | Time:00:00.15 | Mem:677.01M, Peak:677.01M | 08_Conservation_Light_Detail, 视图层 | Sample 0/32
+Fra:1 Mem:318.64M (Peak 318.64M) | Time:00:00.16 | Remaining:00:00.29 | Mem:739.63M, Peak:739.63M | 08_Conservation_Light_Detail, 视图层 | Sample 1/32
+Fra:1 Mem:345.02M (Peak 384.58M) | Time:00:01.43 | Mem:739.64M, Peak:739.64M | 08_Conservation_Light_Detail, 视图层 | Sample 32/32
+Fra:1 Mem:345.02M (Peak 384.58M) | Time:00:01.43 | Mem:739.64M, Peak:739.64M | 08_Conservation_Light_Detail, 视图层 | Finished
+Saved: 'E:\GodotProject\悬疑建造\design\presentation\whitebox\renders\lab-light.png'
+Time: 00:01.53 (Saving: 00:00.04)
+
+WHITEBOX_RENDER_DONE lab-light
+WHITEBOX_RENDER_START lab-soft-shadow
+Fra:1 Mem:274.82M (Peak 274.82M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Synchronizing object | Dim explanatory fill.003
+Fra:1 Mem:274.82M (Peak 274.82M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Synchronizing object | Table leg.028
+Fra:1 Mem:274.82M (Peak 274.82M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Synchronizing object | Table leg.030
+Fra:1 Mem:274.83M (Peak 274.83M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Synchronizing object | Cross rail.007
+Fra:1 Mem:274.83M (Peak 274.83M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Synchronizing object | Painting surface.003
+Fra:1 Mem:274.87M (Peak 274.87M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Synchronizing object | Ruler.003
+Fra:1 Mem:274.90M (Peak 274.90M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Synchronizing object | Cold panel foot.004
+Fra:1 Mem:274.91M (Peak 274.91M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Synchronizing object | Cold panel foot.005
+Fra:1 Mem:274.94M (Peak 274.94M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Synchronizing object | Wide soft cold source.001
+Fra:1 Mem:274.93M (Peak 274.94M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Synchronizing object | Wide cold panel frame.002
+Fra:1 Mem:274.96M (Peak 274.96M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Synchronizing object | Broad diffused emitter.002
+帧:1 内存:275.08M (峰值 275.08M) | 时间:00:00.06 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Initializing
+Fra:1 Mem:273.95M (Peak 275.08M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Waiting for render to start
+Fra:1 Mem:273.95M (Peak 275.08M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Updating Scene
+Fra:1 Mem:273.95M (Peak 275.08M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Updating Shaders
+Fra:1 Mem:273.95M (Peak 275.08M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:274.03M (Peak 302.05M) | Time:00:00.12 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Updating Procedurals
+Fra:1 Mem:274.03M (Peak 302.05M) | Time:00:00.12 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Updating Background
+Fra:1 Mem:274.03M (Peak 302.05M) | Time:00:00.12 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Updating Camera
+Fra:1 Mem:274.03M (Peak 302.05M) | Time:00:00.12 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Updating Meshes Flags
+Fra:1 Mem:274.03M (Peak 302.05M) | Time:00:00.12 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Updating Objects
+Fra:1 Mem:274.03M (Peak 302.05M) | Time:00:00.12 | Mem:0.00M, Peak:0.00M | 09_Soft_Shadow_Detail, 视图层 | Updating Objects | Copying Transformations to device
+Fra:1 Mem:274.04M (Peak 302.05M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 09_Soft_Shadow_Detail, 视图层 | Updating Particle Systems
+Fra:1 Mem:274.04M (Peak 302.05M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 09_Soft_Shadow_Detail, 视图层 | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:274.04M (Peak 302.05M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 09_Soft_Shadow_Detail, 视图层 | Updating Meshes
+Fra:1 Mem:274.04M (Peak 302.05M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 09_Soft_Shadow_Detail, 视图层 | Updating Objects | Applying Static Transformations
+Fra:1 Mem:274.04M (Peak 302.05M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 09_Soft_Shadow_Detail, 视图层 | Updating Mesh | Computing attributes
+Fra:1 Mem:274.09M (Peak 302.05M) | Time:00:00.13 | Mem:0.01M, Peak:0.01M | 09_Soft_Shadow_Detail, 视图层 | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:274.09M (Peak 302.05M) | Time:00:00.13 | Mem:0.06M, Peak:0.06M | 09_Soft_Shadow_Detail, 视图层 | Updating Scene BVH | Building
+Fra:1 Mem:274.09M (Peak 302.05M) | Time:00:00.13 | Mem:0.06M, Peak:0.06M | 09_Soft_Shadow_Detail, 视图层 | Updating Scene BVH | Building BVH
+Fra:1 Mem:274.21M (Peak 302.05M) | Time:00:00.13 | Mem:0.06M, Peak:0.06M | 09_Soft_Shadow_Detail, 视图层 | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:274.22M (Peak 302.05M) | Time:00:00.13 | Mem:0.06M, Peak:0.06M | 09_Soft_Shadow_Detail, 视图层 | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:274.23M (Peak 302.05M) | Time:00:00.13 | Mem:0.06M, Peak:0.06M | 09_Soft_Shadow_Detail, 视图层 | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:274.23M (Peak 302.05M) | Time:00:00.13 | Mem:0.13M, Peak:0.13M | 09_Soft_Shadow_Detail, 视图层 | Updating Mesh | Computing normals
+Fra:1 Mem:274.36M (Peak 302.05M) | Time:00:00.13 | Mem:0.13M, Peak:0.13M | 09_Soft_Shadow_Detail, 视图层 | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:274.36M (Peak 302.05M) | Time:00:00.13 | Mem:0.26M, Peak:0.26M | 09_Soft_Shadow_Detail, 视图层 | Updating Objects Flags
+Fra:1 Mem:274.36M (Peak 302.05M) | Time:00:00.13 | Mem:0.26M, Peak:0.26M | 09_Soft_Shadow_Detail, 视图层 | Updating Primitive Offsets
+Fra:1 Mem:274.36M (Peak 302.05M) | Time:00:00.13 | Mem:0.26M, Peak:0.26M | 09_Soft_Shadow_Detail, 视图层 | Updating Images
+Fra:1 Mem:274.36M (Peak 302.05M) | Time:00:00.13 | Mem:0.26M, Peak:0.26M | 09_Soft_Shadow_Detail, 视图层 | Updating Camera Volume
+Fra:1 Mem:274.36M (Peak 302.05M) | Time:00:00.13 | Mem:0.26M, Peak:0.26M | 09_Soft_Shadow_Detail, 视图层 | Updating Lookup Tables
+Fra:1 Mem:274.36M (Peak 302.05M) | Time:00:00.13 | Mem:0.34M, Peak:0.34M | 09_Soft_Shadow_Detail, 视图层 | Updating Lights
+Fra:1 Mem:274.36M (Peak 302.05M) | Time:00:00.13 | Mem:0.35M, Peak:0.35M | 09_Soft_Shadow_Detail, 视图层 | Updating Lights | Computing tree
+Fra:1 Mem:274.36M (Peak 302.05M) | Time:00:00.13 | Mem:0.35M, Peak:0.35M | 09_Soft_Shadow_Detail, 视图层 | Updating Integrator
+Fra:1 Mem:274.36M (Peak 302.05M) | Time:00:00.13 | Mem:0.35M, Peak:0.35M | 09_Soft_Shadow_Detail, 视图层 | Updating Film
+Fra:1 Mem:274.37M (Peak 302.05M) | Time:00:00.13 | Mem:0.26M, Peak:0.35M | 09_Soft_Shadow_Detail, 视图层 | Updating Lookup Tables
+Fra:1 Mem:274.37M (Peak 302.05M) | Time:00:00.13 | Mem:0.35M, Peak:0.35M | 09_Soft_Shadow_Detail, 视图层 | Updating Baking
+Fra:1 Mem:274.37M (Peak 302.05M) | Time:00:00.13 | Mem:0.35M, Peak:0.35M | 09_Soft_Shadow_Detail, 视图层 | Updating Device | Writing constant memory
+Fra:1 Mem:274.37M (Peak 302.05M) | Time:00:00.13 | Mem:0.35M, Peak:0.35M | 09_Soft_Shadow_Detail, 视图层 | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:282.06M (Peak 302.05M) | Time:00:00.14 | Mem:676.85M, Peak:676.85M | 09_Soft_Shadow_Detail, 视图层 | Sample 0/32
+Fra:1 Mem:344.69M (Peak 344.69M) | Time:00:00.15 | Remaining:00:00.39 | Mem:739.47M, Peak:739.47M | 09_Soft_Shadow_Detail, 视图层 | Sample 1/32
+Fra:1 Mem:371.06M (Peak 410.62M) | Time:00:01.52 | Mem:739.48M, Peak:739.48M | 09_Soft_Shadow_Detail, 视图层 | Sample 32/32
+Fra:1 Mem:371.06M (Peak 410.62M) | Time:00:01.52 | Mem:739.48M, Peak:739.48M | 09_Soft_Shadow_Detail, 视图层 | Finished
+Saved: 'E:\GodotProject\悬疑建造\design\presentation\whitebox\renders\lab-soft-shadow.png'
+Time: 00:01.63 (Saving: 00:00.05)
+
+WHITEBOX_RENDER_DONE lab-soft-shadow
+WHITEBOX_KIT_COMPLETE
+
+Blender quit

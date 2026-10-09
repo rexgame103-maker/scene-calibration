@@ -1,0 +1,75 @@
+{
+  "format": {
+    "width": 1920,
+    "height": 1080,
+    "language": "English",
+    "text": "editable SVG"
+  },
+  "images": [
+    {
+      "cell": "A1",
+      "image": "process/renders/studio-stage-1.png",
+      "origin": "Blender reconstructed study: studio, stage 1"
+    },
+    {
+      "cell": "A2",
+      "image": "process/renders/studio-stage-2.png",
+      "origin": "Blender reconstructed study: studio, stage 2"
+    },
+    {
+      "cell": "A3",
+      "image": "process/renders/studio-stage-3.png",
+      "origin": "Blender reconstructed study: studio, stage 3"
+    },
+    {
+      "cell": "A4",
+      "image": "process/final/studio-final.png",
+      "origin": "Godot in-engine capture: studio"
+    },
+    {
+      "cell": "B1",
+      "image": "process/renders/office-stage-1.png",
+      "origin": "Blender reconstructed study: office, stage 1"
+    },
+    {
+      "cell": "B2",
+      "image": "process/renders/office-stage-2.png",
+      "origin": "Blender reconstructed study: office, stage 2"
+    },
+    {
+      "cell": "B3",
+      "image": "process/renders/office-stage-3.png",
+      "origin": "Blender reconstructed study: office, stage 3"
+    },
+    {
+      "cell": "B4",
+      "image": "process/final/office-final.png",
+      "origin": "Godot in-engine capture: office"
+    },
+    {
+      "cell": "C1",
+      "image": "process/renders/restoration-stage-1.png",
+      "origin": "Blender reconstructed study: restoration, stage 1"
+    },
+    {
+      "cell": "C2",
+      "image": "process/renders/restoration-stage-2.png",
+      "origin": "Blender reconstructed study: restoration, stage 2"
+    },
+    {
+      "cell": "C3",
+      "image": "process/renders/restoration-stage-3.png",
+      "origin": "Blender reconstructed study: restoration, stage 3"
+    },
+    {
+      "cell": "C4",
+      "image": "process/final/restoration-final.png",
+      "origin": "Godot in-engine capture: restoration"
+    }
+  ],
+  "blender_source": "process/three-scenes-production-studies.blend",
+  "build_source": "process/build_process_whiteboxes.py",
+  "capture_source": "process/capture_final_scenes.gd",
+  "stages_1_to_3": "Retrospective reconstructions created for this presentation; not recovered historical asset versions.",
+  "stage_4": "Fresh screenshots from the three full authored Godot game scenes, retaining their saved lighting and materials. Camera framing is adjusted only in memory to include the complete rooms."
+}

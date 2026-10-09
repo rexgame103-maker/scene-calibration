@@ -92,7 +92,17 @@ func investigate() -> bool:
 
 	var popup := get_tree().get_first_node_in_group("scene_clue_ui")
 	if is_instance_valid(popup):
-		return bool(popup.call("show_point", self))
+		var opened := bool(popup.call("show_point", self))
+		if opened:
+			# Audio follows the same angle, occlusion and unlock checks above.
+			_play_sound("clue_discover")
+			if clue_point_id == "computer_work_log":
+				_play_sound("keyboard_type", global_position)
+			elif clue_point_id == "printer_photo":
+				# The photograph is already on the printer; reading it does not
+				# start a new print cycle.
+				_play_sound("photo_pick")
+		return opened
 	return false
 
 func collect_clue() -> bool:
@@ -108,7 +118,15 @@ func collect_clue() -> bool:
 		push_warning("SceneCluePoint '%s' has no valid clue_id or CaseManager." % clue_point_id)
 
 	_refresh_visual_state()
+	if newly_discovered:
+		_play_sound("clue_collect")
 	return newly_discovered
+
+func _play_sound(event_id: String, position: Variant = null) -> void:
+	# Tool classes can be parsed before runtime Autoload names are registered.
+	var audio := get_node_or_null("/root/GameAudio")
+	if audio != null:
+		audio.call("play", event_id, position)
 
 
 func set_inspection_context(furniture_node: Node3D) -> void:

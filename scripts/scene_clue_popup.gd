@@ -95,7 +95,7 @@ func _layout() -> void:
 	copy.size = Vector2(minf(size.x * 0.37, size.x-copy_home.x-28), side)
 	title_label.size = Vector2(copy.size.x, 35)
 	description_label.position = Vector2(0, 42)
-	description_label.size = Vector2(copy.size.x, maxf(82, side * 0.40))
+	description_label.size = Vector2(copy.size.x, maxf(100, side * 0.50))
 	collect_button.size = Vector2(170, 42)
 	collect_button.position = Vector2(
 		maxf(0, copy.size.x - collect_button.size.x),

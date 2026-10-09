@@ -23,21 +23,21 @@ TEXT_EXTENSIONS = {
 TEXT_NAMES = {".gitignore", ".gitattributes", ".editorconfig"}
 MODULES = [
     {"title": "启动与游戏流程", "description": "从开始菜单进入工作室，再接取案件。", "paths": ["project.godot", "scripts/game_flow.gd", "scripts/scene_transition.gd", "scenes/start_menu/start_menu_office.tscn"]},
-    {"title": "案件、资料与线索", "description": "JSON 驱动资料展示、线索发现和家具解锁。", "paths": ["scripts/case_manager.gd", "scripts/case_file_ui.gd", "scripts/case_archive_view.gd", "data/cases/office_case_001.json"]},
+    {"title": "案件、资料与线索", "description": "JSON 驱动办公室与文物修复室的资料、线索和家具解锁。", "paths": ["scripts/case_manager.gd", "scripts/case_file_ui.gd", "scripts/case_archive_view.gd", "data/cases/office_case_001.json", "data/cases/gallery_case_002.json"]},
     {"title": "家具与现场重构", "description": "家具创建、摆放、空间条件与步骤奖励。", "paths": ["scripts/main.gd", "scripts/furniture_factory.gd", "scripts/reconstruction_zone.gd", "scripts/reconstruction_manager.gd", "scripts/scene_clue_point.gd"]},
-    {"title": "玩家工作室与存档", "description": "工作室布置、电脑应用、商品与玩家进度。", "paths": ["scripts/calibrator_studio.gd", "scripts/studio_computer_ui.gd", "scripts/player_profile.gd", "scripts/studio_furniture_factory.gd", "data/progression/studio_catalog.json"]},
-    {"title": "界面与图形资源", "description": "报纸界面、透明家具图标、暂停与画面效果。", "paths": ["scripts/first_case_flow_ui.gd", "scripts/catalog_item.gd", "scripts/furniture_icon_library.gd", "scripts/pause_menu.gd", "scripts/hand_drawn_post_process.gd"]},
+    {"title": "玩家工作室与存档", "description": "工作室布置、桌面窗口、邮件阅读状态、商品与玩家进度。", "paths": ["scripts/calibrator_studio.gd", "scripts/studio_computer_ui.gd", "scripts/terminal_app_window.gd", "scripts/terminal_mail_client.gd", "scripts/player_profile.gd", "scripts/studio_furniture_factory.gd", "data/progression/studio_catalog.json"]},
+    {"title": "界面、音效与图形资源", "description": "报纸界面、英语 / 中文、事件音效、手绘家具与植被。", "paths": ["scripts/first_case_flow_ui.gd", "scripts/catalog_item.gd", "scripts/furniture_icon_library.gd", "scripts/pause_menu.gd", "scripts/game_language.gd", "scripts/game_audio.gd", "scripts/hand_drawn_post_process.gd"]},
     {"title": "运行与验证", "description": "阅读说明、查看验证脚本及源码交付工具。", "paths": ["docs/SOURCE_GUIDE.md", "tests/smoke_furniture_handdrawn.gd", "tools/build_source_review.py", "README.md"]},
 ]
 
 
 def included(path: Path) -> bool:
     parts = path.relative_to(ROOT).parts
-    if path.is_symlink() or parts[0] in EXCLUDED_ROOTS or "__pycache__" in parts:
+    if path.is_symlink() or parts[0] in EXCLUDED_ROOTS or any(part in {"__pycache__", ".tooling"} for part in parts):
         return False
     if path.name.startswith(".env") and path.name != ".env.example":
         return False
-    return path.suffix.lower() not in {".pyc", ".key", ".p12", ".pfx"}
+    return path.suffix.lower() not in {".pyc", ".key", ".p12", ".pfx", ".blend1", ".blend2"}
 
 
 def paths() -> list[Path]:

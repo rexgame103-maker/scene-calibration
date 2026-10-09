@@ -1,0 +1,156 @@
+{
+  "page": {
+    "width": 1920,
+    "height": 1080,
+    "language": "English",
+    "text": "editable native SVG"
+  },
+  "repository": "https://github.com/rexgame103-maker/scene-calibration",
+  "code_reference": "main branch line links; source hashes below identify the represented files",
+  "capture_script": "code/capture_code_features.gd",
+  "capture_method": "Isolated Godot project/user directory, English, 1600×900. Existing debug placement/calibration helpers stage the cases. The office clue passes the real camera visibility gate; the restoration case passes its final reconstruction conditions. No game scene files were edited.",
+  "sources": [
+    {
+      "image": "code/screenshots/evidence.png",
+      "sha256": "6446a87d8451aeb93beae5ca5e210d793b8839ca5952847f88c5723e941ef7c5",
+      "origin": "Godot 4.7.2 runtime screenshot",
+      "crop_viewbox": null
+    },
+    {
+      "file": "scripts/case_manager.gd",
+      "sha256": "c99ce2a68e7b56c3cd829de66102f76b3c50ee1c07157334f6eb148e5b856bac",
+      "lines": [
+        197,
+        205
+      ],
+      "original_lines": [
+        "\tvar item := evidence[evidence_id] as Dictionary",
+        "\titem[\"is_viewed\"] = true",
+        "\tevidence[evidence_id] = item",
+        "\tfor clue_value: Variant in item.get(\"clue_ids\", []):",
+        "\t\tvar clue_id := String(clue_value)",
+        "\t\tif discover_clue(clue_id):",
+        "\t\t\tdiscovered_ids.append(clue_id)",
+        "\tevidence_viewed.emit(item.duplicate(true))",
+        "\treturn discovered_ids"
+      ],
+      "display_lines": [
+        "var item := evidence[evidence_id] as Dictionary",
+        "item[\"is_viewed\"] = true",
+        "evidence[evidence_id] = item",
+        "for clue_value: Variant in item.get(\"clue_ids\", []):",
+        "    var clue_id := String(clue_value)",
+        "    if discover_clue(clue_id):",
+        "        discovered_ids.append(clue_id)",
+        "evidence_viewed.emit(item.duplicate(true))",
+        "return discovered_ids"
+      ],
+      "display_normalization": "Tabs expanded to four spaces; common indentation removed. Long lines visually wrap, marked by an arrow instead of a new source line number.",
+      "url": "https://github.com/rexgame103-maker/scene-calibration/blob/main/scripts/case_manager.gd#L197-L205",
+      "font_size": 15
+    },
+    {
+      "image": "code/screenshots/visible-clue.png",
+      "sha256": "920fa06b9b665a25a66545c8e88acb5940f2d714224065cacb7614871dec5b4a",
+      "origin": "Godot 4.7.2 runtime screenshot",
+      "crop_viewbox": "245 250 1100 618.75"
+    },
+    {
+      "file": "scripts/scene_clue_point.gd",
+      "sha256": "2ee6f3642e15fb849310b5696cfb5737ce1377c5657e009b164a10b9a2557b35",
+      "lines": [
+        194,
+        199
+      ],
+      "original_lines": [
+        "\treturn (",
+        "\t\tis_unlocked",
+        "\t\tand not (is_discovered and hide_after_discovered)",
+        "\t\tand (not show_only_during_inspection or _inspection_active)",
+        "\t\tand is_visible_from_camera()",
+        "\t)"
+      ],
+      "display_lines": [
+        "return (",
+        "    is_unlocked",
+        "    and not (is_discovered and hide_after_discovered)",
+        "    and (not show_only_during_inspection or _inspection_active)",
+        "    and is_visible_from_camera()",
+        ")"
+      ],
+      "display_normalization": "Tabs expanded to four spaces; common indentation removed. Long lines visually wrap, marked by an arrow instead of a new source line number.",
+      "url": "https://github.com/rexgame103-maker/scene-calibration/blob/main/scripts/scene_clue_point.gd#L194-L199",
+      "font_size": 14
+    },
+    {
+      "image": "code/screenshots/reconstruction.png",
+      "sha256": "a4da579fe7aee9fa0d10b5d4bed09d699af6bdb2458572291e2e8c4fc02cd63b",
+      "origin": "Godot 4.7.2 runtime screenshot",
+      "crop_viewbox": null
+    },
+    {
+      "file": "scripts/reconstruction_zone.gd",
+      "sha256": "cf8e9b9860f928463cbaef497bc9edc302e0b38ef420f9ad223d08cda75b3046",
+      "lines": [
+        97,
+        104
+      ],
+      "original_lines": [
+        "\tvar local_position := to_local(furniture_node.global_position)",
+        "\tvar half_size := zone_size * 0.5",
+        "\treturn (",
+        "\t\tabsf(local_position.x) <= half_size.x",
+        "\t\tand absf(local_position.y) <= half_size.y",
+        "\t\tand absf(local_position.z) <= half_size.z",
+        "\t)",
+        ""
+      ],
+      "display_lines": [
+        "var local_position := to_local(furniture_node.global_position)",
+        "var half_size := zone_size * 0.5",
+        "return (",
+        "    absf(local_position.x) <= half_size.x",
+        "    and absf(local_position.y) <= half_size.y",
+        "    and absf(local_position.z) <= half_size.z",
+        ")"
+      ],
+      "display_normalization": "Tabs expanded to four spaces; common indentation removed. Long lines visually wrap, marked by an arrow instead of a new source line number.",
+      "url": "https://github.com/rexgame103-maker/scene-calibration/blob/main/scripts/reconstruction_zone.gd#L97-L104",
+      "font_size": 14
+    },
+    {
+      "image": "code/screenshots/desktop.png",
+      "sha256": "9adfd76d846e55c564e5e91abfd0851e2cd55a2cb7c8bb2da87c34e1f403fc1f",
+      "origin": "Godot 4.7.2 runtime screenshot",
+      "crop_viewbox": null
+    },
+    {
+      "file": "scripts/terminal_app_window.gd",
+      "sha256": "06f58d832e6b7497c082df5fd589812e3fe2c654011455c77ba7e0a82389f0bd",
+      "lines": [
+        73,
+        79
+      ],
+      "original_lines": [
+        "\t_dragging = false",
+        "\tif not is_maximized:",
+        "\t\tnormal_rect = Rect2(position, size)",
+        "\tis_maximized = not is_maximized",
+        "\tfit_to_workspace()",
+        "\tmaximized_changed.emit(is_maximized)",
+        ""
+      ],
+      "display_lines": [
+        "_dragging = false",
+        "if not is_maximized:",
+        "    normal_rect = Rect2(position, size)",
+        "is_maximized = not is_maximized",
+        "fit_to_workspace()",
+        "maximized_changed.emit(is_maximized)"
+      ],
+      "display_normalization": "Tabs expanded to four spaces; common indentation removed. Long lines visually wrap, marked by an arrow instead of a new source line number.",
+      "url": "https://github.com/rexgame103-maker/scene-calibration/blob/main/scripts/terminal_app_window.gd#L73-L79",
+      "font_size": 15
+    }
+  ]
+}

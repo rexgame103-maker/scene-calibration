@@ -58,6 +58,9 @@ func _run() -> void:
 			failures.append("furniture remains outside room: %s" % String(node.get_meta("studio_kind", "")))
 
 	computer_ui.call("open_desktop")
+	if not (computer_ui.get("_windows") as Dictionary).is_empty():
+		failures.append("computer should start on its desktop")
+	computer_ui.call("_open_app", "mail")
 	await process_frame
 	if hud.visible:
 		failures.append("studio HUD remains visible over desktop")
@@ -65,10 +68,18 @@ func _run() -> void:
 	var has_accept := _find_button_text(computer_ui, "接取委托")
 	if not has_continue and not has_accept:
 		failures.append("mail has no case entry button")
+	computer_ui.call("_close_app", "mail")
+	if not computer_ui.visible or hud.visible:
+		failures.append("closing an app should stay on the desktop with the studio HUD hidden")
 	computer_ui.call("close_desktop")
 	await process_frame
 	if not hud.visible:
 		failures.append("studio HUD did not restore")
+	root.get_node("GameAudio").stop_all()
+	studio.queue_free()
+	await process_frame
+	await process_frame
+	await create_timer(0.2).timeout
 
 	if failures.is_empty():
 		print("STUDIO_UNIFIED_FLOW_SMOKE_OK")

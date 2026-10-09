@@ -23,6 +23,8 @@ var footprint := Vector2i.ONE
 @export var visual_style := "paper"
 var _hovered := false
 var _pressed := false
+var _authored_title_font_size := 0
+var _authored_detail_font_size := 0
 
 
 func setup(item: Dictionary) -> void:
@@ -39,7 +41,7 @@ func setup(item: Dictionary) -> void:
 	mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	mouse_filter = Control.MOUSE_FILTER_STOP
 	focus_mode = Control.FOCUS_ALL
-	tooltip_text = description
+	tooltip_text = item_label + "\n" + description
 	if title_label == null:
 		if authored_studio_card:
 			title_label = get_node("TitleLabel") as Label
@@ -66,12 +68,18 @@ func setup(item: Dictionary) -> void:
 			detail_label.max_lines_visible = 2
 			detail_label.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 	title_label.text = item_label
-	detail_label.text = description
-	size_label.text = tr("%d × %d 格") % [footprint.x,footprint.y]
+	# Compact captions fit the inventory card; retain the full description in the tooltip.
+	detail_label.text = String(item.get("short_description", description))
+	size_label.text = "%d × %d 格" % [footprint.x,footprint.y]
 	if visual_style == "studio_dossier" and not authored_studio_card:
 		title_label.add_theme_font_size_override("font_size", 13)
 		detail_label.add_theme_font_size_override("font_size", 11)
 		size_label.add_theme_font_size_override("font_size", 11)
+	if authored_studio_card:
+		if _authored_title_font_size == 0:
+			_authored_title_font_size = title_label.get_theme_font_size("font_size")
+			_authored_detail_font_size = detail_label.get_theme_font_size("font_size")
+		_fit_authored_text.call_deferred()
 	var primary := CASE_SCENE_UI.TEXT if visual_style == "dark" else STUDIO_UI.INK if visual_style == "studio_dossier" else ARCHIVE_UI.INK
 	var secondary := CASE_SCENE_UI.MUTED if visual_style == "dark" else STUDIO_UI.MUTED if visual_style == "studio_dossier" else ARCHIVE_UI.INK
 	if not authored_studio_card:
@@ -82,6 +90,8 @@ func setup(item: Dictionary) -> void:
 
 
 func _notification(what: int) -> void:
+	if what == NOTIFICATION_TRANSLATION_CHANGED and is_node_ready() and _authored_title_font_size > 0:
+		_fit_authored_text.call_deferred()
 	if what == NOTIFICATION_MOUSE_ENTER:
 		_hovered = true
 		queue_redraw()
@@ -89,6 +99,23 @@ func _notification(what: int) -> void:
 		_hovered = false
 		_pressed = false
 		queue_redraw()
+
+
+func _fit_authored_text() -> void:
+	_fit_card_label(title_label, _authored_title_font_size, 11)
+	_fit_card_label(detail_label, _authored_detail_font_size, 10)
+
+
+func _fit_card_label(label: Label, original_size: int, minimum_size: int) -> void:
+	label.clip_text = true
+	label.autowrap_mode = TextServer.AUTOWRAP_OFF
+	label.max_lines_visible = 1
+	label.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
+	var font := label.get_theme_font("font")
+	var font_size := original_size
+	while font_size > minimum_size and font.get_string_size(tr(label.text), HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x > label.size.x:
+		font_size -= 1
+	label.add_theme_font_size_override("font_size", font_size)
 
 
 func _gui_input(event: InputEvent) -> void:

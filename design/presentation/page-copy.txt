@@ -1,0 +1,47 @@
+PAGE 01 / COVER
+
+Scene Calibration is a spatial deduction game about reconstructing places after the evidence has been disturbed. Work from a personal studio, compare photographs and records, and inspect traces on everyday objects. Restore furniture, lighting, and spatial relationships to test your deductions. Complete investigations, archive restored scenes, and equip your studio for the next case.
+
+
+PAGE 02 / INSPIRATION & REFERENCES
+
+01 / EVERYDAY TRACES
+Wear marks, displaced furniture and missing equipment suggest habits that outlast the people who used a room. Ordinary objects become clues through their relationships.
+
+02 / PARTIAL RECORDS
+Photographs capture a moment, but hide what lies outside the frame. Comparing documents with physical traces turns an incomplete record into a testable spatial hypothesis.
+
+03 / A WORKING ARCHIVE
+The newspaper and case-file language frames information as evidence. A personal studio and retro terminal connect separate investigations through a persistent workspace.
+
+RETURN OF THE OBRA DINN
+
+Lucas Pope · 2018 · Exploration & logical deduction [1]
+
+CORE LOOP
+Explore the ship, revisit frozen moments, and reconcile identities and fates with the investigation book. Progress comes from making consistent deductions across multiple scenes, rather than following a single highlighted clue.
+
+DESIGN READING
+A scene functions as evidence: position, sightlines and nearby actions can support or contradict a theory. The book externalizes the investigation, helping the player compare fragments and revisit an earlier assumption.
+
+WHAT WE TAKE
+Treat photographs as partial records and make physical traces readable from the correct view. Reveal furniture through deductions, then let the final arrangement demonstrate that several clues agree.
+
+OUR DEPARTURE
+The target is a room's prior arrangement. Players test a hypothesis by placing objects and calibrating light; the task is spatial reconstruction, rather than identifying a ship's crew.
+
+HOUSE FLIPPER
+
+Empyrean · 2018 · Renovation & interior furnishing [2]
+
+CORE LOOP
+Accept renovation jobs, improve a property with tools, furnish rooms, and reinvest the earnings. Completing a physical task produces a visible change in the room and supports the next job.
+
+DESIGN READING
+Direct interaction makes room-scale decisions tangible. Furniture and renovation tools provide a readable vocabulary of actions, while a task-based structure gives the player a clear reason to alter the environment.
+
+WHAT WE TAKE
+Use a clear furniture inventory, visible placement feedback, rotation, and undo. Carry job rewards and functional equipment back to the studio, linking a completed investigation to the player's ongoing workspace.
+
+OUR DEPARTURE
+The goal is evidential accuracy, rather than a profitable makeover. Placement must satisfy documented spatial relationships, and lighting can be part of the reasoning.
