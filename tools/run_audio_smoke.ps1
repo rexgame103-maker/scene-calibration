@@ -33,7 +33,7 @@ foreach ($test in $Tests) {
     $stdout = Join-Path $testRoot ($test + '.stdout.log')
     $stderr = Join-Path $testRoot ($test + '.stderr.log')
     $arguments = @('--headless', '--path', ('"' + $testRoot + '"'), '--script', ('res://tests/' + $test + '.gd'))
-    if ($test -in @('smoke_clue_visibility', 'smoke_the_scene_menu', 'smoke_start_menu_office', 'smoke_menu_hover', 'smoke_language_settings', 'smoke_terminal_mail', 'smoke_terminal_apps', 'smoke_terminal_desktop', 'smoke_ui_text_fit')) {
+    if ($test -in @('smoke_clue_visibility', 'smoke_the_scene_menu', 'smoke_start_menu_office', 'smoke_menu_hover', 'smoke_language_settings', 'smoke_terminal_mail', 'smoke_terminal_apps', 'smoke_terminal_desktop', 'smoke_ui_text_fit', 'smoke_debug_hotkey')) {
         # Rendered mesh occlusion cannot be checked by Godot's headless dummy
         # renderer. Render offscreen with the real Windows/OpenGL driver.
         $arguments = @('--path', ('"' + $testRoot + '"'), '--script', ('res://tests/' + $test + '.gd'), '--audio-driver', 'Dummy', '--rendering-method', 'gl_compatibility', '--resolution', '1280x800', '--position', '-10000,-10000')

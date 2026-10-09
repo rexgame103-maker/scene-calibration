@@ -18,7 +18,7 @@
 
 检视光点打开 `scripts/scene_clue_popup.gd` 的分段动画：背景模糊、近景图从左进入、连接线、逐字描述、收集按钮。空白处点击提高播放速度，只有点击收集才授予线索；退场期间继续拦截场景输入。`SceneCluePoint` 的 Detail View Distance 和 Detail View Offset 控制近景镜头，Offset 为光点局部方向，零向量沿用主镜头方向。桌侧磨损的近景方向由 `office_concept_furniture.gd` 设置，以看清柜体侧面。验证脚本 `tests/smoke_clue_animation.gd` 覆盖播放顺序、实际空白/按钮点击、收集时机与退场；图形模式生成 `tests/clue_animation_preview.png`。
 
-光点显示与点击共享主相机可见性判定：必须在画面内、面向线索表面且无实际模型遮挡。`Surface Normal` 为线索表面的局部朝外方向（桌侧为 +X），随家具旋转；`Minimum View Dot` 控制侧视角度阈值。零法线不限制方向，仍检查模型遮挡。遮挡检测使用网格三角面而非家具的宽大碰撞盒，避免电脑前方可见光点被碰撞盒误拦。DEBUG 下一步会在玩家可用旋转范围内寻找可见视角，也不能直接绕过判定。`tests/smoke_clue_visibility.gd` 覆盖背面盲点、可达视角、真实网格遮挡和实际点击；`tests/smoke_computer_clue_click.gd` 检查电脑光点交互。
+光点显示与点击共享主相机可见性判定：必须在画面内、面向线索表面且无实际模型遮挡。`Surface Normal` 为线索表面的局部朝外方向（桌侧为 +X），随家具旋转；`Minimum View Dot` 控制侧视角度阈值。零法线不限制方向，仍检查模型遮挡。遮挡检测使用网格三角面而非家具的宽大碰撞盒，避免电脑前方可见光点被碰撞盒误拦。原 DEBUG 下一步现通过 `P` 键执行，按钮隐藏；它会在玩家可用旋转范围内寻找可见视角，也不能直接绕过判定。自动摆放时播放短暂下落动画，落地后再登记重构完成。`tests/smoke_clue_visibility.gd` 覆盖背面盲点、可达视角、真实网格遮挡和实际点击；`tests/smoke_computer_clue_click.gd` 检查电脑光点交互；`tests/smoke_debug_hotkey.gd` 检查快捷键、动画、暂停、重复按键与两关结案。
 
 桌面与柜层高度、物品占地、正确位置和调查点已匹配新尺寸。旧办公室备份位于 `res://Backups/office_before_concept_integration/`。独立概念场景仍保留供美术编辑。
 

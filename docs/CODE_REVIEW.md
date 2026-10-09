@@ -51,3 +51,9 @@ To rerun the six checks on Windows:
 ```
 
 The runner uses the configured local Godot executable; override `-Godot` if it is installed elsewhere. These results describe the selected checks, not every historical test in `tests/`.
+
+## P shortcut and animated placement — 2026-10-09
+
+The next-step Debug button is hidden and ignores pointer input. `P` now runs its existing evidence, investigation, placement and calibration flow. Furniture descends one metre over 0.34 seconds with accelerating motion; reconstruction completion is registered after landing. The busy guard rejects repeat presses and edits during the drop. Pausing also pauses the tween and its completion timer; text entry and modal screens cannot accidentally advance.
+
+`smoke_debug_hotkey` passed with real P key events through both formal cases, checking hidden UI, archive progression, movement over time, exact landing, pause/resume, repeated keys, no duplicate furniture, final reconstruction and submission. `smoke_computer_clue_click` and `smoke_game_audio` also passed. Run the current shortcut check with `tools/run_audio_smoke.ps1 -Tests smoke_debug_hotkey`. The historical `smoke_debug_next_step` still references superseded cabinet and lighting assumptions; it is not the current shortcut validation.

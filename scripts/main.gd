@@ -34,6 +34,8 @@ const DEFAULT_LIGHT_TEMPERATURES := [4200.0, 7800.0, 2800.0]
 const DEFAULT_LIGHT_RANGES := [0.0, 8.0, 7.0]
 const DEFAULT_LIGHT_SHADOWS := [true, false, false]
 const PHYSICS_DROP_HEIGHT := 0.32
+const DEBUG_DROP_HEIGHT := 1.0
+const DEBUG_DROP_DURATION := 0.34
 const SURFACE_SNAP_CLEARANCE := 0.008
 const ROOM_PHYSICS_LAYER := 1
 const FURNITURE_PHYSICS_LAYER := 4
@@ -61,6 +63,7 @@ var status_label: Label
 var overview_button: Button
 var case_files_button: Button
 var debug_hint_button: Button
+var _debug_step_running := false
 var case_file_ui: CaseFileUI
 var scene_clue_popup: SceneCluePopup
 var first_case_flow_ui: FirstCaseFlowUI
@@ -642,6 +645,8 @@ func _catalog_contains_kind(kind: String) -> bool:
 
 
 func _debug_advance_next_step() -> void:
+	if _debug_step_running or get_tree().paused:
+		return
 	if is_instance_valid(scene_clue_popup) and scene_clue_popup.visible:
 		return
 	if (
@@ -654,6 +659,13 @@ func _debug_advance_next_step() -> void:
 		return
 	if not active_kind.is_empty():
 		_cancel_placement(false)
+	_debug_step_running = true
+	pending_world_drag = false
+	orbit_dragging = false
+	focus_pan_dragging = false
+	_hide_furniture_menu()
+	if is_instance_valid(case_file_ui) and case_file_ui.visible:
+		case_file_ui.close_files()
 	if is_instance_valid(debug_hint_button):
 		debug_hint_button.disabled = true
 
@@ -697,8 +709,11 @@ func _debug_advance_next_step() -> void:
 		return
 
 	var zone := _debug_find_next_placeable_zone()
-	if is_instance_valid(zone) and _debug_place_furniture_in_zone(zone):
-		_set_status("DEBUG · 已自动摆放「%s」" % _debug_furniture_display_name(zone.required_furniture_id), Color("75c8ff"))
+	if is_instance_valid(zone) and _debug_place_furniture_in_zone(zone, false):
+		var furniture_id := zone.required_furniture_id
+		var furniture := _debug_find_placed_furniture_by_id(furniture_id)
+		if await _debug_animate_furniture_drop(furniture):
+			_set_status("DEBUG · 已自动摆放「%s」" % _debug_furniture_display_name(furniture_id), Color("75c8ff"))
 		_debug_release_button()
 		return
 
@@ -711,8 +726,33 @@ func _debug_advance_next_step() -> void:
 
 
 func _debug_release_button() -> void:
+	_debug_step_running = false
 	if is_instance_valid(debug_hint_button):
 		debug_hint_button.disabled = false
+
+
+func _debug_animate_furniture_drop(furniture: Node3D) -> bool:
+	if not is_instance_valid(furniture):
+		return false
+	# Later phases move already registered furniture too. Keep it out of the
+	# answer candidates until landing, even if an overlap queues an evaluation.
+	_unregister_reconstruction_furniture(furniture)
+	var landing_position := furniture.global_position
+	furniture.global_position = landing_position + Vector3.UP * DEBUG_DROP_HEIGHT
+	# The exact frozen placement stays deterministic; only its arrival is animated.
+	# Bind to the furniture so removing it also cancels the property tween safely.
+	var fall := furniture.create_tween()
+	fall.tween_property(furniture, "global_position", landing_position, DEBUG_DROP_DURATION).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
+	# Unlike awaiting Tween.finished, this also resumes if the furniture is removed.
+	# Pause this timer along with the game and the node-bound tween.
+	await get_tree().create_timer(DEBUG_DROP_DURATION, false).timeout
+	if is_instance_valid(furniture) and not furniture.is_queued_for_deletion():
+		fall.kill()
+		furniture.global_position = landing_position
+		_notify_reconstruction_placement_completed(furniture)
+		GameAudio.play_placement(String(furniture.get_meta("furniture_kind", "")), landing_position)
+		return true
+	return false
 
 
 func _debug_case_flow_finished() -> bool:
@@ -841,7 +881,7 @@ func _debug_find_placed_furniture_by_id(furniture_id: String) -> Node3D:
 	return null
 
 
-func _debug_place_furniture_in_zone(zone: ReconstructionZone) -> bool:
+func _debug_place_furniture_in_zone(zone: ReconstructionZone, notify_placement: bool = true) -> bool:
 	if not is_instance_valid(zone):
 		return false
 	var manager := _get_case_manager()
@@ -921,7 +961,8 @@ func _debug_place_furniture_in_zone(zone: ReconstructionZone) -> bool:
 		var existing_index := _find_entry_index(furniture)
 		if existing_index >= 0:
 			placed_items[existing_index] = updated_entry
-	_notify_reconstruction_placement_completed(furniture)
+	if notify_placement:
+		_notify_reconstruction_placement_completed(furniture)
 	return true
 
 
@@ -994,6 +1035,14 @@ func _process(delta: float) -> void:
 func _input(event: InputEvent) -> void:
 	if Engine.is_editor_hint():
 		return
+	if event is InputEventKey and event.pressed and not event.echo and (event.physical_keycode == KEY_P or event.keycode == KEY_P):
+		var focused_control := get_viewport().gui_get_focus_owner()
+		if not (focused_control is LineEdit or focused_control is TextEdit) and not event.ctrl_pressed and not event.alt_pressed and not event.meta_pressed:
+			get_viewport().set_input_as_handled()
+			_debug_advance_next_step()
+			return
+	if _debug_step_running:
+		return
 	if is_instance_valid(first_case_flow_ui):
 		if first_case_flow_ui.is_modal_active():
 			return
@@ -1005,9 +1054,6 @@ func _input(event: InputEvent) -> void:
 		return
 	if event is InputEventMouse and is_instance_valid(case_files_button):
 		if case_files_button.get_global_rect().has_point((event as InputEventMouse).position):
-			return
-	if event is InputEventMouse and is_instance_valid(debug_hint_button):
-		if debug_hint_button.get_global_rect().has_point((event as InputEventMouse).position):
 			return
 	if gizmo_dragging:
 		if event is InputEventMouseMotion:
@@ -1906,6 +1952,9 @@ func _build_ui() -> void:
 	debug_hint_button.size = Vector2(126, 44)
 	debug_hint_button.tooltip_text = "自动执行当前案件的下一个资料、检视或摆放步骤"
 	debug_hint_button.pressed.connect(_debug_advance_next_step)
+	# Keep the node for capture/test compatibility; runtime input is the P key.
+	debug_hint_button.hide()
+	debug_hint_button.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui_root.add_child(debug_hint_button)
 	lighting_toolbar = PanelContainer.new()
 	lighting_toolbar.position = Vector2(24, 166)
@@ -2452,6 +2501,8 @@ func _take_from_inventory(kind: String) -> bool:
 
 
 func _begin_placement(kind: String) -> void:
+	if _debug_step_running:
+		return
 	if camera_focused or camera_transitioning:
 		_set_status("近景查看中不可摆放家具，请先返回全景", Color("f0bd7a"))
 		return
@@ -3757,6 +3808,8 @@ func _can_place_at(
 
 
 func _undo_last() -> void:
+	if _debug_step_running:
+		return
 	if camera_focused or camera_transitioning:
 		_set_status("近景查看中不可编辑，请先返回全景", Color("f0bd7a"))
 		return
@@ -3781,6 +3834,8 @@ func _undo_last() -> void:
 
 
 func _clear_room() -> void:
+	if _debug_step_running:
+		return
 	if camera_focused or camera_transitioning:
 		_set_status("近景查看中不可编辑，请先返回全景", Color("f0bd7a"))
 		return

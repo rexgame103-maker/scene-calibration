@@ -9,7 +9,7 @@
   "images": [
     {
       "image": "gameplay/screenshots/mail.png",
-      "sha256": "bdb8424ba7281509939ab0d79628de36d566fd37b11fcc5589e6ed6872581e17",
+      "sha256": "e21a890c7385345a787a209e12244c658bd319f7bb42fd7c6b5383eee74a0a9e",
       "source": "Actual Godot 4.7.2 Windows OpenGL runtime",
       "crop_viewbox": null,
       "rotation_degrees": -1.6
@@ -23,14 +23,14 @@
     },
     {
       "image": "gameplay/screenshots/placement.png",
-      "sha256": "9dfdb39f0e0ed2fd31825067731ec97bf40a995bb4476534426b1dd240ca10a6",
+      "sha256": "a4303937bbf096ef812767672eb343705584db449f9a936ed7719571fe95efa2",
       "source": "Actual Godot 4.7.2 Windows OpenGL runtime",
       "crop_viewbox": null,
       "rotation_degrees": 1.1
     },
     {
       "image": "gameplay/screenshots/inspection.png",
-      "sha256": "d1b7859995878d05d6ee3f1cb2aba921ab1b74e5fa190ac68dea46f199f32a5a",
+      "sha256": "1ebf433e3580e02f2906fd40cf29f4037a4e7809dad4732e147204cf79a80858",
       "source": "Actual Godot 4.7.2 Windows OpenGL runtime",
       "crop_viewbox": null,
       "rotation_degrees": -1.5
@@ -44,21 +44,21 @@
     },
     {
       "image": "gameplay/screenshots/settlement.png",
-      "sha256": "b43bd2b6280cb6a4146025e518fe9ed1abc87d4b55564c5cdf208cec1b072a20",
+      "sha256": "2e3c1c9512313dc08818872a1ad6a5edf9d74d2fa0ae3c16a2ad2241324c4bd1",
       "source": "Actual Godot 4.7.2 Windows OpenGL runtime",
       "crop_viewbox": null,
       "rotation_degrees": -0.8
     },
     {
       "image": "gameplay/screenshots/album.png",
-      "sha256": "a0d862bf81d843b1e6e8e96ba9d21a166ed0ae04c7814d3cd06e101e54611ce9",
+      "sha256": "d0897ffc7fa4b1c58bab3d50bb5fff531bfb7aee04f46c5dc593ec00c2d44a13",
       "source": "Actual Godot 4.7.2 Windows OpenGL runtime",
       "crop_viewbox": null,
       "rotation_degrees": 1
     },
     {
       "image": "gameplay/screenshots/calibration.png",
-      "sha256": "f143e66882c3c9e7bf7243f0972b54af7c5a2fa3d0384d78ca53600176f0cdbb",
+      "sha256": "3c17123ec3c3abb98d002aed3c2f28ef170cda4a7f953131f841206b91f692f8",
       "source": "Actual Godot 4.7.2 Windows OpenGL runtime",
       "crop_viewbox": null,
       "rotation_degrees": -1.2
