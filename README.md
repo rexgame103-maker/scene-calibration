@@ -1,67 +1,79 @@
-# 错位现场 / Scene Calibration
+# Scene Calibration
 
-使用 **Godot 4.7 / GDScript** 制作的现场重构推理游戏。玩家在工作室接取案件，通过照片、资料与场景痕迹解锁家具，恢复空间关系并完成调查。
+*Read the traces. Connect the evidence. Reconstruct the scene.*
 
-## 源码审核入口
+**Scene Calibration** is a 3D deduction and reconstruction game built with **Godot 4.7 and GDScript**. Accept commissions from a retro computer in your studio, examine photographs and documents, and investigate the physical traces left behind. Each clue unlocks new furnishings and helps you reconstruct the relationships between objects.
 
-- **[源码导览](docs/SOURCE_GUIDE.md)**：启动流程、目录结构、模块关系、核心代码索引。
-- **[离线浏览说明](review/README.md)**：目录树、带行号的完整文本源码、函数 / 节点导航和全文检索。
-- **[文件校验清单](review/manifest.json)**：实际文件路径、字节数与 SHA-256。
-- **[开发记录与操作说明](docs/DEVELOPMENT_NOTES.md)**：详细交互规则、编辑器配置与历史说明。
-- **[English code review map](docs/CODE_REVIEW.md)**: feature entry points, matching game captures, and verified checks.
-- **[Portfolio pages](design/presentation/README.md)**: editable English newspaper SVGs and PNG previews.
+The playable campaign includes your personal studio and two case locations:
 
-下载完整工程后，双击 `review/index.html` 即可离线审阅源码。GitHub 上可直接阅读 `.gd`、`.tscn`、`.json` 与 `.gdshader` 文件；浏览页的 HTML 请下载到本地打开。
+- **The Cleared Office:** rebuild an office emptied before the police arrived, using incomplete photographs, furniture wear, computer records and printed documents.
+- **The Miscalibrated Restoration Room:** reconstruct a conservation workspace, then compare photographic evidence and adjust lighting to investigate a discrepancy in the restoration records.
+- **Your Studio:** arrange your workspace, read mail, purchase equipment and keep an album of completed reconstructions between assignments.
 
-## 启动工程
+English is the default language. Simplified Chinese is available in Settings.
 
-1. 安装 Godot 4.7，导入根目录 `project.godot`。
-2. 等待首次资源导入完成后按 **F5**。
-3. 从开始菜单进入工作室，在电脑中查看委托并接取案件。
+## Source Review
 
-实际启动入口：`scenes/start_menu/start_menu_office.tscn`。案件现场共用 `scenes/main.tscn`，玩家工作室位于 `scenes/studio/calibrator_studio.tscn`。当前渲染配置为 `gl_compatibility`。
+- **[Source guide](docs/SOURCE_GUIDE.md):** startup flow, directory structure, module relationships and a core code index.
+- **[Offline browser instructions](review/README.md):** a directory tree, complete source text with line numbers, function and node navigation, and full-text search.
+- **[File manifest](review/manifest.json):** file paths, byte counts and SHA-256 checksums.
+- **[Development notes](docs/DEVELOPMENT_NOTES.md):** interaction rules, editor configuration and development history.
+- **[English code review map](docs/CODE_REVIEW.md):** feature entry points, corresponding game captures and verified checks.
+- **[Portfolio pages](design/presentation/README.md):** editable English newspaper SVGs and PNG previews.
 
-## 源码结构
+After downloading the complete project, open `review/index.html` to browse the source offline. GitHub displays `.gd`, `.tscn`, `.json` and `.gdshader` files directly; download the HTML source browser to use it locally.
+
+## Run the Project
+
+1. Install Godot 4.7 and import `project.godot` from the repository root.
+2. Wait for the initial asset import to finish, then press **F5**.
+3. Enter your studio from the start menu, set up your workspace and open the computer to read and accept commissions.
+
+The startup scene is `scenes/start_menu/start_menu_office.tscn`. Case locations share `scenes/main.tscn`, and the player studio uses `scenes/studio/calibrator_studio.tscn`. The project uses the `gl_compatibility` renderer.
+
+## Repository Structure
 
 ```text
 scene-calibration/
-├── project.godot          # 工程配置、启动入口与八个 Autoload
-├── scripts/              # 游戏逻辑、输入、家具系统、存档与运行时 UI
-├── scenes/               # 开始菜单、工作室、案件现场和界面节点
+├── project.godot          # Project settings, startup scene and eight autoloads
+├── scripts/              # Game logic, input, furniture, saves and runtime UI
+├── scenes/               # Start menu, studio, case locations and UI nodes
 ├── data/
-│   ├── cases/            # 案件、线索、资料、解锁与重构步骤
-│   ├── progression/      # 案件进程与工作室商品
-│   ├── localization/     # 英文翻译与语言设置
-│   └── audio/            # 音效清单与事件配置
-├── assets/               # 模型、图片、字体、照片、音效与 UI 图集
-├── materials/            # Godot 材质资源
-├── shaders/              # 着色器与手绘画面效果
-├── tests/                # 功能验证脚本与预览
-├── tools/                # 资源处理、场景渲染与源码交付工具
-├── design/               # 设计稿与界面参考
-├── docs/                 # 源码导览与开发记录
-└── review/               # 可离线打开的源码浏览页
+│   ├── cases/            # Cases, clues, evidence, unlocks and reconstruction steps
+│   ├── progression/      # Campaign progression and studio shop inventory
+│   ├── localization/     # English translations and language settings
+│   └── audio/            # Sound manifests and event configuration
+├── assets/               # Models, images, fonts, photographs, audio and UI atlases
+├── materials/            # Godot material resources
+├── shaders/              # Shaders and hand-drawn rendering effects
+├── tests/                # Feature checks and visual previews
+├── tools/                # Asset processing, scene rendering and source delivery
+├── design/               # Design studies and interface references
+├── docs/                 # Source guides and development notes
+└── review/               # Offline source browser
 ```
 
-## 建议阅读顺序
+## Suggested Reading Order
 
-1. [project.godot](project.godot)：确认入口与全局管理器。
-2. [game_flow.gd](scripts/game_flow.gd)：工作室、开始菜单和案件之间的切换。
-3. [case_manager.gd](scripts/case_manager.gd) 与 [第一案数据](data/cases/office_case_001.json)：线索、资料和家具解锁。
-4. [main.gd](scripts/main.gd) 与 [furniture_factory.gd](scripts/furniture_factory.gd)：家具创建与现场交互。
-5. [reconstruction_manager.gd](scripts/reconstruction_manager.gd)：空间条件与案件重构步骤。
-6. [player_profile.gd](scripts/player_profile.gd)：进度、库存和布局存档。
-7. [terminal_app_window.gd](scripts/terminal_app_window.gd) 与 [terminal_mail_client.gd](scripts/terminal_mail_client.gd)：桌面窗口、任务栏和邮件阅读状态。
-8. [game_language.gd](scripts/game_language.gd) 与 [game_audio.gd](scripts/game_audio.gd)：默认英语、语言偏好与事件音效。
+1. [project.godot](project.godot): startup configuration and global managers.
+2. [game_flow.gd](scripts/game_flow.gd): transitions between the start menu, studio and cases.
+3. [case_manager.gd](scripts/case_manager.gd) and [office case data](data/cases/office_case_001.json): clues, evidence and furniture unlocks.
+4. [main.gd](scripts/main.gd) and [furniture_factory.gd](scripts/furniture_factory.gd): furniture creation and scene interaction.
+5. [reconstruction_manager.gd](scripts/reconstruction_manager.gd): spatial conditions and reconstruction steps.
+6. [player_profile.gd](scripts/player_profile.gd): progress, inventory and saved layouts.
+7. [terminal_app_window.gd](scripts/terminal_app_window.gd) and [terminal_mail_client.gd](scripts/terminal_mail_client.gd): desktop windows, taskbar behavior and mail reading state.
+8. [game_language.gd](scripts/game_language.gd) and [game_audio.gd](scripts/game_audio.gd): default English, language preferences and event-driven sound effects.
 
-当前展示范围是玩家工作室，以及办公室、文物修复室两个正式案件。目录中的公寓数据是旧实验内容，不作为本项目的正式关卡展示。
+The active campaign is limited to the studio, office and restoration room. Legacy experimental case data remains in the project, but its commission emails, case index and replay entries are disabled. Related tasks and album records from older saves are excluded from the normal flow. Unfinished terminal mini-games are also unavailable.
 
-## 离线交付与验证
+## Offline Delivery and Verification
 
-运行 `python tools/build_source_review.py --date YYYY-MM-DD --zip` 可以重新生成源码浏览页、文件清单和 `deliveries/scene-calibration-source.zip`。生成过程只读取项目源码，不改写游戏逻辑。
+Run `python tools/build_source_review.py --date YYYY-MM-DD --zip` to regenerate the source browser, file manifest and `deliveries/scene-calibration-source.zip`. The generator reads the project source without changing game logic.
 
-工程保留运行所需的模型、图片、场景、导入设置与 `.uid`。Godot 导入缓存、Git 内部目录、本地旧备份与交付 ZIP 不提交。
+The repository includes the models, images, scenes, import settings and `.uid` files required to run the project. Godot import caches, Git internals, local backups and delivery archives are excluded from version control.
 
-`tests/` 中包含不同阶段的验证脚本。收录测试文件不等于所有测试均通过；应以所选测试的实际运行日志为准。
+The `tests/` directory contains checks from different development stages. Including a test does not imply that it currently passes; use the actual execution logs for the checks you run.
 
-此仓库未新增开源授权协议。源码公开展示不改变原有代码与素材的授权条件。
+## Licensing
+
+This repository does not introduce an open-source license. Public source access does not change the existing licensing terms of the code or assets.
